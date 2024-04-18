@@ -1,0 +1,113 @@
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-panel {
+    width: 100%;
+    padding: 20px;
+    background-color:lightgrey;
+    border-bottom: 1px solid #dee2e6;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 15%; /* Adjust as needed */
+    border-right: 1px solid black;
+    padding: 1em;
+}
+
+.left-pane {
+	padding-top: 100px;
+    background-color:silver;
+    height: 400px;
+    position: sticky;
+    top: 10px;
+    text-align: center;
+}
+
+.main {
+    width: 85%; /* Adjust as needed */
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+input[type="text"], select {
+    font-size: 16px; /* Change this to the size you want */
+    width: 150px;
+}
+
+
+.bordered-table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.bordered-table th, .bordered-table td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.nice-button {
+    background-color: lightsteelblue; /* Background color */
+    color: black; /* Text color */
+    font-family: 'Calibri', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    border: 2px solid black; /* Border */
+    border-radius: 10px; /* Smooth corners */
+    padding: 10px 20px; /* Padding around text */
+    margin-right: 30px;
+    width: 200px;
+}
+
+.table-button {
+    background-color: lightsteelblue; /* Background color */
+    color: black; /* Text color */
+    font-family: 'Calibri', sans-serif; /* Font family */
+    font-size: 12px; /* Font size */
+    border: 2px solid black; /* Border */
+    border-radius: 10px; /* Smooth corners */
+    padding: 5px; /* Padding around text */
+}
+
+.button-container {
+    display: flex;
+    justify-content: start;
+}
+
+
+.nice-link {
+    display: inline-block;
+    width:200px;
+    background-color: steelblue;
+    color: black;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    border: none;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nice-pencil {
+    color: darkgrey;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.clickable-header {
+    cursor: pointer;
+    background-color:lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
