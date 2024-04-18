@@ -23,6 +23,7 @@ def export_pdf():
 
     path = "C:\\Users\\j4alo\\Dropbox\\Lenguas\\Ilven\\Ilven-Inglisen_kiskirtus.pdf"
 
+
     class FooterCanvas:
         def __init__(self, doc):
             self.doc = doc
