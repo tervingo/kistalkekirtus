@@ -7,6 +7,8 @@ import { EnterForm } from './EnterForm';
 import { QueryForm } from './QueryForm';
 import { ListForm } from './ListForm';
 import { EditForm } from './EditForm';
+import { ExportCsvForm } from './ExportCsvForm';
+import { ExportPdfForm } from './ExportPdfForm';
 
 import { SERVER_IP } from './constants';
 
@@ -27,9 +29,9 @@ function App() {
                                 <br/><br/>
                                 <Link className="nice-link" to="/list-entries">Uilen kistalkee salli</Link>
                                 <br/><br/>
-                                <button className='nice-link' onClick={() => window.open(`${SERVER_IP}/api/export/csv`, '_blank')}>CSV oikappi</button>
+                                <Link className='nice-link' to="/export/csv" >CSV oikappi</Link>
                                 <br/><br/>
-                                <button className='nice-link' onClick={() => window.open(`${SERVER_IP}/api/export/pdf`, '_blank')}>PDF oikappi</button>
+                                <Link className='nice-link' to="/export/pdf" >PDF oikappi</Link>
                                 <br/><br/>
                                 {/* Add more links here... */}
                         </div>
@@ -41,6 +43,8 @@ function App() {
                     <Route path="/query-entry" element={<QueryForm />} />
                     <Route path="/list-entries" element={<ListForm refreshKey={refreshKey} />} />
                     <Route path="/edit-entry/:can" element={<EditForm setRefreshKey={setRefreshKey} />} />
+                    <Route path="/export/csv" element={<ExportCsvForm />} />
+                    <Route path="/export/pdf" element={<ExportPdfForm />} />
                         {/* Add more routes here... */}
                     </Routes>
                     </div>

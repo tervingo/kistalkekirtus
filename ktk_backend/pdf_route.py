@@ -172,4 +172,4 @@ def export_pdf():
     pdf_doc.build(elements)
 
     # Return a success message
-    return jsonify({"message": "PDF generated successfully!"}), 200
+    return 'PDF generated successfully!', 200

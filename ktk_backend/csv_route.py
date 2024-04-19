@@ -41,4 +41,5 @@ def export_csv():
 
 
      # Return a success message
-    return jsonify({"message": "CSV generated successfully!"}), 200
+#    return jsonify({"message": "CSV generated successfully!"}), 200    
+    return 'CSV generated successfully', 200

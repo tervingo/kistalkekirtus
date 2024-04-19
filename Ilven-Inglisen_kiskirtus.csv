@@ -35,15 +35,18 @@ eddi,VB,,,,ed,id,eud,ED,"to digest, to process"
 ei,PF,,,,,,,,"again, repetition"
 eiras,NO,eirai,,eirea,,,,,mind
 eki (jek),NU,,,,,,,,one
+ekjo,NO,ekjota,,ekjoi,,,,,singular
 el,PF,,,,,,,,well
 elarri,VB,,,,elar,elir,elur,,to be happy
 elarso,NO,elarsota,,elarsoi,,,,,happiness
+elkappi,VB,,,,elkap,elkaip,elkaup,KAP,to accept
 elli,VB,,,,ell,ill,eull,TEL,to know
 ellis,AV,,,,,,,-,well
 elto,NO,eltota,,eltoi,,,,TEL,"knowledge, information"
 eltoedarjus,NO,eltoedarjusta,,eltoedarjuos,,,,,computer
 er,PF,,,,,,,,marker HAB
 es,PF,,,,,,,,contrary (eng. un- dis-)
+eskappi,VB,,,,eskap,eskaip,eskaup,KAP,"to avoid, to reject"
 ia,PF,,,,,,,,"intensifier, indeed"
 ibar,NO,ibarta/ibrar,,ibear,,,,,river
 ijas,PR,,,ijea,,,,,"he, she, it"
@@ -62,6 +65,7 @@ isuveruiras,NO,isuveruirai,,isuveruirea,,,,,neurologist
 isuvoiso,NO,isuvoisota,,isuvoisoi,,,,,neurological treatment
 itar,NO,itarta/itrar,,itear,,,,,sea
 itrivar,NO,itrivarta,,itrivear,,,,,lake
+iuki,VB,,,,iuk,iuik,iuok,VIK,to be alive
 kalkapariel,NO,kalkaparielta,,kalkaparielat,,,,,shop
 kalkappi,VB,,,,kalkap,kalkaip,kalkaup,,to buy
 kalli,VB,,,,kal,kail,kaul,KAL,to pay
@@ -106,6 +110,9 @@ kunas,NO,iknen,kunai,kunea,,,,-,woman
 kunranni,VB,,,,kunran,kunrain,kunraun,KUN,to teach
 kuti (kuit),NU,,,,,,,,four
 la,PF,,,,,,,,negative imperative
+lammi,VB,,,,lam,laim,laum,LAM,to breathe
+lamto,NO,lamtota,,lamtoi,,,,LAM,air
+lamtoske,NO,lamtosketa,,lamtoskee,,,,LAM,gas
 le,CJ,,,,,,,,and
 lekkarjas,NO,lekkarjai,,lekkarjea,,,,LEK+,student
 lel,PF,,,,,,,,very well
@@ -180,10 +187,15 @@ un,PF,,,,,,,,"progressive, now"
 unnen,AJ,,,,,,,VUN,"new, young"
 unni,VB,,,,un,uin,uon,VUN,"to be new, to be young"
 ureno,NO,urenota,,urenoi,,,,,evil
+uriljus,NO,uriljusta,,uriljuos,,,,,train
+uriljustatema,NO,uriljustatemata,,uriljustatemea,,,,,train station
 uspi,VB,,,,usp,uisp,uosp,SUP,to sleep
 vai,PF,,,,,,,,"emphatic, indeed"
 vajentulus,NO,vajentulusta,,vajentuluos,,,,TUL,telephone
+vanlamtoske,NO,vanlamtosketa,,vanlamtoskee,,,,VAN & LAM,hydrogen
 varas,NO,ivren,varai,varea,,,,VAR,bird
 varjus,NO,varjusta,,varjuos,,,,VAR,airplane
 varjusema,NO,varjusemata,,varjusemea,,,,VAR,airport
 vijas,PR,,,vijea,,,,,we
+viko,NO,vikota,,vikoi,,,,VIK,life
+vikolamtoske,NO,vikolamtosketa,,vikolamtoskee,,,,VIK & LAM,oxygen
