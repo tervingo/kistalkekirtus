@@ -9,10 +9,11 @@ alevervoiso,NO,alevervoisota,,alevervoisoi,,,,,physiotherapy treatment
 alken,AJ,,,,,,,LAK,white
 alki,VB,,,,alk,ailk,aulk,LAK,to be white
 anir,AV,,,,,,,,now
-anni,VB,,,,an,in,un,,to be (ser)
+anni,VB,,,,an,in,un,AN,to be (ser)
 ansir,AV,,,,,,,,today
 ar,PF,,,,,,,,immediate future
-arri,VB,,,,ar,ir,ur,,to be (estar)
+arri,VB,,,,ar,ir,ur,AR,to be (estar)
+arso,NO,arsota,,arsoi,,,,AR,situation
 atri,VB,,,,atr,aitr,autr,TAR,to fall
 attas,NO,itten,attai,attea,,,,,father
 aunilli,VB,,,,aunil,auniel,auniul,NIL,"to put inside, to enter"
@@ -59,12 +60,14 @@ inri,VB,,,,inr,ienr,iunr,NIR,to be green
 ir,NO,,,irat,,,,,mountains (col.)
 irke,NO,irketa,,irkee,,,,,mountain 
 is,PF,,,,,,,,to want
+isir,AV,,,,,,,,yesterday
 isto,NO,istota,,istoi,,,,,will
 isukunto,NO,isukuntota,,isukuntoi,,,,,neurology
 isuveruiras,NO,isuveruirai,,isuveruirea,,,,,neurologist
 isuvoiso,NO,isuvoisota,,isuvoisoi,,,,,neurological treatment
 itar,NO,itarta/itrar,,itear,,,,,sea
 itrivar,NO,itrivarta,,itrivear,,,,,lake
+itsi,VB,,,,its,iets,iuts,TIS,to be cold
 iuki,VB,,,,iuk,iuik,iuok,VIK,to be alive
 kalkapariel,NO,kalkaparielta,,kalkaparielat,,,,,shop
 kalkappi,VB,,,,kalkap,kalkaip,kalkaup,,to buy
@@ -74,7 +77,8 @@ kaltilli,VB,,,,kaltil,kaltiel,kaltiul,,to sell
 kami (kem),NU,,,,,,,,five
 kappi,VB,,,,kap,kaip,kaup,KAP,"to catch, to take "
 karjus,NO,karjusta,,karjuos,,,,KAR,machine
-karri,VB,,,,kar,kair,kaur,KAR,to make
+karri,VB,,,,kar,kair,kaur,KAR,"to act, to do"
+karri [RES],VB,,,,kar,kair,kaur,KAR,"to make, to create, to craft"
 karruvo,NO,karruvota,,karruvoi,,,,KAR,"order, instruction"
 karvoedarjus,NO,karvoedarjusta,,karvoedarjuos,,,,,"app, software"
 karvosalto,NO,karvosaltota,,karvosaltoi,,,,,computer program
@@ -118,10 +122,13 @@ lekkarjas,NO,lekkarjai,,lekkarjea,,,,LEK+,student
 lel,PF,,,,,,,,very well
 leluiriel,NO,leluirielta,,leluirielat,,,,,heaven
 lo,PF,,,,,,,,"can, know how to"
+lun,NO,lunta,,luon,,,,,snow
+lunni,VB,,,,lun,luin,luon,,to snow
 luras,NO,ilren,lurai,lurea,,,,,flower
 lut,NO,lutut,,lutat (old luot),,,,LUT,"land, Earth"
 mari (mer),NU,,,,,,,,ten
 massi,VB,,,,mas,mais,maus,MAS,to ask
+massi [RES],VB,,,,mas,mais,maus,MAS,to query
 menis,NO,menista,,menies,,,,MEN,brain
 menkarjus,NO,menkarjusta,,menkarjuos,,,,,"program, app"
 merledi,NU,,,,,,,,twelve
@@ -135,14 +142,19 @@ merletel,NU,,,,,,,,thirteen
 merliek,NU,,,,,,,,eleven
 mijas,PR,,,mijea,,,,,I
 minni,VB,,,,min,mien,miun,MIN,"to chat, to have a talk"
+mussi,VB,,,,mus,muis,muos,MUS,to change sth
+mussi [RES],VB,,,,mus,muis,muos,MUS,to become
 na,PF,,,,,,,,imperative
 nevi (niev),NU,,,,,,,,nine
 niemmer,NU,,,,,,,,ninety
 nijas,PR,,,nijea,,,,,they
+nikir,NO,nikirta,,nikier,,,,NIK,year
 nilli,VB,,,,nil,niel,niul,NIL,to put
 niras,NO,inren,nirai,nirea,,,,NIR,plant
 oikappi,VB,,,,oikap,oikaip,oikaup,KAP,"to keep away, to protect "
+oipirri,VB,,,,oipir,oipier,oipiur,PIR,to walk out
 pirri,VB,,,,pir,pier,piur,PIR,to walk
+pirso,NO,pirsota,,pirsoi,,,,PIR,walking
 pul,PF,,,,,,,,"main, big"
 pulkunariel,NO,pulkunarielta,,pulkunarielat,,,,KUN/GUN,university
 ro,PF,,,,,,,,marker PERF
@@ -160,6 +172,7 @@ sati,NO,,,satie,,,,,weather
 satikunto,NO,satikuntota,,satikuntoi,,,,,meteorology
 semmer,NU,,,,,,,,seventy
 sijas,PR,,,sijea,,,,,you (sg)
+sirke,NO,sirketa,,sirkee,,,,,hour
 sirkirtivus,NO,sirkirtivusta,,sirkirtivuos,,,,,newspaper
 su,PF,,,,,,,,"to each other, marker RECIP"
 suimmer,NU,,,,,,,,eighty
@@ -177,7 +190,10 @@ te,PF,,,,,,,,"in vain, unsuccessfully"
 telmer,NU,,,,,,,,thirty
 tilli,VB,,,,til,tiel,tiul,TIL,to give
 timmi,VB,,,,tim,tiem,tium,TIM,to dwell
+tisi,NO,tisita,,tisie,,,,TIS,cold
 tuni,NO,tunita,,tunie,,,,TUN,bread
+tur,NO,turur,,tuor,,,,,house
+turri,VB,,,,tur,tuir,tuor,TUR,to come
 uapas,NO,uapai,,,,,,UAP,dog
 uilsir,AV,,,,,,,,daily
 uino,NO,uinota,,uinoi,,,,GUN,"knowledge, information"
@@ -189,10 +205,14 @@ unni,VB,,,,un,uin,uon,VUN,"to be new, to be young"
 ureno,NO,urenota,,urenoi,,,,,evil
 uriljus,NO,uriljusta,,uriljuos,,,,,train
 uriljustatema,NO,uriljustatemata,,uriljustatemea,,,,,train station
+usir,AV,,,,,,,,tomorrow 
 uspi,VB,,,,usp,uisp,uosp,SUP,to sleep
 vai,PF,,,,,,,,"emphatic, indeed"
 vajentulus,NO,vajentulusta,,vajentuluos,,,,TUL,telephone
+van,NO,vanan,,vean,,,,,water
+vanevo,NO,vanevota,,vanevoi,,,,,rain
 vanlamtoske,NO,vanlamtosketa,,vanlamtoskee,,,,VAN & LAM,hydrogen
+vanni,NO,,,,van,vain,vaun,,to rain
 varas,NO,ivren,varai,varea,,,,VAR,bird
 varjus,NO,varjusta,,varjuos,,,,VAR,airplane
 varjusema,NO,varjusemata,,varjusemea,,,,VAR,airport

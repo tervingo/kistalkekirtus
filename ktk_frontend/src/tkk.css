@@ -63,7 +63,7 @@ input[type="text"], select {
     border-radius: 10px; /* Smooth corners */
     padding: 10px 20px; /* Padding around text */
     margin-right: 30px;
-    width: 200px;
+    width: 150px;
 }
 
 .table-button {
@@ -84,7 +84,7 @@ input[type="text"], select {
 
 .nice-link {
     display: inline-block;
-    width:200px;
+    width: 70%;
     background-color: steelblue;
     color: black;
     font-family: 'Calibri', sans-serif;
