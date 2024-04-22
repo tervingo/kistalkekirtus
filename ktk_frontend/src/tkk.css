@@ -47,6 +47,7 @@ input[type="text"], select {
 .bordered-table {
     border-collapse: collapse;
     width: 80%;
+    overflow: auto;
 }
 
 .bordered-table th, .bordered-table td {
@@ -98,7 +99,7 @@ input[type="text"], select {
 
 .nice-pencil {
     color: darkgrey;
-    padding-right: 20px;
+    padding-right: 10px;
     cursor: pointer;
 }
 

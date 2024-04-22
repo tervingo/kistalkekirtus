@@ -1,4 +1,5 @@
 can,cat,pl,pl2,par,pr,pa,fu,root,en
+aijas,NO,aijai,,aijea,,,,,moon
 aj,IJ,,,,,,,,"vocative, exhortative"
 akpi,VB,,,,akp,aikp,aukp,KAP,to understand 
 al,PF,,,,,,,,yes-no question
@@ -8,9 +9,12 @@ aleveruiras,NO,aleveruirai,,aleveruirea,,,,,physiotherapist
 alevervoiso,NO,alevervoisota,,alevervoisoi,,,,,physiotherapy treatment
 alken,AJ,,,,,,,LAK,white
 alki,VB,,,,alk,ailk,aulk,LAK,to be white
+anas,PR,anai,,anea,,,,,this [+HUM]
 anir,AV,,,,,,,,now
 anni,VB,,,,an,in,un,AN,to be (ser)
+ano,PR,anota,,anoi,,,,,this [+ABS]
 ansir,AV,,,,,,,,today
+anus,PR,anusta,,anuos,,,,,thihs [+CNC]
 ar,PF,,,,,,,,immediate future
 arri,VB,,,,ar,ir,ur,AR,to be (estar)
 arso,NO,arsota,,arsoi,,,,AR,situation
@@ -45,6 +49,8 @@ elli,VB,,,,ell,ill,eull,TEL,to know
 ellis,AV,,,,,,,-,well
 elto,NO,eltota,,eltoi,,,,TEL,"knowledge, information"
 eltoedarjus,NO,eltoedarjusta,,eltoedarjuos,,,,,computer
+epren,AJ,,,,,,,PER,summer
+epri,VB,,,,epr,eipr,eupr,PER,"to be hot, warm"
 er,PF,,,,,,,,marker HAB
 es,PF,,,,,,,,contrary (eng. un- dis-)
 eskappi,VB,,,,eskap,eskaip,eskaup,KAP,"to avoid, to reject"
@@ -145,6 +151,7 @@ minni,VB,,,,min,mien,miun,MIN,"to chat, to have a talk"
 mussi,VB,,,,mus,muis,muos,MUS,to change sth
 mussi [RES],VB,,,,mus,muis,muos,MUS,to become
 na,PF,,,,,,,,imperative
+nekir,NO,nekirta,,nekier,,,,NEK,year
 nevi (niev),NU,,,,,,,,nine
 niemmer,NU,,,,,,,,ninety
 nijas,PR,,,nijea,,,,,they
@@ -153,6 +160,7 @@ nilli,VB,,,,nil,niel,niul,NIL,to put
 niras,NO,inren,nirai,nirea,,,,NIR,plant
 oikappi,VB,,,,oikap,oikaip,oikaup,KAP,"to keep away, to protect "
 oipirri,VB,,,,oipir,oipier,oipiur,PIR,to walk out
+perir,NO,perirta,,perier,,,,PER,summer
 pirri,VB,,,,pir,pier,piur,PIR,to walk
 pirso,NO,pirsota,,pirsoi,,,,PIR,walking
 pul,PF,,,,,,,,"main, big"
@@ -192,6 +200,7 @@ telmer,NU,,,,,,,,thirty
 tilli,VB,,,,til,tiel,tiul,TIL,to give
 timmi,VB,,,,tim,tiem,tium,TIM,to dwell
 tisi,NO,tisita,,tisie,,,,TIS,cold
+tisir,NO,tisirta,,tisier,,,,TIS,winter
 tuni,NO,tunita,,tunie,,,,TUN,bread
 tur,NO,turur,,tuor,,,,,house
 turri,VB,,,,tur,tuir,tuor,TUR,to come
