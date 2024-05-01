@@ -6,12 +6,13 @@ from __init__ import mongo
 
 query_route = Blueprint('query_route', __name__)
 
+# Entry point used for Search Entries Option (kistalkeeva massi)
+
 @query_route.route('/api/search-entries', methods=['GET'])
 def search_translations():
     search = request.args.get('search')
     if search:
         regex = re.compile(search, re.IGNORECASE)
-#        translation = mongo.db.translations.find_one({'$or': [{'can': regex}, {'en': regex}]})
         translations = mongo.db.translations.find({'$or' : [{'can': {'$regex':regex}}, {'en': {'$regex':regex}}]}).sort('can',1)
         translations = list(translations)
     else:
@@ -23,8 +24,10 @@ def search_translations():
         return jsonify(translations), 200
     else:
         return jsonify({'error': 'No translations found'}), 404
-#          return jsonify([json.loads(dumps(translation)) for translation in translations]), 200
 
+
+
+# entry point used for internal entry retrieval 
 
 @query_route.route('/api/query-entry', methods=['GET'])
 def get_translation():

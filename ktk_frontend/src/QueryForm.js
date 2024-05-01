@@ -10,6 +10,8 @@ import { SERVER_IP } from './constants';
 export function QueryForm() {
     const [search, setSearch] = useState('');
     const [translations, setTranslations] = useState([]);
+ 
+ // Main queryEntry function
 
     const queryEntry = async (event) => {
         event.preventDefault();
@@ -20,13 +22,15 @@ export function QueryForm() {
         setTranslations(data);
     };
 
+// Edit an entry
+
     const navigate = useNavigate();
 
     const handleEdit = async (can) => {
         navigate(`/edit-entry/${can}`);
     };    
 
-    const [del_message, setMessage] = useState('');
+// Delete an entry
 
     const handleDelete = async (id, can) => {
         if (window.confirm(`Are you sure you want to delete ${can}?`)) {
@@ -34,18 +38,17 @@ export function QueryForm() {
                 method: 'DELETE',
             });
             const data = await response.json();
-            if (response.ok) {
-                setMessage('Entry deleted successfully');
-            } else {
-                setMessage('Failed to delete entry');
-            }
         }
     };
+
+// Clear form
 
     const handleClear = () => {
         setSearch('');
         setTranslations([]);
     };
+
+//  Return form 
 
     return (
         <div>
