@@ -6,8 +6,8 @@ from __init__ import mongo
 
 query_route = Blueprint('query_route', __name__)
 
-@query_route.route('/api/query-entry', methods=['GET'])
-def get_translation():
+@query_route.route('/api/search-entries', methods=['GET'])
+def search_translations():
     search = request.args.get('search')
     if search:
         regex = re.compile(search, re.IGNORECASE)
@@ -25,3 +25,20 @@ def get_translation():
         return jsonify({'error': 'No translations found'}), 404
 #          return jsonify([json.loads(dumps(translation)) for translation in translations]), 200
 
+
+@query_route.route('/api/query-entry', methods=['GET'])
+def get_translation():
+    can = request.args.get('can')
+    en = request.args.get('en')
+    if can:
+        translation = mongo.db.translations.find_one({'can': can})
+    elif en:
+        translation = mongo.db.translations.find_one({'en': en})
+    else:
+        return jsonify({'error': 'Missing query parameter'}), 400
+    if translation:
+        # Convert the ObjectId into a string
+        translation['_id'] = str(translation['_id'])
+        return jsonify(translation), 200
+    else:
+        return jsonify({'error': 'No translation found'}), 404

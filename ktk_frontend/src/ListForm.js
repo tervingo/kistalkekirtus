@@ -48,7 +48,7 @@ export function ListForm({ refreshKey })  {
     const navigate = useNavigate();
 
     const handleEdit = async (can) => {
-        // Handle the edit action here
+        // Handle the edit action here  
         navigate(`/edit-entry/${can}`);
     };  
 
@@ -57,6 +57,7 @@ export function ListForm({ refreshKey })  {
         {
             const temp = await fetch(`${SERVER_IP}/api/query-entry?${`can=${can}`}`);
             const temp_data = await temp.json();
+            console.log(temp_data);
             const response = await fetch(`${SERVER_IP}/api/delete-entry/${temp_data._id}`, {
                 method: 'DELETE',
             });

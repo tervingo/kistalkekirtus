@@ -13,7 +13,7 @@ export function QueryForm() {
 
     const queryEntry = async (event) => {
         event.preventDefault();
-        const response = await fetch(`${SERVER_IP}/api/query-entry?search=${search}`);
+        const response = await fetch(`${SERVER_IP}/api/search-entries?search=${search}`);
         console.log(response);
         const data = await response.json();
         console.log(data);
