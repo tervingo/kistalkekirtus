@@ -80,7 +80,7 @@ export function ListForm({ refreshKey })  {
                     <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN</th>
                     <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS</th>
                     <th className='clickable-header' onClick={() => handleSort('cat')}>TSK</th>
-                    <th>KONO</th>
+                    <th className='clickable-header' onClick={() => handleSort('root')}>KONO</th>
                     <th>KENO</th>
                     <th>KENO2</th>
                     <th>AKEA</th>
