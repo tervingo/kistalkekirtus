@@ -80,13 +80,13 @@ export function ListForm({ refreshKey })  {
                     <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN</th>
                     <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS</th>
                     <th className='clickable-header' onClick={() => handleSort('cat')}>TSK</th>
+                    <th>KONO</th>
                     <th>KENO</th>
                     <th>KENO2</th>
                     <th>AKEA</th>
                     <th>A-KONIVO</th>
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
-                    <th>KONO</th>
                     <th>KARSOTA</th>
                 </tr>
                 {translations.map((translation, index) => (
@@ -94,13 +94,13 @@ export function ListForm({ refreshKey })  {
                             <td>{translation.can}</td>
                             <td>{translation.en}</td>
                             <td>{translation.cat}</td>
+                            <td>{translation.root ? translation.root : '<ilkonoi>'}</td>
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
                             <td>{translation.par}</td>
                             <td>{translation.pr}</td>
                             <td>{translation.pa}</td>
                             <td>{translation.fu}</td>
-                            <td>{translation.root}</td>
                             <td>
                                 <FontAwesomeIcon className='nice-pencil' icon={faPencilAlt} onClick={() => handleEdit(translation.can)} />
                                 <FontAwesomeIcon className='nice-pencil' icon={faTrashAlt} onClick={() => handleDelete(translation.can)} />

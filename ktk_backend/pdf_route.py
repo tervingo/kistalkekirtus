@@ -18,6 +18,7 @@ def export_pdf():
     iv_en = mongo.db.translations.find().sort('can')
     en_iv = mongo.db.translations.find().sort('en')
     cat = mongo.db.translations.find().sort([('cat', 1), ('can', 1)])
+    konota = mongo.db.translations.find().sort([('root', 1), ('can', 1)])
 
     iv_en_count = mongo.db.translations.count_documents({})
 
@@ -164,6 +165,20 @@ def export_pdf():
 
     for i, doc in enumerate(cat):
         text = f"{doc['cat']} : {doc['can']} - {doc['en']}"
+        elements.append(Paragraph(text, normal_style))
+    elements.append(PageBreak())
+
+#   ROOT
+
+    section_root = Paragraph("Konosies Salten", section_style)
+
+    elements.append(section_root)
+    # Add a spacer after the title
+    elements.append(Spacer(1, cm))
+
+    for i, doc in enumerate(konota):
+        root = doc['root'] if doc['root'] != '' else '<ilkonoi>'
+        text = f" {root} : {doc['can']} ({doc['cat']}) - {doc['en']}"
         elements.append(Paragraph(text, normal_style))
     elements.append(PageBreak())
 
