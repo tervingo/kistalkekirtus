@@ -84,36 +84,36 @@ export function EnterForm() {
                 <br/>
                 <label>
                     <h4>Keno:</h4>
-                    <input type="text" value={pl} onChange={(e) => setPl(e.target.value)} />
+                    <input type="text" value={pl} onChange={(e) => setPl(e.target.value)} disabled={cat !== 'NO'}  />
                 </label>
                 <br/>
                 <label>
                     <h4>Keno+:</h4>
-                    <input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} />
+                    <input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} disabled={cat !== 'NO'} />
                 </label>
                 <br/>
                 <label>
                     <h4>Akea:</h4>
-                    <input type="text" value={par} onChange={(e) => setPar(e.target.value)} />
+                    <input type="text" value={par} onChange={(e) => setPar(e.target.value)} disabled={cat !== 'NO'} />
                 </label>
                 <br/>
                 <label>
                     <h4>Pulso:</h4>
-                    <input type="text" value={val} onChange={(e) => setVal(e.target.value)} />
+                    <input type="text" value={val} onChange={(e) => setVal(e.target.value)} disabled={cat !== 'VB'} />
                 </label>
                 <br/>
                 <label>
                     <h4>Aniren konivo:</h4>
-                    <input type="text" value={pr} onChange={(e) => setPr(e.target.value)} />
+                    <input type="text" value={pr} onChange={(e) => setPr(e.target.value)} disabled={cat !== 'VB'} />
                 </label>
                 <label>
                     <h4>Iniren konivo:</h4>
-                    <input type="text" value={pa} onChange={(e) => setPa(e.target.value)} />
+                    <input type="text" value={pa} onChange={(e) => setPa(e.target.value)} disabled={cat !== 'VB'} />
                 </label>
                 <br/>
                 <label>
                     <h4>Uniren konivo:</h4>
-                    <input type="text" value={fu} onChange={(e) => setFu(e.target.value)} />
+                    <input type="text" value={fu} onChange={(e) => setFu(e.target.value)} disabled={cat !== 'VB'} />
                 </label>
                 <br/>
                 <label>

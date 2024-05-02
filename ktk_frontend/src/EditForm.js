@@ -78,6 +78,7 @@ export function EditForm({ setRefreshKey }) {
                     <th>ILVEN</th>
                     <th>INGLIS</th>
                     <th>TSK</th>
+                    <th>KONO</th>
                     <th>KENO</th>
                     <th>KENO2</th>
                     <th>AKEA</th>
@@ -85,7 +86,6 @@ export function EditForm({ setRefreshKey }) {
                     <th>A-KONIVO</th>
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
-                    <th>KONO</th>
                 </tr>
                 <tr>
                             <td><input type="text" value={can} onChange={(e) => can} /></td>
@@ -106,14 +106,14 @@ export function EditForm({ setRefreshKey }) {
 	                            {/* Add more options here... */}
     	                        </select>
                             </td>
-                            <td><input type="text" value={pl} onChange={(e) => setPl(e.target.value)} /></td>
-                            <td><input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} /></td>
-                            <td><input type="text" value={par} onChange={(e) => setPar(e.target.value)} /></td>
-                            <td><input type="text" value={val} onChange={(e) => setVal(e.target.value)} /></td>
-                            <td><input type="text" value={pr} onChange={(e) => setPr(e.target.value)} /></td>
-                            <td><input type="text" value={pa} onChange={(e) => setPa(e.target.value)} /></td>
-                            <td><input type="text" value={fu} onChange={(e) => setFu(e.target.value)} /></td>
                             <td><input type="text" value={root} onChange={(e) => setRoot(e.target.value)} /></td>
+                            <td><input type="text" value={pl} onChange={(e) => setPl(e.target.value)}  disabled={cat !== 'NO'} /></td>
+                            <td><input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} disabled={cat !== 'NO'}  /></td>
+                            <td><input type="text" value={par} onChange={(e) => setPar(e.target.value)} disabled={cat !== 'NO'}  /></td>
+                            <td><input type="text" value={val} onChange={(e) => setVal(e.target.value)} disabled={cat !== 'VB'} /></td>
+                            <td><input type="text" value={pr} onChange={(e) => setPr(e.target.value)} disabled={cat !== 'VB'} /></td>
+                            <td><input type="text" value={pa} onChange={(e) => setPa(e.target.value)} disabled={cat !== 'VB'} /></td>
+                            <td><input type="text" value={fu} onChange={(e) => setFu(e.target.value)} disabled={cat !== 'VB'} /></td>
                 </tr>
             </table>
             <br/><br/>

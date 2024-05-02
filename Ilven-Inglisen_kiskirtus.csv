@@ -39,15 +39,18 @@ devi (di),NU,,,,,,,,,two
 devri,NU,,,,,,,,,twenty
 drever,NO,dreverta,,dreveer,,,,,DER,forest
 dunas,NO,innen,dunai,dunea,,,,,DUN,man
+edarjus,NO,edarjusta,,edarjuos,,,,,ED,processor
 edaso,NO,edasota,,edasoi,,,,,ED,process
 eddi,VB,,,,ed,id,eud,,ED,"to digest, to process"
 ei,PF,,,,,,,,,"again, repetition"
+eikararvo,NO,eikararvota,,eikararvoi,,,,,KAR+,reconstruction
 eiras,NO,eirai,,eirea,,,,,,mind
 eki (jek),NU,,,,,,,,,one
 ekjo,NO,ekjota,,ekjoi,,,,,,singular
 el,PF,,,,,,,,EL,well
 elarri,VB,,,,elar,elir,elur,,EL,to be happy
 elarso,NO,elarsota,,elarsoi,,,,,EL,happiness
+elas,NO,ilen,elai,eel,,,,,,sea
 elkappi,VB,,,,elkap,elkaip,elkaup,,KAP,to accept
 elli,VB,,,,ell,ill,eull,,TEL,to know
 ellis,AV,,,,,,,,EL,well
@@ -63,10 +66,12 @@ etten,AJ,,,,,,,,TEP,warm
 etti,VB,,,,ett,eitt,eutt,,TEP,to be warm
 harjas,NO,harjai,,harjea,,,,,HAR,"doctor, physician"
 harri,VB,,,,har,hair,haur,,HAR,to heal
+hjapapso,NO,hjapapsota,,hjapapsoi,,,,,KAP,hug
 ia,PF,,,,,,,,,"intensifier, indeed"
 ibras,NO,ibren,ibrai,ibrea,,,,BAR,river
 ijas,PR,,,ijea,,,,,,"he, she, it"
 il,PF,,,,,,,,,no
+ile,NO,ileta,,ilee,,,,,,"way, path"
 illelarjas,NO,illelarjai,,illelarjea,,,,,LEL,anxiety
 ilvas,NO,ilven,ilvai,ilvea,,,,,LIV,a left-handed person 
 ilvi,VB,,,,ilv,ielv,iulv,,LIV,to be left-handed
@@ -86,6 +91,7 @@ itras,NO,itren,itrai,itarea,,,,TAR,sea
 itrivar,NO,itrivarta,,itrivear,,,,,,lake
 itsi,VB,,,,its,iets,iuts,,TIS,to be cold
 iuki,VB,,,,iuk,iuik,iuok,,VIK,to be alive
+ivas,NO,iven,ivai,ivea,,,,,IV,"child, kid"
 kalkapariel,NO,kalkaparielta,,kalkaparielat,,,,,KAL & KAP,shop
 kalkappi,VB,,,,kalkap,kalkaip,kalkaup,,KAL & KAP,to buy
 kalli,VB,,,,kal,kail,kaul,,KAL,to pay
@@ -94,6 +100,7 @@ kaltilli,VB,,,,kaltil,kaltiel,kaltiul,,,to sell
 kami (kem),NU,,,,,,,,,five
 kapaijir,NO,kapaijirta,,kapaijier,,,,,KAP,August
 kappi,VB,,,,kap,kaip,kaup,,KAP,"to catch, to take "
+kararvo,NO,kararvota,,kararvoi,,,,,KAR+,"building, construction"
 karjus,NO,karjusta,,karjuos,,,,,KAR,machine
 karri,VB,,,,kar,kair,kaur,jas,KAR,"to act, to do"
 karri,VB,,,,kar,kair,kaur,jas-java,KAR,"to make, to create, to craft"
@@ -108,6 +115,7 @@ keltivas,NO,keltivai,,keltivea,,,,,KEL,prince
 kemmer,NU,,,,,,,,,fifty
 kenni,NU,,,,,,,,,hundred
 keno,NO,kenota,,kenoi,,,,,KEN,plural
+ker,NO,kerer,,keer,,,,,KER,"village, town"
 keruriljus,NO,keruriljusta,,keruriljuos,,,,,,tram
 kesi (kies),NU,,,,,,,,,six
 kiesmer,NU,,,,,,,,,sixty
@@ -124,7 +132,7 @@ kirtuskalkapariel,NO,kirtuskalkaparielta,,kirtuskalkaparielat,,,,,,bookshop
 kissi,VB,,,,kis,kies,kius,,KIS,to exchange 
 kistalke,NO,kistalketa,,kistalkee,,,,,KIS & TAL,dictionary entry
 kistalkekirtus,NO,kistalkekirtusta,,kistalkekirtuos,,,,,,bilingual dictionary
-kolli,VB,,,,kol,koil,koul,KOL,to listen
+kolli,VB,,,,kol,koil,koul,KOL,to listen,jas-jasi
 konivo,NO,konivota,,konivoi,,,,,KON,stem
 kono,NO,konota,,konoi,,,,,KON,"root, centre, bone"
 konoi,NO,konoita,,konojat,,,,,KON,"root, centre"
@@ -134,6 +142,7 @@ kunariel,NO,kunarielta,,kunarielat,,,,,KUN/GUN,school
 kunarjas,NO,kunarjai,,kunarjea,,,,,KUN/GUN,teacher
 kunas,NO,iknen,kunai,kunea,,,,,KUN,woman
 kunranni,VB,,,,kunran,kunrain,kunraun,,KUN,to teach
+kussi,VB,,,,jas-ja,kus,kuis,kuos,KUS,to look at
 kuti (kuit),NU,,,,,,,,,four
 la,PF,,,,,,,,,negative imperative
 lalarjas,NO,lalarjai,,lalarjea,,,,,LAL,singer
@@ -174,6 +183,7 @@ merletel,NU,,,,,,,,,thirteen
 merliek,NU,,,,,,,,,eleven
 mijas,PR,,,mijea,,,,,,I
 minni,VB,,,,min,mien,miun,,MIN,"to chat, to have a talk"
+minso,NO,minsota,,minsoi,,,,,MIN,talk
 muraijir,NO,muraijirta,,muraijier,,,,,,November
 mussi,VB,,,,mus,muis,muos,jas-ja,MUS,to change sth
 mussi,VB,,,,mus,muis,muos,jas-java,MUS,to become
@@ -188,6 +198,7 @@ nilli,VB,,,,nil,niel,niul,,NIL,to put
 niras,NO,inren,nirai,nirea,,,,,NIR,plant
 oikappi,VB,,,,oikap,oikaip,oikaup,,KAP,"to keep away, to protect "
 oipirri,VB,,,,oipir,oipier,oipiur,,PIR,to walk out
+okli,VB,,,,ja-jasi,okl,oikl,oukl,KOL,to hear
 osaijir,NO,osaijirta,,osaijier,,,,,,October
 osas,NO,iusen,osai,osea,,,,,,thunder
 perir,NO,perirta,,perier,,,,,PER,summer
@@ -197,11 +208,16 @@ pul,PF,,,,,,,,,"main, big"
 puljas,NO,puljai,,puljea,,,,,PUL,"leader, boss"
 pulkunariel,NO,pulkunarielta,,pulkunarielat,,,,,KUN/GUN,university
 pulso,NO,pulota,,pulsoi,,,,PUL,government
+pulvimile,NO,pulvimileta,,pulvimilee,,,,,VIM,highway
 ro,PF,,,,,,,,,marker PERF
 runkirtus,NO,runkirtusta,,runkirtuos,,,,,KIR,grammar book
 runni,VB,,,,run,ruin,ruon,,RUN,"to speak, to say, to tell"
 runtal,NO,runtalal (runtalta),,runtalat,,,,,RUN & TAL,colloquial language
 rutjenmalo,NO,rutjenmalota,,rutjenmaloi,,,,,MAL,cinema (technique)
+rutti,VB,,,,jas-ja,rut,ruit,ruot,RUT,to move
+rutueni,VB,,,,jas,rutuen,ruituen,ruotuen,RUT,to move oneself
+rututueni,VB,,,,jas,rututuen,ruitutuen,ruotutuen,RUT+,to work out
+rututueniso,NO,rututuenisota,,rututuenisoi,,,,,RUT+,"exercice, training"
 salke,NO,salketa,,salkee,,,,,SAL,number
 salkunto,NO,salkuntota,,salkuntoi,,,,,SAL & KUN,mathematics
 salli,VB,,,,sal,sail,saul,,SAL,"to list, to order"
@@ -215,10 +231,12 @@ satikunto,NO,satikuntota,,satikuntoi,,,,,,meteorology
 semmer,NU,,,,,,,,,seventy
 sievaijir,NO,sievaijirta,,sievaijier,,,,,SIJ,June
 sijas,PR,,,sijea,,,,,,you (sg)
+sijas,NO,isjen,sijai,sijea,,,,,SIJ,sun
 sirke,NO,sirketa,,sirkee,,,,,SIJ,hour
 sirkirtivus,NO,sirkirtivusta,,sirkirtivuos,,,,,SIJ & KIR,newspaper
 su,PF,,,,,,,,,"to each other, marker RECIP"
 suimmer,NU,,,,,,,,,eighty
+supantemiviel,NO,supantemivielta,,supantemivielat,,,,,SUP,sleeping room
 suti (suit),NU,,,,,,,,,eight
 tal,NO,talal,,talat (old teal),,,,,TAL,language
 tali (tel),NU,,,,,,,,,three
@@ -231,6 +249,7 @@ talkisvo,NO,talkisvota,,talkisvoi,,,,,TAL & KIS,translation
 talsalke,NO,talsalketa,,talsalkee,,,,,TAL & SAL,grammatical category
 te,PF,,,,,,,,,"in vain, unsuccessfully"
 telmer,NU,,,,,,,,,thirty
+temiviel,NO,temivielta,,temivielat,,,,,TEM,room
 tepaijir,NO,tepaijirta,,tepaijier,,,,,TEP,July
 tepir,NO,tepirta,,tepier,,,,,TEP,summer
 tepivir,NO,tepivirta,,tepivier,,,,,TEP,spring
@@ -250,12 +269,14 @@ turri,VB,,,,tur,tuir,tuor,,TUR,to come
 uapas,NO,uapai,,,,,,,UAP,dog
 uilsir,AV,,,,,,,,,daily
 uino,NO,uinota,,uinoi,,,,,GUN,"knowledge, information"
+uksi,VB,,,,ja-jasi,uks,uiks,uoks,KUS,to see
 umren,AJ,,,,,,,,MUR,black
 umri,VB,,,,umr,uimr,uomr,,MUR,to be black
 un,PF,,,,,,,,,"progressive, now"
 unekir,AV,,,,,,,,NEK,next year
 unnen,AJ,,,,,,,,VUN,"new, young"
 unni,VB,,,,un,uin,uon,,VUN,"to be new, to be young"
+ure,NO,ureta,,uree,,,,,,iron
 ureno,NO,urenota,,urenoi,,,,,,evil
 uriljus,NO,uriljusta,,uriljuos,,,,,,train
 uriljustatema,NO,uriljustatemata,,uriljustatemea,,,,,,train station
@@ -276,4 +297,5 @@ varjusema,NO,varjusemata,,varjusemea,,,,,VAR,airport
 vijas,PR,,,vijea,,,,,,we
 viko,NO,vikota,,vikoi,,,,,VIK,life
 vikolamtoske,NO,vikolamtosketa,,vikolamtoskee,,,,,VIK & LAM,oxygen
+vimile,NO,vimileta,,vimilee,,,,,VIM,road
 vinaijir,NO,vinaijirta,,vinaijier,,,,,VIN,September
