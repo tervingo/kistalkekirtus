@@ -49,6 +49,13 @@ export function QueryForm() {
         setTranslations([]);
     };
 
+// Cancel
+
+    const handleCancel = async () => {
+        navigate(`/list-entries`);
+    }
+
+
 //  Return form 
 
     return (
@@ -60,7 +67,10 @@ export function QueryForm() {
                     <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
                 </label>
                 <br/><br/>
-                <input className='nice-button' type="submit" value="Search" />
+                <div className='button-container'>
+                    <input className='nice-button' type="submit" value="Search" />
+                    <button className='nice-button' type="button" onClick={handleCancel}>Cancel</button>
+                </div>
                 <div>
                     <h2>Search Results:</h2>
                     <table className="bordered-table">

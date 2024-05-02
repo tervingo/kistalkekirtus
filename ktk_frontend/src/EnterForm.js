@@ -55,6 +55,10 @@ export function EnterForm() {
         setEn('');
     };
 
+    const handleCancel = async () => {
+        navigate(`/list-entries`);
+    }
+
     return (
         <div>
             <h2>Enter data </h2>
@@ -126,9 +130,10 @@ export function EnterForm() {
                     <input type="text" value={en} onChange={(e) => setEn(e.target.value)} />
                 </label>
                 <br/><br/>
-                <div className='bttonn-container'>
+                <div className='button-container'>
                     <input className="nice-button" type="submit" value="Submit" />
                     <button className="nice-button" type="button" onClick={handleClear}>Clear</button>
+                    <button className='nice-button' type="button" onClick={handleCancel}>Cancel</button>
                 </div>
                                
             </form>

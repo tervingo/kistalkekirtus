@@ -69,6 +69,10 @@ export function EditForm({ setRefreshKey }) {
         setRefreshKey(oldKey => oldKey + 1);
         navigate('/list-entries');
     };
+
+    const handleCancel = async () => {
+        navigate(`/list-entries`);
+    }
     
     return (
         <form onSubmit={handleEdit}>
@@ -117,7 +121,10 @@ export function EditForm({ setRefreshKey }) {
                 </tr>
             </table>
             <br/><br/>
-            <input className="nice-button" type="submit" value="Update" />
+            <div className='button-container'>
+                <input className="nice-button" type="submit" value="Update" />
+                <button className='nice-button' onClick={handleCancel}>Cancel</button>
+             </div>
             {message && <p>{message}</p>} {/* Add this line */}
         </form>
     );
