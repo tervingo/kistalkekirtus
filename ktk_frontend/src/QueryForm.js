@@ -38,6 +38,7 @@ export function QueryForm() {
                 method: 'DELETE',
             });
             const data = await response.json();
+            console.log(data);
         }
     };
 
@@ -70,13 +71,14 @@ export function QueryForm() {
                             <th>KENO</th>
                             <th>KENO2</th>
                             <th>AKEA</th>
+                            <th>PULSO</th>
                             <th>A-KONIVO</th>
                             <th>I-KONIVO</th>
                             <th>U-KONIVO</th>
                             <th>KONO</th>
                             <th>KARSOTA</th>
                         </tr>
-                        {translations.map((translation, index) => (
+                        {Array.isArray(translations) && translations.map((translation, index) => (
                         <tr key={index}>
                             <td>{translation.can}</td>
                             <td>{translation.en}</td>
@@ -85,6 +87,7 @@ export function QueryForm() {
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
                             <td>{translation.par}</td>
+                            <td>{translation.val}</td>
                             <td>{translation.pr}</td>
                             <td>{translation.pa}</td>
                             <td>{translation.fu}</td>

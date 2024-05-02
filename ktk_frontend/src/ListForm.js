@@ -85,6 +85,7 @@ export function ListForm({ refreshKey })  {
                     <th>KENO</th>
                     <th>KENO2</th>
                     <th>AKEA</th>
+                    <th>PULSO</th>
                     <th>A-KONIVO</th>
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
@@ -99,6 +100,7 @@ export function ListForm({ refreshKey })  {
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
                             <td>{translation.par}</td>
+                            <td>{translation.val}</td>
                             <td>{translation.pr}</td>
                             <td>{translation.pa}</td>
                             <td>{translation.fu}</td>

@@ -13,6 +13,7 @@ export function EditForm({ setRefreshKey }) {
     const [pl, setPl] = useState('');
     const [pl2, setPl2] = useState('');
     const [par, setPar] = useState('');
+    const [val, setVal] = useState('');
     const [pr, setPr] = useState('');
     const [pa, setPa] = useState('');
     const [fu, setFu] = useState('');
@@ -29,6 +30,7 @@ export function EditForm({ setRefreshKey }) {
             setPl(data.pl);
             setPl2(data.pl2);
             setPar(data.par);
+            setVal(data.val);
             setPr(data.pr);
             setPa(data.pa);
             setFu(data.fu);
@@ -53,6 +55,7 @@ export function EditForm({ setRefreshKey }) {
                 pl,
                 pl2,
                 par,
+                val,
                 pr,
                 pa,
                 fu,
@@ -78,6 +81,7 @@ export function EditForm({ setRefreshKey }) {
                     <th>KENO</th>
                     <th>KENO2</th>
                     <th>AKEA</th>
+                    <th>PULSO</th>
                     <th>A-KONIVO</th>
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
@@ -105,6 +109,7 @@ export function EditForm({ setRefreshKey }) {
                             <td><input type="text" value={pl} onChange={(e) => setPl(e.target.value)} /></td>
                             <td><input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} /></td>
                             <td><input type="text" value={par} onChange={(e) => setPar(e.target.value)} /></td>
+                            <td><input type="text" value={val} onChange={(e) => setVal(e.target.value)} /></td>
                             <td><input type="text" value={pr} onChange={(e) => setPr(e.target.value)} /></td>
                             <td><input type="text" value={pa} onChange={(e) => setPa(e.target.value)} /></td>
                             <td><input type="text" value={fu} onChange={(e) => setFu(e.target.value)} /></td>

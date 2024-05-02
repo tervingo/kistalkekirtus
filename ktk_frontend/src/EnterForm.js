@@ -1,4 +1,4 @@
-import React, { useState, useEffect  } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './tkk.css';
 
@@ -14,6 +14,7 @@ export function EnterForm() {
     const [pl, setPl] = useState(initialTranslation.pl || '');
     const [pl2, setPl2] = useState(initialTranslation.pl2 || '');
     const [par, setPar] = useState(initialTranslation.par || '');
+    const [val, setVal] = useState(initialTranslation.val || '');
     const [pr, setPr] = useState(initialTranslation.pr || '');
     const [pa, setPa] = useState(initialTranslation.pa || '');
     const [fu, setFu] = useState(initialTranslation.fu || '');
@@ -31,7 +32,7 @@ export function EnterForm() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ can, cat, pl, pl2, par, pr, pa, fu, root, en }),
+            body: JSON.stringify({ can, cat, pl, pl2, par, val, pr, pa, fu, root, en }),
         });
         const data = await response.json();
         console.log(data);
@@ -46,6 +47,7 @@ export function EnterForm() {
         setPl('');
         setPl2('');
         setPar('');
+        setVal('');
         setPr('');
         setPa('');
         setFu('');
@@ -93,6 +95,11 @@ export function EnterForm() {
                 <label>
                     <h4>Akea:</h4>
                     <input type="text" value={par} onChange={(e) => setPar(e.target.value)} />
+                </label>
+                <br/>
+                <label>
+                    <h4>Pulso:</h4>
+                    <input type="text" value={val} onChange={(e) => setVal(e.target.value)} />
                 </label>
                 <br/>
                 <label>

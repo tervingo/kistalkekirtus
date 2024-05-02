@@ -12,11 +12,12 @@ def add_translation():
     pl = data['pl']
     pl2 = data['pl2']
     par = data['par']
+    val = data['val']
     pr = data['pr']
     pa = data['pa']
     fu = data['fu']
     root = data['root']
     en = data['en']
 
-    mongo.db.translations.insert_one({'can': can, 'cat': cat, 'pl': pl, 'pl2': pl2, 'par': par, 'pr': pr, 'pa': pa, 'fu': fu, 'root': root, 'en': en })
+    mongo.db.translations.insert_one({'can': can, 'cat': cat, 'pl': pl, 'pl2': pl2, 'par': par, 'val' : val, 'pr': pr, 'pa': pa, 'fu': fu, 'root': root, 'en': en })
     return jsonify({'result': 'Translation added successfully'}), 201

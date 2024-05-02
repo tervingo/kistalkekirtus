@@ -14,6 +14,7 @@ def edit_entry(id):
     pl = data['pl']
     pl2 = data['pl2']
     par = data['par']
+    val = data['val']
     pr = data['pr']
     pa = data['pa']
     fu = data['fu']
@@ -22,7 +23,7 @@ def edit_entry(id):
 
     mongo.db.translations.update_one(
         {'_id': ObjectId(id)},
-        {'$set': {'can': can, 'cat': cat, 'pl': pl, 'pl2': pl2, 'par': par, 'pr': pr, 'pa': pa, 'fu': fu, 'root': root, 'en': en }}
+        {'$set': {'can': can, 'cat': cat, 'pl': pl, 'pl2': pl2, 'par': par, 'val' : val, 'pr': pr, 'pa': pa, 'fu': fu, 'root': root, 'en': en }}
     )
     return jsonify({'result': 'Entry updated successfully'}), 200
 
