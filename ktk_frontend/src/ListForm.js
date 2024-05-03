@@ -82,7 +82,7 @@ export function ListForm({ refreshKey })  {
                     <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('cat')} width="50px">TS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
-                    <th className='clickable-header' onClick={() => handleSort('sw')}>SWAD <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown}/></th>
+                    <th className='clickable-header' onClick={() => handleSort('sw')} width="50px">SW <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown}/></th>
                     <th className='clickable-header' onClick={() => handleSort('root')}>KONO <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th>KENO</th>
                     <th>KENO2</th>
@@ -99,8 +99,11 @@ export function ListForm({ refreshKey })  {
                             <td>{translation.can}</td>
                             <td>{translation.en}</td>
                             <td>{translation.cat}</td>
-                            <td><input type="checkbox" checked={translation.sw === 1} disabled /></td>
-                            <td>{translation.root ? translation.root : '<ilkonoi>'}</td>
+                            <div className="custom-checkbox">
+                                <input type="checkbox" id="swadesh" checked={translation.sw === 1} disabled />
+                                <label htmlFor="swadesh"></label>
+                            </div>
+                           <td>{translation.root ? translation.root : '<ilkonoi>'}</td>
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
                             <td>{translation.par}</td>

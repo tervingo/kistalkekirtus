@@ -119,3 +119,31 @@ h1 {
     background: white;
     z-index: 10;
 }
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Create a new checkbox */
+.custom-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px; /* Adjust this value as needed */
+    border-bottom: 1px solid #000; /* Add a border */
+}
+
+.custom-checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+}
+
+/* Show a checkmark when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+    background: black;
+}

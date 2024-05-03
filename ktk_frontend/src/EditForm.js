@@ -85,6 +85,7 @@ export function EditForm({ setRefreshKey }) {
                     <th>ILVEN</th>
                     <th>INGLIS</th>
                     <th>TSK</th>
+                    <th>SWAD</th>
                     <th>KONO</th>
                     <th>KENO</th>
                     <th>KENO2</th>
@@ -93,8 +94,7 @@ export function EditForm({ setRefreshKey }) {
                     <th>A-KONIVO</th>
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
-                    <th>SWADESH</th>
-                </tr>
+                 </tr>
                 <tr>
                             <td><input type="text" value={can} onChange={(e) => can} /></td>
                             <td><input type="text" value={en} onChange={(e) => setEn(e.target.value)} /></td>
@@ -114,6 +114,7 @@ export function EditForm({ setRefreshKey }) {
 	                            {/* Add more options here... */}
     	                        </select>
                             </td>
+                            <td><input type="checkbox" checked={sw === 1} onChange={(e) => setSw(e.target.checked ? 1 : 0)} /></td>
                             <td><input type="text" value={root} onChange={(e) => setRoot(e.target.value)} /></td>
                             <td><input type="text" value={pl} onChange={(e) => setPl(e.target.value)}  disabled={cat !== 'NO'} /></td>
                             <td><input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} disabled={cat !== 'NO'}  /></td>
@@ -122,7 +123,6 @@ export function EditForm({ setRefreshKey }) {
                             <td><input type="text" value={pr} onChange={(e) => setPr(e.target.value)} disabled={cat !== 'VB'} /></td>
                             <td><input type="text" value={pa} onChange={(e) => setPa(e.target.value)} disabled={cat !== 'VB'} /></td>
                             <td><input type="text" value={fu} onChange={(e) => setFu(e.target.value)} disabled={cat !== 'VB'} /></td>
-                            <td><input type="checkbox" checked={sw === 1} onChange={(e) => setSw(e.target.checked ? 1 : 0)} /></td>
                 </tr>
             </table>
             <br/><br/>
