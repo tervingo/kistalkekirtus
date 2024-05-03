@@ -91,6 +91,7 @@ export function ListForm({ refreshKey })  {
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
                     <th>KARSOTA</th>
+                    <th>SWADESH</th>
                 </tr>
                 {translations.map((translation, index) => (
                      <tr key={index}>
@@ -111,6 +112,7 @@ export function ListForm({ refreshKey })  {
                                 <FontAwesomeIcon className='nice-pencil' icon={faCopy} onClick={() => handleCopy(translation)} />
 
                             </td>
+                            <td><input type="checkbox" checked={translation.sw === 1} disabled /></td>
 
                      </tr>
             ))}

@@ -20,10 +20,11 @@ def edit_entry(id):
     fu = data['fu']
     root = data['root']
     en = data['en']
+    sw = data['sw']
 
     mongo.db.translations.update_one(
         {'_id': ObjectId(id)},
-        {'$set': {'can': can, 'cat': cat, 'pl': pl, 'pl2': pl2, 'par': par, 'val' : val, 'pr': pr, 'pa': pa, 'fu': fu, 'root': root, 'en': en }}
+        {'$set': {'can': can, 'cat': cat, 'pl': pl, 'pl2': pl2, 'par': par, 'val' : val, 'pr': pr, 'pa': pa, 'fu': fu, 'root': root, 'en': en, 'sw': sw }}
     )
     return jsonify({'result': 'Entry updated successfully'}), 200
 

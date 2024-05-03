@@ -20,6 +20,7 @@ export function EnterForm() {
     const [fu, setFu] = useState(initialTranslation.fu || '');
     const [root, setRoot] = useState(initialTranslation.root || '');
     const [en, setEn] = useState(initialTranslation.en || '');
+    const [sw, setSw] = useState(initialTranslation.sw || 0);
 
     const [message, setMessage] = useState('');
 
@@ -32,7 +33,7 @@ export function EnterForm() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ can, cat, pl, pl2, par, val, pr, pa, fu, root, en }),
+            body: JSON.stringify({ can, cat, pl, pl2, par, val, pr, pa, fu, root, en, sw }),
         });
         const data = await response.json();
         console.log(data);
@@ -53,6 +54,7 @@ export function EnterForm() {
         setFu('');
         setRoot('');
         setEn('');
+        setSw(0);
     };
 
     const handleCancel = async () => {
@@ -128,6 +130,11 @@ export function EnterForm() {
                 <label>
                     <h4>Inglis talkisvo:</h4>
                     <input type="text" value={en} onChange={(e) => setEn(e.target.value)} />
+                </label>
+                <br/>
+                <label>
+                    <h4>Swadesh:</h4>
+                    <td><input type="checkbox" checked={sw === 1} onChange={(e) => setSw(e.target.checked ? 1 : 0)} /></td>
                 </label>
                 <br/><br/>
                 <div className='button-container'>

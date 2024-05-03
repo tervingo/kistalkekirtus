@@ -19,6 +19,7 @@ export function EditForm({ setRefreshKey }) {
     const [fu, setFu] = useState('');
     const [root, setRoot] = useState('');
     const [en, setEn] = useState('');
+    const [sw, setSw] = useState(0);
     const [message, setMessage] = useState(''); // Add this line
 
     useEffect(() => {
@@ -36,6 +37,7 @@ export function EditForm({ setRefreshKey }) {
             setFu(data.fu);
             setRoot(data.root);
             setEn(data.en);
+            setSw(data.sw);
         };
         fetchEntry();
     }, [can]); 
@@ -61,6 +63,7 @@ export function EditForm({ setRefreshKey }) {
                 fu,
                 root,
                 en,
+                sw,
             }),
         });
 //        const data = await response.json();
@@ -90,6 +93,7 @@ export function EditForm({ setRefreshKey }) {
                     <th>A-KONIVO</th>
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
+                    <th>SWADESH</th>
                 </tr>
                 <tr>
                             <td><input type="text" value={can} onChange={(e) => can} /></td>
@@ -118,6 +122,7 @@ export function EditForm({ setRefreshKey }) {
                             <td><input type="text" value={pr} onChange={(e) => setPr(e.target.value)} disabled={cat !== 'VB'} /></td>
                             <td><input type="text" value={pa} onChange={(e) => setPa(e.target.value)} disabled={cat !== 'VB'} /></td>
                             <td><input type="text" value={fu} onChange={(e) => setFu(e.target.value)} disabled={cat !== 'VB'} /></td>
+                            <td><input type="checkbox" checked={sw === 1} onChange={(e) => setSw(e.target.checked ? 1 : 0)} /></td>
                 </tr>
             </table>
             <br/><br/>
