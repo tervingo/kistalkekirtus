@@ -112,3 +112,10 @@ h1 {
     text-align: center;
     font-size: 40px;
 }
+
+.sticky-header th {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}

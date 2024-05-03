@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsUpDown } from '@fortawesome/free-solid-svg-icons';
 import './tkk.css';
 
 import { SERVER_IP } from './constants';
@@ -76,12 +77,12 @@ export function ListForm({ refreshKey })  {
     return (
         <div>
             <h2>Uilen kistalkee ({translations.length} kistalkee)</h2>
-            <table className="bordered-table">
+            <table className="bordered-table sticky-header">
                 <tr>
-                    <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN</th>
-                    <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS</th>
-                    <th className='clickable-header' onClick={() => handleSort('cat')}>TSK</th>
-                    <th className='clickable-header' onClick={() => handleSort('root')}>KONO</th>
+                    <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th className='clickable-header' onClick={() => handleSort('cat')} width="50px">TS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th className='clickable-header' onClick={() => handleSort('root')}>KONO <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th>KENO</th>
                     <th>KENO2</th>
                     <th>AKEA</th>
