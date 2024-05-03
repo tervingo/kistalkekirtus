@@ -82,6 +82,7 @@ export function ListForm({ refreshKey })  {
                     <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('cat')} width="50px">TS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th className='clickable-header' onClick={() => handleSort('sw')}>SWAD <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown}/></th>
                     <th className='clickable-header' onClick={() => handleSort('root')}>KONO <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th>KENO</th>
                     <th>KENO2</th>
@@ -91,13 +92,14 @@ export function ListForm({ refreshKey })  {
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
                     <th>KARSOTA</th>
-                    <th>SWADESH</th>
+
                 </tr>
                 {translations.map((translation, index) => (
                      <tr key={index}>
                             <td>{translation.can}</td>
                             <td>{translation.en}</td>
                             <td>{translation.cat}</td>
+                            <td><input type="checkbox" checked={translation.sw === 1} disabled /></td>
                             <td>{translation.root ? translation.root : '<ilkonoi>'}</td>
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
@@ -112,8 +114,6 @@ export function ListForm({ refreshKey })  {
                                 <FontAwesomeIcon className='nice-pencil' icon={faCopy} onClick={() => handleCopy(translation)} />
 
                             </td>
-                            <td><input type="checkbox" checked={translation.sw === 1} disabled /></td>
-
                      </tr>
             ))}
             </table>
