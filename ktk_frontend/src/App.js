@@ -1,5 +1,6 @@
-import React, { useState  } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './tkk.css'; // Import your CSS file
 // import './const.js';
 
@@ -12,8 +13,36 @@ import { ExportPdfForm } from './ExportPdfForm';
 
 import { SERVER_IP } from './constants';
 
+
 function App() {
     const [refreshKey, setRefreshKey] = useState(0);
+    const [isFirstRender, setIsFirstRender] = useState(true);
+
+    
+    function MainComponent() {
+        const navigate = useNavigate();
+
+        useEffect(() => {
+            if (isFirstRender) {
+                navigate('/list-entries');
+                setIsFirstRender(false);
+            }
+        }, [navigate, isFirstRender]);
+
+        return (
+            <div className="main">
+                <Routes>
+                    <Route path="/enter-entry" element={<EnterForm />} />
+                    <Route path="/query-entry" element={<QueryForm />} />
+                    <Route path="/list-entries" element={<ListForm refreshKey={refreshKey} />} />
+                    <Route path="/edit-entry/:can" element={<EditForm setRefreshKey={setRefreshKey} />} />
+                    <Route path="/export/csv" element={<ExportCsvForm />} />
+                    <Route path="/export/pdf" element={<ExportPdfForm />} />
+                </Routes>
+            </div>
+        );
+    }
+
     return (
         <Router>
             <div className="app">
@@ -23,35 +52,24 @@ function App() {
                 <div className="content">
                     <nav className="sidebar">
                         <div className="left-pane">
-                                <Link className="nice-link" to="/enter-entry">Unnen kistalke aunilli</Link>
-                                <br/><br/>
-                                <Link className="nice-link" to="/query-entry">Kistalkeeva massi</Link>
-                                <br/><br/>
-                                <Link className="nice-link" to="/list-entries">Uilen kistalkee salli</Link>
-                                <br/><br/>
-                                <Link className='nice-link' to="/export/csv" >CSV oikappi</Link>
-                                <br/><br/>
-                                <Link className='nice-link' to="/export/pdf" >PDF oikappi</Link>
-                                <br/><br/>
-                                {/* Add more links here... */}
+                            <Link className="nice-link" to="/list-entries">Uilen kistalkee salli</Link>
+                            <br/><br/>
+                            <Link className="nice-link" to="/enter-entry">Unnen kistalke aunilli</Link>
+                            <br/><br/>
+                            <Link className="nice-link" to="/query-entry">Kistalkeeva massi</Link>
+                            <br/><br/>
+                            <Link className='nice-link' to="/export/csv" >CSV oikappi</Link>
+                            <br/><br/>
+                            <Link className='nice-link' to="/export/pdf" >PDF oikappi</Link>
+                            <br/><br/>
                         </div>
                     </nav>
-
-                    <div className="main">
-                    <Routes>
-                    <Route path="/enter-entry" element={<EnterForm />} />
-                    <Route path="/query-entry" element={<QueryForm />} />
-                    <Route path="/list-entries" element={<ListForm refreshKey={refreshKey} />} />
-                    <Route path="/edit-entry/:can" element={<EditForm setRefreshKey={setRefreshKey} />} />
-                    <Route path="/export/csv" element={<ExportCsvForm />} />
-                    <Route path="/export/pdf" element={<ExportPdfForm />} />
-                        {/* Add more routes here... */}
-                    </Routes>
-                    </div>
+                    <MainComponent />
                 </div>
             </div>
         </Router>
     );
 }
+
 
 export default App;
