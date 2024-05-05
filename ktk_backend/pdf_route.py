@@ -10,6 +10,8 @@ import datetime
 
 from __init__ import mongo
 
+import AYUR_PDF_FILE from constants
+
 pdf_route = Blueprint('pdf_route', __name__)
 
 @pdf_route.route('/api/export/pdf', methods=['GET'])
@@ -23,8 +25,8 @@ def export_pdf():
 
     iv_en_count = mongo.db.translations.count_documents({})
 
-    path = "C:\\Users\\j4alo\\Dropbox\\Lenguas\\Ilven\\Ilven-Inglisen_kiskirtus.pdf"
-
+    #path = "C:\\Users\\j4alo\\Dropbox\\Lenguas\\Ilven\\Ilven-Inglisen_kiskirtus.pdf"
+    path = AYUR_PDF_PATH
 
     class FooterCanvas:
         def __init__(self, doc):

@@ -26,7 +26,7 @@
 .left-pane {
 	padding-top: 100px;
     background-color:silver;
-    height: 400px;
+    height: 600px;
     position: sticky;
     top: 10px;
     text-align: center;
@@ -55,6 +55,14 @@ input[type="text"], select {
     padding: 10px;
 }
 
+.letter-table {
+    width: 80%;
+/*    overflow: auto; */
+    align-self: center;
+    align-items: center;
+    padding: 40px;
+}
+
 .nice-button {
     background-color: lightsteelblue; /* Background color */
     color: black; /* Text color */
@@ -76,6 +84,8 @@ input[type="text"], select {
     border-radius: 10px; /* Smooth corners */
     padding: 5px; /* Padding around text */
 }
+
+
 
 .button-container {
     display: flex;
@@ -131,7 +141,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px; /* Adjust this value as needed */
+    height: 60px; /* Adjust this value as needed */
     border-bottom: 1px solid #000; /* Add a border */
 }
 
@@ -145,5 +155,5 @@ h1 {
 
 /* Show a checkmark when the checkbox is checked */
 .custom-checkbox input[type="checkbox"]:checked + label:before {
-    background: black;
+    background: darkgray;
 }

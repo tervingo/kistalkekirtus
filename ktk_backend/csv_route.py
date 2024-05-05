@@ -7,6 +7,9 @@ from flask import send_file
 
 from __init__ import mongo
 
+import AYUR_CSV_PATH from constants
+import AYUR_CSV_GIT_PATH from constants
+
 csv_route = Blueprint('csv_route', __name__)
 
 
@@ -17,8 +20,11 @@ def export_csv():
     cursor_git = mongo.db.translations.find({}, {'_id': 0}).sort('can')
 
     # Specify the path where you want to save the CSV file
-    path = "C:\\Users\\j4alo\\Dropbox\\Lenguas\\Ilven\\Ilven-Inglisen_kiskirtus.csv"
-    path_git = "C:\\Users\\j4alo\\Dropbox\\PythonProgs\\kistalkekirtus\\Ilven-Inglisen_kiskirtus.csv"
+ #   path = "C:\\Users\\j4alo\\Dropbox\\Lenguas\\Ilven\\Ilven-Inglisen_kiskirtus.csv"
+ #   path_git = "C:\\Users\\j4alo\\Dropbox\\PythonProgs\\kistalkekirtus\\Ilven-Inglisen_kiskirtus.csv"
+
+    path = AYUR_CSV_PATH
+    path_git = AYUR_CSV_GIT_PATH
 
     # Open the file at the specified path
     with open(path, 'w', newline='') as file:

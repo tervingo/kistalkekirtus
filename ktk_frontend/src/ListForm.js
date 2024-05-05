@@ -91,7 +91,7 @@ export function ListForm({ refreshKey })  {
                     <th>A-KONIVO</th>
                     <th>I-KONIVO</th>
                     <th>U-KONIVO</th>
-                    <th>KARSOTA</th>
+                    <th width="80px">KARSOTA</th>
 
                 </tr>
                 {translations.map((translation, index) => (
