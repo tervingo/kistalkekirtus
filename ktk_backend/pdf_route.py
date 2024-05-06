@@ -10,7 +10,7 @@ import datetime
 
 from __init__ import mongo
 
-import AYUR_PDF_FILE from constants
+from constants import AYUR_PDF_PATH
 
 pdf_route = Blueprint('pdf_route', __name__)
 

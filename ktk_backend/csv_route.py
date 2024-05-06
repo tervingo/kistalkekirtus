@@ -7,8 +7,8 @@ from flask import send_file
 
 from __init__ import mongo
 
-import AYUR_CSV_PATH from constants
-import AYUR_CSV_GIT_PATH from constants
+from constants import AYUR_CSV_PATH
+from constants import AYUR_CSV_GIT_PATH
 
 csv_route = Blueprint('csv_route', __name__)
 
