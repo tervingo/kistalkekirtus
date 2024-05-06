@@ -7,10 +7,14 @@ from reportlab.lib.units import cm
 from reportlab.lib.styles import ParagraphStyle
 
 import datetime
+import socket
 
 from __init__ import mongo
 
+hostname = socket.gethostname()
+
 from constants import AYUR_PDF_PATH
+from constants import AMLENAI_PDF_PATH
 
 pdf_route = Blueprint('pdf_route', __name__)
 
@@ -25,8 +29,10 @@ def export_pdf():
 
     iv_en_count = mongo.db.translations.count_documents({})
 
-    #path = "C:\\Users\\j4alo\\Dropbox\\Lenguas\\Ilven\\Ilven-Inglisen_kiskirtus.pdf"
-    path = AYUR_PDF_PATH
+    if (hostname == 'Ayur'):
+        path = AYUR_PDF_PATH
+    elif (hostname  == 'Amlenai'):
+        path = AMLENAI_PDF_PATH
 
     class FooterCanvas:
         def __init__(self, doc):

@@ -1,17 +1,19 @@
 from flask import Blueprint, send_file, request, jsonify
 
 import csv
-import io
+import socket
 from flask import send_file
-
 
 from __init__ import mongo
 
+hostname = socket.gethostname()
+
 from constants import AYUR_CSV_PATH
 from constants import AYUR_CSV_GIT_PATH
+from constants import AMLENAI_CSV_PATH
+from constants import AMLENAI_CSV_GIT_PATH
 
 csv_route = Blueprint('csv_route', __name__)
-
 
 @csv_route.route('/api/export/csv', methods=['GET'])
 def export_csv():
@@ -20,11 +22,13 @@ def export_csv():
     cursor_git = mongo.db.translations.find({}, {'_id': 0}).sort('can')
 
     # Specify the path where you want to save the CSV file
- #   path = "C:\\Users\\j4alo\\Dropbox\\Lenguas\\Ilven\\Ilven-Inglisen_kiskirtus.csv"
- #   path_git = "C:\\Users\\j4alo\\Dropbox\\PythonProgs\\kistalkekirtus\\Ilven-Inglisen_kiskirtus.csv"
 
-    path = AYUR_CSV_PATH
-    path_git = AYUR_CSV_GIT_PATH
+    if (hostname == 'Ayur'):
+        path = AYUR_CSV_PATH
+        path_git = AYUR_CSV_GIT_PATH
+    elif (hostname  == 'Amlenai'):
+        path = AMLENAI_CSV_PATH
+        path_git = AMLENAI_CSV_GIT_PATH
 
     # Open the file at the specified path
     with open(path, 'w', newline='') as file:
@@ -47,5 +51,5 @@ def export_csv():
 
 
      # Return a success message
-#    return jsonify({"message": "CSV generated successfully!"}), 200    
-    return 'CSV generated successfully', 200
+
+    return 'CSV generated successfully from {}'.format(hostname), 200

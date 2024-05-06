@@ -1,5 +1,5 @@
-can,cat,pl,pl2,par,pr,pa,fu,val,root,en,sw
-aijas,NO,aijai,,aijea,,,,,,moon,1
+can,cat,pl,pl2,par,val,pr,pa,fu,root,en,sw
+aijas | ABS ai,NO,aijai,,aijea,,,,,,moon,1
 aj,IJ,,,,,,,,,"vocative, exhortative",0
 ajir,NO,ajirta,,ajier,,,,,,month,0
 akpi,VB,,,,akp,aikp,aukp,ja,KAP,to understand ,0
@@ -50,7 +50,7 @@ ekjo,NO,ekjota,,ekjoi,,,,,,singular,0
 el,PF,,,,,,,,EL,well,0
 elarri,VB,,,,elar,elir,elur,,EL,to be happy,0
 elarso,NO,elarsota,,elarsoi,,,,,EL,happiness,0
-elas,NO,ilen,elai,eel,,,,,,sea,1
+elas | ABS el,NO,ilen,elai,eel,,,,,,sea,1
 elkappi,VB,,,,elkap,elkaip,elkaup,,KAP,to accept,0
 elli,VB,,,,ell,ill,eull,,TEL,to know,0
 ellis,AV,,,,,,,,EL,well,0
@@ -67,8 +67,9 @@ etti,VB,,,,ett,eitt,eutt,,TEP,to be warm,0
 harjas,NO,harjai,,harjea,,,,,HAR,"doctor, physician",0
 harri,VB,,,,har,hair,haur,,HAR,to heal,0
 hjapapso,NO,hjapapsota,,hjapapsoi,,,,,KAP,hug,0
+hjivas,NO,ihjen,hjivai,hjivea,,,,,KIV,"child, kid",1
 ia,PF,,,,,,,,,"intensifier, indeed",0
-ibras,NO,ibren,ibrai,ibrea,,,,,BAR,river,1
+ibras | ABS ibar,NO,ibren,ibrai,ibrea,,,,,BAR,river,1
 ijas,PR,,,ijea,,,,,,"he, she, it",1
 il,PF,,,,,,,,,no,0
 ile,NO,ileta,,ilee,,,,,,"way, path",0
@@ -87,7 +88,7 @@ isto,NO,istota,,istoi,,,,,,will,0
 isukunto,NO,isukuntota,,isukuntoi,,,,,,neurology,0
 isuveruiras,NO,isuveruirai,,isuveruirea,,,,,,neurologist,0
 isuvoiso,NO,isuvoisota,,isuvoisoi,,,,,,neurological treatment,0
-itras,NO,itren,itrai,itarea,,,,,TAR,sea,1
+itras | ABS itar,NO,itren,itrai,itarea,,,,,TAR,sea,1
 itrivar,NO,itrivarta,,itrivear,,,,,,lake,0
 itsi,VB,,,,its,iets,iuts,,TIS,to be cold,0
 iuki,VB,,,,iuk,iuik,iuok,,VIK,to be alive,0
@@ -140,7 +141,7 @@ ku,SF,,,,,,,,,indeed (attached to a conclusion after a premise),0
 kuimmer,NU,,,,,,,,,forty,0
 kunariel,NO,kunarielta,,kunarielat,,,,,KUN/GUN,school,0
 kunarjas,NO,kunarjai,,kunarjea,,,,,KUN/GUN,teacher,0
-kunas,NO,iknen,kunai,kunea,,,,,KUN,woman,0
+kunas,NO,iknen,kunai,kunea,,,,,KUN,woman,1
 kunranni,VB,,,,kunran,kunrain,kunraun,,KUN,to teach,0
 kussi,VB,,,,jas-ja,kus,kuis,kuos,KUS,to look at,0
 kuti (kuit),NU,,,,,,,,,four,0
