@@ -1,1 +1,3 @@
-ktk_backend/__pycache__/*.pyc
+ktk_frontend/src/constants.js
+.gitignore
+
