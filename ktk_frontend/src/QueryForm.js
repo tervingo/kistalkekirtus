@@ -7,6 +7,7 @@ import './tkk.css';
 
 import { SERVER_IP } from './constants';
 
+
 export function QueryForm() {
     const [search, setSearch] = useState('');
     const [translations, setTranslations] = useState([]);
