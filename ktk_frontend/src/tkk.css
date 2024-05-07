@@ -56,11 +56,11 @@ input[type="text"], select {
 }
 
 .letter-table {
-    width: 80%;
+    width: 90%;
 /*    overflow: auto; */
     align-self: center;
     align-items: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .nice-button {
