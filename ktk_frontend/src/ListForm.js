@@ -21,6 +21,13 @@ export function ListForm({ refreshKey })  {
         const fetchTranslations = async () => {
             const response = await fetch(`${SERVER_IP}/api/list-entries`);
             let data = await response.json();
+
+           // Add a 'firstLetter' field to each item in the 'translations' array
+           data = data.map(item => ({
+                ...item,
+                firstLetter: item.can[0].toUpperCase(),
+            }));
+
             setTranslations(data);
         };
         fetchTranslations();
@@ -96,7 +103,7 @@ export function ListForm({ refreshKey })  {
 
                 </tr>
                 {translations.map((translation, index) => (
-                     <tr key={index}>
+                     <tr key={index} id={`entry-${translation.firstLetter}`}>
                             <td>{translation.can}</td>
                             <td>{translation.en}</td>
                             <td>{translation.cat}</td>

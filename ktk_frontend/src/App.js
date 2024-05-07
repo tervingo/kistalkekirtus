@@ -50,6 +50,22 @@ function App() {
         );
     }
 
+    function handleLetterClick(letter) {
+        // Scroll to the first entry in the CAN column (ILVEN) that starts with the clicked letter
+        const element = document.getElementById(`entry-${letter}`);
+        if (element) {
+          window.scrollTo({
+            top: element.offsetTop,
+            behavior: "smooth" // Optional: Smooth scrolling
+          });
+        }
+      }
+      
+      // In your alphabet table...
+      <td onClick={() => handleLetterClick('A')}><FontAwesomeIcon icon={faA} /></td>
+      // Repeat for each letter
+      
+
     return (
         <Router>
             <div className="app">
@@ -71,39 +87,39 @@ function App() {
                             <br/><br/>
                                 <table className='letter-table'>
                                 <tr>
-                                    <td><FontAwesomeIcon icon={faA} /></td>
-                                    <td><FontAwesomeIcon icon={faB} /></td>
-                                    <td><FontAwesomeIcon icon={faC} /></td>
-                                    <td><FontAwesomeIcon icon={faD} /></td>
-                                    <td><FontAwesomeIcon icon={faE} /></td>
+                                    <td onClick={() => handleLetterClick('A')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faA} /></td>
+                                    <td onClick={() => handleLetterClick('B')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faB} /></td>
+                                    <td onClick={() => handleLetterClick('C')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faC} /></td>
+                                    <td onClick={() => handleLetterClick('D')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faD} /></td>
+                                    <td onClick={() => handleLetterClick('E')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faE} /></td>
                                 </tr>
                                 <tr>
-                                    <td><FontAwesomeIcon icon={faF} /></td>
-                                    <td><FontAwesomeIcon icon={faG} /></td>
-                                    <td><FontAwesomeIcon icon={faH} /></td>
-                                    <td><FontAwesomeIcon icon={faI} /></td>
-                                    <td><FontAwesomeIcon icon={faJ} /></td>
+                                    <td onClick={() => handleLetterClick('F')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faF} /></td>
+                                    <td onClick={() => handleLetterClick('G')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faG} /></td>
+                                    <td onClick={() => handleLetterClick('H')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faH} /></td>
+                                    <td onClick={() => handleLetterClick('I')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faI} /></td>
+                                    <td onClick={() => handleLetterClick('J')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faJ} /></td>
                                 </tr>
                                 <tr>
-                                    <td><FontAwesomeIcon icon={faK} /></td>
-                                    <td><FontAwesomeIcon icon={faL} /></td>
-                                    <td><FontAwesomeIcon icon={faM} /></td>
-                                    <td><FontAwesomeIcon icon={faN} /></td>
-                                    <td><FontAwesomeIcon icon={faO} /></td>
+                                    <td onClick={() => handleLetterClick('K')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faK} /></td>
+                                    <td onClick={() => handleLetterClick('L')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faL} /></td>
+                                    <td onClick={() => handleLetterClick('M')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faM} /></td>
+                                    <td onClick={() => handleLetterClick('N')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faN} /></td>
+                                    <td onClick={() => handleLetterClick('O')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faO} /></td>
                                 </tr>
                                 <tr>
-                                    <td><FontAwesomeIcon icon={faP} /></td>
-                                    <td><FontAwesomeIcon icon={faR} /></td>
-                                    <td><FontAwesomeIcon icon={faS} /></td>
-                                    <td><FontAwesomeIcon icon={faT} /></td>
-                                    <td><FontAwesomeIcon icon={faU} /></td>
+                                    <td onClick={() => handleLetterClick('P')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faP} /></td>
+                                    <td onClick={() => handleLetterClick('R')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faR} /></td>
+                                    <td onClick={() => handleLetterClick('S')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faS} /></td>
+                                    <td onClick={() => handleLetterClick('T')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faT} /></td>
+                                    <td onClick={() => handleLetterClick('U')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faU} /></td>
                                 </tr>
                                 <tr>
-                                    <td><FontAwesomeIcon icon={faV} /></td>
-                                    <td><FontAwesomeIcon icon={faW} /></td>
-                                    <td><FontAwesomeIcon icon={faX} /></td>
-                                    <td><FontAwesomeIcon icon={faY} /></td>
-                                    <td><FontAwesomeIcon icon={faZ} /></td>
+                                    <td onClick={() => handleLetterClick('V')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faV} /></td>
+                                    <td onClick={() => handleLetterClick('W')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faW} /></td>
+                                    <td onClick={() => handleLetterClick('X')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faX} /></td>
+                                    <td onClick={() => handleLetterClick('Y')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faY} /></td>
+                                    <td onClick={() => handleLetterClick('X')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faZ} /></td>
                                 </tr>
 
                             </table>
