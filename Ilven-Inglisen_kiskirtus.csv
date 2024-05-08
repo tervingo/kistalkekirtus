@@ -2,6 +2,7 @@ can,cat,pl,pl2,par,val,pr,pa,fu,root,en,sw
 aijas | ABS ai,NO,aijai,,aijea,,,,,,moon,1
 aj,IJ,,,,,,,,,"vocative, exhortative",0
 ajir,NO,ajirta,,ajier,,,,,,month,0
+akea,NO,akeata,,akea,,,,,,partitive case,0
 akpi,VB,,,,akp,aikp,aukp,ja,KAP,to understand ,0
 al,PF,,,,,,,,,yes-no question,0
 ale,NO,aleta,,alee,,,,,AL,body,0
@@ -11,8 +12,13 @@ aleveruiras,NO,aleveruirai,,aleveruirea,,,,,AL,physiotherapist,0
 alevervoiso,NO,alevervoisota,,alevervoisoi,,,,,AL,physiotherapy treatment,0
 alken,AJ,,,,,,,,LAK,white,1
 alki,VB,,,,alk,ailk,aulk,ja,LAK,to be white,0
+am,NO,,,eam,,,,,AM,clouds (col.),1
+amke,NO,amkek,,amkee,,,,,AM,cloud (one cloud),1
+amken,AJ,,,,,,,,AM,cloudy,0
 anas,PR,anai,,anea,,,,,,this [+HUM],0
 anir,AV,,,,,,,,,now,0
+anla,AV,,,,,,,,,here,0
+anlen,AJ,,,,,,,,,local,0
 anni,VB,,,,an,in,un,,AN,to be (ser),1
 ano,PR,anota,,anoi,,,,,,this [+ABS],1
 ansir,AV,,,,,,,,,today,0
@@ -106,6 +112,7 @@ karjus,NO,karjusta,,karjuos,,,,,KAR,machine,0
 karri,VB,,,,kar,kair,kaur,jas,KAR,"to act, to do",0
 karri,VB,,,,kar,kair,kaur,jas-java,KAR,"to make, to create, to craft",0
 karruvo,NO,karruvota,,karruvoi,,,,,KAR,"order, instruction",0
+karso,NO,karsota,,karsoi,,,,,KAR,action,0
 karvoedarjus,NO,karvoedarjusta,,karvoedarjuos,,,,,,"app, software",0
 karvosalto,NO,karvosaltota,,karvosaltoi,,,,,KAR & SAL,computer program,0
 kavvi,NO,kavvita,,kavvie,,,,,KAP,harvest,0
@@ -136,7 +143,6 @@ kistalkekirtus,NO,kistalkekirtusta,,kistalkekirtuos,,,,,,bilingual dictionary,0
 kolli,VB,,,,kol,koil,koul,KOL,to listen,jas-jasi,0
 konivo,NO,konivota,,konivoi,,,,,KON,stem,0
 kono,NO,konota,,konoi,,,,,KON,"root, centre, bone",0
-konoi,NO,konoita,,konojat,,,,,KON,"root, centre",0
 ku,SF,,,,,,,,,indeed (attached to a conclusion after a premise),0
 kuimmer,NU,,,,,,,,,forty,0
 kunariel,NO,kunarielta,,kunarielat,,,,,KUN/GUN,school,0
@@ -186,6 +192,7 @@ merliek,NU,,,,,,,,,eleven,0
 mijas,PR,,,mijea,,,,,,I,0
 minni,VB,,,,min,mien,miun,,MIN,"to chat, to have a talk",0
 minso,NO,minsota,,minsoi,,,,,MIN,talk,0
+minvo,NO,minvota,,minvoi,,,,,MIN,"story, tale",0
 muraijir,NO,muraijirta,,muraijier,,,,,,November,0
 mussi,VB,,,,mus,muis,muos,jas-ja,MUS,to change sth,0
 mussi,VB,,,,mus,muis,muos,jas-java,MUS,to become,0

@@ -17,7 +17,8 @@ import { ListForm } from './ListForm';
 import { EditForm } from './EditForm';
 import { ExportCsvForm } from './ExportCsvForm';
 import { ExportPdfForm } from './ExportPdfForm';
-
+import { ImportCsvForm } from './ImportCsvForm';
+ 
 import { SERVER_IP } from './constants';
 
 
@@ -45,6 +46,7 @@ function App() {
                     <Route path="/edit-entry/:can" element={<EditForm setRefreshKey={setRefreshKey} />} />
                     <Route path="/export/csv" element={<ExportCsvForm />} />
                     <Route path="/export/pdf" element={<ExportPdfForm />} />
+                    <Route path="/import/csv" element={<ImportCsvForm />} />
                 </Routes>
             </div>
         );
@@ -85,6 +87,7 @@ function App() {
                             <br/><br/>
                             <Link className='nice-link' to="/export/pdf" >PDF oikappi</Link>
                             <br/><br/>
+                            <Link className='nice-link' to="import/csv" >Import CSV</Link>
                                 <table className='letter-table'>
                                 <tr>
                                     <td onClick={() => handleLetterClick('A')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faA} /></td>
