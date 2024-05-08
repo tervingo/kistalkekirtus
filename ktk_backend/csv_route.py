@@ -5,8 +5,11 @@ import socket
 from flask import send_file
 
 from __init__ import mongo
+from tkinter import messagebox
 
 hostname = socket.gethostname()
+
+messagebox.showinfo("Variable Value", f"The value of the variable is: |{hostname}|")
 
 from constants import AYUR_CSV_PATH
 from constants import AYUR_CSV_GIT_PATH
@@ -26,9 +29,16 @@ def export_csv():
     if (hostname == 'Ayur'):
         path = AYUR_CSV_PATH
         path_git = AYUR_CSV_GIT_PATH
+        messagebox.showinfo("Variable Value", f"Hostname is Ayur, path is {path}")
     elif (hostname  == 'Amlenai'):
         path = AMLENAI_CSV_PATH
         path_git = AMLENAI_CSV_GIT_PATH
+        messagebox.showinfo("Variable Value", f"Hostname is Amlenai, path is {path}")
+    else:
+        path = AMLENAI_CSV_PATH
+        path_git = AMLENAI_CSV_GIT_PATH
+        messagebox.showinfo("Variable Value", f"Hostname is neither Ayur nor Amlenai |{hostname}|, defaulting to path {path}")
+
 
     # Open the file at the specified path
     with open(path, 'w', newline='') as file:
