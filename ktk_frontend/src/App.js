@@ -63,11 +63,6 @@ function App() {
         }
       }
       
-      // In your alphabet table...
-      <td onClick={() => handleLetterClick('A')}><FontAwesomeIcon icon={faA} /></td>
-      // Repeat for each letter
-      
-
     return (
         <Router>
             <div className="app">
