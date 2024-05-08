@@ -74,15 +74,15 @@ function App() {
                         <div className="left-pane">
                             <Link className="nice-link" to="/list-entries">Uilen kistalkee salli</Link>
                             <br/><br/>
-                            <Link className="nice-link" to="/enter-entry">Unnen kistalke aunilli</Link>
+                            <Link className="nice-link" to="/enter-entry">Unnen kistalkeva aunilli</Link>
                             <br/><br/>
                             <Link className="nice-link" to="/query-entry">Kistalkeeva massi</Link>
                             <br/><br/>
-                            <Link className='nice-link' to="/export/csv" >CSV oikappi</Link>
+                            <Link className='nice-link' to="/export/csv" >CSV oinilli</Link>
                             <br/><br/>
-                            <Link className='nice-link' to="/export/pdf" >PDF oikappi</Link>
+                            <Link className='nice-link' to="/export/pdf" >PDF oinilli</Link>
                             <br/><br/>
-                            <Link className='nice-link' to="import/csv" >Import CSV</Link>
+                            <Link className='nice-link' to="import/csv" >CSV aunilli</Link>
                                 <table className='letter-table'>
                                 <tr>
                                     <td onClick={() => handleLetterClick('A')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faA} /></td>
