@@ -13,8 +13,7 @@ from __init__ import mongo
 
 hostname = socket.gethostname()
 
-from constants import AYUR_PDF_PATH
-from constants import AMLENAI_PDF_PATH
+from constants import paths
 
 pdf_route = Blueprint('pdf_route', __name__)
 
@@ -29,10 +28,11 @@ def export_pdf():
 
     iv_en_count = mongo.db.translations.count_documents({})
 
-    if (hostname == 'Ayur'):
-        path = AYUR_PDF_PATH
-    elif (hostname  == 'Amlenai'):
-        path = AMLENAI_PDF_PATH
+    # Specify the path where you want to save the CSV file
+
+    pdf_path_name = f"{hostname.upper()}_PDF_PATH"
+    
+    path = paths[pdf_path_name]
 
     class FooterCanvas:
         def __init__(self, doc):

@@ -9,12 +9,10 @@ from tkinter import messagebox
 
 hostname = socket.gethostname()
 
-messagebox.showinfo("Variable Value", f"The value of the variable is: |{hostname}|")
-
-from constants import AYUR_CSV_PATH
-from constants import AYUR_CSV_GIT_PATH
-from constants import AMLENAI_CSV_PATH
-from constants import AMLENAI_CSV_GIT_PATH
+from constants import paths
+#from constants import AYUR_CSV_GIT_PATH
+#from constants import AMLENAI_CSV_PATH
+#from constants import AMLENAI_CSV_GIT_PATH
 
 csv_route = Blueprint('csv_route', __name__)
 
@@ -26,19 +24,11 @@ def export_csv():
 
     # Specify the path where you want to save the CSV file
 
-    if (hostname == 'Ayur'):
-        path = AYUR_CSV_PATH
-        path_git = AYUR_CSV_GIT_PATH
-        messagebox.showinfo("Variable Value", f"Hostname is Ayur, path is {path}")
-    elif (hostname  == 'Amlenai'):
-        path = AMLENAI_CSV_PATH
-        path_git = AMLENAI_CSV_GIT_PATH
-        messagebox.showinfo("Variable Value", f"Hostname is Amlenai, path is {path}")
-    else:
-        path = AMLENAI_CSV_PATH
-        path_git = AMLENAI_CSV_GIT_PATH
-        messagebox.showinfo("Variable Value", f"Hostname is neither Ayur nor Amlenai |{hostname}|, defaulting to path {path}")
-
+    csv_path_name = f"{hostname.upper()}_CSV_PATH"
+    git_csv_path_name = f"{hostname.upper()}_CSV_GIT_PATH"
+    
+    path = paths[csv_path_name]
+    path_git = paths[git_csv_path_name]
 
     # Open the file at the specified path
     with open(path, 'w', newline='') as file:
