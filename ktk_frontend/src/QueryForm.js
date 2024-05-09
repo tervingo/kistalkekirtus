@@ -79,6 +79,7 @@ export function QueryForm() {
                             <th>ILVEN</th>
                             <th>INGLIS</th>
                             <th>TSK</th>
+                            <th>KONO</th>
                             <th>KENO</th>
                             <th>KENO2</th>
                             <th>AKEA</th>
@@ -86,7 +87,6 @@ export function QueryForm() {
                             <th>A-KONIVO</th>
                             <th>I-KONIVO</th>
                             <th>U-KONIVO</th>
-                            <th>KONO</th>
                             <th>KARSOTA</th>
                         </tr>
                         {Array.isArray(translations) && translations.map((translation, index) => (
@@ -98,7 +98,7 @@ export function QueryForm() {
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
                             <td>{translation.par}</td>
-                            <td>{translation.val}</td>
+                            <td>{translation.pul}</td>
                             <td>{translation.pr}</td>
                             <td>{translation.pa}</td>
                             <td>{translation.fu}</td>

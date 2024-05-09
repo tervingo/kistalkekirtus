@@ -15,7 +15,7 @@ export function EnterForm() {
     const [pl, setPl] = useState(initialTranslation.pl || '');
     const [pl2, setPl2] = useState(initialTranslation.pl2 || '');
     const [par, setPar] = useState(initialTranslation.par || '');
-    const [val, setVal] = useState(initialTranslation.val || '');
+    const [pul, setPul] = useState(initialTranslation.pul || '');
     const [pr, setPr] = useState(initialTranslation.pr || '');
     const [pa, setPa] = useState(initialTranslation.pa || '');
     const [fu, setFu] = useState(initialTranslation.fu || '');
@@ -34,7 +34,7 @@ export function EnterForm() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ can, cat, pl, pl2, par, val, pr, pa, fu, root, en, sw }),
+            body: JSON.stringify({ can, cat, pl, pl2, par, pul, pr, pa, fu, root, en, sw }),
         });
         const data = await response.json();
         console.log(data);
@@ -49,7 +49,7 @@ export function EnterForm() {
         setPl('');
         setPl2('');
         setPar('');
-        setVal('');
+        setPul('');
         setPr('');
         setPa('');
         setFu('');
@@ -106,7 +106,7 @@ export function EnterForm() {
                 <br/>
                 <label>
                     <h4>Pulso:</h4>
-                    <input type="text" value={val} onChange={(e) => setVal(e.target.value)} disabled={cat !== 'VB'} />
+                    <input type="text" value={pul} onChange={(e) => setPul(e.target.value)} disabled={cat !== 'VB'} />
                 </label>
                 <br/>
                 <label>

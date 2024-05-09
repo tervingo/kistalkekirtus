@@ -115,7 +115,7 @@ export function ListForm({ refreshKey })  {
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
                             <td>{translation.par}</td>
-                            <td>{translation.val}</td>
+                            <td>{translation.pul}</td>
                             <td>{translation.pr}</td>
                             <td>{translation.pa}</td>
                             <td>{translation.fu}</td>
