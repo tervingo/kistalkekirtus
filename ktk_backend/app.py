@@ -10,6 +10,7 @@ from delete_route import delete_route
 from csv_route import csv_route
 from pdf_route import pdf_route
 from import_csv_route import import_csv_route
+from csv_info_route import csv_info_route
 
 app = Flask(__name__)
 CORS(app)
@@ -22,6 +23,7 @@ app.register_blueprint(delete_route)
 app.register_blueprint(csv_route)
 app.register_blueprint(pdf_route)
 app.register_blueprint(import_csv_route)
+app.register_blueprint(csv_info_route)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,6 @@ import socket
 from flask import send_file
 
 from __init__ import mongo
-from tkinter import messagebox
 
 hostname = socket.gethostname()
 

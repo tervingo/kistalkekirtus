@@ -18,6 +18,8 @@ import { EditForm } from './EditForm';
 import { ExportCsvForm } from './ExportCsvForm';
 import { ExportPdfForm } from './ExportPdfForm';
 import { ImportCsvForm } from './ImportCsvForm';
+import { CsvInfo } from './ImportCsvForm';
+
  
 import { SERVER_IP } from './constants';
 
@@ -47,6 +49,7 @@ function App() {
                     <Route path="/export/csv" element={<ExportCsvForm />} />
                     <Route path="/export/pdf" element={<ExportPdfForm />} />
                     <Route path="/import/csv" element={<ImportCsvForm />} />
+                    <Route path="/csv-info" element={<CsvInfo />} />
                 </Routes>
             </div>
         );
@@ -83,6 +86,9 @@ function App() {
                             <Link className='nice-link' to="/export/pdf" >PDF oinilli</Link>
                             <br/><br/>
                             <Link className='nice-link' to="import/csv" >CSV aunilli</Link>
+                            <br/><br/>
+                            <Link className='nice-link' to="/csv-info" >CSV aro</Link>
+                            
                                 <table className='letter-table'>
                                 <tr>
                                     <td onClick={() => handleLetterClick('A')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faA} /></td>

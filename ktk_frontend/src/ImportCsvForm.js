@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SERVER_IP } from './constants';
 
 export function ImportCsvForm() {
@@ -16,11 +16,30 @@ export function ImportCsvForm() {
         .catch(error => console.error(error));
       };
 
-  return (
-    <form>
-      <input type="file" onChange={handleFileUpload} />
-      <button type="submit">Upload CSV</button>
-    </form>
-  );
+    return (
+      <form>
+        <input type="file" onChange={handleFileUpload} />
+        <button type="submit">Upload CSV</button>
+      </form>
+    );
 };
+
+export function CsvInfo() {
+  const [info, setInfo] = useState({});
+
+  useEffect(() => {
+    fetch(`${SERVER_IP}/api/csv-info`)
+      .then(response => response.json())
+      .then(data => setInfo(data));
+  }, []);
+
+  console.log(info.modified_date)
+
+  return (
+    <div>
+      <p>Modified Date: {info.modified_date}</p>
+      <p>Number of Rows: {info.num_rows}</p>
+    </div>
+  );
+}
 
