@@ -10,9 +10,6 @@ from tkinter import messagebox
 hostname = socket.gethostname()
 
 from constants import paths
-#from constants import AYUR_CSV_GIT_PATH
-#from constants import AMLENAI_CSV_PATH
-#from constants import AMLENAI_CSV_GIT_PATH
 
 csv_route = Blueprint('csv_route', __name__)
 
@@ -20,15 +17,11 @@ csv_route = Blueprint('csv_route', __name__)
 def export_csv():
     # Get all documents from your MongoDB collection and sort them by 'can'
     cursor = mongo.db.translations.find({}, {'_id': 0}).sort('can')
-    cursor_git = mongo.db.translations.find({}, {'_id': 0}).sort('can')
 
     # Specify the path where you want to save the CSV file
 
     csv_path_name = f"{hostname.upper()}_CSV_PATH"
-    git_csv_path_name = f"{hostname.upper()}_CSV_GIT_PATH"
-    
     path = paths[csv_path_name]
-    path_git = paths[git_csv_path_name]
 
     # Open the file at the specified path
     with open(path, 'w', newline='') as file:
@@ -39,16 +32,6 @@ def export_csv():
         # write the values
         for doc in cursor:
             writer.writerow(doc.values())  # write values of each item
-
-    with open(path_git, 'w', newline='') as file:
-        writer = csv.writer(file)
-        # Get the first document and write the keys as a header row
-        first_doc = cursor_git[0]
-        writer.writerow(first_doc.keys())
-        # write the values
-        for doc in cursor_git:
-            writer.writerow(doc.values())  # write values of each item
-
 
      # Return a success message
 
