@@ -2,27 +2,38 @@ import React, { useEffect, useState } from 'react';
 import { SERVER_IP } from './constants';
 
 export function ImportCsvForm() {
-    const handleFileUpload = (event) => {
-        const file = event.target.files[0];
-        const formData = new FormData();
-        formData.append('file', file);
-      
-        fetch(`${SERVER_IP}/api/import/csv`, {
-          method: 'POST',
-          body: formData,
-        })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error(error));
-      };
+  const [message, setMessage] = useState(null);
+  const [hasUploaded, setHasUploaded] = useState(false);
 
-    return (
-      <form>
-        <input type="file" onChange={handleFileUpload} />
-        <button type="submit">Upload CSV</button>
-      </form>
-    );
+  const handleFileUpload = () => {
+    if (window.confirm('Do you want to import the new CSV file?')) {
+      fetch(`${SERVER_IP}/api/import/csv`, {
+        method: 'POST',
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        setMessage(data.message);
+        setHasUploaded(true);
+      })
+      .catch(error => console.error(error));
+    }
+  };
+
+  // Call handleFileUpload when the component is rendered
+  useEffect(() => {
+    if (!hasUploaded) {
+      handleFileUpload();
+    }
+  }, []);
+
+  return (
+    <div>
+      {message && <p>{message}</p>}
+    </div>
+  );
 };
+
 
 export function CsvInfo() {
   const [info, setInfo] = useState({});
@@ -37,8 +48,13 @@ export function CsvInfo() {
 
   return (
     <div>
+      <h3>Current CSV file info</h3>
       <p>Modified Date: {info.modified_date}</p>
-      <p>Number of Rows: {info.num_rows}</p>
+      <p>Number of Entries: {info.num_rows}</p>
+      <h3>Last read CSV info at {info.hostname}</h3>
+      <p>{info.last_date_info}</p>
+      <p>{info.last_noe_info}</p>
+
     </div>
   );
 }

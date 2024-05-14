@@ -49,13 +49,12 @@ function App() {
                     <Route path="/export/csv" element={<ExportCsvForm />} />
                     <Route path="/export/pdf" element={<ExportPdfForm />} />
                     <Route path="/import/csv" element={<ImportCsvForm />} />
-                    <Route path="/csv-info" element={<CsvInfo />} />
                 </Routes>
             </div>
         );
     }
 
-    function handleLetterClick(letter) {
+     function handleLetterClick(letter) {
         // Scroll to the first entry in the CAN column (ILVEN) that starts with the clicked letter
         const element = document.getElementById(`entry-${letter}`);
         if (element) {
@@ -88,7 +87,7 @@ function App() {
                             <Link className='nice-link' to="import/csv" >CSV aunilli</Link>
                             <br/><br/>
                             <Link className='nice-link' to="/csv-info" >CSV aro</Link>
-                            
+
                                 <table className='letter-table'>
                                 <tr>
                                     <td onClick={() => handleLetterClick('A')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faA} /></td>
@@ -127,7 +126,11 @@ function App() {
                                 </tr>
 
                             </table>
-                        </div>
+                            <Routes>
+                                <Route path="/csv-info" element={<CsvInfo />} />
+                            </Routes>
+
+                         </div>
                     </nav>
                     <MainComponent />
                 </div>

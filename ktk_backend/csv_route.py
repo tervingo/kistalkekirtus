@@ -6,6 +6,8 @@ from flask import send_file
 
 from __init__ import mongo
 
+from datetime import datetime
+
 hostname = socket.gethostname()
 
 from constants import paths
@@ -31,6 +33,22 @@ def export_csv():
         # write the values
         for doc in cursor:
             writer.writerow(doc.values())  # write values of each item
+
+    # write CSV stamp file
+
+    hostname_csv_last_read_path_name = f"{hostname.upper()}_CSV_LAST_READ_PATH"
+    hostname_last_read_file = paths[hostname_csv_last_read_path_name]
+
+    # Count the number of entries
+    with open(path, 'r') as f:
+        reader = csv.reader(f)
+        entries = sum(1 for row in reader) - 1
+
+    # Write to the "last_csv_written.txt" file
+    with open(hostname_last_read_file, 'w') as f:
+        f.write(f'Last read on: {datetime.now().strftime("%d-%m-%Y at %H:%M:%S")}\n')
+        f.write(f'Number of entries: {entries}\n')
+
 
      # Return a success message
 

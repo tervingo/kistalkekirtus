@@ -110,6 +110,7 @@ export function EditForm({ setRefreshKey }) {
                                 <option value="NU">Number</option>
                                 <option value="PF">Prefix</option>
                                 <option value="PR">Pronoun</option>
+                                <option value="QT">Quantifier</option>
                                 <option value="SF">Suffix</option>
                                 <option value="VB">Verb</option>
 	                            {/* Add more options here... */}

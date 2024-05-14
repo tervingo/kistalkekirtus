@@ -83,6 +83,7 @@ export function EnterForm() {
                             <option value="NU">Number</option>
                             <option value="PF">Prefix</option>
                             <option value="PR">Pronoun</option>
+                            <option value="QT">Quantifier</option>
                             <option value="SF">Suffix</option>
                             <option value="VB">Verb</option>
 	                        {/* Add more options here... */}
@@ -91,17 +92,17 @@ export function EnterForm() {
                 <br/>
                 <label>
                     <h4>Keno:</h4>
-                    <input type="text" value={pl} onChange={(e) => setPl(e.target.value)} disabled={cat !== 'NO'}  />
+                    <input type="text" value={pl} onChange={(e) => setPl(e.target.value)} disabled={!['NO', 'PR'].includes(cat)} />
                 </label>
                 <br/>
                 <label>
                     <h4>Keno+:</h4>
-                    <input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} disabled={cat !== 'NO'} />
+                    <input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} disabled={!['NO', 'PR'].includes(cat)} />
                 </label>
                 <br/>
                 <label>
                     <h4>Akea:</h4>
-                    <input type="text" value={par} onChange={(e) => setPar(e.target.value)} disabled={cat !== 'NO'} />
+                    <input type="text" value={par} onChange={(e) => setPar(e.target.value)} disabled={!['NO', 'PR'].includes(cat)} />
                 </label>
                 <br/>
                 <label>
