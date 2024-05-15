@@ -9,6 +9,7 @@ import { SERVER_IP } from './constants';
 export function EditForm({ setRefreshKey }) {
 
     const {can} = useParams();
+    const [canState, setCan] = useState('');
     const [id, setId] = useState('');
     const [cat, setCat] = useState('');
     const [pl, setPl] = useState('');
@@ -21,27 +22,31 @@ export function EditForm({ setRefreshKey }) {
     const [root, setRoot] = useState('');
     const [en, setEn] = useState('');
     const [sw, setSw] = useState(0);
-    const [message, setMessage] = useState(''); // Add this line
+    const [message, setMessage] = useState('');
 
     useEffect(() => {
-        const fetchEntry = async () => {
-            const response = await fetch(`${SERVER_IP}/api/query-entry?${`can=${can}`}`);
-            const data = await response.json();
-            setId(data._id);
-            setCat(data.cat);
-            setPl(data.pl);
-            setPl2(data.pl2);
-            setPar(data.par);
-            setPul(data.pul);
-            setPr(data.pr);
-            setPa(data.pa);
-            setFu(data.fu);
-            setRoot(data.root);
-            setEn(data.en);
-            setSw(data.sw);
-        };
-        fetchEntry();
-    }, [can]); 
+        console.log(can);
+        if (can) {
+            const fetchEntry = async () => {
+                const response = await fetch(`${SERVER_IP}/api/query-entry?${`can=${can}`}`);
+                const data = await response.json();
+                setId(data._id);
+                setCan(data.can);
+                setCat(data.cat);
+                setPl(data.pl);
+                setPl2(data.pl2);
+                setPar(data.par);
+                setPul(data.pul);
+                setPr(data.pr);
+                setPa(data.pa);
+                setFu(data.fu);
+                setRoot(data.root);
+                setEn(data.en);
+                setSw(data.sw);
+            }
+            fetchEntry();
+        }
+     }, [can]); 
     
     const navigate = useNavigate();
     
@@ -53,7 +58,7 @@ export function EditForm({ setRefreshKey }) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                can,
+                can: canState,
                 cat,
                 pl,
                 pl2,
@@ -97,7 +102,7 @@ export function EditForm({ setRefreshKey }) {
                     <th>U-KONIVO</th>
                  </tr>
                 <tr>
-                            <td><input type="text" value={can} onChange={(e) => can} /></td>
+                            <td><input type="text" value={canState} onChange={(e) => setCan(e.target.value)} /></td>
                             <td><input type="text" value={en} onChange={(e) => setEn(e.target.value)} /></td>
                             <td>
                                 <select value={cat} onChange={(e) => setCat(e.target.value)}>
