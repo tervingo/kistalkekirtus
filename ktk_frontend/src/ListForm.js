@@ -23,7 +23,7 @@ export function ListForm({ refreshKey })  {
             let data = await response.json();
 
            // Add a 'firstLetter' field to each item in the 'translations' array
-           data = data.map(item => ({
+           data = data.map((item, index) => ({
                 ...item,
                 firstLetter: item.can[0].toUpperCase(),
             }));
@@ -80,13 +80,13 @@ export function ListForm({ refreshKey })  {
     const handleCopy = (translation) => {
         navigate('/enter-entry', { state: { translation: translation } });
     };
-    
-    
+
     return (
         <div>
             <h2>Uilen kistalkee ({translations.length} kistalkee)</h2>
             <table className="bordered-table sticky-header">
                 <tr>
+                    <th>SALKE</th>
                     <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('cat')} width="50px">TS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
@@ -104,6 +104,7 @@ export function ListForm({ refreshKey })  {
                 </tr>
                 {translations.map((translation, index) => (
                      <tr key={index} id={`entry-${translation.firstLetter}`}>
+                            <td>{translation.number}</td>
                             <td>{translation.can}</td>
                             <td>{translation.en}</td>
                             <td>{translation.cat}</td>
