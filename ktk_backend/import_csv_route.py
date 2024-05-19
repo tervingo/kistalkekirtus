@@ -41,7 +41,7 @@ def import_csv():
         f.write(f'Last read on: {datetime.now().strftime("%d-%m-%Y at %H:%M:%S")}\n')
         f.write(f'Number of entries: {nof_entries}\n')
 
-    return {'message': 'CSV data has been successfully imported to MongoDB!'}
+    return {'message': f'CSV file with {nof_entries} entries has been successfully imported to MongoDB!'}
 
 
 
