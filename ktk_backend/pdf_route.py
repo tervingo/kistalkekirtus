@@ -186,9 +186,9 @@ def export_pdf():
     elements.append(Spacer(1, cm))
 
     for i, doc in enumerate(konota):
-        root = doc['root'] if doc['root'] != '' else '<ilkonoi>'
-        text = f" {root} : {doc['can']} ({doc['cat']}) - {doc['en']}"
-        elements.append(Paragraph(text, normal_style))
+        if doc['root'] != '':
+            text = f" {doc['root']} : {doc['can']} ({doc['cat']}) - {doc['en']}"
+            elements.append(Paragraph(text, normal_style))
     elements.append(PageBreak())
 
 #   SWADESH LIST
