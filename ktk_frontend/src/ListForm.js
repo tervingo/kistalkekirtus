@@ -1,5 +1,6 @@
 import React, { useState, useEffect  } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
@@ -112,7 +113,12 @@ export function ListForm({ refreshKey })  {
                                 <input type="checkbox" id="swadesh" checked={translation.sw === 1} disabled />
                                 <label htmlFor="swadesh"></label>
                             </div>
-                           <td>{translation.root ? translation.root : '<ilkonoi>'}</td>
+                            <td>
+                                {translation.root 
+                                ? <Link to="/list-roots">{translation.root}</Link> 
+                                : '<ilkonoi>'
+                                }
+                            </td>
                             <td>{translation.pl}</td>
                             <td>{translation.pl2}</td>
                             <td>{translation.par}</td>
