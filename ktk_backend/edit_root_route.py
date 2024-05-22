@@ -10,6 +10,7 @@ edit_root_route = Blueprint('edit_root_route', __name__)
 def edit_root(id):
     data = request.get_json()
     root = data['root']
+    prim = data['prim']
     moda = data['moda']
     act = data['act']
     modp = data['modp']
@@ -17,7 +18,7 @@ def edit_root(id):
  
     mongo.db.roots.update_one(
         {'_id': ObjectId(id)},
-        {'$set': {'root': root, 'moda': moda, 'act': act, 'modp': modp, 'pas': pas }}
+        {'$set': {'root': root, 'prim': prim, 'moda': moda, 'act': act, 'modp': modp, 'pas': pas }}
     )
     return jsonify({'result': 'Entry updated successfully'}), 200
 

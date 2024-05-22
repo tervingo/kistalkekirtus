@@ -88,6 +88,7 @@ export function ListRoots({ refreshKey })  {
                 <tr>
                     <th>SALKE</th>
                     <th className='clickable-header' onClick={() => handleSort('root')}>KONO <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th>PRIMARY</th>
                     <th>MOD-ACT</th>
                     <th>ACTIVE</th>
                     <th>MOD-PAS</th>
@@ -99,6 +100,7 @@ export function ListRoots({ refreshKey })  {
                      <tr key={index} id={`entry-${root.firstLetter}`}>
                             <td>{root.number}</td>
                             <td>{root.root}</td>
+                            <td>{root.prim}</td>
                             <td>{root.moda}</td>
                             <td>{root.act}</td>
                             <td>{root.modp}</td>

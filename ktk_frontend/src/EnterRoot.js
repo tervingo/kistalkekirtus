@@ -11,6 +11,7 @@ export function EnterRoot() {
     const initialRoot = location.state?.root || {};
 
     const [root, setRoot] = useState(initialRoot.root || '');
+    const [prim, setPrim] = useState(initialRoot.prim || '');
     const [moda, setModa] = useState(initialRoot.moda || '');
     const [act, setAct] = useState(initialRoot.act || '');
     const [modp, setModp] = useState(initialRoot.modp || '');
@@ -19,6 +20,7 @@ export function EnterRoot() {
 
 
     const navigate = useNavigate();
+
     const enterRoot = async (event) => {
         event.preventDefault();
         const response = await fetch(`${SERVER_IP}/api/enter-root`, {
@@ -26,7 +28,7 @@ export function EnterRoot() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ root, moda, act, modp, pas }),
+            body: JSON.stringify({ root, prim, moda, act, modp, pas }),
         });
         const data = await response.json();
         console.log(data);
@@ -37,6 +39,7 @@ export function EnterRoot() {
 
     const handleClear = () => {
         setRoot('');
+        setPrim('');
         setModa('');
         setAct('');
         setModp('');
@@ -54,6 +57,11 @@ export function EnterRoot() {
                 <label>
                     <h4>Kono:</h4>
                     <input type="text" value={root} onChange={(e) => setRoot(e.target.value)} />
+                </label>
+                <br/>
+                <label>
+                    <h4>Primary:</h4>
+                    <input type="text" value={prim} onChange={(e) => setPrim(e.target.value)} />
                 </label>
                 <br/>
                 <label>

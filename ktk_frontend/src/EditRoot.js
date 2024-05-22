@@ -10,6 +10,7 @@ export function EditRoot() {
     const {root} = useParams();
     const [rootState, setRoot] = useState('');
     const [id, setId] = useState('');
+    const [prim, setPrim] = useState('');
     const [moda, setModa] = useState('');
     const [act, setAct] = useState('');
     const [modp, setModp] = useState('');
@@ -29,6 +30,7 @@ export function EditRoot() {
                     const data = await response.json();
                     setId(data._id);
                     setRoot(data.root);
+                    setPrim(data.prim);
                     setModa(data.moda);
                     setAct(data.act);
                     setModp(data.modp);
@@ -53,6 +55,7 @@ export function EditRoot() {
             },
             body: JSON.stringify({
                 root: rootState,
+                prim,
                 moda,
                 act,
                 modp,
@@ -76,6 +79,7 @@ export function EditRoot() {
                 <table className="bordered-table">
                 <tr>
                     <th>KONO</th>
+                    <th>PRIMARY</th>
                     <th>MODE ACT</th>
                     <th>ACTIVE</th>
                     <th>MODE PAS</th>
@@ -83,6 +87,7 @@ export function EditRoot() {
                  </tr>
                 <tr>
                             <td><input type="text" value={rootState} onChange={(e) => setRoot(e.target.value)} /></td>
+                            <td><input type="text" value={prim} onChange={(e) => setPrim(e.target.value)} /></td>
                             <td><input type="text" value={moda} onChange={(e) => setModa(e.target.value)} /></td>
                             <td><input type="text" value={act} onChange={(e) => setAct(e.target.value)} /></td>
                             <td><input type="text" value={modp} onChange={(e) => setModp(e.target.value)} /></td>

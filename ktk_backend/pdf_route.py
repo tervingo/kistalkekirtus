@@ -203,10 +203,10 @@ def export_pdf():
 
 #   ROOTS
 
-    data = [["ROOT", "ACTIVE", "MODA", "PASSIVE", "MODP"]]  # Header row
+    data = [["ROOT", "PRIMARY", "ACTIVE", "MODA", "PASSIVE", "MODP"]]  # Header row
 
     for doc in konota:
-        row = [doc['root'], doc['act'], doc['moda'], doc['pas'], doc['modp']]
+        row = [doc['root'], doc['prim'], doc['act'], doc['moda'], doc['pas'], doc['modp']]
         data.append(row)
 
     # Create the table

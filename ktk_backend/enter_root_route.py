@@ -8,10 +8,11 @@ enter_root_route = Blueprint('enter_root_route', __name__)
 def add_root():
     data = request.get_json()
     root = data['root']
+    prim = data['prim']
     moda = data['moda']
     act = data['act']
     modp = data['modp']
     pas = data['pas']
  
-    mongo.db.roots.insert_one({'root': root, 'moda': moda, 'act': act, 'modp': modp, 'pas': pas })
+    mongo.db.roots.insert_one({'root': root, 'prim': prim, 'moda': moda, 'act': act, 'modp': modp, 'pas': pas })
     return jsonify({'result': 'Root added successfully'}), 201

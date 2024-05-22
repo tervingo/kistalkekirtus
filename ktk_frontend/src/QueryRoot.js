@@ -77,6 +77,7 @@ export function QueryRoot() {
                     <table className="bordered-table">
                         <tr>
                             <th>KONO</th>
+                            <th>PRIMARY</th>
                             <th>MODE ACT</th>
                             <th>ACTIVE</th>
                             <th>MODE PAS</th>
@@ -85,6 +86,7 @@ export function QueryRoot() {
                         {Array.isArray(roots) && roots.map((root, index) => (
                         <tr key={index}>
                             <td>{root.root}</td>
+                            <td>{root.prim}</td>
                             <td>{root.moda}</td>
                             <td>{root.act}</td>
                             <td>{root.modp}</td>
