@@ -23,16 +23,20 @@ def export_pdf():
     iv_en = mongo.db.translations.find().sort('can')
     en_iv = mongo.db.translations.find().sort('en')
     cat = mongo.db.translations.find().sort([('cat', 1), ('can', 1)])
-    konota = mongo.db.translations.find().sort([('root', 1), ('can', 1)])
+    konota = mongo.db.roots.find().sort('root', 1)
     swadesh = mongo.db.translations.find( {"sw" : 1 } ).sort('en')
 
     iv_en_count = mongo.db.translations.count_documents({})
+    root_count = mongo.db.roots.count_documents({})
 
     # Specify the path where you want to save the CSV file
 
     pdf_path_name = f"{hostname.upper()}_PDF_PATH"
-    
     path = paths[pdf_path_name]
+
+    root_pdf_path_name = f"{hostname.upper()}_ROOT_PDF_PATH"
+    root_file = paths[root_pdf_path_name]
+
 
     class FooterCanvas:
         def __init__(self, doc):
@@ -47,21 +51,26 @@ def export_pdf():
             c.restoreState()
 
 
-    # Create a new PDF file
+    # Create a new PDF files
     pdf_doc = BaseDocTemplate(path, pagesize=letter)
+    root_doc = BaseDocTemplate(root_file, pagesize=letter)
 
     # Create a Frame for the main content
     main_frame = Frame(pdf_doc.leftMargin, pdf_doc.bottomMargin, pdf_doc.width, pdf_doc.height, id='main_frame')
+    root_main_frame = Frame(root_doc.leftMargin, root_doc.bottomMargin, root_doc.width, root_doc.height, id='main_frame')
 
     # Create a Frame for the footer
     footer_frame = Frame(pdf_doc.leftMargin, pdf_doc.bottomMargin - 50, pdf_doc.width, 50, id='footer_frame')
+    root_footer_frame = Frame(root_doc.leftMargin, root_doc.bottomMargin - 50, root_doc.width, 50, id='footer_frame')
 
     # Create a PageTemplate with the main_frame and the footer_frame
     main_page_template = PageTemplate(id='main', frames=[main_frame], onPageEnd=FooterCanvas(pdf_doc).afterPage)
+    root_main_page_template = PageTemplate(id='main', frames=[root_main_frame], onPageEnd=FooterCanvas(root_doc).afterPage)
 
     # Add the PageTemplate to the document
     pdf_doc.addPageTemplates([main_page_template])
-
+    root_doc.addPageTemplates([root_main_page_template])
+ 
     # title
 
     # Get a sample stylesheet
@@ -108,13 +117,18 @@ def export_pdf():
 
     # Create a list to hold the elements
     elements = []
+    root_elements = []
 
     # Create a Paragraph object with the title text
     title = Paragraph("Ilven-Inglis Kistalkekirtus", title_style)
+    root_title = Paragraph("Konotalen Salto", title_style)
     # Add the title to the elements list
     elements.append(title)
+    root_elements.append(root_title)
+
     # Add a spacer after the title
     elements.append(Spacer(1, 0.5 * cm))
+    root_elements.append(Spacer(1, 0.5 * cm))
 
     # Insert date
 
@@ -123,10 +137,16 @@ def export_pdf():
     date = Paragraph(anir_str, date_style)
     elements.append(date)
     elements.append(Spacer(1, 0.2 * cm))
+    root_elements.append(date)
+    root_elements.append(Spacer(1, 0.2 * cm))
 
     noe = Paragraph(f"({iv_en_count} kistalkee)", noe_style)
     elements.append(noe)
     elements.append(Spacer(1, 0.2 * cm))
+
+    nor = Paragraph(f"({root_count} konoi)", noe_style)
+    root_elements.append(nor)
+    root_elements.append(Spacer(1, 0.2 * cm))
 
     # Section IV2EN
     section_iv2en = Paragraph("Ilvensi > Inglisu", section_style)
@@ -177,19 +197,12 @@ def export_pdf():
         elements.append(Paragraph(text, normal_style))
     elements.append(PageBreak())
 
-#   ROOT
-
-    section_root = Paragraph("Konosies Salten", section_style)
-
-    elements.append(section_root)
-    # Add a spacer after the title
-    elements.append(Spacer(1, cm))
+#   ROOTS
 
     for i, doc in enumerate(konota):
-        if doc['root'] != '':
-            text = f" {doc['root']} : {doc['can']} ({doc['cat']}) - {doc['en']}"
-            elements.append(Paragraph(text, normal_style))
-    elements.append(PageBreak())
+        text = f" {doc['root']} : ACTIVE = {doc['act']} ({doc['moda']}) | PASSIVE = {doc['pas']} ({doc['modp']})"
+        root_elements.append(Paragraph(text, normal_style))
+    root_elements.append(PageBreak())
 
 #   SWADESH LIST
 
@@ -207,6 +220,7 @@ def export_pdf():
 
     # Build the PDF
     pdf_doc.build(elements)
+    root_doc.build(root_elements)
 
     # Return a success message
-    return 'PDF generated successfully!', 200
+    return 'PDFs generated successfully!', 200
