@@ -5,6 +5,10 @@ from reportlab.platypus import BaseDocTemplate, PageTemplate, Frame, Paragraph, 
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import cm
 from reportlab.lib.styles import ParagraphStyle
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+from reportlab.lib import colors
+
+
 
 import datetime
 import socket
@@ -199,10 +203,29 @@ def export_pdf():
 
 #   ROOTS
 
-    for i, doc in enumerate(konota):
-        text = f" {doc['root']} : ACTIVE = {doc['act']} ({doc['moda']}) | PASSIVE = {doc['pas']} ({doc['modp']})"
-        root_elements.append(Paragraph(text, normal_style))
-    root_elements.append(PageBreak())
+    data = [["ROOT", "ACTIVE", "MODA", "PASSIVE", "MODP"]]  # Header row
+
+    for doc in konota:
+        row = [doc['root'], doc['act'], doc['moda'], doc['pas'], doc['modp']]
+        data.append(row)
+
+    # Create the table
+    table = Table(data)
+
+    table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, 0), 14),
+
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+        ('BACKGROUND', (0, 1), (-1, -1), colors.ghostwhite),
+        ('GRID', (0,0), (-1,-1), 1, colors.black)
+    ]))
+
+    root_elements.append(table)
 
 #   SWADESH LIST
 
