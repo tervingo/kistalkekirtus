@@ -18,13 +18,17 @@ csv_route = Blueprint('csv_route', __name__)
 def export_csv():
     # Get all documents from your MongoDB collection and sort them by 'can'
     cursor = mongo.db.translations.find({}, {'_id': 0}).sort('can')
+    root_cursor = mongo.db.roots.find({}, {'_id': 0}).sort('root')
 
-    # Specify the path where you want to save the CSV file
+    # Specify the paths where you want to save the CSV files
 
     csv_path_name = f"{hostname.upper()}_CSV_PATH"
     path = paths[csv_path_name]
 
-    # Open the file at the specified path
+    root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
+    root_path = paths[root_csv_path_name]
+
+    # Open the lexicon file at the specified path
     with open(path, 'w', newline='') as file:
         writer = csv.writer(file)
         # Get the first document and write the keys as a header row
@@ -32,6 +36,16 @@ def export_csv():
         writer.writerow(first_doc.keys())
         # write the values
         for doc in cursor:
+            writer.writerow(doc.values())  # write values of each item
+
+    # Open the roots file at the specified path
+    with open(root_path, 'w', newline='') as root_file:
+        writer = csv.writer(root_file)
+        # Get the first document and write the keys as a header row
+        first_doc = root_cursor[0]
+        writer.writerow(first_doc.keys())
+        # write the values
+        for doc in root_cursor:
             writer.writerow(doc.values())  # write values of each item
 
     # write CSV stamp file

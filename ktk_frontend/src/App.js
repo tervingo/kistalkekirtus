@@ -19,6 +19,10 @@ import { ExportCsvForm } from './ExportCsvForm';
 import { ExportPdfForm } from './ExportPdfForm';
 import { ImportCsvForm } from './ImportCsvForm';
 import { CsvInfo } from './ImportCsvForm';
+import { ListRoots } from './ListRoots';
+import { EditRoot } from './EditRoot';
+import { QueryRoot } from './QueryRoot';
+import { EnterRoot } from './EnterRoot';
 
  
 import { SERVER_IP } from './constants';
@@ -46,6 +50,10 @@ function App() {
                     <Route path="/query-entry" element={<QueryForm />} />
                     <Route path="/list-entries" element={<ListForm refreshKey={refreshKey} />} />
                     <Route path="/edit-entry/:can" element={<EditForm setRefreshKey={setRefreshKey} />} />
+                    <Route path="/list-roots" element={< ListRoots />} />
+                    <Route path="/edit-root/:root" element={< EditRoot />} />
+                    <Route path="/enter-root" element={< EnterRoot />} />
+                    <Route path="/query-root" element={< QueryRoot />} />
                     <Route path="/export/csv" element={<ExportCsvForm />} />
                     <Route path="/export/pdf" element={<ExportPdfForm />} />
                     <Route path="/import/csv" element={<ImportCsvForm />} />
@@ -74,19 +82,25 @@ function App() {
                 <div className="content">
                     <nav className="sidebar">
                         <div className="left-pane">
-                            <Link className="nice-link" to="/list-entries">Uilen kistalkee salli</Link>
+                            <Link className="nice-link entries" to="/list-entries">Uilen kistalkee salli</Link>
                             <br/><br/>
-                            <Link className="nice-link" to="/enter-entry">Unnen kistalkeva aunilli</Link>
+                            <Link className="nice-link entries" to="/enter-entry">Unnen kistalkeva aunilli</Link>
                             <br/><br/>
-                            <Link className="nice-link" to="/query-entry">Kistalkeeva massi</Link>
+                            <Link className="nice-link entries" to="/query-entry">Kistalkeeva massi</Link>
                             <br/><br/>
-                            <Link className='nice-link' to="/export/csv" >CSV oinilli</Link>
+                            <Link className="nice-link roots" to="/list-roots">Uilen konoi salli</Link>
                             <br/><br/>
-                            <Link className='nice-link' to="/export/pdf" >PDF oinilli</Link>
+                            <Link className="nice-link roots" to="/enter-root">Unnen konova aunilli</Link>
                             <br/><br/>
-                            <Link className='nice-link' to="import/csv" >CSV aunilli</Link>
+                            <Link className="nice-link roots" to="/query-root">Konoiva massi</Link>
                             <br/><br/>
-                            <Link className='nice-link' to="/csv-info" >CSV aro</Link>
+                            <Link className='nice-link files' to="/export/csv" >CSV oinilli</Link>
+                            <br/><br/>
+                            <Link className='nice-link files' to="/export/pdf" >PDF oinilli</Link>
+                            <br/><br/>
+                            <Link className='nice-link files' to="import/csv" >CSV aunilli</Link>
+                            <br/><br/>
+                            <Link className='nice-link files' to="/csv-info" >CSV aro</Link>
 
                                 <table className='letter-table'>
                                 <tr>
