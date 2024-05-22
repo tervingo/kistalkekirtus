@@ -50,10 +50,13 @@ export function CsvInfo() {
     <div>
       <h3>Current CSV file info</h3>
       <p>Modified Date: {info.modified_date}</p>
-      <p>Number of Entries: {info.num_rows}</p>
+      <p>Number of Entries: {info.num_entries}</p>
+      <p>Root modified data: {info.root_modified_date} </p>
+      <p>Number of Roots: {info.num_roots}</p>
       <h3>Last read CSV info at {info.hostname}</h3>
       <p>{info.last_date_info}</p>
       <p>{info.last_noe_info}</p>
+      <p>{info.last_nor_info}</p>
 
     </div>
   );

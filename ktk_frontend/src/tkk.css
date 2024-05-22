@@ -118,6 +118,10 @@ input[type="text"], select {
     background-color: green;
 }
 
+.nice-link.csv {
+    background-color: slategray;
+}
+
 .nice-pencil {
     color: darkgrey;
     padding-right: 10px;

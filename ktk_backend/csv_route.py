@@ -29,7 +29,7 @@ def export_csv():
     root_path = paths[root_csv_path_name]
 
     # Open the lexicon file at the specified path
-    with open(path, 'w', newline='') as file:
+    with open(path, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         # Get the first document and write the keys as a header row
         first_doc = cursor[0]
@@ -39,7 +39,7 @@ def export_csv():
             writer.writerow(doc.values())  # write values of each item
 
     # Open the roots file at the specified path
-    with open(root_path, 'w', newline='') as root_file:
+    with open(root_path, 'w', newline='', encoding='utf-8') as root_file:
         writer = csv.writer(root_file)
         # Get the first document and write the keys as a header row
         first_doc = root_cursor[0]

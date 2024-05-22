@@ -57,6 +57,7 @@ function App() {
                     <Route path="/export/csv" element={<ExportCsvForm />} />
                     <Route path="/export/pdf" element={<ExportPdfForm />} />
                     <Route path="/import/csv" element={<ImportCsvForm />} />
+                    <Route path="/csv-info" element={<CsvInfo />} />
                 </Routes>
             </div>
         );
@@ -98,9 +99,9 @@ function App() {
                             <br/><br/>
                             <Link className='nice-link files' to="/export/pdf" >PDF oinilli</Link>
                             <br/><br/>
-                            <Link className='nice-link files' to="import/csv" >CSV aunilli</Link>
+                            <Link className='nice-link csv' to="import/csv" >CSV aunilli</Link>
                             <br/><br/>
-                            <Link className='nice-link files' to="/csv-info" >CSV aro</Link>
+                            <Link className='nice-link csv' to="/csv-info" >CSV aro</Link>
 
                                 <table className='letter-table'>
                                 <tr>
@@ -140,11 +141,7 @@ function App() {
                                 </tr>
 
                             </table>
-                            <Routes>
-                                <Route path="/csv-info" element={<CsvInfo />} />
-                            </Routes>
-
-                         </div>
+                          </div>
                     </nav>
                     <MainComponent />
                 </div>
