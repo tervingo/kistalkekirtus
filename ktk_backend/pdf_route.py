@@ -118,6 +118,15 @@ def export_pdf():
         spaceAfter = 5,
         spaceBefore = 5
         )
+    
+    tableStyle = ParagraphStyle(
+    name='CustomWrap',
+    fontName='Helvetica',
+    fontSize=10,
+    leading=12,  # Line spacing
+    wordWrap='CJK'  # Wrap algorithm
+)
+
 
     # Create a list to hold the elements
     elements = []
@@ -203,29 +212,36 @@ def export_pdf():
 
 #   ROOTS
 
-    data = [["ROOT", "PRIMARY", "ACTIVE", "MODA", "PASSIVE", "MODP"]]  # Header row
+    data = [["ROOT", "PRIMARY", "ACTIVE", "MOD ACT", "PASSIVE", "MOD PAS"]]  # Header row
 
     for doc in konota:
         row = [doc['root'], doc['prim'], doc['act'], doc['moda'], doc['pas'], doc['modp']]
         data.append(row)
 
+
+    # Wrap cell content in Paragraphs
+    for i in range(len(data)):
+        for j in range(len(data[i])):
+            data[i][j] = Paragraph(data[i][j], tableStyle)  # Wrap text
     # Create the table
-    table = Table(data)
+
+    table = Table(data, colWidths=[60, 80, 90, 40, 90, 40], repeatRows=1)  # Adjust widths as needed
+    WIDTH, HEIGHT = letter
 
     table.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-
         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
         ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
         ('FONTSIZE', (0, 0), (-1, 0), 14),
-
         ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
         ('BACKGROUND', (0, 1), (-1, -1), colors.ghostwhite),
-        ('GRID', (0,0), (-1,-1), 1, colors.black)
+        ('GRID', (0,0), (-1,-1), 1, colors.black),
+        ('WIDTH', (0, 0), (-1, -1), WIDTH * 0.8),
     ]))
 
     root_elements.append(table)
+
 
 #   SWADESH LIST
 
