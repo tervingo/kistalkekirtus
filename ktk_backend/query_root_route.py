@@ -38,4 +38,5 @@ def get_translation():
         kono['_id'] = str(kono['_id'])
         return jsonify(kono), 200
     else:
-        return jsonify({'error': 'No root found'}), 404
+#        return jsonify({'result' : 'no root found'}), 200
+        return "0", 201

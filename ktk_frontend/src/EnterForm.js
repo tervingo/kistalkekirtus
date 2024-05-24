@@ -4,7 +4,6 @@ import './tkk.css';
 
 import { SERVER_IP } from './constants';
 
-
 export function EnterForm() {
 
     const location = useLocation();
@@ -25,10 +24,11 @@ export function EnterForm() {
 
     const [message, setMessage] = useState('');
 
-
     const navigate = useNavigate();
+
     const enterEntry = async (event) => {
         event.preventDefault();
+
         const response = await fetch(`${SERVER_IP}/api/enter-entry`, {
             method: 'POST',
             headers: {
@@ -38,9 +38,21 @@ export function EnterForm() {
         });
         const data = await response.json();
         console.log(data);
-        setMessage('Entry stored successfully!'); // Add this line
-        handleClear(); // Add this line
-        navigate(`/list-entries`);
+        setMessage('Entry stored successfully!');
+
+        const alkono = await fetch(`${SERVER_IP}/api/query-root?root=${root}`);
+        const kono = await alkono.json();
+        console.log('root is: ', kono);
+        if (kono == '0') {
+            console.log('lets enter a new root');
+            navigate(`/enter-root`);
+        }
+        else 
+        {
+            console.log(kono.root);
+            handleClear();
+            navigate(`/list-entries`);
+        }
     };
 
     const handleClear = () => {
