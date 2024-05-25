@@ -53,6 +53,7 @@ function App() {
                     <Route path="/list-roots" element={< ListRoots />} />
                     <Route path="/edit-root/:root" element={< EditRoot />} />
                     <Route path="/enter-root" element={< EnterRoot />} />
+                    <Route path="/enter-root/:root" element={< EnterRoot />} />
                     <Route path="/query-root" element={< QueryRoot />} />
                     <Route path="/export/csv" element={<ExportCsvForm />} />
                     <Route path="/export/pdf" element={<ExportPdfForm />} />

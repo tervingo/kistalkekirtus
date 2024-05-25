@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
 import './tkk.css';
 
 import { SERVER_IP } from './constants';
@@ -10,7 +10,8 @@ export function EnterRoot() {
     const location = useLocation();
     const initialRoot = location.state?.root || {};
 
-    const [root, setRoot] = useState(initialRoot.root || '');
+    const { root: rootParam } = useParams();
+    const [root, setRoot] = useState(rootParam || '');
     const [prim, setPrim] = useState(initialRoot.prim || '');
     const [moda, setModa] = useState(initialRoot.moda || '');
     const [act, setAct] = useState(initialRoot.act || '');
@@ -23,12 +24,16 @@ export function EnterRoot() {
 
     const enterRoot = async (event) => {
         event.preventDefault();
-        const response = await fetch(`${SERVER_IP}/api/enter-root`, {
+ /*        let url = `${SERVER_IP}/api/enter-root`;
+        if (root) {
+            url += `/?root=${root}`;
+        }
+ */        const response = await fetch(`${SERVER_IP}/api/enter-root`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ root, prim, moda, act, modp, pas }),
+            body: JSON.stringify({ root : root, prim, moda, act, modp, pas }),
         });
         const data = await response.json();
         console.log(data);

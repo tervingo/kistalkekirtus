@@ -45,7 +45,7 @@ export function EnterForm() {
         console.log('root is: ', kono);
         if (kono == '0') {
             console.log('lets enter a new root');
-            navigate(`/enter-root`);
+            navigate(`/enter-root/${root}`);
         }
         else 
         {
