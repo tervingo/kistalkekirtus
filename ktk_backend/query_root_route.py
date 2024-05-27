@@ -37,6 +37,8 @@ def get_translation():
         # Convert the ObjectId into a string
         kono['_id'] = str(kono['_id'])
         return jsonify(kono), 200
+    elif (root == ""):
+        return "1", 201   
     else:
 #        return jsonify({'result' : 'no root found'}), 200
         return "0", 201
