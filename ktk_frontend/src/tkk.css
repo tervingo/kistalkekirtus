@@ -177,6 +177,8 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
 }
 
 .tabs button {
@@ -195,6 +197,6 @@ h1 {
 }
 
 .tabs button.active {
-    background-color: #ccc;
+    background-color: orange;
 }
 
