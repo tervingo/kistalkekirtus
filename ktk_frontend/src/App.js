@@ -23,14 +23,12 @@ import { ListRoots } from './ListRoots';
 import { EditRoot } from './EditRoot';
 import { QueryRoot } from './QueryRoot';
 import { EnterRoot } from './EnterRoot';
-
+import { HtmlDisplay } from './DisplayHtml';
  
-import { SERVER_IP } from './constants';
-
-
 function App() {
     const [refreshKey, setRefreshKey] = useState(0);
     const [isFirstRender, setIsFirstRender] = useState(true);
+    const [activeTab, setActiveTab] = useState('LEXICON');
 
     
     function MainComponent() {
@@ -41,7 +39,7 @@ function App() {
                 navigate('/list-entries');
                 setIsFirstRender(false);
             }
-        }, [navigate, isFirstRender]);
+        }, [navigate]);
 
         return (
             <div className="main">
@@ -59,12 +57,14 @@ function App() {
                     <Route path="/export/pdf" element={<ExportPdfForm />} />
                     <Route path="/import/csv" element={<ImportCsvForm />} />
                     <Route path="/csv-info" element={<CsvInfo />} />
+                    <Route path="/html-display" element={<HtmlDisplay />} />
                 </Routes>
             </div>
         );
     }
 
-     function handleLetterClick(letter) {
+    
+    function handleLetterClick(letter) {
         // Scroll to the first entry in the CAN column (ILVEN) that starts with the clicked letter
         const element = document.getElementById(`entry-${letter}`);
         if (element) {
@@ -84,25 +84,38 @@ function App() {
                 <div className="content">
                     <nav className="sidebar">
                         <div className="left-pane">
-                            <Link className="nice-link entries" to="/list-entries">Uilen kistalkee salli</Link>
-                            <br/><br/>
-                            <Link className="nice-link entries" to="/enter-entry">Unnen kistalkeva aunilli</Link>
-                            <br/><br/>
-                            <Link className="nice-link entries" to="/query-entry">Kistalkeeva massi</Link>
-                            <br/><br/>
-                            <Link className="nice-link roots" to="/list-roots">Uilen konoi salli</Link>
-                            <br/><br/>
-                            <Link className="nice-link roots" to="/enter-root">Unnen konova aunilli</Link>
-                            <br/><br/>
-                            <Link className="nice-link roots" to="/query-root">Konoiva massi</Link>
-                            <br/><br/>
-                            <Link className='nice-link files' to="/export/csv" >CSV oinilli</Link>
-                            <br/><br/>
-                            <Link className='nice-link files' to="/export/pdf" >PDF oinilli</Link>
-                            <br/><br/>
-                            <Link className='nice-link csv' to="import/csv" >CSV aunilli</Link>
-                            <br/><br/>
-                            <Link className='nice-link csv' to="/csv-info" >CSV aro</Link>
+                            <div className="tabs"> {/* Add this div for tabs */}
+                                <button className={activeTab === 'LEXICON' ? 'active' : ''} onClick={() => setActiveTab('LEXICON')}>LEXICON</button>
+                                <button className={activeTab === 'GRAMMAR' ? 'active' : ''} onClick={() => setActiveTab('GRAMMAR')}>GRAMMAR</button>
+                            </div>
+                            {activeTab === 'LEXICON' && (
+                                <>
+                                    <Link className="nice-link entries" to="/list-entries">Uilen kistalkee salli</Link>
+                                    <br/><br/>
+                                    <Link className="nice-link entries" to="/enter-entry">Unnen kistalkeva aunilli</Link>
+                                    <br/><br/>
+                                    <Link className="nice-link entries" to="/query-entry">Kistalkeeva massi</Link>
+                                    <br/><br/>
+                                    <Link className="nice-link roots" to="/list-roots">Uilen konoi salli</Link>
+                                    <br/><br/>
+                                    <Link className="nice-link roots" to="/enter-root">Unnen konova aunilli</Link>
+                                    <br/><br/>
+                                    <Link className="nice-link roots" to="/query-root">Konoiva massi</Link>
+                                    <br/><br/>
+                                    <Link className='nice-link files' to="/export/csv" >CSV oinilli</Link>
+                                    <br/><br/>
+                                    <Link className='nice-link files' to="/export/pdf" >PDF oinilli</Link>
+                                    <br/><br/>
+                                    <Link className='nice-link csv' to="import/csv" >CSV aunilli</Link>
+                                    <br/><br/>
+                                    <Link className='nice-link csv' to="/csv-info" >CSV aro</Link>
+                                </>
+                                )}
+                            {activeTab === 'GRAMMAR' && (
+                                <>
+                                    <Link className='nice-link entries' to="/html-display" >Show Declensions</Link>
+                                </>
+                                )}
 
                                 <table className='letter-table'>
                                 <tr>
