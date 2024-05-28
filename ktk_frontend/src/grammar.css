@@ -1,0 +1,26 @@
+
+.grammar-table {
+    border-collapse: collapse;
+    width: 80%;
+    overflow: auto;
+}
+
+
+.grammar-table td:first-child {
+    font-weight: bold;
+}
+
+
+.grammar-table th, .grammar-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.grammar-table th {
+    background-color: lightgray;
+}
+
+.grammar-table td:last-child {
+    text-align: left;
+}

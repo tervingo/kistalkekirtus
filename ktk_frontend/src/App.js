@@ -8,8 +8,8 @@ import { faK, faL, faM, faN, faO } from '@fortawesome/free-solid-svg-icons';
 import { faP, faR, faS, faT, faU } from '@fortawesome/free-solid-svg-icons';
 import { faV, faW, faX, faY, faZ } from '@fortawesome/free-solid-svg-icons';
 
-import './tkk.css'; // Import your CSS file
-// import './const.js';
+import './tkk.css';
+import './grammar.css';
 
 import { EnterForm } from './EnterForm';
 import { QueryForm } from './QueryForm';
