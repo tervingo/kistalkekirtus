@@ -29,7 +29,8 @@
     height: 1000px;
     position: sticky;
     top: 10px;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .main {
@@ -200,3 +201,81 @@ h1 {
     background-color: orange;
 }
 
+/* Collapsible Menu */
+
+/* General styles */
+.tree-view ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Styles for collapsible items */
+.tree-view .collapsible {
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+/* Hide the nested list */
+.tree-view .nested {
+    display: none;
+}
+
+
+/* Show the nested list when the user clicks on the "collapsible" class */
+.tree-view .active {
+    display: block;
+}
+
+/* Styles for the collapsible content */
+..tree-view .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background: #f9f9f9;
+  }
+  
+.tree-view .content.active {
+    max-height: 200px; /* Adjust as needed */
+  }
+
+.tree-view .content a {
+    display: block;
+}
+
+/* Optional: Add an arrow icon to indicate collapsible elements */
+.tree-view .collapsible::before {
+    content: '\25B7';
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate arrow icon when the collapsible content is shown */
+.tree-view .collapsible.active::before {
+    transform: rotate(90deg);
+}
+
+
+.tree-list {
+    display: flex;
+    align-items: left;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    text-decoration-color: darkgrey;
+}
+
+a:visited, a:link, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:after {
+    color: orange;
+}

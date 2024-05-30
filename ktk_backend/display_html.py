@@ -19,9 +19,6 @@ html_route = Blueprint('html_route', __name__)
 def serve_html():
     data = request.get_json()
     grammarKey = data['grammarKey']
-#    grammarKey = request.args.get('grammarKey')
-#    messagebox.showinfo("My Message", f"Entering Flask html.route with grammarKey: {grammarKey}")
-
 
     grammar_host = f"{hostname.upper()}_GRAM_FOLDER"
     grammar_folder = grammar_folders[grammar_host]

@@ -4,5 +4,7 @@ grammar_folders = {
 }
 
 grammar_keys = {
-    "NOM_DECLENSION" : "nom_declension.html",
+    "NOM_ANI_DECLENSION" : "nom_ani_declension.html",
+    "NOM_INA_DECLENSION" : "nom_ina_declension.html",
+
 }

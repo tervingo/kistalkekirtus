@@ -1,30 +1,33 @@
+
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { SERVER_IP } from './constants';
+import './tkk.css';
 
 export function HtmlDisplay() {
+    const label = useParams();
     const [htmlContent, setHtmlContent] = useState('');
-    const grammarKey = 'NOM_DECLENSION';
-
-    console.log('Entering HtmlDisplay');
-
+ 
     useEffect(() => {
-        console.log(grammarKey);
+        console.log('label is: ', label.label);
         const fetchData = async () => {
             const response = await fetch(`${SERVER_IP}/api/get_html`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ grammarKey: grammarKey })
+                body: JSON.stringify({ grammarKey: label.label })
             });
             const data = await response.text();
             setHtmlContent(data);
         };
         fetchData();
-    }, [grammarKey]);
+    }, [label]); // Fetch new data when selectedFile changes
 
-    console.log('htmlContent:', htmlContent);
-
-    return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
+    return (
+        <div>
+            <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        </div>
+    );
 }
