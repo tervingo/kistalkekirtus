@@ -58,7 +58,6 @@ input[type="text"], select {
 
 .letter-table {
     width: 90%;
-/*    overflow: auto; */
     align-self: center;
     align-items: center;
     padding: 30px;
@@ -201,9 +200,18 @@ h1 {
     background-color: orange;
 }
 
+/*=========================*/
 /* Collapsible Menu */
+/*=========================*/
 
 /* General styles */
+.tree-view {
+    font-family: 'Calibri', sans-serif;
+    font-size: larger;
+    padding: 0;
+    margin: 0;
+}
+
 .tree-view ul {
     margin: 0;
     padding: 0;

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
+
 import './tkk.css';
 
 
 const TreeNode = ({ label, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -49,6 +50,7 @@ export const GramTreeView = () => (
     <MorphoNode />
 {/*     <SyntaxNode />
     <PhonoNode /> */}
+   <Navigate to="/html-display/NOM_ANI_DECLENSION" replace={true} />
   </div>
 );
 

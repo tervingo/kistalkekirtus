@@ -33,11 +33,10 @@ function App() {
     const [isFirstRender, setIsFirstRender] = useState(true);
     const [activeTab, setActiveTab] = useState('LEXICON');
 
-   
-    
     function MainComponent() {
 
         const navigate = useNavigate();
+
 
         useEffect(() => {
             if (isFirstRender) {
@@ -68,7 +67,7 @@ function App() {
         );
     }
 
-    
+   
     function handleLetterClick(letter) {
         // Scroll to the first entry in the CAN column (ILVEN) that starts with the clicked letter
         const element = document.getElementById(`entry-${letter}`);
@@ -79,6 +78,11 @@ function App() {
           });
         }
       }
+    
+    function GoToDisplayHtml() {
+        let navigate = useNavigate
+        navigate('/html-display/NOM_ANI_DECLENSION');
+    }
       
     return (
         <Router>
@@ -91,7 +95,8 @@ function App() {
                         <div className="left-pane">
                             <div className="tabs">
                                 <button className={activeTab === 'LEXICON' ? 'active' : ''} onClick={() => setActiveTab('LEXICON')}>LEXICON</button>
-                                <button className={activeTab === 'GRAMMAR' ? 'active' : ''} onClick={() => setActiveTab('GRAMMAR')}>GRAMMAR</button>
+                                {/* {activeTab === 'GRAMMAR' ? <InitGrammar /> : <button onClick={() => setActiveTab('GRAMMAR')}>GRAMMAR</button>} */}
+                                <button className={activeTab === 'GRAMMAR' ? 'active' : ''} onClick={() => setActiveTab('GRAMMAR') }>GRAMMAR</button>
                              </div>
                             {activeTab === 'LEXICON' && (
                                 <>        
