@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 import './tkk.css';
 
 
@@ -45,12 +45,25 @@ const FilesNode = () => (
   </TreeNode>
 );
 
-export const LexTreeView = () => (
+
+
+export const LexTreeView = ({ LexNavigateOnMount, setLexNavigateOnMount }) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (LexNavigateOnMount) {
+      setLexNavigateOnMount(false);
+    }
+  }, [location]);
+
+  console.log('LTV: LexNavigateOnMount is: ', LexNavigateOnMount);
+
+  return (
   <div>
     <EntriesNode />
     <RootsNode />
     <FilesNode />
-    <Navigate to="/list-entries" replace={true} />
+    { LexNavigateOnMount && <Navigate to="/list-entries" replace={true} /> }
   </div>
-);
-
+  );
+};

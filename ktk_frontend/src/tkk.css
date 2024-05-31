@@ -258,7 +258,8 @@ h1 {
 
 /* Optional: Add an arrow icon to indicate collapsible elements */
 .tree-view .collapsible::before {
-    content: '\25B7';
+    /* content: '\25B7'; */
+    content: '\003e'; /* Unicode character for "right arrow" */
     color: black;
     display: inline-block;
     margin-right: 6px;

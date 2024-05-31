@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 
 import './tkk.css';
 
@@ -45,12 +45,22 @@ const PhonoNode = () => (
   </TreeNode>
 ); */
 
-export const GramTreeView = () => (
-  <div>
-    <MorphoNode />
-{/*     <SyntaxNode />
-    <PhonoNode /> */}
-   <Navigate to="/html-display/NOM_ANI_DECLENSION" replace={true} />
-  </div>
-);
 
+export const GramTreeView = ({ GramNavigateOnMount, setGramNavigateOnMount }) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (GramNavigateOnMount) {
+      setGramNavigateOnMount(false);
+    }
+  }, [location]);
+
+  console.log('GTV: GramNavigateOnMount is: ', GramNavigateOnMount);
+
+  return (
+    <div>
+      <MorphoNode />
+      {GramNavigateOnMount && <Navigate to="/html-display/NOM_ANI_DECLENSION" />}
+    </div>
+  );
+};
