@@ -289,3 +289,30 @@ a:visited, a:link, a:hover {
 a:after {
     color: orange;
 }
+
+/*=========================*/
+/* Language switcher       */
+/*=========================*/
+
+.language-switcher {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.nice-switcher {
+    background-color: darkgray; /* Background color */
+    color: black; /* Text color */
+    font-family: 'Calibri', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: bold ;
+    border: 2px solid black; /* Border */
+    border-radius: 10px; /* Smooth corners */
+    padding: 10px 13px; /* Padding around text */
+    margin-right: 10px;
+    width: 40px;
+}
+
+.nice-switcher button.active {
+    background-color: orange;
+}

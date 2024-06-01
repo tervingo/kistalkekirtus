@@ -1,10 +1,11 @@
 import React, { useState, useEffect  } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import './tkk.css';
 import './grammar.css';
-
+import './i18n';
 
 import { EnterForm } from './EnterForm';
 import { QueryForm } from './QueryForm';
@@ -23,17 +24,33 @@ import { LexTreeView } from './LexTreeView';
 import { GramTreeView } from './GramTreeView';
 import { LetterTable } from './LetterTable'; 
 
+function LanguageSwitcher() {
+    const { i18n } = useTranslation();
+  
+    const changeLanguage = (language) => {
+      i18n.changeLanguage(language);
+    };
+  
+    return (
+      <div className="language-switcher">
+        <button className='nice-switcher' onClick={() => changeLanguage('en')}>EN</button>
+        <button className='nice-switcher' onClick={() => changeLanguage('iv')}>IV</button>
+        {/* Add more buttons for other languages */}
+      </div>
+    );
+  }
+
 function App() {
     const [refreshKey, setRefreshKey] = useState(0);
     const [isFirstRender, setIsFirstRender] = useState(true);
     const [activeTab, setActiveTab] = useState('LEXICON');
     const [lexNavigateOnMount, setLexNavigateOnMount] = useState(true);
     const [gramNavigateOnMount, setGramNavigateOnMount] = useState(false);
+    const { t } = useTranslation();
 
     function MainComponent() {
 
         const navigate = useNavigate();
-
 
         useEffect(() => {
             if (isFirstRender) {
@@ -64,7 +81,6 @@ function App() {
         );
     }
 
-   
     function handleLetterClick(letter) {
         // Scroll to the first entry in the CAN column (ILVEN) that starts with the clicked letter
         const element = document.getElementById(`entry-${letter}`);
@@ -75,48 +91,32 @@ function App() {
           });
         }
       }
-    
-      
+
     return (
         <Router>
             <div className="app">
                 <div className="top-panel">
-                    <h1>Ilven Talkummur le Kistalkonsjur</h1>
+                    <LanguageSwitcher />
+                    <h1>{t('title')}</h1>
                     <img src=".\kantokirtur.jpg" alt="Kantokirtur" />
                 </div>
                 <div className="content">
                     <nav className="sidebar">
                         <div className="left-pane">
                             <div className="tabs">
-                                <button className={activeTab === 'LEXICON' ? 'active' : ''} 
-                                onClick={() => { 
-                                    setActiveTab('LEXICON'); 
-                                    setLexNavigateOnMount(true); 
-                                    setGramNavigateOnMount(false);
-                                    console.log('LEX: lexNavigateOnMount:', lexNavigateOnMount);
-                                    console.log('LEX: gramNavigateOnMount:', gramNavigateOnMount);
-                                    } }>LEXICON</button>
+                                <button className={activeTab === 'LEXICON' ? 'active' : ''} onClick={() => { setActiveTab('LEXICON'); setLexNavigateOnMount(true); setGramNavigateOnMount(false); } }>{t('tabs.lexicon')}</button>
 
-                                <button className={activeTab === 'GRAMMAR' ? 'active' : ''} 
-                                onClick={() => { 
-                                    setActiveTab('GRAMMAR'); 
-                                    setGramNavigateOnMount(true); 
-                                    setLexNavigateOnMount(false);
-                                    console.log('GRAM: lexNavigateOnMount:', lexNavigateOnMount);
-                                    console.log('GRAM: gramNavigateOnMount:', gramNavigateOnMount);
-                                    } }>GRAMMAR</button>
+                                <button className={activeTab === 'GRAMMAR' ? 'active' : ''} onClick={() => { setActiveTab('GRAMMAR'); setGramNavigateOnMount(true); setLexNavigateOnMount(false); } }>{t('tabs.grammar')}</button>
                             </div>
                             {activeTab === 'LEXICON' && (
                                 <>        
                                     <LexTreeView LexNavigateOnMount={lexNavigateOnMount} setLexNavigateOnMount={setLexNavigateOnMount} />
                                     <LetterTable handleLetterClick={handleLetterClick} />                       
                                 </>
-
                                 )}
                              {activeTab === 'GRAMMAR' && (
                                 <>
                                     <GramTreeView GramNavigateOnMount={gramNavigateOnMount} setGramNavigateOnMount={setGramNavigateOnMount} />
-
                                 </>
                                 )}
                           </div>

@@ -1,0 +1,29 @@
+{
+    "title": "Ilven Talkummur le Kistalkonsjur",
+    "tabs": {
+      "lexicon": "TALKONSJUR",
+      "grammar": "TALKUMMUR"
+    },
+    "lex": {
+        "entries": {
+            "label": "Kistalketa",
+            "listEntries": "Uilen kistalkee salli ",
+            "enterEntry": "Unnen kistalkeva aunilli",
+            "queryEntry": "Kistalkeeva massi"
+        },
+        "roots": {
+            "label" : "Konota",
+            "listRoots": "Uilen konota salli",
+            "enterRoot": "Unnen konova aunilli",
+            "queryRoot": "Konoiva massi"
+        },
+        "files": {
+            "label" : "Eltonsjurta",
+            "exportCSV": "CSV oinilli",
+            "exportPDF": "PDF oinilli",
+            "importCSV": "CSV aunilli",
+            "CSVInfo": "CSV aro"
+        }
+      }
+  }
+  

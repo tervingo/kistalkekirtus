@@ -1,0 +1,28 @@
+{
+    "title": "Ilvish Grammar and Lexicon",
+    "tabs": {
+      "lexicon": "LEXICON",
+      "grammar": "GRAMMAR"
+    },
+    "lex": {
+        "entries": {
+            "label" : "Entries",
+            "listEntries": "List All Entries",
+            "enterEntry": "Enter New Entry",
+            "queryEntry": "Query Entries"
+        },
+        "roots": {
+            "label" : "Roots",
+            "listRoots": "List All Roots",
+            "enterRoot": "Enter New Root",
+            "queryRoot": "Query Roots"
+        },
+        "files": {
+            "label" : "Files",
+            "exportCSV": "Export CSV",
+            "exportPDF": "Export PDF",
+            "importCSV": "Import CSV",
+            "CSVInfo": "CSV Info"
+        }
+    }
+  }
