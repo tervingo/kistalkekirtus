@@ -306,11 +306,12 @@ a:after {
     font-family: 'Calibri', sans-serif; /* Font family */
     font-size: 14px; /* Font size */
     font-weight: bold ;
-    border: 2px solid black; /* Border */
+    border: 0px solid black; /* Border */
     border-radius: 10px; /* Smooth corners */
     padding: 10px 13px; /* Padding around text */
     margin-right: 10px;
     width: 40px;
+    cursor: pointer;
 }
 
 .nice-switcher button.active {

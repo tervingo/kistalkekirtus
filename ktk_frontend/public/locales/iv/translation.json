@@ -7,7 +7,11 @@
     "lex": {
         "entries": {
             "label": "Kistalketa",
-            "listEntries": "Uilen kistalkee salli ",
+            "listEntries":  {
+                "label" : "Uilen kistalkee salli ",
+                "pre-header" : "Uilen kistalkee ",
+                "post-header" : " kistalkee"
+            },
             "enterEntry": "Unnen kistalkeva aunilli",
             "queryEntry": "Kistalkeeva massi"
         },

@@ -6,6 +6,7 @@ import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import { faArrowsUpDown } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import './tkk.css';
 
 import { SERVER_IP } from './constants';
@@ -16,7 +17,7 @@ export function ListForm({ refreshKey })  {
     const [sortField, setSortField] = useState(null);
     const [sortDirection, setSortDirection] = useState(true); // true for ascending, false for descending
     const [refresh, setRefresh] = useState(0);
-
+    const { t } = useTranslation();
  
     useEffect(() => {
         const fetchTranslations = async () => {
@@ -84,7 +85,7 @@ export function ListForm({ refreshKey })  {
 
     return (
         <div>
-            <h2>Uilen kistalkee ({translations.length} kistalkee)</h2>
+            <h2>{t('lex.entries.listEntries.pre-header')} ({translations.length} {t('lex.entries.listEntries.post-header')})</h2>
             <table className="bordered-table sticky-header">
                 <tr>
                     <th>SALKE</th>

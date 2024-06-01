@@ -7,7 +7,11 @@
     "lex": {
         "entries": {
             "label" : "Entries",
-            "listEntries": "List All Entries",
+            "listEntries": {
+                "label" : "List All Entries",
+                "pre-header" : "All entries ",
+                "post-header" : " entries"
+            },
             "enterEntry": "Enter New Entry",
             "queryEntry": "Query Entries"
         },
