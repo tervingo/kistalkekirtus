@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import './tkk.css';
 import './grammar.css';
 
+
 import { EnterForm } from './EnterForm';
 import { QueryForm } from './QueryForm';
 import { ListForm } from './ListForm';
@@ -80,7 +81,8 @@ function App() {
         <Router>
             <div className="app">
                 <div className="top-panel">
-                    <h1>Ilven-Inglisen Kistalkekirtusen Karvoedarjus</h1>
+                    <h1>Ilven Talkummur le Kistalkonsjur</h1>
+                    <img src=".\kantokirtur.jpg" alt="Kantokirtur" />
                 </div>
                 <div className="content">
                     <nav className="sidebar">

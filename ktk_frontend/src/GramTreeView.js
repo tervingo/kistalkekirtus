@@ -25,6 +25,7 @@ const MorphoNode = () => (
   <TreeNode label="Kistalketa">
     <Link className="tree-list" to="/html-display/NOM_ANI_DECLENSION">Nominal Animate Declension</Link>
     <Link className="tree-list" to="/html-display/NOM_INA_DECLENSION">Nominal Inanimate Declension</Link>
+    <Link className="tree-list" to="/html-display/NOM_ROOT_DECLENSION">Nominal Root Declension</Link>
   </TreeNode>
 );
 
