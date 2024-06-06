@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Navigate, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import './tkk.css';
 
@@ -21,13 +22,16 @@ const TreeNode = ({ label, children }) => {
   );
 };
 
-const MorphoNode = () => (
-  <TreeNode label="Kistalketa">
-    <Link className="tree-list" to="/html-display/NOM_ANI_DECLENSION">Nominal Animate Declension</Link>
-    <Link className="tree-list" to="/html-display/NOM_INA_DECLENSION">Nominal Inanimate Declension</Link>
-    <Link className="tree-list" to="/html-display/NOM_ROOT_DECLENSION">Nominal Root Declension</Link>
-  </TreeNode>
-);
+const MorphNomNode = () =>{
+  const { t } = useTranslation();
+  return (
+    <TreeNode label={t('gram.morph.nom.label')}>
+      <Link className="tree-list" to="/html-display/NOM_ANI_DECLENSION">{t('gram.morph.nom.aniDeclension')}</Link>
+      <Link className="tree-list" to="/html-display/NOM_INA_DECLENSION">{t('gram.morph.nom.inaDeclension')}</Link>
+      <Link className="tree-list" to="/html-display/NOM_ROOT_DECLENSION">{t('gram.morph.nom.rootDeclension')}</Link>
+    </TreeNode>
+  );
+};
 
 /* const SyntaxNode = () => (
   <TreeNode label="Konota">
@@ -60,7 +64,7 @@ export const GramTreeView = ({ GramNavigateOnMount, setGramNavigateOnMount }) =>
 
   return (
     <div>
-      <MorphoNode />
+      <MorphNomNode />
       {GramNavigateOnMount && <Navigate to="/html-display/NOM_ANI_DECLENSION" />}
     </div>
   );

@@ -1,7 +1,7 @@
 {
-    "title": "Ilven Talkummur le Kistalkonsjur",
+    "title": "Ilven Talkummur le Kistalkejonsjur",
     "tabs": {
-      "lexicon": "TALKONSJUR",
+      "lexicon": "TALKEJONSJUR",
       "grammar": "TALKUMMUR"
     },
     "lex": {
@@ -28,6 +28,46 @@
             "importCSV": "CSV aunilli",
             "CSVInfo": "CSV aro"
         }
-      }
+    },
+    "gram": {
+        "morph": {
+            "label" : "Talaplo",
+            "nom": {
+                "label" : "Samvejuren talaplo",
+                "case": "AKUR",
+                "sing": "EKJO",
+                "plur": "KENO",
+                "example": "KUSARVUR",
+                "abs": "Aka",
+                "agt": "Akas",
+                "rel": "Aken",
+                "gen": "Akin",
+                "dat": "Aku",
+                "ins": "Akmi",
+                "abl": "Aksi",
+                "loc": "Akla",
+                "com": "Akle",
+                "res": "Akva",
+                "par": "Akea",
+                "aniDeclension" : "Vikolen akursaltur",
+                "inaDeclension": "Ilvikolen akursaltur",
+                "rootDeclension": "Konolen akursaltur"
+            },
+            "verb": {
+                "label" : "Verbal",
+                "aoristPresent": "Aorist Present",
+                "progPresent": "Progressive Present",
+                "aoristPast": "Aorist Past",
+                "progPast": "Progressive Past",
+                "aoristFuture": "Aorist Future",
+                "progFuture": "Progressive Future"
+            },
+            "adj": {
+                "label" : "Adjectival",
+                "comparison": "Degree of Comparison"
+            }
+        }
+    }
+
   }
   

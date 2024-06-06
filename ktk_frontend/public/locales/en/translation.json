@@ -28,5 +28,44 @@
             "importCSV": "Import CSV",
             "CSVInfo": "CSV Info"
         }
+    },
+    "gram": {
+        "morph": {
+            "label" : "Morphology",
+            "nom": {
+                "label" : "Nominal Morphology",
+                "case": "CASE",
+                "sing": "SINGULAR",
+                "plur": "PLURAL",
+                "example": "EXAMPLE",
+                "abs": "Absolutive",
+                "agt": "Agentive",
+                "rel": "Relative",
+                "gen": "Genitive",
+                "dat": "Dative",
+                "ins": "Instrumental",
+                "abl": "Ablative",
+                "loc": "Locative",
+                "com": "Comitative",
+                "res": "Resultative",
+                "par": "Partitive",
+                "aniDeclension" : "Nominal Animate Declension",
+                "inaDeclension": "Nominal Inanimate Declension",
+                "rootDeclension": "Nominal Root Declension"
+            },
+            "verb": {
+                "label" : "Verbal",
+                "aoristPresent": "Aorist Present",
+                "progPresent": "Progressive Present",
+                "aoristPast": "Aorist Past",
+                "progPast": "Progressive Past",
+                "aoristFuture": "Aorist Future",
+                "progFuture": "Progressive Future"
+            },
+            "adj": {
+                "label" : "Adjectival",
+                "comparison": "Degree of Comparison"
+            }
+        }
+        }
     }
-  }
