@@ -10,7 +10,21 @@
             "listEntries": {
                 "label" : "List All Entries",
                 "pre-header" : "All entries ",
-                "post-header" : " entries"
+                "post-header" : " entries",
+                "number": "NUMBER",
+                "iv": "ILVISH",
+                "en": "ENGLISH",
+                "cat": "CAT",
+                "sw": "SW",
+                "root": "ROOT",
+                "pl": "PLURAL",
+                "pl2": "PLURAL2",
+                "par": "PARTITIVE",
+                "pul": "VAL",
+                "prstem": "PR STEM",
+                "pastem": "PA STEM",
+                "fustem": "FU STEM",
+                "acts": "ACTIONS"
             },
             "enterEntry": "Enter New Entry",
             "queryEntry": "Query Entries"
@@ -54,13 +68,25 @@
                 "rootDeclension": "Nominal Root Declension"
             },
             "verb": {
-                "label" : "Verbal",
-                "aoristPresent": "Aorist Present",
-                "progPresent": "Progressive Present",
-                "aoristPast": "Aorist Past",
-                "progPast": "Progressive Past",
-                "aoristFuture": "Aorist Future",
-                "progFuture": "Progressive Future"
+                "label" : "Verbal Morphology",
+                "pers": "PERSON",
+                "example": "EXAMPLE",
+                "1s": "1st singular",
+                "2s": "2nd singular",
+                "3s": "3rd singular",
+                "1p": "1st plural",
+                "2p": "2nd plural",
+                "3p": "3rd plural",
+                "imp": "Impersonal",
+                "actPres": "Verb Active Present",
+                "aorPres": "PRESENT AORIST",
+                "progPres": "PRESENT PROGRESSIVE",
+                "actPast": "Verb Active Past",
+                "aorPast": "PAST AORIST",
+                "progPast": "PAST PROGRESSIVE",
+                "actFut": "Verb Active Future",
+                "aorFut": "FUTURE AORIST",
+                "progFut": "FUTURE PROGRESSIVE"
             },
             "adj": {
                 "label" : "Adjectival",

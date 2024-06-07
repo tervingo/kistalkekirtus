@@ -314,6 +314,6 @@ a:after {
     cursor: pointer;
 }
 
-.nice-switcher button.active {
+.nice-switcher.active {
     background-color: orange;
 }

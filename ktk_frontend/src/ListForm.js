@@ -88,20 +88,20 @@ export function ListForm({ refreshKey })  {
             <h2>{t('lex.entries.listEntries.pre-header')} ({translations.length} {t('lex.entries.listEntries.post-header')})</h2>
             <table className="bordered-table sticky-header">
                 <tr>
-                    <th>SALKE</th>
-                    <th className='clickable-header' onClick={() => handleSort('can')}>ILVEN <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
-                    <th className='clickable-header' onClick={() => handleSort('en')}>INGLIS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
-                    <th className='clickable-header' onClick={() => handleSort('cat')} width="50px">TS <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
-                    <th className='clickable-header' onClick={() => handleSort('sw')} width="50px">SW <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown}/></th>
-                    <th className='clickable-header' onClick={() => handleSort('root')}>KONO <FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
-                    <th>KENO</th>
-                    <th>KENO2</th>
-                    <th>AKEA</th>
-                    <th>PULSO</th>
-                    <th>A-KONIVO</th>
-                    <th>I-KONIVO</th>
-                    <th>U-KONIVO</th>
-                    <th width="80px">KARSOTA</th>
+                    <th>{t('lex.entries.listEntries.number')}</th>
+                    <th className='clickable-header' onClick={() => handleSort('can')}>{t('lex.entries.listEntries.iv')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th className='clickable-header' onClick={() => handleSort('en')}>{t('lex.entries.listEntries.en')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th className='clickable-header' onClick={() => handleSort('cat')} width="50px">{t('lex.entries.listEntries.cat')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th className='clickable-header' onClick={() => handleSort('sw')} width="50px">{t('lex.entries.listEntries.sw')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown}/></th>
+                    <th className='clickable-header' onClick={() => handleSort('root')}>{t('lex.entries.listEntries.root')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
+                    <th>{t('lex.entries.listEntries.pl')}</th>
+                    <th>{t('lex.entries.listEntries.pl2')}</th>
+                    <th>{t('lex.entries.listEntries.par')}</th>
+                    <th>{t('lex.entries.listEntries.pul')}</th>
+                    <th>{t('lex.entries.listEntries.prstem')}</th>
+                    <th>{t('lex.entries.listEntries.pastem')}</th>
+                    <th>{t('lex.entries.listEntries.fustem')}</th>
+                    <th width="80px">{t('lex.entries.listEntries.acts')}</th>
 
                 </tr>
                 {translations.map((translation, index) => (

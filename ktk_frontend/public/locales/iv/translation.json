@@ -10,7 +10,21 @@
             "listEntries":  {
                 "label" : "Uilen kistalkee salli ",
                 "pre-header" : "Uilen kistalkee ",
-                "post-header" : " kistalkee"
+                "post-header" : " kistalkee",
+                "number": "SALKE",
+                "iv": "ILVEN",
+                "en": "INGLIS",
+                "cat": "TSK",
+                "sw": "SW",
+                "root": "KONO",
+                "pl": "KENO",
+                "pl2": "KENO2",
+                "par": "AKEA",
+                "pul": "PULSO",
+                "prstem": "A-KONIVO",
+                "pastem": "I-KONIVO",
+                "fustem": "U-KONIVO",
+                "acts": "KARSOTA"
             },
             "enterEntry": "Unnen kistalkeva aunilli",
             "queryEntry": "Kistalkeeva massi"
@@ -54,13 +68,25 @@
                 "rootDeclension": "Konolen akursaltur"
             },
             "verb": {
-                "label" : "Verbal",
-                "aoristPresent": "Aorist Present",
-                "progPresent": "Progressive Present",
-                "aoristPast": "Aorist Past",
-                "progPast": "Progressive Past",
-                "aoristFuture": "Aorist Future",
-                "progFuture": "Progressive Future"
+                "label" : "Kartalken talaplo",
+                "pers": "KIJA",
+                "example": "KUSARVUR",
+                "1s": "Mijas",
+                "2s": "Sijas",
+                "3s": "Jas",
+                "1p": "Vijasi",
+                "2p": "Kijai",
+                "3p": "Nijai",
+                "imp": "Lijas",
+                "actPres": "Kartalkek: karsolen ajir",
+                "aorPres": "ILIREN AJIR",
+                "progPres": "TERSELEN AJIR",
+                "actPast": "Verb Active Past",
+                "aorPast": "PAST AORIST",
+                "progPast": "PAST PROGRESSIVE",
+                "actFut": "Verb Active Future",
+                "aorFut": "FUTURE AORIST",
+                "progFut": "FUTURE PROGRESSIVE"
             },
             "adj": {
                 "label" : "Adjectival",

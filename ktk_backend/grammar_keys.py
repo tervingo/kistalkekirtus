@@ -7,5 +7,6 @@ grammar_keys = {
     "NOM_ANI_DECLENSION" : "nom_ani_declension.html",
     "NOM_INA_DECLENSION" : "nom_ina_declension.html",
     "NOM_ROOT_DECLENSION" : "nom_root_declension.html",
+    "VERB_ACT_PRES" : "verb_act_present.html",
 
 }

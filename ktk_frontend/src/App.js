@@ -33,12 +33,12 @@ function LanguageSwitcher() {
   
     return (
       <div className="language-switcher">
-        <button className='nice-switcher' onClick={() => changeLanguage('en')}>EN</button>
-        <button className='nice-switcher' onClick={() => changeLanguage('iv')}>IV</button>
-        {/* Add more buttons for other languages */}
+        <button className={`nice-switcher ${i18n.language === 'en' ? 'active' : ''}`} onClick={() => changeLanguage('en')}>EN</button>
+        <button className={`nice-switcher ${i18n.language === 'iv' ? 'active' : ''}`} onClick={() => changeLanguage('iv')}>IV</button>
       </div>
     );
-  }
+}
+
 
 function App() {
     const [refreshKey, setRefreshKey] = useState(0);

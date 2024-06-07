@@ -33,6 +33,15 @@ const MorphNomNode = () =>{
   );
 };
 
+const MorphVerbNode = () =>{
+  const { t } = useTranslation();
+  return (
+    <TreeNode label={t('gram.morph.verb.label')}>
+      <Link className="tree-list" to="/html-display/VERB_ACT_PRES">{t('gram.morph.verb.actPres')}</Link>
+    </TreeNode>
+  );
+};
+
 /* const SyntaxNode = () => (
   <TreeNode label="Konota">
     <Link className="tree-list" to="/list-roots">Uilen konoi salli</Link>
@@ -65,6 +74,7 @@ export const GramTreeView = ({ GramNavigateOnMount, setGramNavigateOnMount }) =>
   return (
     <div>
       <MorphNomNode />
+      <MorphVerbNode />
       {GramNavigateOnMount && <Navigate to="/html-display/NOM_ANI_DECLENSION" />}
     </div>
   );
