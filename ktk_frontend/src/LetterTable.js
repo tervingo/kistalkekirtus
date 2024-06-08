@@ -1,10 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faA, faB, faC, faD, faE, faF, faG, faH, faI, faJ, faK, faL, faM, faN, faO, faP, faR, faS, faT, faU, faV, faW, faX, faY, faZ } from '@fortawesome/free-solid-svg-icons';
+import { faA, faB, faC, faD, faE, faF, faG, faH, faI, faJ, faK, faL, faM, faN, faO, faP, faR, faS, faT, faU, faV, faW, faX, faY, faZ, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-export const LetterTable = ({ handleLetterClick }) => (
+export const LetterTable = ({ handleLetterClick, handleScrollToTop, handleScrollToBottom }) => (
     <table className='letter-table'>
-        <tr>
+         <tr>
+            <td colspan="5" align="right" onClick={() => handleScrollToTop()} style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faArrowUp}/></td>
+        </tr>
+         <tr>
             <td onClick={() => handleLetterClick('A')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faA} /></td>
             <td onClick={() => handleLetterClick('B')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faB} /></td>
             <td onClick={() => handleLetterClick('C')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faC} /></td>
@@ -39,6 +42,9 @@ export const LetterTable = ({ handleLetterClick }) => (
             <td onClick={() => handleLetterClick('Y')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faY} /></td>
             <td onClick={() => handleLetterClick('X')}  style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faZ} /></td>
         </tr>
-    </table>
+        <tr>
+            <td colspan="5" align="right" onClick={() => handleScrollToBottom()} style={{cursor: 'pointer'}}><FontAwesomeIcon icon={faArrowDown}/></td>
+        </tr>
+   </table>
 
 );

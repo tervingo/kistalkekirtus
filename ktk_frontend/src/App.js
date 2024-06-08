@@ -91,6 +91,22 @@ function App() {
           });
         }
       }
+      
+    function handleScrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    
+    function handleScrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
+    }
+    
+
 
     return (
         <Router>
@@ -111,7 +127,7 @@ function App() {
                             {activeTab === 'LEXICON' && (
                                 <>        
                                     <LexTreeView LexNavigateOnMount={lexNavigateOnMount} setLexNavigateOnMount={setLexNavigateOnMount} />
-                                    <LetterTable handleLetterClick={handleLetterClick} />                       
+                                    <LetterTable handleLetterClick={handleLetterClick} handleScrollToTop={handleScrollToTop} handleScrollToBottom={handleScrollToBottom}/>                       
                                 </>
                                 )}
                              {activeTab === 'GRAMMAR' && (

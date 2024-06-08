@@ -14,38 +14,39 @@ import { SERVER_IP } from './constants';
 
 export function ListForm({ refreshKey })  {
     const [translations, setTranslations] = useState([]);
-    const [sortField, setSortField] = useState(null);
+    const [sortField, setSortField] = useState('can');
     const [sortDirection, setSortDirection] = useState(true); // true for ascending, false for descending
     const [refresh, setRefresh] = useState(0);
     const { t } = useTranslation();
- 
+
     useEffect(() => {
-        const fetchTranslations = async () => {
+        const fetchAndSortTranslations = async () => {
             const response = await fetch(`${SERVER_IP}/api/list-entries`);
             let data = await response.json();
-
-           // Add a 'firstLetter' field to each item in the 'translations' array
-           data = data.map((item, index) => ({
+    
+            // Add a 'firstLetter' field to each item in the 'translations' array
+            data = data.map((item, index) => ({
                 ...item,
-                firstLetter: item.can[0].toUpperCase(),
+                firstLetter: sortField && item[sortField] ? item[sortField][0].toUpperCase() : '',
             }));
-
+    
+            // Sort the data
+            if (sortField !== null) {
+                data.sort((a, b) => {
+                    if (a[sortField] < b[sortField]) return sortDirection ? -1 : 1;
+                    if (a[sortField] > b[sortField]) return sortDirection ? 1 : -1;
+                    return 0;
+                });
+            }
+    
             setTranslations(data);
         };
-        fetchTranslations();
-    }, [refreshKey, refresh]);
+    
+        fetchAndSortTranslations();
+    }, [refreshKey, refresh, sortField, sortDirection]);
+    
 
-    useEffect(() => {
-        let sortedTranslations = [...translations];
-        if (sortField !== null) {
-            sortedTranslations.sort((a, b) => {
-                if (a[sortField] < b[sortField]) return sortDirection ? -1 : 1;
-                if (a[sortField] > b[sortField]) return sortDirection ? 1 : -1;
-                return 0;
-            });
-        }
-        setTranslations(sortedTranslations);
-    }, [sortField, sortDirection]);
+
 
     const handleSort = (field) => {
         if (field === sortField) {
