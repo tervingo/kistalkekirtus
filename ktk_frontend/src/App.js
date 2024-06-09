@@ -30,7 +30,12 @@ function LanguageSwitcher() {
     const changeLanguage = (language) => {
       i18n.changeLanguage(language);
     };
-  
+
+    // Set default language to English on component mount
+    useEffect(() => {
+        changeLanguage('en');
+      }, []);
+
     return (
       <div className="language-switcher">
         <button className={`nice-switcher ${i18n.language === 'en' ? 'active' : ''}`} onClick={() => changeLanguage('en')}>EN</button>
