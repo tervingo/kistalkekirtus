@@ -39,6 +39,8 @@ const MorphVerbNode = () =>{
     <TreeNode label={t('gram.morph.verb.label')}>
       <Link className="tree-list" to="/html-display/VERB_ACT_PRES">{t('gram.morph.verb.actPres')}</Link>
       <Link className="tree-list" to="/html-display/VERB_PAS_PRES">{t('gram.morph.verb.pasPres')}</Link>
+      <Link className="tree-list" to="/html-display/VERB_ACT_PAST">{t('gram.morph.verb.actPast')}</Link>
+      <Link className="tree-list" to="/html-display/VERB_PAS_PAST">{t('gram.morph.verb.pasPast')}</Link>
       </TreeNode>
   );
 };
