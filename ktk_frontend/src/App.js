@@ -52,6 +52,7 @@ function App() {
     const [lexNavigateOnMount, setLexNavigateOnMount] = useState(true);
     const [gramNavigateOnMount, setGramNavigateOnMount] = useState(false);
     const { t } = useTranslation();
+    const hostname = window.location.hostname;
 
     function MainComponent() {
 
@@ -124,6 +125,7 @@ function App() {
                 <div className="content">
                     <nav className="sidebar">
                         <div className="left-pane">
+                            <h3 className="hostname">{hostname}</h3>
                             <div className="tabs">
                                 <button className={activeTab === 'LEXICON' ? 'active' : ''} onClick={() => { setActiveTab('LEXICON'); setLexNavigateOnMount(true); setGramNavigateOnMount(false); } }>{t('tabs.lexicon')}</button>
 
