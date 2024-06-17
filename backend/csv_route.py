@@ -11,6 +11,13 @@ from datetime import datetime
 hostname = socket.gethostname()
 
 from constants import paths
+from docker_paths import docker_paths
+
+import os
+
+def is_docker():
+    path = '/.dockerenv'
+    return os.path.isfile(path)
 
 csv_route = Blueprint('csv_route', __name__)
 
@@ -23,10 +30,16 @@ def export_csv():
     # Specify the paths where you want to save the CSV files
 
     csv_path_name = f"{hostname.upper()}_CSV_PATH"
-    path = paths[csv_path_name]
+    if is_docker():
+        path = docker_paths["CSV_PATH"]
+    else:
+        path = paths[csv_path_name]
 
     root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
-    root_path = paths[root_csv_path_name]
+    if is_docker():
+        root_path = docker_paths["ROOT_CSV_PATH"]
+    else:
+        root_path = paths[root_csv_path_name]
 
     # Open the lexicon file at the specified path
     with open(path, 'w', newline='', encoding='utf-8') as file:
@@ -51,7 +64,10 @@ def export_csv():
     # write CSV stamp file
 
     hostname_csv_last_read_path_name = f"{hostname.upper()}_CSV_LAST_READ_PATH"
-    hostname_last_read_file = paths[hostname_csv_last_read_path_name]
+    if is_docker():
+        hostname_last_read_file = docker_paths["CSV_LAST_READ_PATH"]
+    else:
+        hostname_last_read_file = paths[hostname_csv_last_read_path_name]
 
     # Count the number of entries
     with open(path, 'r') as f:

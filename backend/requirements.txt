@@ -1,0 +1,7 @@
+flask==3.0.2
+gunicorn==20.0.4
+flask-pymongo
+flask_cors
+reportlab
+pandas
+datetime

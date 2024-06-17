@@ -6,22 +6,32 @@ from __init__ import mongo
 import os
 from datetime import datetime
 import socket
-import tkinter as tk
-from tkinter import messagebox
 from constants import paths
+from docker_paths import docker_paths
 
 import_csv_route = Blueprint('import_csv_route', __name__)
 
 hostname = socket.gethostname()
 
+def is_docker():
+    path = '/.dockerenv'
+    return os.path.isfile(path)
+
+
 @import_csv_route.route('/api/import/csv', methods=['POST'])
 def import_csv():
        
     csv_path_name = f"{hostname.upper()}_CSV_PATH"
-    csv_file = paths[csv_path_name]
+    if is_docker():
+        csv_file = docker_paths["CSV_PATH"]
+    else:
+        csv_file = paths[csv_path_name]
 
     root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
-    root_file = paths[root_csv_path_name]
+    if is_docker():
+        root_file = docker_paths["ROOT_CSV_PATH"]
+    else:
+        root_file = paths[root_csv_path_name]
 
     # Read the CSV file
     data = pd.read_csv(csv_file)
@@ -47,7 +57,10 @@ def import_csv():
     mongo.db.roots.insert_many(root_data.to_dict('records'))
 
     hostname_csv_last_read_path_name = f"{hostname.upper()}_CSV_LAST_READ_PATH"
-    hostname_last_read_file = paths[hostname_csv_last_read_path_name]
+    if is_docker():
+        hostname_last_read_file = docker_paths["CSV_LAST_READ_PATH"]
+    else:
+        hostname_last_read_file = paths[hostname_csv_last_read_path_name]
 
     # Write to the "last_csv_written.txt" file
     with open(hostname_last_read_file, 'w') as f:

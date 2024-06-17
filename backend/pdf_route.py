@@ -8,8 +8,6 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 from reportlab.lib import colors
 
-
-
 import datetime
 import socket
 
@@ -18,6 +16,13 @@ from __init__ import mongo
 hostname = socket.gethostname()
 
 from constants import paths
+from docker_paths import docker_paths
+
+import os
+
+def is_docker():
+    path = '/.dockerenv'
+    return os.path.isfile(path)
 
 pdf_route = Blueprint('pdf_route', __name__)
 
@@ -36,10 +41,16 @@ def export_pdf():
     # Specify the path where you want to save the CSV file
 
     pdf_path_name = f"{hostname.upper()}_PDF_PATH"
-    path = paths[pdf_path_name]
+    if is_docker():
+        path = docker_paths["PDF_PATH"]
+    else:
+        path = paths[pdf_path_name]
 
     root_pdf_path_name = f"{hostname.upper()}_ROOT_PDF_PATH"
-    root_file = paths[root_pdf_path_name]
+    if is_docker():
+        root_file = docker_paths["ROOT_PDF_PATH"]
+    else:
+        root_file = paths[root_pdf_path_name]
 
 
     class FooterCanvas:

@@ -3,11 +3,6 @@ import socket
 
 from grammar_keys import grammar_keys, grammar_folders
 
-from tkinter import messagebox, Tk
-
-# Initialize Tkinter
-root = Tk()
-root.withdraw()  # Hide the main window
 
 app = Flask(__name__, static_folder='static')
 
