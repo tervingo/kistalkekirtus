@@ -2,3 +2,4 @@ ktk_backend/__pycache__/*.pyc
 ktk_frontend/src/constants.js
 ktk_frontend/public/index.html
 *.csv
+backend/__pycache__/constants.cpython-311.pyc
