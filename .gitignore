@@ -1,5 +1,5 @@
-ktk_backend/__pycache__/*.pyc
-ktk_frontend/src/constants.js
-ktk_frontend/public/index.html
+backend/__pycache__/*.pyc
+frontend/src/constants.js
+frontend/public/index.html
 *.csv
-backend/__pycache__/constants.cpython-311.pyc
+frontend/src/constants.js
