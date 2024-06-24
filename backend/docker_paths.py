@@ -1,9 +1,9 @@
 docker_paths = {
-    "PDF_PATH" : "/app/data/Ilven-Inglisen_kiskirtus.pdf",
+    "PDF_PATH" : "/app/data/iv-en.pdf",
 
     "ROOT_PDF_PATH" : "/app/data/konota.pdf",
 
-    "CSV_PATH" : "/app/data/Ilven-Inglisen_kiskirtus.csv",
+    "CSV_PATH" : "/app/data/iv-en.csv",
  
     "ROOT_CSV_PATH" : "/app/data/konota.csv",
 

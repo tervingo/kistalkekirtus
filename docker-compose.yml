@@ -3,6 +3,7 @@ version: '3.7'
 services:
 
     client:
+        image: react
         build:
             context: ./frontend
             dockerfile: Dockerfile
@@ -31,6 +32,7 @@ services:
         networks:
             - backend
     api:
+        image: flask
         build: 
             context: ./backend
             dockerfile: Dockerfile
