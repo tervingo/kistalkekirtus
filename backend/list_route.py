@@ -9,7 +9,7 @@ list_route = Blueprint('list_route', __name__)
 def get_all_translations():
     translations = mongo.db.translations.find()
     translations_list = [json.loads(dumps(translation)) for translation in translations]
-    for i, translation in enumerate(translations_list, start=1):
-        translation['number'] = i
+#     for i, translation in enumerate(translations_list, start=1):
+#        translation['number'] = i
     translations_list = sorted(translations_list, key=lambda x: x['can'])
     return jsonify(translations_list), 200

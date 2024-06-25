@@ -1,5 +1,10 @@
-backend/__pycache__/*.pyc
+# Ignore all __pycache__ directories and their contents
+__pycache__/
+*.py[cod]
+
+# Frontend specific ignores
 frontend/src/constants.js
 frontend/public/index.html
+
+# Ignore all CSV files
 *.csv
-frontend/src/constants.js

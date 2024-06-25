@@ -11,7 +11,7 @@
                 "label" : "List All Entries",
                 "pre-header" : "All entries ",
                 "post-header" : " entries",
-                "number": "NUMBER",
+                "num": "ENTRY NR",
                 "iv": "ILVISH",
                 "en": "ENGLISH",
                 "cat": "CAT",
