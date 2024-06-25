@@ -27,7 +27,6 @@ export function ListForm({ refreshKey })  {
             // Add a 'firstLetter' field to each item in the 'translations' array
             data = data.map((item, index) => ({
                 ...item,
-//                firstLetter: sortField && item[sortField] ? item[sortField][0].toUpperCase() : '',
                 firstLetter: sortField && item[sortField] ? item[sortField][0] : '',
             }));
     
@@ -75,9 +74,8 @@ export function ListForm({ refreshKey })  {
                 method: 'DELETE',
             });
             if (response) {
-                setRefresh(refresh + 1); // Increment refresh here
-//                navigate(`/list-entries`);
-            }
+                setRefresh(refresh + 1); 
+           }
         }
     };
 
@@ -90,7 +88,6 @@ export function ListForm({ refreshKey })  {
             <h2>{t('lex.entries.listEntries.pre-header')} ({translations.length} {t('lex.entries.listEntries.post-header')})</h2>
             <table className="bordered-table sticky-header">
                 <tr>
-                    {/* <th>{t('lex.entries.listEntries.number')}</th> */}
                     <th className='clickable-header' onClick={() => handleSort('num')}>{t('lex.entries.listEntries.num')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('can')}>{t('lex.entries.listEntries.iv')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
                     <th className='clickable-header' onClick={() => handleSort('en')}>{t('lex.entries.listEntries.en')}<FontAwesomeIcon className='nice-pencil' icon={faArrowsUpDown} /></th>
@@ -109,8 +106,7 @@ export function ListForm({ refreshKey })  {
                 </tr>
                 {translations.map((translation, index) => (
                      <tr key={index} id={`entry-${translation.firstLetter}`}>
-                            {/* <td>{translation.number}</td> */}
-                            <td>{translation.num}</td>
+                             <td>{translation.num}</td>
                             <td>{translation.can}</td>
                             <td>{translation.en}</td>
                             <td>{translation.cat}</td>
