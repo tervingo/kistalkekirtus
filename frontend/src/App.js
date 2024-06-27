@@ -7,18 +7,13 @@ import './tkk.css';
 import './grammar.css';
 import './i18n';
 
-import { EnterForm } from './EnterForm';
-import { QueryForm } from './QueryForm';
-import { ListForm } from './ListForm';
-import { EditForm } from './EditForm';
+import { EnterEntry, EnterRoot } from './EnterForm';
+import { QueryEntry, QueryRoot } from './QueryForm';
+import { ListEntries, ListRoots } from './ListForm';
+import { EditEntry, EditRoot } from './EditForm';
 import { ExportCsvForm } from './ExportCsvForm';
 import { ExportPdfForm } from './ExportPdfForm';
-import { ImportCsvForm } from './ImportCsvForm';
-import { CsvInfo } from './ImportCsvForm';
-import { ListRoots } from './ListRoots';
-import { EditRoot } from './EditRoot';
-import { QueryRoot } from './QueryRoot';
-import { EnterRoot } from './EnterRoot';
+import { ImportCsvForm, CsvInfo } from './ImportCsvForm';
 import { HtmlDisplay } from './DisplayHtml';
 import { LexTreeView } from './LexTreeView';
 import { GramTreeView } from './GramTreeView';
@@ -68,10 +63,10 @@ function App() {
         return (
             <div className="main">
                 <Routes>
-                    <Route path="/enter-entry" element={<EnterForm />} />
-                    <Route path="/query-entry" element={<QueryForm />} />
-                    <Route path="/list-entries" element={<ListForm refreshKey={refreshKey} />} />
-                    <Route path="/edit-entry/:can" element={<EditForm setRefreshKey={setRefreshKey} />} />
+                    <Route path="/enter-entry" element={<EnterEntry />} />
+                    <Route path="/query-entry" element={<QueryEntry />} />
+                    <Route path="/list-entries" element={<ListEntries refreshKey={refreshKey} />} />
+                    <Route path="/edit-entry/:can" element={<EditEntry setRefreshKey={setRefreshKey} />} />
                     <Route path="/list-roots" element={< ListRoots />} />
                     <Route path="/edit-root/:root" element={< EditRoot />} />
                     <Route path="/enter-root" element={< EnterRoot />} />

@@ -5,8 +5,9 @@ import './tkk.css';
 
 import { SERVER_IP } from './constants';
 
+// EDIT ENTRIES
 
-export function EditForm({ setRefreshKey }) {
+export function EditEntry({ setRefreshKey }) {
 
     const {can} = useParams();
     const [canState, setCan] = useState('');
@@ -72,9 +73,8 @@ export function EditForm({ setRefreshKey }) {
                 sw,
             }),
         });
-//        const data = await response.json();
+        
         setMessage("Entry updated successfully");
-//        console.log(data);
         setRefreshKey(oldKey => oldKey + 1);
         navigate('/list-entries');
     };
@@ -118,7 +118,6 @@ export function EditForm({ setRefreshKey }) {
                                 <option value="QT">Quantifier</option>
                                 <option value="SF">Suffix</option>
                                 <option value="VB">Verb</option>
-	                            {/* Add more options here... */}
     	                        </select>
                             </td>
                             <td><input type="checkbox" checked={sw === 1} onChange={(e) => setSw(e.target.checked ? 1 : 0)} /></td>
@@ -131,6 +130,103 @@ export function EditForm({ setRefreshKey }) {
                             <td><input type="text" value={pa} onChange={(e) => setPa(e.target.value)} disabled={cat !== 'VB'} /></td>
                             <td><input type="text" value={fu} onChange={(e) => setFu(e.target.value)} disabled={cat !== 'VB'} /></td>
                 </tr>
+            </table>
+            <br/><br/>
+            <div className='button-container'>
+                <input className="nice-button" type="submit" value="Update" />
+                <button className='nice-button' onClick={handleCancel}>Cancel</button>
+             </div>
+            {message && <p>{message}</p>}
+        </form>
+    );
+}
+
+// EDIT ROOTS
+
+
+export function EditRoot() {
+
+    const {root} = useParams();
+    const [rootState, setRoot] = useState('');
+    const [id, setId] = useState('');
+    const [prim, setPrim] = useState('');
+    const [moda, setModa] = useState('');
+    const [act, setAct] = useState('');
+    const [modp, setModp] = useState('');
+    const [pas, setPas] = useState('');
+    const [message, setMessage] = useState('');
+
+    console.log('EditRoot component rendering');
+
+    useEffect(() => {
+        console.log('root: ',root);
+            const fetchRoot = async () => {
+                const url = `${SERVER_IP}/api/query-root?root=${root}`;
+                console.log('url: ', url);
+                const response = await fetch(url);
+                if (response.ok) {
+                    const data = await response.json();
+                    setId(data._id);
+                    setRoot(data.root);
+                    setPrim(data.prim);
+                    setModa(data.moda);
+                    setAct(data.act);
+                    setModp(data.modp);
+                    setPas(data.pas);
+                }
+                else {
+                    console.log('Error with fetch: ', response.status, response.statusText);
+                }
+            }
+            fetchRoot();
+     }, []); 
+    
+    const navigate = useNavigate();
+    
+    const handleEdit = async (event) => {
+        event.preventDefault();
+        const response = await fetch(`${SERVER_IP}/api/edit-root/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                root: rootState,
+                prim,
+                moda,
+                act,
+                modp,
+                pas,
+            }),
+        });
+        setMessage("Root updated successfully");
+        navigate('/list-roots');
+    };
+
+    const handleCancel = async () => {
+        navigate(`/list-roots`);
+    }
+    
+    return (
+        <form onSubmit={handleEdit}>
+                <br/><br/>
+                <table className="bordered-table">
+                <tr>
+                    <th>KONO</th>
+                    <th>PRIMARY</th>
+                    <th>MODE ACT</th>
+                    <th>ACTIVE</th>
+                    <th>MODE PAS</th>
+                    <th>PASSIVE</th>
+                 </tr>
+                <tr>
+                            <td><input type="text" value={rootState} onChange={(e) => setRoot(e.target.value)} /></td>
+                            <td><input type="text" value={prim} onChange={(e) => setPrim(e.target.value)} /></td>
+                            <td><input type="text" value={moda} onChange={(e) => setModa(e.target.value)} /></td>
+                            <td><input type="text" value={act} onChange={(e) => setAct(e.target.value)} /></td>
+                            <td><input type="text" value={modp} onChange={(e) => setModp(e.target.value)} /></td>
+                            <td><input type="text" value={pas} onChange={(e) => setPas(e.target.value)} /></td>
+                 </tr>
             </table>
             <br/><br/>
             <div className='button-container'>
