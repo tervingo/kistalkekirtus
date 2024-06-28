@@ -1,4 +1,4 @@
-from flask import Blueprint, send_file, request, jsonify
+from flask import Blueprint, request, jsonify
 from __init__ import mongo
 
 enter_route = Blueprint('enter_route', __name__)
@@ -43,3 +43,17 @@ def add_translation():
     mongo.db.translations.insert_one(new_document)
     
     return jsonify({'result': 'Translation added successfully', 'num': current_count + 1}), 201
+
+
+@enter_route.route('/api/enter-root', methods=['POST'])
+def add_root():
+    data = request.get_json()
+    root = data['root']
+    prim = data['prim']
+    moda = data['moda']
+    act = data['act']
+    modp = data['modp']
+    pas = data['pas']
+ 
+    mongo.db.roots.insert_one({'root': root, 'prim': prim, 'moda': moda, 'act': act, 'modp': modp, 'pas': pas })
+    return jsonify({'result': 'Root added successfully'}), 201
