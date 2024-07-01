@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { Button, AppBar, Toolbar, Typography } from '@mui/material';
+import { ToggleButtonGroup, ToggleButton } from '@mui/material';
+import theme from './theme';
+
 import './tkk.css';
 import './grammar.css';
 import './i18n';
@@ -17,6 +23,7 @@ import { HtmlDisplay } from './DisplayHtml';
 import { LexTreeView } from './LexTreeView';
 import { GramTreeView } from './GramTreeView';
 import { LetterTable } from './LetterTable'; 
+
 
 function LanguageSwitcher() {
     const { i18n } = useTranslation();
@@ -106,14 +113,30 @@ function App() {
         });
     }
     
+    const handleTabChange = (event, newTab) => {
+      setActiveTab(newTab);
+      if (newTab === 'LEXICON') {
+        setLexNavigateOnMount(true);
+        setGramNavigateOnMount(false);
+      } else if (newTab === 'GRAMMAR') {
+        setGramNavigateOnMount(true);
+        setLexNavigateOnMount(false);
+      }
+    };
 
 
     return (
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+
         <Router>
             <div className="app">
                 <div className="top-panel">
                     <LanguageSwitcher />
-                    <h1>{t('title')}</h1>
+                    <Typography variant="h2">
+                      {t('title')}
+                    </Typography>
+ 
                     <img src=".\kantokirtur.jpg" alt="Kantokirtur" />
                 </div>
                 <div className="content">
@@ -121,9 +144,47 @@ function App() {
                         <div className="left-pane">
                             <h3 className="hostname">{hostname}</h3>
                             <div className="tabs">
-                                <button className={activeTab === 'LEXICON' ? 'active' : ''} onClick={() => { setActiveTab('LEXICON'); setLexNavigateOnMount(true); setGramNavigateOnMount(false); } }>{t('tabs.lexicon')}</button>
-
-                                <button className={activeTab === 'GRAMMAR' ? 'active' : ''} onClick={() => { setActiveTab('GRAMMAR'); setGramNavigateOnMount(true); setLexNavigateOnMount(false); } }>{t('tabs.grammar')}</button>
+                                <ToggleButtonGroup
+                                  value={activeTab}
+                                  exclusive
+                                  onChange={handleTabChange}
+                                  aria-label="text alignment"
+/*                                   sx={{
+                                    '& .MuiToggleButton-root': {
+                                      border: '1px solid #1976d2',
+                                      '&.Mui-selected': {
+                                        backgroundColor: '#1976d2',
+                                        color: 'white',
+                                        '&:hover': {
+                                          backgroundColor: '#1565c0',
+                                        },
+                                      },
+                                    },
+                                  }} */
+                                >
+                                <ToggleButton 
+                                  value="LEXICON" 
+                                  aria-label="lexicon"
+                                  size="small"
+/*                                   sx={{
+                                    borderRadius: '4px 0 0 4px',
+                                    padding: '10px 20px',
+                                  }}
+ */                                  >
+                                  {t('tabs.lexicon')}
+                                </ToggleButton>
+                                <ToggleButton 
+                                  value="GRAMMAR" 
+                                  aria-label="grammar"
+                                  size="small"
+   /*                                sx={{ 
+                                    borderRadius: '0 4px 4px 0',
+                                    padding: '10px 20px',
+                                  }}                              
+ */                                  >
+                                  {t('tabs.grammar')}
+                                </ToggleButton>
+                              </ToggleButtonGroup>
                             </div>
                             {activeTab === 'LEXICON' && (
                                 <>        
@@ -142,6 +203,7 @@ function App() {
                 </div>
             </div>
         </Router>
+      </ThemeProvider>
     );
 }
 
