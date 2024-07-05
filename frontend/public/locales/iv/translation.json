@@ -11,7 +11,7 @@
                 "label" : "Uilen kistalkee salli ",
                 "pre-header" : "Uilen kistalkee ",
                 "post-header" : " kistalkee",
-                "num": "AUN. SALTO",
+                "num": "#",
                 "iv": "ILVEN",
                 "en": "INGLIS",
                 "cat": "TSK",
@@ -27,7 +27,21 @@
                 "acts": "KARSOTA"
             },
             "enterEntry": "Unnen kistalkeva aunilli",
-            "queryEntry": "Kistalkeeva massi"
+            "queryEntry": "Kistalkeeva massi",
+            "listRoots": {
+                "label" : "Uilen konoi salli",
+                "pre-header": "Uilen konoi ",
+                "post-header": "  konoi",
+                "number": "#",
+                "root": "KONO",
+                "prim": "PRIMARY",
+                "moda": "MODACT",
+                "act": "ACTIVE",
+                "modp": "MODPAS",
+                "pas": "PASSIVE",
+                "acts": "KARSOTA"
+            }
+
         },
         "roots": {
             "label" : "Konota",

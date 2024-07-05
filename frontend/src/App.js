@@ -1,12 +1,13 @@
-import React, { useState, useEffect  } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Button, AppBar, Toolbar, Typography } from '@mui/material';
+import { Container, Grid, Box, Paper, Button, AppBar, Toolbar, Typography } from '@mui/material';
 import { ToggleButtonGroup, ToggleButton } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import theme from './theme';
 
 import './tkk.css';
@@ -25,24 +26,55 @@ import { GramTreeView } from './GramTreeView';
 import { LetterTable } from './LetterTable'; 
 
 
+// Custom styled ToggleButton
+const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
+  '&.MuiToggleButton-root': {
+    textTransform: 'none',
+    minWidth: '40px',
+    padding: '5px 10px',
+    border: `1px solid ${theme.palette.primary.main}`,
+    '&.Mui-selected': {
+      backgroundColor: theme.palette.primary.dark,
+      color: theme.palette.primary.contrastText,
+      '&:hover': {
+        backgroundColor: theme.palette.primary.dark,
+      },
+    },
+  },
+}));
+
+
 function LanguageSwitcher() {
-    const { i18n } = useTranslation();
-  
-    const changeLanguage = (language) => {
-      i18n.changeLanguage(language);
-    };
+  const { i18n } = useTranslation();
 
-    // Set default language to English on component mount
-    useEffect(() => {
-        changeLanguage('en');
-      }, []);
+  const changeLanguage = (event, newLanguage) => {
+    if (newLanguage !== null) {
+      i18n.changeLanguage(newLanguage);
+    }
+  };
 
-    return (
-      <div className="language-switcher">
-        <button className={`nice-switcher ${i18n.language === 'en' ? 'active' : ''}`} onClick={() => changeLanguage('en')}>EN</button>
-        <button className={`nice-switcher ${i18n.language === 'iv' ? 'active' : ''}`} onClick={() => changeLanguage('iv')}>IV</button>
-      </div>
-    );
+  // Set default language to English on component mount
+  useEffect(() => {
+    changeLanguage(null, 'en');
+  }, []);
+
+  return (
+    <div className='language-switcher'>
+      <ToggleButtonGroup
+        value={i18n.language}
+        exclusive
+        onChange={changeLanguage}
+        aria-label="language switcher"
+      >
+        <StyledToggleButton value="en" aria-label="English">
+          EN
+        </StyledToggleButton>
+        <StyledToggleButton value="iv" aria-label="Ivrit">
+          IV
+        </StyledToggleButton>
+      </ToggleButtonGroup>
+    </div>
+  );
 }
 
 
@@ -71,9 +103,9 @@ function App() {
                 <Routes>
                     <Route path="/enter-entry" element={<EnterEntry />} />
                     <Route path="/query-entry" element={<QueryEntry />} />
-                    <Route path="/list-entries" element={<ListEntries refreshKey={refreshKey} />} />
+                    <Route path="/list-entries" element={<ListEntries refreshKey={refreshKey} tableContainerRef={tableContainerRef} />} />
                     <Route path="/edit-entry/:can" element={<EditEntry setRefreshKey={setRefreshKey} />} />
-                    <Route path="/list-roots" element={< ListRoots />} />
+                    <Route path="/list-roots" element={< ListRoots refreshKey={refreshKey} tableContainerRef={tableContainerRef} />} />
                     <Route path="/edit-root/:root" element={< EditRoot />} />
                     <Route path="/enter-root" element={< EnterRoot />} />
                     <Route path="/enter-root/:root" element={< EnterRoot />} />
@@ -88,37 +120,35 @@ function App() {
         );
     }
 
+    const tableContainerRef = useRef(null);
+
     function handleLetterClick(letter) {
-        // Scroll to the first entry in the CAN column (ILVEN) that starts with the clicked letter
-        const element = document.getElementById(`entry-${letter}`);
-        if (element) {
-          window.scrollTo({
-            top: element.offsetTop,
-            behavior: "smooth"
-          });
-        }
+      const element = document.getElementById(`entry-${letter}`);
+      if (element && tableContainerRef.current) {
+        tableContainerRef.current.scrollTop = element.offsetTop - tableContainerRef.current.offsetTop;
       }
-      
+    }
+    
     function handleScrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+      if (tableContainerRef.current) {
+        tableContainerRef.current.scrollTop = 0;
+      }
     }
     
     function handleScrollToBottom() {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: "smooth"
-        });
+      if (tableContainerRef.current) {
+        tableContainerRef.current.scrollTop = tableContainerRef.current.scrollHeight;
+      }
     }
     
     const handleTabChange = (event, newTab) => {
       setActiveTab(newTab);
-      if (newTab === 'LEXICON') {
+      if (newTab === 'LEXICON') 
+      {
         setLexNavigateOnMount(true);
         setGramNavigateOnMount(false);
-      } else if (newTab === 'GRAMMAR') {
+      } else if (newTab === 'GRAMMAR') 
+      {
         setGramNavigateOnMount(true);
         setLexNavigateOnMount(false);
       }
@@ -126,84 +156,79 @@ function App() {
 
 
     return (
+      <Container maxWidth="xl" sx={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-
         <Router>
-            <div className="app">
-                <div className="top-panel">
+            <Grid container sx={{ height: '100%', flexGrow: 1, overflow:'hidden' }}>
+
+              {/* Top Panel */}
+              <Grid item xs={12}>
+                <Box sx={{ p: 2, backgroundColor: 'primary.main' }}>            
                     <LanguageSwitcher />
-                    <Typography variant="h2">
-                      {t('title')}
-                    </Typography>
- 
-                    <img src=".\kantokirtur.jpg" alt="Kantokirtur" />
-                </div>
-                <div className="content">
-                    <nav className="sidebar">
-                        <div className="left-pane">
-                            <h3 className="hostname">{hostname}</h3>
-                            <div className="tabs">
-                                <ToggleButtonGroup
-                                  value={activeTab}
-                                  exclusive
-                                  onChange={handleTabChange}
-                                  aria-label="text alignment"
-/*                                   sx={{
-                                    '& .MuiToggleButton-root': {
-                                      border: '1px solid #1976d2',
-                                      '&.Mui-selected': {
-                                        backgroundColor: '#1976d2',
-                                        color: 'white',
-                                        '&:hover': {
-                                          backgroundColor: '#1565c0',
-                                        },
-                                      },
-                                    },
-                                  }} */
-                                >
-                                <ToggleButton 
-                                  value="LEXICON" 
-                                  aria-label="lexicon"
-                                  size="small"
-/*                                   sx={{
-                                    borderRadius: '4px 0 0 4px',
-                                    padding: '10px 20px',
-                                  }}
- */                                  >
-                                  {t('tabs.lexicon')}
-                                </ToggleButton>
-                                <ToggleButton 
-                                  value="GRAMMAR" 
-                                  aria-label="grammar"
-                                  size="small"
-   /*                                sx={{ 
-                                    borderRadius: '0 4px 4px 0',
-                                    padding: '10px 20px',
-                                  }}                              
- */                                  >
-                                  {t('tabs.grammar')}
-                                </ToggleButton>
-                              </ToggleButtonGroup>
-                            </div>
-                            {activeTab === 'LEXICON' && (
-                                <>        
-                                    <LexTreeView LexNavigateOnMount={lexNavigateOnMount} setLexNavigateOnMount={setLexNavigateOnMount} />
-                                    <LetterTable handleLetterClick={handleLetterClick} handleScrollToTop={handleScrollToTop} handleScrollToBottom={handleScrollToBottom}/>                       
-                                </>
-                                )}
-                             {activeTab === 'GRAMMAR' && (
-                                <>
-                                    <GramTreeView GramNavigateOnMount={gramNavigateOnMount} setGramNavigateOnMount={setGramNavigateOnMount} />
-                                </>
-                                )}
-                          </div>
-                    </nav>
+                    <Paper sx={{ my:3, bgcolor: 'lightslategray', textAlign: 'center' }} elevation={3}>
+                      <Typography variant="h2">
+                        {t('title')}
+                      </Typography>
+                    </Paper>
+                    <Box sx={{ p:1, textAlign: 'center'}} >
+                      <img src=".\kantokirtur.jpg" alt="Kantokirtur" />
+                    </Box>
+                </Box>
+              </Grid>
+              
+              {/* Left Panel */}
+              <Grid item xs={2} sx={{ height: '100%', overflow: 'auto', borderRight: 1, borderColor: 'divider' }}>
+                  <Box sx={{ p: 2, backgroundColor: 'primary.main' }}>
+                    <h3 className="hostname">{hostname}</h3>
+                    <div className="tabs">
+                        <ToggleButtonGroup
+                          value={activeTab}
+                          exclusive
+                          onChange={handleTabChange}
+                          aria-label="text alignment"
+                        >
+                        <ToggleButton 
+                          value="LEXICON" 
+                          aria-label="lexicon"
+                          size="small"
+                          >
+                          {t('tabs.lexicon')}
+                        </ToggleButton>
+                        <ToggleButton 
+                          value="GRAMMAR" 
+                          aria-label="grammar"
+                          size="small"
+                        >
+                          {t('tabs.grammar')}
+                        </ToggleButton>
+                      </ToggleButtonGroup>
+                    </div>
+                    {activeTab === 'LEXICON' && (
+                        <>        
+                            <LexTreeView LexNavigateOnMount={lexNavigateOnMount} setLexNavigateOnMount={setLexNavigateOnMount} />
+                            <LetterTable handleLetterClick={handleLetterClick} handleScrollToTop={handleScrollToTop} handleScrollToBottom={handleScrollToBottom}/>                       
+                        </>
+                        )}
+                      {activeTab === 'GRAMMAR' && (
+                        <>
+                            <GramTreeView GramNavigateOnMount={gramNavigateOnMount} setGramNavigateOnMount={setGramNavigateOnMount} />
+                        </>
+                        )}
+                  </Box>
+                </Grid>   
+      
+                {/* Main Panel  */}
+
+                <Grid item xs={9} sx={{ height: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                  <Box sx={{ width: '100%', overflowX: 'auto',  backgroundColor: 'primary.main' }}>
                     <MainComponent />
-                </div>
-            </div>
+                  </Box>
+                </Grid>
+             </Grid>
         </Router>
       </ThemeProvider>
+      </Container>
     );
 }
 

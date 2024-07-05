@@ -1,6 +1,13 @@
 import { createTheme } from '@mui/material/styles';
+import { blue, orange, lightGreen, red, grey } from '@mui/material/colors';
 
 const theme = createTheme({
+    palette: {
+        primary: {
+          main: grey[400], // This is the default MUI blue
+          dark: grey[700], // You can change this to any color you want
+        },
+      },
   components: {
     MuiButton: {
       styleOverrides: {
@@ -22,10 +29,10 @@ const theme = createTheme({
         root: {
           border: '1px solid #1976d2',
           '&.Mui-selected': {
-            backgroundColor: '#1976d2',
+            backgroundColor: lightGreen[900],
             color: '#ffffff',
             '&:hover': {
-              backgroundColor: '#1565c0',
+              backgroundColor: lightGreen[400],
             },
           },
         },

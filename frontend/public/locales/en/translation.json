@@ -11,7 +11,7 @@
                 "label" : "List All Entries",
                 "pre-header" : "All entries ",
                 "post-header" : " entries",
-                "num": "ENTRY NR",
+                "num": "#",
                 "iv": "ILVISH",
                 "en": "ENGLISH",
                 "cat": "CAT",
@@ -27,7 +27,20 @@
                 "acts": "ACTIONS"
             },
             "enterEntry": "Enter New Entry",
-            "queryEntry": "Query Entries"
+            "queryEntry": "Query Entries",
+            "listRoots": {
+                "label" : "List All Roots",
+                "pre-header": "All Roots ",
+                "post-header": "  roots",
+                "number": "#",
+                "root": "ROOT",
+                "prim": "PRIMARY",
+                "moda": "MODACT",
+                "act": "ACTIVE",
+                "modp": "MODPAS",
+                "pas": "PASSIVE",
+                "acts": "ACTIONS"
+            }
         },
         "roots": {
             "label" : "Roots",

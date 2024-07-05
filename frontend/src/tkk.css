@@ -50,6 +50,7 @@ input[type="text"], select {
     border-collapse: collapse;
     width: 80%;
     overflow: auto;
+    font-size: 12px;
 }
 
 .bordered-table th, .bordered-table td {
