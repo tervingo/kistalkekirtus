@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef  } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Container, Grid, Box, Paper, Button, AppBar, Toolbar, Typography } from '@mui/material';
+import { Container, Grid, Box, Paper, Typography } from '@mui/material';
 import { ToggleButtonGroup, ToggleButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import theme from './theme';

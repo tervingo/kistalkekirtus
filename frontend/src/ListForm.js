@@ -1,11 +1,6 @@
-import React, { useState, useEffect, useRef  } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import { faCopy } from '@fortawesome/free-solid-svg-icons';
-import { faArrowsUpDown } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
 import { 
@@ -143,7 +138,7 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
               >
                 {t(`lex.entries.listEntries.${key}`)}
                 {['num', 'iv', 'en', 'cat', 'sw', 'root'].includes(key) && (
-                  <FontAwesomeIcon icon={faArrowsUpDown} style={{ marginLeft: '5px' }} />
+                  <UnfoldMoreIcon sx={{ marginLeft: '5px', fontSize: 'small' }} />
                 )}
               </TableCell>
             ))}

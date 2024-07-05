@@ -1,7 +1,21 @@
 
 import React, { useState, useEffect  } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './tkk.css';
+import { 
+    Box, 
+    Grid, 
+    TextField, 
+    Select, 
+    MenuItem, 
+    Checkbox, 
+    FormControlLabel, 
+    Button, 
+    Typography,
+    FormControl,
+    InputLabel
+  } from '@mui/material';
 
 import { SERVER_IP } from './constants';
 
@@ -24,6 +38,7 @@ export function EditEntry({ setRefreshKey }) {
     const [en, setEn] = useState('');
     const [sw, setSw] = useState(0);
     const [message, setMessage] = useState('');
+    const { t } = useTranslation();
 
     useEffect(() => {
         console.log(can);
@@ -84,61 +99,153 @@ export function EditEntry({ setRefreshKey }) {
     }
     
     return (
-        <form onSubmit={handleEdit}>
-                 <br/><br/>
-                <table className="bordered-table">
-                <tr>
-                    <th>ILVEN</th>
-                    <th>INGLIS</th>
-                    <th>TSK</th>
-                    <th>SWAD</th>
-                    <th>KONO</th>
-                    <th>KENO</th>
-                    <th>KENO2</th>
-                    <th>AKEA</th>
-                    <th>PULSO</th>
-                    <th>A-KONIVO</th>
-                    <th>I-KONIVO</th>
-                    <th>U-KONIVO</th>
-                 </tr>
-                <tr>
-                            <td><input type="text" value={canState} onChange={(e) => setCan(e.target.value)} /></td>
-                            <td><input type="text" value={en} onChange={(e) => setEn(e.target.value)} /></td>
-                            <td>
-                                <select value={cat} onChange={(e) => setCat(e.target.value)}>
-                                <option value="">Select...</option>
-                                <option value="AJ">Adjective</option>
-                                <option value="AV">Adverb</option>
-                                <option value="CJ">Conjunction</option>
-                                <option value="IJ">Interjection</option>
-                                <option value="NO">Noun</option>
-                                <option value="NU">Number</option>
-                                <option value="PF">Prefix</option>
-                                <option value="PR">Pronoun</option>
-                                <option value="QT">Quantifier</option>
-                                <option value="SF">Suffix</option>
-                                <option value="VB">Verb</option>
-    	                        </select>
-                            </td>
-                            <td><input type="checkbox" checked={sw === 1} onChange={(e) => setSw(e.target.checked ? 1 : 0)} /></td>
-                            <td><input type="text" value={root} onChange={(e) => setRoot(e.target.value)} /></td>
-                            <td><input type="text" value={pl} onChange={(e) => setPl(e.target.value)}  disabled={cat !== 'NO'} /></td>
-                            <td><input type="text" value={pl2} onChange={(e) => setPl2(e.target.value)} disabled={cat !== 'NO'}  /></td>
-                            <td><input type="text" value={par} onChange={(e) => setPar(e.target.value)} disabled={cat !== 'NO'}  /></td>
-                            <td><input type="text" value={pul} onChange={(e) => setPul(e.target.value)} disabled={cat !== 'VB'} /></td>
-                            <td><input type="text" value={pr} onChange={(e) => setPr(e.target.value)} disabled={cat !== 'VB'} /></td>
-                            <td><input type="text" value={pa} onChange={(e) => setPa(e.target.value)} disabled={cat !== 'VB'} /></td>
-                            <td><input type="text" value={fu} onChange={(e) => setFu(e.target.value)} disabled={cat !== 'VB'} /></td>
-                </tr>
-            </table>
-            <br/><br/>
-            <div className='button-container'>
-                <input className="nice-button" type="submit" value="Update" />
-                <button className='nice-button' onClick={handleCancel}>Cancel</button>
-             </div>
-            {message && <p>{message}</p>}
-        </form>
-    );
+      <Box component="form" onSubmit={handleEdit} sx={{ mt: 4 }}>
+        <Typography variant="h4" gutterBottom>{t('lex.entries.editEntry.label')}</Typography>
+        <Grid container spacing={2}>
+          {/* First Row */}
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.editEntry.iv')}
+              value={canState}
+              onChange={(e) => setCan(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.editEntry.en')}
+              value={en}
+              onChange={(e) => setEn(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+          <FormControl fullWidth>
+            <InputLabel id="cat-select-label">{t('lex.entries.editEntry.cat.label')}</InputLabel>
+            <Select
+            labelId="cat-select-label"
+            id="cat-select"
+            value={cat}
+            label={t('lex.entries.editEntry.cat.label')}
+            onChange={(e) => setCat(e.target.value)}
+            >
+            <MenuItem value="">{t('lex.entries.editEntry.cat.select')}</MenuItem>
+            <MenuItem value="AJ">{t('lex.entries.editEntry.cat.aj')}</MenuItem>
+            <MenuItem value="AV">{t('lex.entries.editEntry.cat.av')}</MenuItem>
+            <MenuItem value="CJ">{t('lex.entries.editEntry.cat.cj')}</MenuItem>
+            <MenuItem value="IJ">{t('lex.entries.editEntry.cat.ij')}</MenuItem>
+            <MenuItem value="NO">{t('lex.entries.editEntry.cat.no')}</MenuItem>
+            <MenuItem value="NU">{t('lex.entries.editEntry.cat.nu')}</MenuItem>
+            <MenuItem value="PF">{t('lex.entries.editEntry.cat.pf')}</MenuItem>
+            <MenuItem value="PR">{t('lex.entries.editEntry.cat.pr')}</MenuItem>
+            <MenuItem value="QT">{t('lex.entries.editEntry.cat.qt')}</MenuItem>
+            <MenuItem value="SF">{t('lex.entries.editEntry.cat.sf')}</MenuItem>
+            <MenuItem value="VB">{t('lex.entries.editEntry.cat.vb')}</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>        
+        <Grid item xs={12} sm={4}>
+          <FormControlLabel
+            control={
+              <Checkbox 
+                checked={sw === 1} 
+                onChange={(e) => setSw(e.target.checked ? 1 : 0)}
+              />
+            }
+            label={t('lex.entries.editEntry.sw')}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.root')}
+            value={root}
+            onChange={(e) => setRoot(e.target.value)}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.pl')}
+            value={pl}
+            onChange={(e) => setPl(e.target.value)}
+            disabled={cat !== 'NO'}
+          />
+        </Grid>
+
+        {/* Second Row */}
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.pl2')}
+            value={pl2}
+            onChange={(e) => setPl2(e.target.value)}
+            disabled={cat !== 'NO'}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.par')}
+            value={par}
+            onChange={(e) => setPar(e.target.value)}
+            disabled={cat !== 'NO'}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.pul')}
+            value={pul}
+            onChange={(e) => setPul(e.target.value)}
+            disabled={cat !== 'VB'}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.prstem')}
+            value={pr}
+            onChange={(e) => setPr(e.target.value)}
+            disabled={cat !== 'VB'}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.pastem')}
+            value={pa}
+            onChange={(e) => setPa(e.target.value)}
+            disabled={cat !== 'VB'}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            fullWidth
+            label={t('lex.entries.editEntry.fustem')}
+            value={fu}
+            onChange={(e) => setFu(e.target.value)}
+            disabled={cat !== 'VB'}
+          />
+        </Grid>
+      </Grid>
+      
+      <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
+        <Button variant="contained" color="primary" type="submit">
+          Update
+        </Button>
+        <Button variant="outlined" color="secondary" onClick={handleCancel}>
+          Cancel
+        </Button>
+      </Box>
+      
+      {message && (
+        <Typography color="primary" sx={{ mt: 2 }}>
+          {message}
+        </Typography>
+      )}
+    </Box>
+  );
 }
 
 // EDIT ROOTS

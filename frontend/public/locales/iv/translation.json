@@ -7,6 +7,7 @@
     "lex": {
         "entries": {
             "label": "Kistalketa",
+
             "listEntries":  {
                 "label" : "Uilen kistalkee salli ",
                 "pre-header" : "Uilen kistalkee ",
@@ -26,6 +27,38 @@
                 "fustem": "U-KONIVO",
                 "acts": "KARSOTA"
             },
+
+            "editEntry": {
+                "label": "Kistalkee eddi",
+                "iv": "ILVEN",
+                "en": "INGLIS",
+                "cat": {
+                    "label": "TALSALKE",
+                    "select": "Kelli...",
+                    "aj": "Anistalke",
+                    "av": "Adverb",
+                    "cj": "Conjunction",
+                    "ij": "Interjection",
+                    "no": "Samvejur",
+                    "nu": "Number",
+                    "pf": "Prefix",
+                    "pr": "Pronoun",
+                    "qt": "Quantifier",
+                    "sf": "Suffix",
+                    "vb": "Kartalke"
+                },
+
+                "sw": "SWADESH",
+                "root": "KONO",
+                "pl": "KENO",
+                "pl2": "KENO2",
+                "par": "AKEA",
+                "pul": "PULSO",
+                "prstem": "A-KONIVO",
+                "pastem": "I-KONIVO",
+                "fustem": "U-KONIVO"
+            },
+
             "enterEntry": "Unnen kistalkeva aunilli",
             "queryEntry": "Kistalkeeva massi",
             "listRoots": {
