@@ -55,7 +55,35 @@
                 "pastem": "PA STEM",
                 "fustem": "FU STEM"
             },
-            "enterEntry": "Enter New Entry",
+            "enterEntry": {
+                "label": "Enter New Entry",
+                "iv": "ILVISH",
+                "en": "ENGLISH",
+                "cat": {
+                    "label": "CATEGORY",
+                    "select": "Select...",
+                    "aj": "Adjective",
+                    "av": "Adverb",
+                    "cj": "Conjunction",
+                    "ij": "Interjection",
+                    "no": "Noun",
+                    "nu": "Number",
+                    "pf": "Prefix",
+                    "pr": "Pronoun",
+                    "qt": "Quantifier",
+                    "sf": "Suffix",
+                    "vb": "Verb"
+                },
+                "sw": "SWADESH",
+                "root": "ROOT",
+                "pl": "PLURAL",
+                "pl2": "PLURAL2",
+                "par": "PARTITIVE",
+                "pul": "VALENCE",
+                "prstem": "PR STEM",
+                "pastem": "PA STEM",
+                "fustem": "FU STEM"
+            },    
             "queryEntry": "Query Entries",
             "listRoots": {
                 "label" : "List All Roots",

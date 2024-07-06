@@ -62,7 +62,7 @@ export function EnterEntry() {
         const alkono = await fetch(`${SERVER_IP}/api/query-root?root=${root}`);
         const kono = await alkono.json();
         console.log('root is: ', kono);
-        if (kono == '0') {
+        if (kono === '0') {
             console.log('lets enter a new root');
             navigate(`/enter-root/${root}`);
         }
@@ -95,46 +95,54 @@ export function EnterEntry() {
 
   return (
     <Box component="form" onSubmit={enterEntry} sx={{ mt: 4 }}>
-      <Typography variant="h4" gutterBottom>Enter Entry</Typography>
+      <Typography variant="h4" gutterBottom>{t('lex.entries.enterEntry.label')}</Typography>
       <Grid container spacing={2}>
         {/* First Row */}
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Ilven talke"
+            label={t('lex.entries.enterEntry.iv')}
             value={can}
             onChange={(e) => setCan(e.target.value)}
           />
         </Grid>
         <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.enterEntry.en')}
+              value={en}
+              onChange={(e) => setEn(e.target.value)}
+            />  
+        </Grid>
+        <Grid item xs={12} sm={4}>
           <FormControl fullWidth>
-            <InputLabel id="cat-select-label">{t('lex.entries.editEntry.cat.label')}</InputLabel>
+            <InputLabel id="cat-select-label">{t('lex.entries.enterEntry.cat.label')}</InputLabel>
             <Select
             labelId="cat-select-label"
             id="cat-select"
             value={cat}
-            label={t('lex.entries.editEntry.cat.label')}
+            label={t('lex.entries.enterEntry.cat.label')}
             onChange={(e) => setCat(e.target.value)}
             >
-            <MenuItem value="">{t('lex.entries.editEntry.cat.select')}</MenuItem>
-            <MenuItem value="AJ">{t('lex.entries.editEntry.cat.aj')}</MenuItem>
-            <MenuItem value="AV">{t('lex.entries.editEntry.cat.av')}</MenuItem>
-            <MenuItem value="CJ">{t('lex.entries.editEntry.cat.cj')}</MenuItem>
-            <MenuItem value="IJ">{t('lex.entries.editEntry.cat.ij')}</MenuItem>
-            <MenuItem value="NO">{t('lex.entries.editEntry.cat.no')}</MenuItem>
-            <MenuItem value="NU">{t('lex.entries.editEntry.cat.nu')}</MenuItem>
-            <MenuItem value="PF">{t('lex.entries.editEntry.cat.pf')}</MenuItem>
-            <MenuItem value="PR">{t('lex.entries.editEntry.cat.pr')}</MenuItem>
-            <MenuItem value="QT">{t('lex.entries.editEntry.cat.qt')}</MenuItem>
-            <MenuItem value="SF">{t('lex.entries.editEntry.cat.sf')}</MenuItem>
-            <MenuItem value="VB">{t('lex.entries.editEntry.cat.vb')}</MenuItem>
+            <MenuItem value="">{t('lex.entries.enterEntry.cat.select')}</MenuItem>
+            <MenuItem value="AJ">{t('lex.entries.enterEntry.cat.aj')}</MenuItem>
+            <MenuItem value="AV">{t('lex.entries.enterEntry.cat.av')}</MenuItem>
+            <MenuItem value="CJ">{t('lex.entries.enterEntry.cat.cj')}</MenuItem>
+            <MenuItem value="IJ">{t('lex.entries.enterEntry.cat.ij')}</MenuItem>
+            <MenuItem value="NO">{t('lex.entries.enterEntry.cat.no')}</MenuItem>
+            <MenuItem value="NU">{t('lex.entries.enterEntry.cat.nu')}</MenuItem>
+            <MenuItem value="PF">{t('lex.entries.enterEntry.cat.pf')}</MenuItem>
+            <MenuItem value="PR">{t('lex.entries.enterEntry.cat.pr')}</MenuItem>
+            <MenuItem value="QT">{t('lex.entries.enterEntry.cat.qt')}</MenuItem>
+            <MenuItem value="SF">{t('lex.entries.enterEntry.cat.sf')}</MenuItem>
+            <MenuItem value="VB">{t('lex.entries.enterEntry.cat.vb')}</MenuItem>
             </Select>
           </FormControl>
         </Grid>        
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Keno"
+            label={t('lex.entries.enterEntry.pl')}
             value={pl}
             onChange={(e) => setPl(e.target.value)}
             disabled={!['NO', 'PR'].includes(cat)}
@@ -143,7 +151,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Keno+"
+            label={t('lex.entries.enterEntry.pl2')}
             value={pl2}
             onChange={(e) => setPl2(e.target.value)}
             disabled={!['NO', 'PR'].includes(cat)}
@@ -152,7 +160,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Akea"
+            label={t('lex.entries.enterEntry.par')}
             value={par}
             onChange={(e) => setPar(e.target.value)}
             disabled={!['NO', 'PR'].includes(cat)}
@@ -161,7 +169,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Pulso"
+            label={t('lex.entries.enterEntry.pul')}
             value={pul}
             onChange={(e) => setPul(e.target.value)}
             disabled={cat !== 'VB'}
@@ -172,7 +180,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Aniren konivo"
+            label={t('lex.entries.enterEntry.prstem')}
             value={pr}
             onChange={(e) => setPr(e.target.value)}
             disabled={cat !== 'VB'}
@@ -181,7 +189,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Iniren konivo"
+            label={t('lex.entries.enterEntry.pastem')}
             value={pa}
             onChange={(e) => setPa(e.target.value)}
             disabled={cat !== 'VB'}
@@ -190,7 +198,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Uniren konivo"
+            label={t('lex.entries.enterEntry.fustem')}
             value={fu}
             onChange={(e) => setFu(e.target.value)}
             disabled={cat !== 'VB'}
@@ -199,20 +207,20 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Kono"
+            label={t('lex.entries.enterEntry.root')}
             value={root}
             onChange={(e) => setRoot(e.target.value)}
           />
         </Grid>
-        <Grid item xs={12} sm={4}>
+{/*         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label="Inglis talkisvo"
+            label={t('lex.entries.enterEntry.en')}
             value={en}
             onChange={(e) => setEn(e.target.value)}
           />
         </Grid>
-        <Grid item xs={12} sm={4}>
+ */}        <Grid item xs={12} sm={4}>
           <FormControlLabel
             control={
               <Checkbox 
@@ -220,7 +228,7 @@ export function EnterEntry() {
                 onChange={(e) => setSw(e.target.checked ? 1 : 0)}
               />
             }
-            label="Swadesh"
+            label={t('lex.entries.enterEntry.sw')}
           />
         </Grid>
       </Grid>

@@ -35,17 +35,17 @@
                 "cat": {
                     "label": "TALSALKE",
                     "select": "Kelli...",
-                    "aj": "Anistalke",
-                    "av": "Adverb",
-                    "cj": "Conjunction",
-                    "ij": "Interjection",
+                    "ij": "Ajtalkive",
+                    "av": "Anistalke",
+                    "aj": "Aplotalke",
+                    "pf": "Eatalkive",
+                    "vb": "Kartalke",
+                    "qt": "Kentalke",
+                    "cj": "Kuttalkive",
+                    "sf": "Putalkive",
+                    "nu": "Saltalke",
                     "no": "Samvejur",
-                    "nu": "Number",
-                    "pf": "Prefix",
-                    "pr": "Pronoun",
-                    "qt": "Quantifier",
-                    "sf": "Suffix",
-                    "vb": "Kartalke"
+                    "pr": "Virtalkive"
                 },
 
                 "sw": "SWADESH",
@@ -58,8 +58,35 @@
                 "pastem": "I-KONIVO",
                 "fustem": "U-KONIVO"
             },
-
-            "enterEntry": "Unnen kistalkeva aunilli",
+            "enterEntry": {
+                "label": "Unnen kistalkeva aunilli",
+                "iv": "ILVEN",
+                "en": "INGLIS",
+                "cat": {
+                    "label": "TALSALKE",
+                    "select": "Kelli...",
+                    "ij": "Ajtalkive",
+                    "av": "Anistalke",
+                    "aj": "Aplotalke",
+                    "pf": "Eatalkive",
+                    "vb": "Kartalke",
+                    "qt": "Kentalke",
+                    "cj": "Kuttalkive",
+                    "sf": "Putalkive",
+                    "nu": "Saltalke",
+                    "no": "Samvejur",
+                    "pr": "Virtalkive"
+                },
+                "sw": "SWADESH",
+                "root": "KONO",
+                "pl": "KENO",
+                "pl2": "KENO2",
+                "par": "AKEA",
+                "pul": "PULSO",
+                "prstem": "A-KONIVO",
+                "pastem": "I-KONIVO",
+                "fustem": "U-KONIVO"
+            },
             "queryEntry": "Kistalkeeva massi",
             "listRoots": {
                 "label" : "Uilen konoi salli",
