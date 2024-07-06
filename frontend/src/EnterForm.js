@@ -261,7 +261,7 @@ export function EnterRoot() {
     const [modp, setModp] = useState(initialRoot.modp || '');
     const [pas, setPas] = useState(initialRoot.pas || '');
     const [message, setMessage] = useState('');
-
+    const { t } = useTranslation();
 
     const navigate = useNavigate();
 
@@ -295,48 +295,80 @@ export function EnterRoot() {
     }
 
     return (
-        <div>
-            <h2>Enter data </h2>
-            <form onSubmit={enterRoot}>
-                <label>
-                    <h4>Kono:</h4>
-                    <input type="text" value={root} onChange={(e) => setRoot(e.target.value)} />
-                </label>
-                <br/>
-                <label>
-                    <h4>Primary:</h4>
-                    <input type="text" value={prim} onChange={(e) => setPrim(e.target.value)} />
-                </label>
-                <br/>
-                <label>
-                    <h4>Mod Act:</h4>
-                    <input type="text" value={moda} onChange={(e) => setModa(e.target.value)} />
-                </label>
-                <br/>
-                <label>
-                    <h4>Active</h4>
-                    <input type="text" value={act} onChange={(e) => setAct(e.target.value)} />
-                </label>
-                <br/>
-                <label>
-                    <h4>Mod Pas:</h4>
-                    <input type="text" value={modp} onChange={(e) => setModp(e.target.value)} />
-                </label>
-                <br/>
-                <label>
-                    <h4>Passive:</h4>
-                    <input type="text" value={pas} onChange={(e) => setPas(e.target.value)} />
-                </label>
-                <br/><br/>
-                <div className='button-container'>
-                    <input className="nice-button" type="submit" value="Submit" />
-                    <button className="nice-button" type="button" onClick={handleClear}>Clear</button>
-                    <button className='nice-button' type="button" onClick={handleCancel}>Cancel</button>
-                </div>
-                               
-            </form>
-            <br />
-            {message && <p>{message}</p>}
-        </div>
-    );
+      <div>
+
+      <Box component="form" onSubmit={enterRoot} sx={{ mt: 4 }}>
+        <Typography variant="h4" gutterBottom>{t('lex.entries.enterRoot.label')}</Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.enterRoot.root')}
+              value={root}
+              onChange={(e) => setRoot(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.enterRoot.prim')}
+              value={prim}
+              onChange={(e) => setPrim(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.enterRoot.moda')}
+              value={moda}
+              onChange={(e) => setModa(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.enterRoot.act')}
+              value={act}
+              onChange={(e) => setAct(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.enterRoot.modp')}
+              value={modp}
+              onChange={(e) => setModp(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <TextField
+              fullWidth
+              label={t('lex.entries.enterRoot.pas')}
+              value={pas}
+              onChange={(e) => setPas(e.target.value)}
+            />
+          </Grid>
+      </Grid>
+
+      
+      <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
+        <Button variant="contained" color="primary" type="submit">
+          Submit
+        </Button>
+        <Button variant="outlined" color="secondary" onClick={handleClear}>
+          Clear
+        </Button>
+        <Button variant="outlined" color="secondary" onClick={handleCancel}>
+          Cancel
+        </Button>
+      </Box>
+      
+      {message && (
+        <Typography color="primary" sx={{ mt: 2 }}>
+          {message}
+        </Typography>
+      )}
+    </Box>
+  </div>
+  );
 }

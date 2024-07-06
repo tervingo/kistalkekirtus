@@ -1,7 +1,7 @@
 {
     "title": "Ilven Talkummur le Kistalkejonsjur",
     "tabs": {
-      "lexicon": "TALKEJONSJUR",
+      "lexicon": "TALKONSJUR",
       "grammar": "TALKUMMUR"
     },
     "lex": {
@@ -29,7 +29,7 @@
             },
 
             "editEntry": {
-                "label": "Kistalkee eddi",
+                "label": "Kistalkeva eddi",
                 "iv": "ILVEN",
                 "en": "INGLIS",
                 "cat": {
@@ -73,8 +73,29 @@
                 "modp": "MODPAS",
                 "pas": "PASSIVE",
                 "acts": "KARSOTA"
+            },
+            "editRoot": {
+                "label" : "Konova eddi",
+                "number": "#",
+                "root": "KONO",
+                "prim": "PRIMARY",
+                "moda": "MODACT",
+                "act": "ACTIVE",
+                "modp": "MODPAS",
+                "pas": "PASSIVE",
+                "acts": "KARSOTA"
+            },
+            "enterRoot": {
+                "label" : "Unnen konova aunilli",
+                "number": "#",
+                "root": "KONO",
+                "prim": "PRIMARY",
+                "moda": "MODACT",
+                "act": "ACTIVE",
+                "modp": "MODPAS",
+                "pas": "PASSIVE",
+                "acts": "KARSOTA"
             }
-
         },
         "roots": {
             "label" : "Konota",

@@ -7,6 +7,11 @@ const theme = createTheme({
           main: grey[400], // This is the default MUI blue
           dark: grey[700], // You can change this to any color you want
         },
+        toggle: {
+          on: blue[700],
+          off: grey[200],
+          over: grey[100],
+        }
       },
   components: {
     MuiButton: {
@@ -28,12 +33,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           border: '1px solid #1976d2',
+          backgroundColor: grey[200],
           '&.Mui-selected': {
-            backgroundColor: lightGreen[900],
+            backgroundColor: blue[700],
             color: '#ffffff',
-            '&:hover': {
-              backgroundColor: lightGreen[400],
-            },
           },
         },
       },

@@ -69,7 +69,30 @@
                 "modp": "MODPAS",
                 "pas": "PASSIVE",
                 "acts": "ACTIONS"
+            },
+            "editRoot": {
+                "label" : "Edit Root",
+                "number": "#",
+                "root": "ROOT",
+                "prim": "PRIMARY",
+                "moda": "MODACT",
+                "act": "ACTIVE",
+                "modp": "MODPAS",
+                "pas": "PASSIVE",
+                "acts": "ACTIONS"
+            },
+            "enterRoot": {
+                "label" : "Enter New Root",
+                "number": "#",
+                "root": "ROOT",
+                "prim": "PRIMARY",
+                "moda": "MODACT",
+                "act": "ACTIVE",
+                "modp": "MODPAS",
+                "pas": "PASSIVE",
+                "acts": "ACTIONS"
             }
+
         },
         "roots": {
             "label" : "Roots",

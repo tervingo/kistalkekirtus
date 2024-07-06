@@ -8,6 +8,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Container, Grid, Box, Paper, Typography } from '@mui/material';
 import { ToggleButtonGroup, ToggleButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { indigo, grey } from '@mui/material/colors';
+
 import theme from './theme';
 
 import './tkk.css';
@@ -32,13 +34,11 @@ const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
     textTransform: 'none',
     minWidth: '40px',
     padding: '5px 10px',
+    backgroundColor: theme.palette.toggle.off,
     border: `1px solid ${theme.palette.primary.main}`,
     '&.Mui-selected': {
-      backgroundColor: theme.palette.primary.dark,
+      backgroundColor: theme.palette.toggle.on,
       color: theme.palette.primary.contrastText,
-      '&:hover': {
-        backgroundColor: theme.palette.primary.dark,
-      },
     },
   },
 }));
@@ -166,7 +166,7 @@ function App() {
               <Grid item xs={12}>
                 <Box sx={{ p: 2, backgroundColor: 'primary.main' }}>            
                     <LanguageSwitcher />
-                    <Paper sx={{ my:3, bgcolor: 'lightslategray', textAlign: 'center' }} elevation={3}>
+                    <Paper sx={{ my:3, bgcolor: grey[300], textAlign: 'center' }} elevation={3}>
                       <Typography variant="h2">
                         {t('title')}
                       </Typography>
@@ -178,7 +178,7 @@ function App() {
               </Grid>
               
               {/* Left Panel */}
-              <Grid item xs={2} sx={{ height: '100%', overflow: 'auto', borderRight: 1, borderColor: 'divider' }}>
+              <Grid item xs={3} sx={{ height: '100%', overflow: 'auto', borderRight: 1, borderColor: 'divider' }}>
                   <Box sx={{ p: 2, backgroundColor: 'primary.main' }}>
                     <h3 className="hostname">{hostname}</h3>
                     <div className="tabs">
@@ -187,18 +187,34 @@ function App() {
                           exclusive
                           onChange={handleTabChange}
                           aria-label="text alignment"
+                          size="small"
+                          sx={{
+                            '& .MuiToggleButtonGroup-grouped': {
+                              margin: 0.5,
+                              border: 0,
+                              '&.Mui-disabled': {
+                                border: 0,
+                              },
+                            },
+                          }}
                         >
                         <ToggleButton 
                           value="LEXICON" 
                           aria-label="lexicon"
-                          size="small"
+                          sx={{
+                            padding: '4px 8px',
+                            fontSize: '0.75rem',
+                          }}
                           >
                           {t('tabs.lexicon')}
                         </ToggleButton>
                         <ToggleButton 
                           value="GRAMMAR" 
                           aria-label="grammar"
-                          size="small"
+                          sx={{
+                            padding: '4px 8px',
+                            fontSize: '0.75rem',
+                          }}
                         >
                           {t('tabs.grammar')}
                         </ToggleButton>

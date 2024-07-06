@@ -262,6 +262,7 @@ export function EditRoot() {
     const [modp, setModp] = useState('');
     const [pas, setPas] = useState('');
     const [message, setMessage] = useState('');
+    const { t } = useTranslation();
 
     console.log('EditRoot component rendering');
 
@@ -315,33 +316,79 @@ export function EditRoot() {
     }
     
     return (
-        <form onSubmit={handleEdit}>
-                <br/><br/>
-                <table className="bordered-table">
-                <tr>
-                    <th>KONO</th>
-                    <th>PRIMARY</th>
-                    <th>MODE ACT</th>
-                    <th>ACTIVE</th>
-                    <th>MODE PAS</th>
-                    <th>PASSIVE</th>
-                 </tr>
-                <tr>
-                            <td><input type="text" value={rootState} onChange={(e) => setRoot(e.target.value)} /></td>
-                            <td><input type="text" value={prim} onChange={(e) => setPrim(e.target.value)} /></td>
-                            <td><input type="text" value={moda} onChange={(e) => setModa(e.target.value)} /></td>
-                            <td><input type="text" value={act} onChange={(e) => setAct(e.target.value)} /></td>
-                            <td><input type="text" value={modp} onChange={(e) => setModp(e.target.value)} /></td>
-                            <td><input type="text" value={pas} onChange={(e) => setPas(e.target.value)} /></td>
-                 </tr>
-            </table>
-            <br/><br/>
-            <div className='button-container'>
-                <input className="nice-button" type="submit" value="Update" />
-                <button className='nice-button' onClick={handleCancel}>Cancel</button>
-             </div>
-            {message && <p>{message}</p>} {/* Add this line */}
-        </form>
+
+    <Box component="form" onSubmit={handleEdit} sx={{ mt: 4 }}>
+      <Typography variant="h4" gutterBottom>{t('lex.entries.editRoot.label')}</Typography>
+      <Grid container spacing={2}>
+
+      <Grid item xs={12} sm={4}>
+        <TextField
+          fullWidth
+          label={t('lex.entries.editRoot.root')}
+          value={root}
+          onChange={(e) => setRoot(e.target.value)}
+        />
+      </Grid>
+      <Grid item xs={12} sm={4}>
+        <TextField
+          fullWidth
+          label={t('lex.entries.editRoot.prim')}
+          value={prim}
+          onChange={(e) => setPrim(e.target.value)}
+        />
+      </Grid>
+
+      <Grid item xs={12} sm={4}>
+        <TextField
+          fullWidth
+          label={t('lex.entries.editRoot.moda')}
+          value={moda}
+          onChange={(e) => setModa(e.target.value)}
+        />
+      </Grid>
+      <Grid item xs={12} sm={4}>
+        <TextField
+          fullWidth
+          label={t('lex.entries.editRoot.act')}
+          value={act}
+          onChange={(e) => setAct(e.target.value)}
+        />
+      </Grid>
+      <Grid item xs={12} sm={4}>
+        <TextField
+          fullWidth
+          label={t('lex.entries.editRoot.modp')}
+          value={modp}
+          onChange={(e) => setModp(e.target.value)}
+        />
+      </Grid>
+      <Grid item xs={12} sm={4}>
+        <TextField
+          fullWidth
+          label={t('lex.entries.editRoot.pas')}
+          value={pas}
+          onChange={(e) => setPas(e.target.value)}
+        />
+      </Grid>
+    </Grid>
+    
+    <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
+      <Button variant="contained" color="primary" type="submit">
+        Update
+      </Button>
+      <Button variant="outlined" color="secondary" onClick={handleCancel}>
+        Cancel
+      </Button>
+    </Box>
+    
+    {message && (
+      <Typography color="primary" sx={{ mt: 2 }}>
+        {message}
+      </Typography>
+    )}
+  </Box>
+
+
     );
 }
 

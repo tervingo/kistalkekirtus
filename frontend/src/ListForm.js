@@ -196,32 +196,30 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
 
  
     useEffect(() => {
-        const fetchRoots = async () => {
-            const response = await fetch(`${SERVER_IP}/api/list-roots`);
-            let data = await response.json(); 
-
-           // Add a 'firstLetter' field to each item in the 'roots' array
-           data = data.map((item, index) => ({
-                ...item,
-                firstLetter: item.root[0].toLowerCase(),
-            }));
-
-            setRoots(data);
-        };
-        fetchRoots();
-    }, [refreshKey, refresh]);
-
-    useEffect(() => {
-        let sortedRoots = [...roots];
-        if (sortField !== null) {
-            sortedRoots.sort((a, b) => {
-                if (a[sortField] < b[sortField]) return sortDirection ? -1 : 1;
-                if (a[sortField] > b[sortField]) return sortDirection ? 1 : -1;
-                return 0;
-            });
-        }
-        setRoots(sortedRoots);
-    }, [sortField, sortDirection]);
+      const fetchAndSortRoots = async () => {
+          const response = await fetch(`${SERVER_IP}/api/list-roots`);
+          let data = await response.json();
+  
+          // Add a 'firstLetter' field to each item in the 'translations' array
+          data = data.map((item, index) => ({
+              ...item,
+              firstLetter: sortField && item[sortField] ? item[sortField][0] : '',
+          }));
+  
+          // Sort the data
+          if (sortField !== null) {
+              data.sort((a, b) => {
+                  if (a[sortField] < b[sortField]) return sortDirection ? -1 : 1;
+                  if (a[sortField] > b[sortField]) return sortDirection ? 1 : -1;
+                  return 0;
+              });
+          }
+  
+          setRoots(data);
+      };
+  
+      fetchAndSortRoots();
+    }, [refreshKey, refresh, sortField, sortDirection]);
 
     const handleSort = (field) => {
         if (field === sortField) {
@@ -325,10 +323,10 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.modp}</TableCell>
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.pas}</TableCell>
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>
-                    <IconButton size="small" onClick={() => handleEdit(root.can)}>
+                    <IconButton size="small" onClick={() => handleEdit(root.root)}>
                       <EditIcon fontSize="small" />
                     </IconButton>
-                    <IconButton size="small" onClick={() => handleDelete(root.can)}>
+                    <IconButton size="small" onClick={() => handleDelete(root.root)}>
                       <DeleteIcon fontSize="small" />
                     </IconButton>
                     <IconButton size="small" onClick={() => handleCopy(root)}>
