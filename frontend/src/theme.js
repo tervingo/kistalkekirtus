@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import { blue, orange, lightGreen, red, grey } from '@mui/material/colors';
+import { blue, orange, indigo, lightGreen, green, red, grey } from '@mui/material/colors';
 
 const theme = createTheme({
     palette: {
@@ -11,6 +11,11 @@ const theme = createTheme({
           on: blue[700],
           off: grey[200],
           over: grey[100],
+        },
+        labels: {
+          bgblue: blue[900],
+          bggreen: green[900],
+          tx: grey[100]
         }
       },
   components: {

@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import { 
     Table, TableContainer, TableHead, TableBody, TableRow, TableCell, 
-    Paper, Typography, Checkbox, IconButton
+    Paper, Typography, Checkbox, IconButton, Box
   } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -15,6 +15,7 @@ import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 import './tkk.css';
 
 import { SERVER_IP } from './constants';
+import theme from './theme';
 
 // LIST ENTRIES
 
@@ -90,9 +91,13 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
 
     return (
     <div>
-      <Typography variant="h4">
-      {t('lex.entries.listEntries.pre-header')} ({translations.length} {t('lex.entries.listEntries.post-header')})
-      </Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', my: 1 }} >
+        <Paper sx={{ my:2, bgcolor: theme.palette.labels.bggreen, color: theme.palette.labels.tx, textAlign: 'center', width:"60%"}} elevation={3}>
+          <Typography variant="h4">
+          {t('lex.entries.listEntries.pre-header')} ({translations.length} {t('lex.entries.listEntries.post-header')})
+          </Typography>
+        </Paper>
+      </Box>
       <TableContainer 
         component={Paper} 
         ref={tableContainerRef}

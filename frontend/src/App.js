@@ -156,7 +156,7 @@ function App() {
 
 
     return (
-      <Container maxWidth="xl" sx={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <Container maxWidth="xl" sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Router>
@@ -166,15 +166,15 @@ function App() {
               <Grid item xs={12}>
                 <Box justifyContent="center" alignItems="center" sx={{ p: 2, backgroundColor: 'primary.main' }}>            
                     <LanguageSwitcher />
-                    <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', my: 3 }} >
-                      <Paper sx={{ my:3, bgcolor: grey[300], textAlign: 'center', width:"60%"}} elevation={3}>
-                        <Typography variant="h2">
+                    <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', my: 2 }} >
+                      <Paper sx={{ my:3, bgcolor: theme.palette.labels.bgblue, color: theme.palette.labels.tx, textAlign: 'center', width:"60%"}} elevation={3}>
+                        <Typography variant="h3">
                           {t('title')}
                         </Typography>
                       </Paper>
                     </Box>
                     <Box sx={{ p:1, textAlign: 'center'}} >
-                      <img src=".\kantokirtur.jpg" alt="Kantokirtur" />
+                      <img src=".\kantokirtur_2.png" alt="Kantokirtur" />
                     </Box>
                 </Box>
               </Grid>
