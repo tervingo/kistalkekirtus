@@ -101,7 +101,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.iv')}
+            label={t('lex.entries.labels.iv')}
             value={can}
             onChange={(e) => setCan(e.target.value)}
           />
@@ -109,40 +109,40 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
-              label={t('lex.entries.enterEntry.en')}
+              label={t('lex.entries.labels.en')}
               value={en}
               onChange={(e) => setEn(e.target.value)}
             />  
         </Grid>
         <Grid item xs={12} sm={4}>
           <FormControl fullWidth>
-            <InputLabel id="cat-select-label">{t('lex.entries.enterEntry.cat.label')}</InputLabel>
+            <InputLabel id="cat-select-label">{t('lex.entries.labels.cats.label')}</InputLabel>
             <Select
             labelId="cat-select-label"
             id="cat-select"
             value={cat}
-            label={t('lex.entries.enterEntry.cat.label')}
+            label={t('lex.entries.labels.cats.label')}
             onChange={(e) => setCat(e.target.value)}
             >
-            <MenuItem value="">{t('lex.entries.enterEntry.cat.select')}</MenuItem>
-            <MenuItem value="AJ">{t('lex.entries.enterEntry.cat.aj')}</MenuItem>
-            <MenuItem value="AV">{t('lex.entries.enterEntry.cat.av')}</MenuItem>
-            <MenuItem value="CJ">{t('lex.entries.enterEntry.cat.cj')}</MenuItem>
-            <MenuItem value="IJ">{t('lex.entries.enterEntry.cat.ij')}</MenuItem>
-            <MenuItem value="NO">{t('lex.entries.enterEntry.cat.no')}</MenuItem>
-            <MenuItem value="NU">{t('lex.entries.enterEntry.cat.nu')}</MenuItem>
-            <MenuItem value="PF">{t('lex.entries.enterEntry.cat.pf')}</MenuItem>
-            <MenuItem value="PR">{t('lex.entries.enterEntry.cat.pr')}</MenuItem>
-            <MenuItem value="QT">{t('lex.entries.enterEntry.cat.qt')}</MenuItem>
-            <MenuItem value="SF">{t('lex.entries.enterEntry.cat.sf')}</MenuItem>
-            <MenuItem value="VB">{t('lex.entries.enterEntry.cat.vb')}</MenuItem>
+            <MenuItem value="">{t('lex.entries.labels.cats.select')}</MenuItem>
+            <MenuItem value="AJ">{t('lex.entries.labels.cats.aj')}</MenuItem>
+            <MenuItem value="AV">{t('lex.entries.labels.cats.av')}</MenuItem>
+            <MenuItem value="CJ">{t('lex.entries.labels.cats.cj')}</MenuItem>
+            <MenuItem value="IJ">{t('lex.entries.labels.cats.ij')}</MenuItem>
+            <MenuItem value="NO">{t('lex.entries.labels.cats.no')}</MenuItem>
+            <MenuItem value="NU">{t('lex.entries.labels.cats.nu')}</MenuItem>
+            <MenuItem value="PF">{t('lex.entries.labels.cats.pf')}</MenuItem>
+            <MenuItem value="PR">{t('lex.entries.labels.cats.pr')}</MenuItem>
+            <MenuItem value="QT">{t('lex.entries.labels.cats.qt')}</MenuItem>
+            <MenuItem value="SF">{t('lex.entries.labels.cats.sf')}</MenuItem>
+            <MenuItem value="VB">{t('lex.entries.labels.cats.vb')}</MenuItem>
             </Select>
           </FormControl>
         </Grid>        
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.pl')}
+            label={t('lex.entries.labels.pl')}
             value={pl}
             onChange={(e) => setPl(e.target.value)}
             disabled={!['NO', 'PR'].includes(cat)}
@@ -151,7 +151,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.pl2')}
+            label={t('lex.entries.labels.pl2')}
             value={pl2}
             onChange={(e) => setPl2(e.target.value)}
             disabled={!['NO', 'PR'].includes(cat)}
@@ -160,7 +160,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.par')}
+            label={t('lex.entries.labels.par')}
             value={par}
             onChange={(e) => setPar(e.target.value)}
             disabled={!['NO', 'PR'].includes(cat)}
@@ -169,7 +169,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.pul')}
+            label={t('lex.entries.labels.pul')}
             value={pul}
             onChange={(e) => setPul(e.target.value)}
             disabled={cat !== 'VB'}
@@ -180,7 +180,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.prstem')}
+            label={t('lex.entries.labels.prstem')}
             value={pr}
             onChange={(e) => setPr(e.target.value)}
             disabled={cat !== 'VB'}
@@ -189,7 +189,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.pastem')}
+            label={t('lex.entries.labels.pastem')}
             value={pa}
             onChange={(e) => setPa(e.target.value)}
             disabled={cat !== 'VB'}
@@ -198,7 +198,7 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.fustem')}
+            label={t('lex.entries.labels.fustem')}
             value={fu}
             onChange={(e) => setFu(e.target.value)}
             disabled={cat !== 'VB'}
@@ -207,20 +207,12 @@ export function EnterEntry() {
         <Grid item xs={12} sm={4}>
           <TextField
             fullWidth
-            label={t('lex.entries.enterEntry.root')}
+            label={t('lex.entries.labels.root')}
             value={root}
             onChange={(e) => setRoot(e.target.value)}
           />
         </Grid>
-{/*         <Grid item xs={12} sm={4}>
-          <TextField
-            fullWidth
-            label={t('lex.entries.enterEntry.en')}
-            value={en}
-            onChange={(e) => setEn(e.target.value)}
-          />
-        </Grid>
- */}        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={4}>
           <FormControlLabel
             control={
               <Checkbox 
@@ -228,7 +220,7 @@ export function EnterEntry() {
                 onChange={(e) => setSw(e.target.checked ? 1 : 0)}
               />
             }
-            label={t('lex.entries.enterEntry.sw')}
+            label={t('lex.entries.labels.sw')}
           />
         </Grid>
       </Grid>
@@ -306,12 +298,12 @@ export function EnterRoot() {
       <div>
 
       <Box component="form" onSubmit={enterRoot} sx={{ mt: 4 }}>
-        <Typography variant="h4" gutterBottom>{t('lex.entries.enterRoot.label')}</Typography>
+        <Typography variant="h4" gutterBottom>{t('lex.roots.label')}</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
-              label={t('lex.entries.enterRoot.root')}
+              label={t('lex.roots.root')}
               value={root}
               onChange={(e) => setRoot(e.target.value)}
             />
@@ -319,7 +311,7 @@ export function EnterRoot() {
           <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
-              label={t('lex.entries.enterRoot.prim')}
+              label={t('lex.roots.prim')}
               value={prim}
               onChange={(e) => setPrim(e.target.value)}
             />
@@ -327,7 +319,7 @@ export function EnterRoot() {
           <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
-              label={t('lex.entries.enterRoot.moda')}
+              label={t('lex.roots.moda')}
               value={moda}
               onChange={(e) => setModa(e.target.value)}
             />
@@ -335,7 +327,7 @@ export function EnterRoot() {
           <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
-              label={t('lex.entries.enterRoot.act')}
+              label={t('lex.roots.act')}
               value={act}
               onChange={(e) => setAct(e.target.value)}
             />
@@ -343,7 +335,7 @@ export function EnterRoot() {
           <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
-              label={t('lex.entries.enterRoot.modp')}
+              label={t('lex.roots.modp')}
               value={modp}
               onChange={(e) => setModp(e.target.value)}
             />
@@ -351,7 +343,7 @@ export function EnterRoot() {
           <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
-              label={t('lex.entries.enterRoot.pas')}
+              label={t('lex.roots.pas')}
               value={pas}
               onChange={(e) => setPas(e.target.value)}
             />

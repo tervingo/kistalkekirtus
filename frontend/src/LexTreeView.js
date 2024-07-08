@@ -40,7 +40,7 @@ const RootsNode = () =>  {
 
   return (
     <TreeNode label={t('lex.roots.label')} >
-      <Link className="tree-list" to="/list-roots">{t('lex.roots.listRoots')} </Link>
+      <Link className="tree-list" to="/list-roots">{t('lex.roots.listRoots.label')} </Link>
       <Link className="tree-list" to="/enter-root">{t('lex.roots.enterRoot')} </Link>
       <Link className="tree-list" to="/query-root">{t('lex.roots.queryRoot')} </Link>
     </TreeNode>

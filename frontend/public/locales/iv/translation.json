@@ -7,128 +7,71 @@
     "lex": {
         "entries": {
             "label": "Kistalketa",
+            "labels": {
+                "iv": "ILVEN",
+                "en": "INGLIS",
+                "cat" : "TALSALKE",
+                "cats": {
+                    "label": "TALSALKE",
+                    "select": "Kelli...",
+                    "ij": "Ajtalkive",
+                    "av": "Anistalke",
+                    "aj": "Aplotalke",
+                    "pf": "Eatalkive",
+                    "vb": "Kartalke",
+                    "qt": "Kentalke",
+                    "cj": "Kuttalkive",
+                    "sf": "Putalkive",
+                    "nu": "Saltalke",
+                    "no": "Samvejur",
+                    "pr": "Virtalkive",
+                    "num": "#"
+                },
+                "sw": "SWADESH",
+                "root": "KONO",
+                "pl": "KENO",
+                "pl2": "KENO2",
+                "par": "AKEA",
+                "pul": "PULSO",
+                "prstem": "A-KONIVO",
+                "pastem": "I-KONIVO",
+                "fustem": "U-KONIVO"
+            },
 
             "listEntries":  {
                 "label" : "Uilen kistalkee salli ",
                 "pre-header" : "Uilen kistalkee ",
-                "post-header" : " kistalkee",
-                "num": "#",
-                "iv": "ILVEN",
-                "en": "INGLIS",
-                "cat": "TSK",
-                "sw": "SW",
-                "root": "KONO",
-                "pl": "KENO",
-                "pl2": "KENO2",
-                "par": "AKEA",
-                "pul": "PULSO",
-                "prstem": "A-KONIVO",
-                "pastem": "I-KONIVO",
-                "fustem": "U-KONIVO",
-                "acts": "KARSOTA"
+                "post-header" : " kistalkee"
             },
 
             "editEntry": {
-                "label": "Kistalkeva eddi",
-                "iv": "ILVEN",
-                "en": "INGLIS",
-                "cat": {
-                    "label": "TALSALKE",
-                    "select": "Kelli...",
-                    "ij": "Ajtalkive",
-                    "av": "Anistalke",
-                    "aj": "Aplotalke",
-                    "pf": "Eatalkive",
-                    "vb": "Kartalke",
-                    "qt": "Kentalke",
-                    "cj": "Kuttalkive",
-                    "sf": "Putalkive",
-                    "nu": "Saltalke",
-                    "no": "Samvejur",
-                    "pr": "Virtalkive"
+                "label": "Kistalkeva eddi"
                 },
 
-                "sw": "SWADESH",
-                "root": "KONO",
-                "pl": "KENO",
-                "pl2": "KENO2",
-                "par": "AKEA",
-                "pul": "PULSO",
-                "prstem": "A-KONIVO",
-                "pastem": "I-KONIVO",
-                "fustem": "U-KONIVO"
-            },
             "enterEntry": {
-                "label": "Unnen kistalkeva aunilli",
-                "iv": "ILVEN",
-                "en": "INGLIS",
-                "cat": {
-                    "label": "TALSALKE",
-                    "select": "Kelli...",
-                    "ij": "Ajtalkive",
-                    "av": "Anistalke",
-                    "aj": "Aplotalke",
-                    "pf": "Eatalkive",
-                    "vb": "Kartalke",
-                    "qt": "Kentalke",
-                    "cj": "Kuttalkive",
-                    "sf": "Putalkive",
-                    "nu": "Saltalke",
-                    "no": "Samvejur",
-                    "pr": "Virtalkive"
-                },
-                "sw": "SWADESH",
-                "root": "KONO",
-                "pl": "KENO",
-                "pl2": "KENO2",
-                "par": "AKEA",
-                "pul": "PULSO",
-                "prstem": "A-KONIVO",
-                "pastem": "I-KONIVO",
-                "fustem": "U-KONIVO"
+                "label": "Unnen kistalkeva aunilli"
             },
-            "queryEntry": "Kistalkeeva massi",
-            "listRoots": {
-                "label" : "Uilen konoi salli",
-                "pre-header": "Uilen konoi ",
-                "post-header": "  konoi",
-                "number": "#",
-                "root": "KONO",
-                "prim": "PRIMARY",
-                "moda": "MODACT",
-                "act": "ACTIVE",
-                "modp": "MODPAS",
-                "pas": "PASSIVE",
-                "acts": "KARSOTA"
-            },
-            "editRoot": {
-                "label" : "Konova eddi",
-                "number": "#",
-                "root": "KONO",
-                "prim": "PRIMARY",
-                "moda": "MODACT",
-                "act": "ACTIVE",
-                "modp": "MODPAS",
-                "pas": "PASSIVE",
-                "acts": "KARSOTA"
-            },
-            "enterRoot": {
-                "label" : "Unnen konova aunilli",
-                "number": "#",
-                "root": "KONO",
-                "prim": "PRIMARY",
-                "moda": "MODACT",
-                "act": "ACTIVE",
-                "modp": "MODPAS",
-                "pas": "PASSIVE",
-                "acts": "KARSOTA"
-            }
+            "queryEntry": "Kistalkeeva massi"
+
         },
         "roots": {
             "label" : "Konota",
-            "listRoots": "Uilen konota salli",
+            "number": "#",
+            "root": "KONO",
+            "prim": "PRIMARY",
+            "moda": "MODACT",
+            "act": "ACTIVE",
+            "modp": "MODPAS",
+            "pas": "PASSIVE",
+            "acts": "KARSOTA",
+            "listRoots": {
+                "label": "Uilen konota salli",
+                "pre-header": "Uilen konoi ",
+                "post-header": "  konoi"
+            },
             "enterRoot": "Unnen konova aunilli",
-            "queryRoot": "Konoiva massi"
+            "queryRoot": "Konoiva massi",
+            "noroot": "ilkonoi" 
         },
         "files": {
             "label" : "Eltonsjurta",

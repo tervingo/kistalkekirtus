@@ -141,7 +141,7 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
                   whiteSpace: 'nowrap'
                 }}
               >
-                {t(`lex.entries.listEntries.${key}`)}
+                {t(`lex.entries.labels.${key}`)}
                 {['num', 'iv', 'en', 'cat', 'sw', 'root'].includes(key) && (
                   <UnfoldMoreIcon sx={{ marginLeft: '5px', fontSize: 'small' }} />
                 )}
@@ -163,7 +163,7 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
               <TableCell sx={{ border: 1, borderColor: 'divider' }}>
                 {translation.root 
                   ? <Link href="/list-roots">{translation.root}</Link> 
-                  : '<ilkonoi>'
+                  : t('lex.roots.noroot')
                 }
               </TableCell>
               <TableCell sx={{ border: 1, borderColor: 'divider' }}>{translation.pl}</TableCell>
@@ -265,7 +265,7 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
     return (
         <div>
           <Typography variant="h4">
-          {t('lex.entries.listRoots.pre-header')} ({roots.length} {t('lex.entries.listRoots.post-header')})
+          {t('lex.roots.listRoots.pre-header')} ({roots.length} {t('lex.roots.listRoots.post-header')})
           </Typography>
           <TableContainer 
             component={Paper} 
@@ -309,7 +309,7 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
                       whiteSpace: 'nowrap'
                     }}
                   >
-                    {t(`lex.entries.listRoots.${key}`)}
+                    {t(`lex.roots.${key}`)}
                     {['root'].includes(key) && (
                       <UnfoldMoreIcon sx={{ marginLeft: '5px', fontSize: 'small' }} />
                     )}

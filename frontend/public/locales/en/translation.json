@@ -7,14 +7,25 @@
     "lex": {
         "entries": {
             "label" : "Entries",
-            "listEntries": {
-                "label" : "List All Entries",
-                "pre-header" : "All entries ",
-                "post-header" : " entries",
-                "num": "#",
+            "labels": {
                 "iv": "ILVISH",
                 "en": "ENGLISH",
-                "cat": "CAT",
+                "cat": "CATEGORY",
+                "cats": {
+                    "label": "CATEGORY",
+                    "select": "Select...",
+                    "aj": "Adjective",
+                    "av": "Adverb",
+                    "cj": "Conjunction",
+                    "ij": "Interjection",
+                    "no": "Noun",
+                    "nu": "Number",
+                    "pf": "Prefix",
+                    "pr": "Pronoun",
+                    "qt": "Quantifier",
+                    "sf": "Suffix",
+                    "vb": "Verb"
+                },
                 "sw": "SW",
                 "root": "ROOT",
                 "pl": "PLURAL",
@@ -24,109 +35,46 @@
                 "prstem": "PR STEM",
                 "pastem": "PA STEM",
                 "fustem": "FU STEM",
-                "acts": "ACTIONS"
+                "acts": "ACTIONS",
+                "num": "#"
             },
-            "editEntry": {
-                "label": "Edit Entry",
-                "iv": "ILVISH",
-                "en": "ENGLISH",
-                "cat": {
-                    "label": "CATEGORY",
-                    "select": "Select...",
-                    "aj": "Adjective",
-                    "av": "Adverb",
-                    "cj": "Conjunction",
-                    "ij": "Interjection",
-                    "no": "Noun",
-                    "nu": "Number",
-                    "pf": "Prefix",
-                    "pr": "Pronoun",
-                    "qt": "Quantifier",
-                    "sf": "Suffix",
-                    "vb": "Verb"
-                },
-                "sw": "SWADESH",
-                "root": "ROOT",
-                "pl": "PLURAL",
-                "pl2": "PLURAL2",
-                "par": "PARTITIVE",
-                "pul": "VALENCE",
-                "prstem": "PR STEM",
-                "pastem": "PA STEM",
-                "fustem": "FU STEM"
-            },
-            "enterEntry": {
-                "label": "Enter New Entry",
-                "iv": "ILVISH",
-                "en": "ENGLISH",
-                "cat": {
-                    "label": "CATEGORY",
-                    "select": "Select...",
-                    "aj": "Adjective",
-                    "av": "Adverb",
-                    "cj": "Conjunction",
-                    "ij": "Interjection",
-                    "no": "Noun",
-                    "nu": "Number",
-                    "pf": "Prefix",
-                    "pr": "Pronoun",
-                    "qt": "Quantifier",
-                    "sf": "Suffix",
-                    "vb": "Verb"
-                },
-                "sw": "SWADESH",
-                "root": "ROOT",
-                "pl": "PLURAL",
-                "pl2": "PLURAL2",
-                "par": "PARTITIVE",
-                "pul": "VALENCE",
-                "prstem": "PR STEM",
-                "pastem": "PA STEM",
-                "fustem": "FU STEM"
-            },    
-            "queryEntry": "Query Entries",
-            "listRoots": {
-                "label" : "List All Roots",
-                "pre-header": "All Roots ",
-                "post-header": "  roots",
-                "number": "#",
-                "root": "ROOT",
-                "prim": "PRIMARY",
-                "moda": "MODACT",
-                "act": "ACTIVE",
-                "modp": "MODPAS",
-                "pas": "PASSIVE",
-                "acts": "ACTIONS"
-            },
-            "editRoot": {
-                "label" : "Edit Root",
-                "number": "#",
-                "root": "ROOT",
-                "prim": "PRIMARY",
-                "moda": "MODACT",
-                "act": "ACTIVE",
-                "modp": "MODPAS",
-                "pas": "PASSIVE",
-                "acts": "ACTIONS"
-            },
-            "enterRoot": {
-                "label" : "Enter New Root",
-                "number": "#",
-                "root": "ROOT",
-                "prim": "PRIMARY",
-                "moda": "MODACT",
-                "act": "ACTIVE",
-                "modp": "MODPAS",
-                "pas": "PASSIVE",
-                "acts": "ACTIONS"
-            }
 
+            "listEntries": {
+                "label" : "List All Entries",
+                "pre-header" : "All entries ",
+                "post-header" : " entries"
+            },
+
+            "editEntry": {
+                "label": "Edit Entry"
+            },
+
+            "enterEntry": {
+                "label": "Enter New Entry"
+            },    
+
+            "queryEntry": "Query Entries"
         },
+
         "roots": {
             "label" : "Roots",
-            "listRoots": "List All Roots",
+            "number": "#",
+            "root": "ROOT",
+            "prim": "PRIMARY",
+            "moda": "MODACT",
+            "act": "ACTIVE",
+            "modp": "MODPAS",
+            "pas": "PASSIVE",
+            "acts": "ACTIONS",
+            "listRoots": {
+                "label": "List All Roots",
+                "pre-header": "All Roots ",
+                "post-header": "  roots"
+            },
+            "editRoot": "Edit Root",
             "enterRoot": "Enter New Root",
-            "queryRoot": "Query Roots"
+            "queryRoot": "Query Roots",
+            "noroot": "no root"
         },
         "files": {
             "label" : "Files",

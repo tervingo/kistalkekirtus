@@ -1,18 +1,43 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
+
+
+import {
+    Typography,
+    TextField,
+    Button,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Paper,
+    IconButton,
+    Box,
+    Container,
+  } from '@mui/material';
+  import { Edit as EditIcon, Delete as DeleteIcon } from '@mui/icons-material';
+
+
 import './tkk.css';
 
 import { SERVER_IP } from './constants';
+
+// QUERY ENTRY (using MUI)
+
+
+
 
 // QUERY ENTRY
 
 export function QueryEntry() {
     const [search, setSearch] = useState('');
     const [translations, setTranslations] = useState([]);
- 
+    const { t } = useTranslation();
+
+
  // Main queryEntry function
 
     const queryEntry = async (event) => {
@@ -61,60 +86,84 @@ export function QueryEntry() {
 //  Return form 
 
     return (
-        <div>
-            <h2> Search data </h2>
-            <form onSubmit={queryEntry}>           
-                <label>
-                    <h4>Search expression:</h4>
-                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
-                </label>
-                <br/><br/>
-                <div className='button-container'>
-                    <input className='nice-button' type="submit" value="Search" />
-                    <button className='nice-button' type="button" onClick={handleCancel}>Cancel</button>
-                </div>
-                <div>
-                    <h2>Search Results:</h2>
-                    <table className="bordered-table">
-                        <tr>
-                            <th>ILVEN</th>
-                            <th>INGLIS</th>
-                            <th>TSK</th>
-                            <th>KONO</th>
-                            <th>KENO</th>
-                            <th>KENO2</th>
-                            <th>AKEA</th>
-                            <th>PULSO</th>
-                            <th>A-KONIVO</th>
-                            <th>I-KONIVO</th>
-                            <th>U-KONIVO</th>
-                            <th>KARSOTA</th>
-                        </tr>
-                        {Array.isArray(translations) && translations.map((translation, index) => (
-                        <tr key={index}>
-                            <td>{translation.can}</td>
-                            <td>{translation.en}</td>
-                            <td>{translation.cat}</td>
-                            <td>{translation.root ? translation.root : '<ilkonoi>'}</td>
-                            <td>{translation.pl}</td>
-                            <td>{translation.pl2}</td>
-                            <td>{translation.par}</td>
-                            <td>{translation.pul}</td>
-                            <td>{translation.pr}</td>
-                            <td>{translation.pa}</td>
-                            <td>{translation.fu}</td>
-                            <td>
-                                <FontAwesomeIcon className='nice-pencil' icon={faPencilAlt} onClick={() => handleEdit(translation.can)} />
-                                <FontAwesomeIcon className='nice-pencil' icon={faTrashAlt} onClick={() => handleDelete(translation.can)} />
-                             </td>
-                        </tr>
-                    ))}
-                    </table>
-                </div>
-            </form>
-            <br/>
-            <button className='nice-button' onClick={handleClear}>Clear</button>
-        </div>
+    <div>
+        <Container maxWidth="lg">
+            <Typography variant="h4" gutterBottom>
+                {t('lex.entries.queryEntries.label')}
+            </Typography>
+            <Box component="form" onSubmit={queryEntry} noValidate sx={{ mt: 1 }}>
+                <TextField
+                fullWidth
+                label="Search expression"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                margin="normal"
+                />
+                <Box sx={{ mt: 2, mb: 2 }}>
+                <Button type="submit" variant="contained" sx={{ mr: 1 }}>
+                    Search
+                </Button>
+                <Button variant="outlined" onClick={handleCancel} sx={{ mr: 1 }}>
+                    Cancel
+                </Button>
+                <Button variant="outlined" onClick={handleClear}>
+                    Clear
+                </Button>
+                </Box>
+            </Box>
+
+            <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
+                {t('lex.entries.queryEntries.label')}
+            </Typography>
+            <TableContainer component={Paper}>
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                        <TableCell>{t('lex.entries.labels.iv')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.en')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.cat')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.root')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.pl')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.pl2')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.par')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.pul')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.prstem')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.pastem')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.fustem')}</TableCell>
+                        <TableCell>{t('lex.entries.labels.acts')}</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {Array.isArray(translations) &&
+                        translations.map((translation) => (
+                            <TableRow key={translation.can}>
+                            <TableCell>{translation.can}</TableCell>
+                            <TableCell>{translation.en}</TableCell>
+                            <TableCell>{translation.cat}</TableCell>
+                            <TableCell>{translation.root || t('lex.roots.noroot') }</TableCell>
+                            <TableCell>{translation.pl}</TableCell>
+                            <TableCell>{translation.pl2}</TableCell>
+                            <TableCell>{translation.par}</TableCell>
+                            <TableCell>{translation.pul}</TableCell>
+                            <TableCell>{translation.pr}</TableCell>
+                            <TableCell>{translation.pa}</TableCell>
+                            <TableCell>{translation.fu}</TableCell>
+                            <TableCell>
+                                <IconButton onClick={() => handleEdit(translation.can)}>
+                                <EditIcon />
+                                </IconButton>
+                                <IconButton onClick={() => handleDelete(translation.can, translation.can)}>
+                                <DeleteIcon />
+                                </IconButton>
+                            </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </Container>
+    </div>
+
     );
 }
 
@@ -124,7 +173,9 @@ export function QueryEntry() {
 export function QueryRoot() {
     const [search, setSearch] = useState('');
     const [roots, setRoots] = useState([]);
- 
+    const { t } = useTranslation();
+
+
  // Main queryEntry function
 
     const queryRoot = async (event) => {
@@ -173,47 +224,70 @@ export function QueryRoot() {
 
     return (
         <div>
-            <h2> Search data </h2>
-            <form onSubmit={queryRoot}>           
-                <label>
-                    <h4>Search expression:</h4>
-                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
-                </label>
-                <br/><br/>
-                <div className='button-container'>
-                    <input className='nice-button' type="submit" value="Search" />
-                    <button className='nice-button' type="button" onClick={handleCancel}>Cancel</button>
-                </div>
-                <div>
-                    <h2>Search Results:</h2>
-                    <table className="bordered-table">
-                        <tr>
-                            <th>KONO</th>
-                            <th>PRIMARY</th>
-                            <th>MODE ACT</th>
-                            <th>ACTIVE</th>
-                            <th>MODE PAS</th>
-                            <th>PASSIVE</th>
-                        </tr>
-                        {Array.isArray(roots) && roots.map((root, index) => (
-                        <tr key={index}>
-                            <td>{root.root}</td>
-                            <td>{root.prim}</td>
-                            <td>{root.moda}</td>
-                            <td>{root.act}</td>
-                            <td>{root.modp}</td>
-                            <td>{root.pas}</td>
-                             <td>
-                                <FontAwesomeIcon className='nice-pencil' icon={faPencilAlt} onClick={() => handleEdit(root.root)} />
-                                <FontAwesomeIcon className='nice-pencil' icon={faTrashAlt} onClick={() => handleDelete(root.root)} />
-                             </td>
-                        </tr>
-                    ))}
-                    </table>
-                </div>
-            </form>
-            <br/>
-            <button className='nice-button' onClick={handleClear}>Clear</button>
+            <Container maxWidth="lg">
+                <Typography variant="h4" gutterBottom>
+                    {t('lex.roots.label')}
+                </Typography>
+                <Box component="form" onSubmit={queryRoot} noValidate sx={{ mt: 1 }}>
+                    <TextField
+                    fullWidth
+                    label="Search expression"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    margin="normal"
+                    />
+                    <Box sx={{ mt: 2, mb: 2 }}>
+                    <Button type="submit" variant="contained" sx={{ mr: 1 }}>
+                        Search
+                    </Button>
+                    <Button variant="outlined" onClick={handleCancel} sx={{ mr: 1 }}>
+                        Cancel
+                    </Button>
+                    <Button variant="outlined" onClick={handleClear}>
+                        Clear
+                    </Button>
+                    </Box>
+                </Box>
+
+                <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
+                    {t('lex.roots.label')}
+                </Typography>
+                <TableContainer component={Paper}>
+                    <Table>
+                        <TableHead>
+                            <TableRow>
+                            <TableCell>{t('lex.roots.root')}</TableCell>
+                            <TableCell>{t('lex.roots.prim')}</TableCell>
+                            <TableCell>{t('lex.roots.moda')}</TableCell>
+                            <TableCell>{t('lex.roots.act')}</TableCell>
+                            <TableCell>{t('lex.roots.modp')}</TableCell>
+                            <TableCell>{t('lex.roots.pas')}</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {Array.isArray(roots) &&
+                            roots.map((root, index) => (
+                                <TableRow key={index}>
+                                <TableCell>{root.root}</TableCell>
+                                <TableCell>{root.prim}</TableCell>
+                                <TableCell>{root.moda}</TableCell>
+                                <TableCell>{root.act}</TableCell>
+                                <TableCell>{root.modp}</TableCell>
+                                <TableCell>{root.pas}</TableCell>
+                                <TableCell>
+                                <IconButton onClick={() => handleEdit(root.root)}>
+                                    <EditIcon />
+                                </IconButton>
+                                <IconButton onClick={() => handleDelete(root.root, root.root)}>
+                                    <DeleteIcon />
+                                </IconButton>
+                                </TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </Container>
         </div>
     );
 }
