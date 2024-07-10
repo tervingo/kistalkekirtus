@@ -89,7 +89,7 @@ export function QueryEntry() {
     <div>
         <Container maxWidth="lg">
             <Typography variant="h4" gutterBottom>
-                {t('lex.entries.queryEntries.label')}
+                {t('lex.entries.queryEntries')}
             </Typography>
             <Box component="form" onSubmit={queryEntry} noValidate sx={{ mt: 1 }}>
                 <TextField
@@ -100,20 +100,20 @@ export function QueryEntry() {
                 margin="normal"
                 />
                 <Box sx={{ mt: 2, mb: 2 }}>
-                <Button type="submit" variant="contained" sx={{ mr: 1 }}>
-                    Search
-                </Button>
-                <Button variant="outlined" onClick={handleCancel} sx={{ mr: 1 }}>
-                    Cancel
-                </Button>
-                <Button variant="outlined" onClick={handleClear}>
-                    Clear
-                </Button>
+                    <Button type="submit" variant="contained" sx={{ mr: 1 }}>
+                        {t('buttons.search')}
+                    </Button>
+                    <Button variant="outlined" onClick={handleCancel} sx={{ mr: 1 }}>
+                        {t('buttons.cancel')}
+                    </Button>
+                    <Button variant="outlined" onClick={handleClear}>
+                        {t('buttons.clear')}
+                    </Button>
                 </Box>
             </Box>
 
             <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
-                {t('lex.entries.queryEntries.label')}
+                {t('lex.entries.queryEntries')}
             </Typography>
             <TableContainer component={Paper}>
                 <Table>
@@ -226,7 +226,7 @@ export function QueryRoot() {
         <div>
             <Container maxWidth="lg">
                 <Typography variant="h4" gutterBottom>
-                    {t('lex.roots.label')}
+                    {t('lex.roots.queryRoots')}
                 </Typography>
                 <Box component="form" onSubmit={queryRoot} noValidate sx={{ mt: 1 }}>
                     <TextField
@@ -237,16 +237,17 @@ export function QueryRoot() {
                     margin="normal"
                     />
                     <Box sx={{ mt: 2, mb: 2 }}>
+                    <Box sx={{ mt: 2, mb: 2 }}>
                     <Button type="submit" variant="contained" sx={{ mr: 1 }}>
-                        Search
+                        {t('buttons.search')}
                     </Button>
                     <Button variant="outlined" onClick={handleCancel} sx={{ mr: 1 }}>
-                        Cancel
+                        {t('buttons.cancel')}
                     </Button>
                     <Button variant="outlined" onClick={handleClear}>
-                        Clear
+                        {t('buttons.clear')}
                     </Button>
-                    </Box>
+                </Box>                    </Box>
                 </Box>
 
                 <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>

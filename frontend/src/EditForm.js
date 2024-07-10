@@ -100,7 +100,7 @@ export function EditEntry({ setRefreshKey }) {
     
     return (
       <Box component="form" onSubmit={handleEdit} sx={{ mt: 4 }}>
-        <Typography variant="h4" gutterBottom>{t('lex.entries.editEntry.label')}</Typography>
+        <Typography variant="h4" gutterBottom>{t('lex.entries.editEntry')}</Typography>
         <Grid container spacing={2}>
           {/* First Row */}
           <Grid item xs={12} sm={4}>

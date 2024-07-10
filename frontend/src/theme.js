@@ -15,6 +15,7 @@ const theme = createTheme({
         labels: {
           bgblue: blue[900],
           bggreen: green[900],
+          bgorange: orange[900],
           tx: grey[100]
         }
       },

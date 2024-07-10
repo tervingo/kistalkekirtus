@@ -4,6 +4,12 @@
       "lexicon": "LEXICON",
       "grammar": "GRAMMAR"
     },
+    "buttons": {
+        "submit": "SUBMIT",
+        "clear": "CLEAR",
+        "cancel": "CANCEL",
+        "search": "SEARCH"
+    },
     "lex": {
         "entries": {
             "label" : "Entries",
@@ -45,15 +51,11 @@
                 "post-header" : " entries"
             },
 
-            "editEntry": {
-                "label": "Edit Entry"
-            },
+            "editEntry": "Edit Entry",
 
-            "enterEntry": {
-                "label": "Enter New Entry"
-            },    
+            "enterEntry": "Enter New Entry",    
 
-            "queryEntry": "Query Entries"
+            "queryEntries": "Query Entries"
         },
 
         "roots": {
@@ -73,7 +75,7 @@
             },
             "editRoot": "Edit Root",
             "enterRoot": "Enter New Root",
-            "queryRoot": "Query Roots",
+            "queryRoots": "Query Roots",
             "noroot": "no root"
         },
         "files": {
@@ -95,12 +97,14 @@
                 "example": "EXAMPLE",
                 "abs": "Absolutive",
                 "agt": "Agentive",
+                "voc": "Vocative",
                 "rel": "Relative",
                 "gen": "Genitive",
                 "dat": "Dative",
                 "ins": "Instrumental",
                 "abl": "Ablative",
                 "loc": "Locative",
+                "ads": "Adessive",
                 "com": "Comitative",
                 "res": "Resultative",
                 "par": "Partitive",

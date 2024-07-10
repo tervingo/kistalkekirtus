@@ -28,8 +28,8 @@ const EntriesNode = () => {
   return (
     <TreeNode label={t('lex.entries.label')}>
       <Link className="tree-list" to="/list-entries">{t('lex.entries.listEntries.label')}</Link>
-      <Link className="tree-list" to="/enter-entry">{t('lex.entries.enterEntry.label')}</Link>
-      <Link className="tree-list" to="/query-entry">{t('lex.entries.queryEntry')}</Link>
+      <Link className="tree-list" to="/enter-entry">{t('lex.entries.enterEntry')}</Link>
+      <Link className="tree-list" to="/query-entry">{t('lex.entries.queryEntries')}</Link>
     </TreeNode>
   );
 };
@@ -42,7 +42,7 @@ const RootsNode = () =>  {
     <TreeNode label={t('lex.roots.label')} >
       <Link className="tree-list" to="/list-roots">{t('lex.roots.listRoots.label')} </Link>
       <Link className="tree-list" to="/enter-root">{t('lex.roots.enterRoot')} </Link>
-      <Link className="tree-list" to="/query-root">{t('lex.roots.queryRoot')} </Link>
+      <Link className="tree-list" to="/query-root">{t('lex.roots.queryRoots')} </Link>
     </TreeNode>
   );
 };

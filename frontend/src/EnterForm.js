@@ -95,7 +95,7 @@ export function EnterEntry() {
 
   return (
     <Box component="form" onSubmit={enterEntry} sx={{ mt: 4 }}>
-      <Typography variant="h4" gutterBottom>{t('lex.entries.enterEntry.label')}</Typography>
+      <Typography variant="h4" gutterBottom>{t('lex.entries.enterEntry')}</Typography>
       <Grid container spacing={2}>
         {/* First Row */}
         <Grid item xs={12} sm={4}>
@@ -227,13 +227,13 @@ export function EnterEntry() {
       
       <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
         <Button variant="contained" color="primary" type="submit">
-          Submit
+          {t('buttons.submit')}
         </Button>
         <Button variant="outlined" color="secondary" onClick={handleClear}>
-          Clear
+          {t('buttons.clear')}
         </Button>
         <Button variant="outlined" color="secondary" onClick={handleCancel}>
-          Cancel
+          {t('buttons.cancel')}
         </Button>
       </Box>
       
@@ -298,7 +298,7 @@ export function EnterRoot() {
       <div>
 
       <Box component="form" onSubmit={enterRoot} sx={{ mt: 4 }}>
-        <Typography variant="h4" gutterBottom>{t('lex.roots.label')}</Typography>
+        <Typography variant="h4" gutterBottom>{t('lex.roots.enterRoot')}</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>
             <TextField
@@ -353,13 +353,13 @@ export function EnterRoot() {
       
       <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
         <Button variant="contained" color="primary" type="submit">
-          Submit
+          {t('buttons.submit')}
         </Button>
         <Button variant="outlined" color="secondary" onClick={handleClear}>
-          Clear
+          {t('buttons.clear')}
         </Button>
         <Button variant="outlined" color="secondary" onClick={handleCancel}>
-          Cancel
+          {t('buttons.cancel')}
         </Button>
       </Box>
       

@@ -4,6 +4,12 @@
       "lexicon": "TALKONSJUR",
       "grammar": "TALKUMMUR"
     },
+    "buttons": {
+        "submit": "NARRI",
+        "clear": "LANNI",
+        "cancel": "NUTUENI",
+        "search": "MASSI"
+    },
     "lex": {
         "entries": {
             "label": "Kistalketa",
@@ -44,14 +50,11 @@
                 "post-header" : " kistalkee"
             },
 
-            "editEntry": {
-                "label": "Kistalkeva eddi"
-                },
+            "editEntry": "Kistalkeva eddi",
 
-            "enterEntry": {
-                "label": "Unnen kistalkeva aunilli"
-            },
-            "queryEntry": "Kistalkeeva massi"
+            "enterEntry": "Unnen kistalkeva aunilli",
+
+            "queryEntries": "Kistalkeeva massi"
 
         },
         "roots": {
@@ -70,7 +73,7 @@
                 "post-header": "  konoi"
             },
             "enterRoot": "Unnen konova aunilli",
-            "queryRoot": "Konoiva massi",
+            "queryRoots": "Konoiva massi",
             "noroot": "ilkonoi" 
         },
         "files": {
@@ -92,12 +95,14 @@
                 "example": "KUSARVUR",
                 "abs": "Aka",
                 "agt": "Akas",
+                "voc": "Ake",
                 "rel": "Aken",
                 "gen": "Akin",
                 "dat": "Aku",
                 "ins": "Akmi",
                 "abl": "Aksi",
                 "loc": "Akla",
+                "ads": "Akne",
                 "com": "Akle",
                 "res": "Akva",
                 "par": "Akea",
