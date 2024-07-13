@@ -83,7 +83,13 @@
             "exportCSV": "Export CSV",
             "exportPDF": "Export PDF",
             "importCSV": "Import CSV",
-            "CSVInfo": "CSV Info"
+            "CSVInfo": "CSV Info",
+            "modDate": "Entry Modified Date: ",
+            "nofEntries": "Number of Entries: ",
+            "rootModDate": "Root Modified Date: ",
+            "nofRoots": "Number of Roots: ",
+            "pre-lastReadCSV": "Date when CSV was last read  at ",
+            "post-lastReadCSV": ""
         }
     },
     "gram": {

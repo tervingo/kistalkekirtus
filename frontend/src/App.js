@@ -26,6 +26,7 @@ import { HtmlDisplay } from './DisplayHtml';
 import { LexTreeView } from './LexTreeView';
 import { GramTreeView } from './GramTreeView';
 import { LetterTable } from './LetterTable'; 
+import { Style } from '@mui/icons-material';
 
 
 // Custom styled ToggleButton
@@ -123,7 +124,9 @@ function App() {
     const tableContainerRef = useRef(null);
 
     function handleLetterClick(letter) {
+      console.log('letter :', letter);
       const element = document.getElementById(`entry-${letter}`);
+      console.log('element: ', element);
       if (element && tableContainerRef.current) {
         tableContainerRef.current.scrollTop = element.offsetTop - tableContainerRef.current.offsetTop;
       }
@@ -174,7 +177,10 @@ function App() {
                       </Paper>
                     </Box>
                     <Box sx={{ p:1, textAlign: 'center'}} >
-                      <img src=".\kantokirtur_2.png" alt="Kantokirtur" />
+                      <img src=".\kantokirtur_3.png" alt="Kantokirtur" />
+                      <Typography sx={{ fontFamily: '"Kirmius", sans-serif', fontSize: '2rem', fontWeight: 600}}>
+                        ilvental
+                      </Typography>
                     </Box>
                 </Box>
               </Grid>
@@ -190,36 +196,19 @@ function App() {
                           onChange={handleTabChange}
                           aria-label="text alignment"
                           size="small"
-                          sx={{
-                            '& .MuiToggleButtonGroup-grouped': {
-                              margin: 0.5,
-                              border: 0,
-                              '&.Mui-disabled': {
-                                border: 0,
-                              },
-                            },
-                          }}
                         >
-                        <ToggleButton 
+                        <StyledToggleButton
                           value="LEXICON" 
                           aria-label="lexicon"
-                          sx={{
-                            padding: '4px 8px',
-                            fontSize: '0.75rem',
-                          }}
                           >
                           {t('tabs.lexicon')}
-                        </ToggleButton>
-                        <ToggleButton 
+                        </StyledToggleButton>
+                        <StyledToggleButton
                           value="GRAMMAR" 
                           aria-label="grammar"
-                          sx={{
-                            padding: '4px 8px',
-                            fontSize: '0.75rem',
-                          }}
                         >
                           {t('tabs.grammar')}
-                        </ToggleButton>
+                        </StyledToggleButton>
                       </ToggleButtonGroup>
                     </div>
                     {activeTab === 'LEXICON' && (
@@ -228,7 +217,7 @@ function App() {
                             <LetterTable handleLetterClick={handleLetterClick} handleScrollToTop={handleScrollToTop} handleScrollToBottom={handleScrollToBottom}/>                       
                         </>
                         )}
-                      {activeTab === 'GRAMMAR' && (
+                    {activeTab === 'GRAMMAR' && (
                         <>
                             <GramTreeView GramNavigateOnMount={gramNavigateOnMount} setGramNavigateOnMount={setGramNavigateOnMount} />
                         </>
@@ -238,8 +227,8 @@ function App() {
       
                 {/* Main Panel  */}
 
-                <Grid item xs={9} sx={{ height: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-                  <Box sx={{ width: '100%', overflowX: 'auto',  backgroundColor: 'primary.main' }}>
+                <Grid item xs={9} sx={{ height: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column', backgroundColor: theme.palette.primary.dark }}>
+                  <Box sx={{ width: '100%', overflowX: 'auto' }}>
                     <MainComponent />
                   </Box>
                 </Grid>

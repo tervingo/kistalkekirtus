@@ -105,7 +105,8 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
           flexGrow: 1, 
           overflow: 'auto', 
           maxHeight: 'calc(100vh - 100px)', 
-          maxWidth: '100%'
+          maxWidth: '100%',
+          backgroundColor: theme.palette.primary.dark
           }}
         >
         <Table 
@@ -162,7 +163,7 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
               </TableCell>
               <TableCell sx={{ border: 1, borderColor: 'divider' }}>
                 {translation.root 
-                  ? <Link href="/list-roots">{translation.root}</Link> 
+                  ? translation.root
                   : t('lex.roots.noroot')
                 }
               </TableCell>
@@ -264,9 +265,13 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
 
     return (
         <div>
-          <Typography variant="h4">
-          {t('lex.roots.listRoots.pre-header')} ({roots.length} {t('lex.roots.listRoots.post-header')})
-          </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', my: 1 }} >
+            <Paper sx={{ my:2, bgcolor: theme.palette.labels.bggreen, color: theme.palette.labels.tx, textAlign: 'center', width:"60%"}} elevation={3}>
+              <Typography variant="h4">
+              {t('lex.roots.listRoots.pre-header')} ({roots.length} {t('lex.roots.listRoots.post-header')})
+              </Typography>
+            </Paper>
+          </Box>
           <TableContainer 
             component={Paper} 
             ref={tableContainerRef}
@@ -274,7 +279,8 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
               flexGrow: 1, 
               overflow: 'auto', 
               maxHeight: 'calc(100vh - 100px)', 
-              maxWidth: '100%'
+              maxWidth: '100%',
+              backgroundColor: theme.palette.primary.dark
               }}
             >
             <Table 
@@ -298,7 +304,7 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
             >
             <TableHead>
               <TableRow>
-              {['number', 'root', 'prim', 'moda', 'act', 'modp', 'acts'].map((key) => (
+              {['number', 'root', 'prim', 'moda', 'act', 'modp', 'pas', 'acts'].map((key) => (
                   <TableCell 
                     key={key} 
                     onClick={() => ['root'].includes(key) ? handleSort(key) : null}
@@ -319,10 +325,13 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
             </TableHead>
 
             <TableBody>
-              {roots.map((root, index) => (
-                <TableRow key={index} id={`entry-${root.firstLetter}`}>
+              {roots.map((root, index) => {
+                const id= `entry-${root.root[0]}`;
+                return (
+                <TableRow key={index} id={id}>
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.number}</TableCell>
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.root}</TableCell>
+                  <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.prim}</TableCell>
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.moda}</TableCell>
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.act}</TableCell>
                   <TableCell sx={{ border: 1, borderColor: 'divider' }}>{root.modp}</TableCell>
@@ -339,7 +348,8 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
                     </IconButton>
                   </TableCell>
                 </TableRow>
-              ))}
+                );
+              })}
             </TableBody>
           </Table>
         </TableContainer>

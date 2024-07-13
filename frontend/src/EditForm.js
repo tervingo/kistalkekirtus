@@ -16,6 +16,8 @@ import {
     FormControl,
     InputLabel
   } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 
 import { SERVER_IP } from './constants';
 
@@ -99,7 +101,8 @@ export function EditEntry({ setRefreshKey }) {
     }
     
     return (
-      <Box component="form" onSubmit={handleEdit} sx={{ mt: 4 }}>
+      <ThemeProvider theme={theme}>
+      <Box component="form" onSubmit={handleEdit} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
         <Typography variant="h4" gutterBottom>{t('lex.entries.editEntry')}</Typography>
         <Grid container spacing={2}>
           {/* First Row */}
@@ -245,6 +248,7 @@ export function EditEntry({ setRefreshKey }) {
         </Typography>
       )}
     </Box>
+    </ThemeProvider>
   );
 }
 
@@ -316,8 +320,8 @@ export function EditRoot() {
     }
     
     return (
-
-    <Box component="form" onSubmit={handleEdit} sx={{ mt: 4 }}>
+  <ThemeProvider theme={theme}>
+    <Box component="form" onSubmit={handleEdit} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark  }}>
       <Typography variant="h4" gutterBottom>{t('lex.roots.editRoot')}</Typography>
       <Grid container spacing={2}>
 
@@ -387,8 +391,9 @@ export function EditRoot() {
       </Typography>
     )}
   </Box>
+</ThemeProvider>
 
 
-    );
+  );
 }
 

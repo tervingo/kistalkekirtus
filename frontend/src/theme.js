@@ -3,13 +3,14 @@ import { blue, orange, indigo, lightGreen, green, red, grey } from '@mui/materia
 
 const theme = createTheme({
     palette: {
+        mode: 'dark',
         primary: {
-          main: grey[400], // This is the default MUI blue
-          dark: grey[700], // You can change this to any color you want
+          main: grey[600], // This is the default MUI blue
+          dark: grey[800], // You can change this to any color you want
         },
         toggle: {
           on: blue[700],
-          off: grey[200],
+          off: grey[700],
           over: grey[100],
         },
         labels: {
@@ -39,11 +40,16 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           border: '1px solid #1976d2',
-          backgroundColor: grey[200],
+          backgroundColor: green[700],
+          padding: '4px 8px',
+          fontSize: '0.75rem',
           '&.Mui-selected': {
             backgroundColor: blue[700],
-            color: '#ffffff',
+            color: grey[100],
           },
+          '&:hover': {
+            backgroundColor: green[600],
+          }
         },
       },
     },
@@ -51,11 +57,16 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           '& .MuiToggleButton-root': {
+            margin: 0.5,
+            border: 0,
             '&:first-of-type': {
               borderRadius: '4px 0 0 4px',
             },
             '&:last-of-type': {
               borderRadius: '0 4px 4px 0',
+            },
+            '&.Mui-disabled': {
+              border: 0,
             },
           },
         },

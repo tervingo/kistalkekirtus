@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { SERVER_IP } from './constants';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
+import { Box, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 //=============================
 // EXPORT CSV FILE
@@ -7,6 +11,7 @@ import { SERVER_IP } from './constants';
 
 export const ExportCsvForm = () => {
     const [message, setMessage] = useState('');
+    const { t } = useTranslation();
 
     useEffect(() => {
         const exportCsv = async () => {
@@ -18,10 +23,12 @@ export const ExportCsvForm = () => {
     }, []);
 
     return (
-        <div>
-            <h2>Export CSV</h2>
-            <p>{message}</p>
-        </div>
+      <ThemeProvider theme={theme}>
+        <Box sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
+          <Typography variant="h4" gutterBottom>{t('lex.files.exportCSV')}</Typography>
+          <Typography variant="h6" gutterBottom>{message}</Typography>
+        </Box>
+      </ThemeProvider>
     );
 };
 
@@ -32,7 +39,8 @@ export const ExportCsvForm = () => {
 export function ImportCsvForm() {
     const [message, setMessage] = useState(null);
     const [hasUploaded, setHasUploaded] = useState(false);
-  
+    const { t } = useTranslation();
+
     const handleFileUpload = () => {
       if (window.confirm('Do you want to import the new CSV file?')) {
         fetch(`${SERVER_IP}/api/import/csv`, {
@@ -56,9 +64,12 @@ export function ImportCsvForm() {
     }, []);
   
     return (
-      <div>
-        {message && <p>{message}</p>}
-      </div>
+    <ThemeProvider theme={theme}>
+      <Box sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
+        <Typography variant="h4" gutterBottom>{t('lex.files.importCSV')}</Typography>
+        { message && <Typography variant="h6" gutterBottom>{message}</Typography> }
+      </Box>
+    </ThemeProvider>
     );
   };
   
@@ -69,7 +80,8 @@ export function ImportCsvForm() {
   
   export function CsvInfo() {
     const [info, setInfo] = useState({});
-  
+    const { t } = useTranslation();
+
     useEffect(() => {
       fetch(`${SERVER_IP}/api/csv-info`)
         .then(response => response.json())
@@ -79,18 +91,27 @@ export function ImportCsvForm() {
     console.log(info.modified_date)
   
     return (
-      <div>
-        <h3>Current CSV file info</h3>
-        <p>Modified Date: {info.modified_date}</p>
-        <p>Number of Entries: {info.num_entries}</p>
-        <p>Root modified data: {info.root_modified_date} </p>
-        <p>Number of Roots: {info.num_roots}</p>
-        <h3>Last read CSV info at {info.hostname}</h3>
-        <p>{info.last_date_info}</p>
-        <p>{info.last_noe_info}</p>
-        <p>{info.last_nor_info}</p>
-  
-      </div>
+    <ThemeProvider theme={theme}>
+      <Box sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
+        <Typography variant="h4" gutterBottom>{t('lex.files.CSVInfo')}</Typography>
+        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+          <Typography variant="h6" gutterBottom>{t('lex.files.modDate')} {info.modified_date}</Typography>
+        </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+          <Typography variant="h6" gutterBottom>{t('lex.files.nofEntries')} {info.num_entries}</Typography>
+        </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+          <Typography variant="h6" gutterBottom>{t('lex.files.rootModDate')} {info.root_modified_date}</Typography>
+        </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+          <Typography variant="h6" gutterBottom>{t('lex.files.nofRoots')} {info.num_roots}</Typography>
+        </Box>
+        <Typography variant="h6" gutterBottom>{t('lex.files.pre-lastReadCSV')} {info.hostname}{t('lex.files.post-lastReadCSV')}</Typography>
+        <Typography paragraph variant="h7" gutterBottom> {info.last_date_info}</Typography>
+        <Typography paragraph variant="h7" gutterBottom> {info.last_noe_info}</Typography>
+        <Typography paragraph variant="h7" gutterBottom> {info.last_nor_info}</Typography>
+      </Box>
+    </ThemeProvider>
     );
   }
   

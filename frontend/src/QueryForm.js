@@ -18,8 +18,9 @@ import {
     Box,
     Container,
   } from '@mui/material';
-  import { Edit as EditIcon, Delete as DeleteIcon } from '@mui/icons-material';
-
+import { Edit as EditIcon, Delete as DeleteIcon } from '@mui/icons-material';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 
 import './tkk.css';
 
@@ -87,7 +88,8 @@ export function QueryEntry() {
 
     return (
     <div>
-        <Container maxWidth="lg">
+        <ThemeProvider theme={theme}>
+        <Container maxWidth="lg" sx={{ backgroundColor: theme.palette.primary.dark}}>
             <Typography variant="h4" gutterBottom>
                 {t('lex.entries.queryEntries')}
             </Typography>
@@ -99,15 +101,15 @@ export function QueryEntry() {
                 onChange={(e) => setSearch(e.target.value)}
                 margin="normal"
                 />
-                <Box sx={{ mt: 2, mb: 2 }}>
-                    <Button type="submit" variant="contained" sx={{ mr: 1 }}>
-                        {t('buttons.search')}
+                <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
+                    <Button variant="contained" color="primary" type="submit">
+                    {t('buttons.submit')}
                     </Button>
-                    <Button variant="outlined" onClick={handleCancel} sx={{ mr: 1 }}>
-                        {t('buttons.cancel')}
+                    <Button variant="outlined" color="secondary" onClick={handleClear}>
+                    {t('buttons.clear')}
                     </Button>
-                    <Button variant="outlined" onClick={handleClear}>
-                        {t('buttons.clear')}
+                    <Button variant="outlined" color="secondary" onClick={handleCancel}>
+                    {t('buttons.cancel')}
                     </Button>
                 </Box>
             </Box>
@@ -162,6 +164,7 @@ export function QueryEntry() {
                 </Table>
             </TableContainer>
         </Container>
+        </ThemeProvider>
     </div>
 
     );
@@ -224,7 +227,8 @@ export function QueryRoot() {
 
     return (
         <div>
-            <Container maxWidth="lg">
+        <ThemeProvider theme={theme}>
+            <Container maxWidth="lg" sx={{ backgroundColor: theme.palette.primary.dark}}>
                 <Typography variant="h4" gutterBottom>
                     {t('lex.roots.queryRoots')}
                 </Typography>
@@ -236,18 +240,17 @@ export function QueryRoot() {
                     onChange={(e) => setSearch(e.target.value)}
                     margin="normal"
                     />
-                    <Box sx={{ mt: 2, mb: 2 }}>
-                    <Box sx={{ mt: 2, mb: 2 }}>
-                    <Button type="submit" variant="contained" sx={{ mr: 1 }}>
-                        {t('buttons.search')}
-                    </Button>
-                    <Button variant="outlined" onClick={handleCancel} sx={{ mr: 1 }}>
-                        {t('buttons.cancel')}
-                    </Button>
-                    <Button variant="outlined" onClick={handleClear}>
+                    <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
+                        <Button variant="contained" color="primary" type="submit">
+                        {t('buttons.submit')}
+                        </Button>
+                        <Button variant="outlined" color="secondary" onClick={handleClear}>
                         {t('buttons.clear')}
-                    </Button>
-                </Box>                    </Box>
+                        </Button>
+                        <Button variant="outlined" color="secondary" onClick={handleCancel}>
+                        {t('buttons.cancel')}
+                        </Button>
+                    </Box>
                 </Box>
 
                 <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
@@ -289,6 +292,7 @@ export function QueryRoot() {
                     </Table>
                 </TableContainer>
             </Container>
+        </ThemeProvider>                    
         </div>
     );
 }

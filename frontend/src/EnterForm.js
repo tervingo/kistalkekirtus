@@ -15,7 +15,10 @@ import {
     InputLabel,
   } from '@mui/material';
 
+import { ThemeProvider } from '@mui/material/styles';
+
 import './tkk.css';
+import theme from './theme';
 
 import { SERVER_IP } from './constants';
 
@@ -62,7 +65,7 @@ export function EnterEntry() {
         const alkono = await fetch(`${SERVER_IP}/api/query-root?root=${root}`);
         const kono = await alkono.json();
         console.log('root is: ', kono);
-        if (kono === '0') {
+        if (kono == '0') {
             console.log('lets enter a new root');
             navigate(`/enter-root/${root}`);
         }
@@ -94,7 +97,8 @@ export function EnterEntry() {
     }
 
   return (
-    <Box component="form" onSubmit={enterEntry} sx={{ mt: 4 }}>
+    <ThemeProvider theme={theme}>
+    <Box component="form" onSubmit={enterEntry} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
       <Typography variant="h4" gutterBottom>{t('lex.entries.enterEntry')}</Typography>
       <Grid container spacing={2}>
         {/* First Row */}
@@ -243,6 +247,7 @@ export function EnterEntry() {
         </Typography>
       )}
     </Box>
+    </ThemeProvider> 
   );
 }
 
@@ -296,8 +301,9 @@ export function EnterRoot() {
 
     return (
       <div>
+      <ThemeProvider theme={theme}>
 
-      <Box component="form" onSubmit={enterRoot} sx={{ mt: 4 }}>
+      <Box component="form" onSubmit={enterRoot} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
         <Typography variant="h4" gutterBottom>{t('lex.roots.enterRoot')}</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>
@@ -369,6 +375,7 @@ export function EnterRoot() {
         </Typography>
       )}
     </Box>
+    </ThemeProvider>
   </div>
   );
 }

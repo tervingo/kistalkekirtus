@@ -139,7 +139,7 @@ def import_csv():
     with open(hostname_last_read_file, 'w') as f:
         f.write(f'Last read on: {datetime.now().strftime("%d-%m-%Y at %H:%M:%S")}\n')
         f.write(f'Number of entries: {nof_entries}\n')
-        f.write(f'Nummber of roots: {nof_roots}\n')
+        f.write(f'Number of roots: {nof_roots}\n')
 
     return {'message': f'CSV files with {nof_entries} entries and {nof_roots} roots have been successfully imported to MongoDB!'}
 

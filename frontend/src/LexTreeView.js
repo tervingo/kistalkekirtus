@@ -71,8 +71,6 @@ export const LexTreeView = ({ LexNavigateOnMount, setLexNavigateOnMount }) => {
     }
   }, [location]);
 
-  console.log('LTV: LexNavigateOnMount is: ', LexNavigateOnMount);
-
   return (
   <div>
     <EntriesNode />

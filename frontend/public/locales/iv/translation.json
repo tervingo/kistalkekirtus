@@ -33,7 +33,7 @@
                     "pr": "Virtalkive",
                     "num": "#"
                 },
-                "sw": "SWADESH",
+                "sw": "SW",
                 "root": "KONO",
                 "pl": "KENO",
                 "pl2": "KENO2",
@@ -81,7 +81,13 @@
             "exportCSV": "CSV oinilli",
             "exportPDF": "PDF oinilli",
             "importCSV": "CSV aunilli",
-            "CSVInfo": "CSV aro"
+            "CSVInfo": "CSV aro",
+            "modDate": "Kistalkee musten sirsami: ",
+            "nofEntries": "Janso kistalkee: ",
+            "rootModDate": "Konoi musten sirsami: ",
+            "nofRoots": "Janso konoi: ",
+            "pre-lastReadCSV": "CSV aunilten pusalen sirsami ",
+            "post-lastReadCSV": "-ne"
         }
     },
     "gram": {
