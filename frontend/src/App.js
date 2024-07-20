@@ -178,8 +178,8 @@ function App() {
                     </Box>
                     <Box sx={{ p:1, textAlign: 'center'}} >
                       <img src=".\kantokirtur_3.png" alt="Kantokirtur" />
-                      <Typography sx={{ fontFamily: '"Kirmius", sans-serif', fontSize: '2rem', fontWeight: 600}}>
-                        ilvental
+                      <Typography sx={{ fontFamily: '"Kirmius Ilren", sans-serif', fontSize: '2rem', fontWeight: 600}}>
+                        ilven.talkummur.<br/>le.kistalkejonsjur
                       </Typography>
                     </Box>
                 </Box>

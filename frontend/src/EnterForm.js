@@ -98,7 +98,7 @@ export function EnterEntry() {
 
   return (
     <ThemeProvider theme={theme}>
-    <Box component="form" onSubmit={enterEntry} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
+    <Box component="form" onSubmit={enterEntry} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark, p: 3 }}>
       <Typography variant="h4" gutterBottom>{t('lex.entries.enterEntry')}</Typography>
       <Grid container spacing={2}>
         {/* First Row */}
@@ -303,7 +303,7 @@ export function EnterRoot() {
       <div>
       <ThemeProvider theme={theme}>
 
-      <Box component="form" onSubmit={enterRoot} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
+      <Box component="form" onSubmit={enterRoot} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark, p: 3 }}>
         <Typography variant="h4" gutterBottom>{t('lex.roots.enterRoot')}</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>

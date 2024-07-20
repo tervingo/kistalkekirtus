@@ -102,7 +102,7 @@ export function EditEntry({ setRefreshKey }) {
     
     return (
       <ThemeProvider theme={theme}>
-      <Box component="form" onSubmit={handleEdit} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark }}>
+      <Box component="form" onSubmit={handleEdit} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark, p: 3 }}>
         <Typography variant="h4" gutterBottom>{t('lex.entries.editEntry')}</Typography>
         <Grid container spacing={2}>
           {/* First Row */}
@@ -321,7 +321,7 @@ export function EditRoot() {
     
     return (
   <ThemeProvider theme={theme}>
-    <Box component="form" onSubmit={handleEdit} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark  }}>
+    <Box component="form" onSubmit={handleEdit} sx={{ mt: 4, backgroundColor: theme.palette.primary.dark, p: 3  }}>
       <Typography variant="h4" gutterBottom>{t('lex.roots.editRoot')}</Typography>
       <Grid container spacing={2}>
 

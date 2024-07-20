@@ -33,7 +33,7 @@ export function HtmlDisplay() {
     }, [label, t]); // Fetch new data when selectedFile changes
 
     return (
-        <div>
+        <div style={{ backgroundColor: 'dimgrey', padding: '0 0 0 40px' }}>
             <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         </div>
     );

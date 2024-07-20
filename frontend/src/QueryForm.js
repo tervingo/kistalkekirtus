@@ -89,7 +89,7 @@ export function QueryEntry() {
     return (
     <div>
         <ThemeProvider theme={theme}>
-        <Container maxWidth="lg" sx={{ backgroundColor: theme.palette.primary.dark}}>
+        <Container maxWidth="lg" sx={{ backgroundColor: theme.palette.primary.dark, p: 3}}>
             <Typography variant="h4" gutterBottom>
                 {t('lex.entries.queryEntries')}
             </Typography>
@@ -228,7 +228,7 @@ export function QueryRoot() {
     return (
         <div>
         <ThemeProvider theme={theme}>
-            <Container maxWidth="lg" sx={{ backgroundColor: theme.palette.primary.dark}}>
+            <Container maxWidth="lg" sx={{ backgroundColor: theme.palette.primary.dark, p: 3}}>
                 <Typography variant="h4" gutterBottom>
                     {t('lex.roots.queryRoots')}
                 </Typography>
