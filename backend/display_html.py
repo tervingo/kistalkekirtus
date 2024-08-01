@@ -15,7 +15,7 @@ def serve_html():
     data = request.get_json()
     grammarKey = data['grammarKey']
 
-    grammar_host = f"{hostname.upper()}_GRAM_FOLDER"
+    grammar_host = "GRAM_FOLDER"
     grammar_folder = grammar_folders[grammar_host]
 
     html_file = grammar_keys[grammarKey]
