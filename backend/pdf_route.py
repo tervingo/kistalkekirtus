@@ -15,7 +15,7 @@ from __init__ import mongo
 
 hostname = socket.gethostname()
 
-from constants import paths
+from constants import paths, new_paths
 from docker_paths import docker_paths
 
 import os
@@ -40,17 +40,19 @@ def export_pdf():
 
     # Specify the path where you want to save the CSV file
 
-    pdf_path_name = f"{hostname.upper()}_PDF_PATH"
+#    pdf_path_name = f"{hostname.upper()}_PDF_PATH"
+    pdf_path_name = "PDF_PATH"
     if is_docker():
         path = docker_paths["PDF_PATH"]
     else:
-        path = paths[pdf_path_name]
+        path = new_paths[pdf_path_name]
 
-    root_pdf_path_name = f"{hostname.upper()}_ROOT_PDF_PATH"
+#    root_pdf_path_name = f"{hostname.upper()}_ROOT_PDF_PATH"
+    root_pdf_path_name = "ROOT_PDF_PATH"
     if is_docker():
         root_file = docker_paths["ROOT_PDF_PATH"]
     else:
-        root_file = paths[root_pdf_path_name]
+        root_file = new_paths[root_pdf_path_name]
 
 
     class FooterCanvas:

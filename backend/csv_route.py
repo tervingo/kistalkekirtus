@@ -7,7 +7,7 @@ from __init__ import mongo
 import os
 from datetime import datetime
 
-from constants import paths
+from constants import paths, new_paths
 from docker_paths import docker_paths
 
 
@@ -31,17 +31,19 @@ def export_csv():
 
     # Specify the paths where you want to save the CSV files
 
-    csv_path_name = f"{hostname.upper()}_CSV_PATH"
+#    csv_path_name = f"{hostname.upper()}_CSV_PATH"
+    csv_path_name = "CSV_PATH"
     if is_docker():
         path = docker_paths["CSV_PATH"]
     else:
-        path = paths[csv_path_name]
+        path = new_paths[csv_path_name]
 
-    root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
+#    root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
+    root_csv_path_name = "ROOT_CSV_PATH"
     if is_docker():
         root_path = docker_paths["ROOT_CSV_PATH"]
     else:
-        root_path = paths[root_csv_path_name]
+        root_path = new_paths[root_csv_path_name]
 
     # Open the lexicon file at the specified path
     with open(path, 'w', newline='', encoding='utf-8') as file:
@@ -94,17 +96,19 @@ def export_csv():
 @csv_route.route('/api/import/csv', methods=['POST'])
 def import_csv():
        
-    csv_path_name = f"{hostname.upper()}_CSV_PATH"
+#    csv_path_name = f"{hostname.upper()}_CSV_PATH"
+    csv_path_name = "CSV_PATH"
     if is_docker():
         csv_file = docker_paths["CSV_PATH"]
     else:
-        csv_file = paths[csv_path_name]
+        csv_file = new_paths[csv_path_name]
 
-    root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
+#    root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
+    root_csv_path_name = "ROOT_CSV_PATH"
     if is_docker():
         root_file = docker_paths["ROOT_CSV_PATH"]
     else:
-        root_file = paths[root_csv_path_name]
+        root_file = new_paths[root_csv_path_name]
 
     # Read the CSV file
     data = pd.read_csv(csv_file)
@@ -152,17 +156,19 @@ def import_csv():
 def csv_info():
      
     hostname = socket.gethostname()
-    csv_path_name = f"{hostname.upper()}_CSV_PATH"
+#    csv_path_name = f"{hostname.upper()}_CSV_PATH"
+    csv_path_name = "CSV_PATH"
     if is_docker():
         csv_path = docker_paths["CSV_PATH"]
     else:
-        csv_path = paths[csv_path_name]
+        csv_path = new_paths[csv_path_name]
 
-    root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
+#    root_csv_path_name = f"{hostname.upper()}_ROOT_CSV_PATH"
+    root_csv_path_name = "ROOT_CSV_PATH"
     if is_docker():
         root_csv_path = docker_paths["ROOT_CSV_PATH"]
     else:    
-        root_csv_path = paths[root_csv_path_name]
+        root_csv_path = new_paths[root_csv_path_name]
 
     # Get the modified date
     timestamp = os.path.getmtime(csv_path)
