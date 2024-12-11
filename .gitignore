@@ -4,7 +4,6 @@ __pycache__/
 
 # Frontend specific ignores
 frontend/src/constants.js
-frontend/public/index.html
 
 # Ignore all CSV files
 *.csv

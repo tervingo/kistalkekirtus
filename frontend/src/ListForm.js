@@ -14,7 +14,6 @@ import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 
 import './tkk.css';
 
-import { SERVER_IP } from './constants';
 import theme from './theme';
 
 // LIST ENTRIES
@@ -28,7 +27,7 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
 
     useEffect(() => {
         const fetchAndSortTranslations = async () => {
-            const response = await fetch(`${SERVER_IP}/api/list-entries`);
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/list-entries`);
             let data = await response.json();
     
             // Add a 'firstLetter' field to each item in the 'translations' array

@@ -2,17 +2,9 @@ from flask import Flask
 from flask_pymongo import PyMongo
 import os
 
-def is_docker():
-    path = '/.dockerenv'
-    return os.path.isfile(path)
-
-
 username = os.getenv("MONGODB_USERNAME")
 password = os.getenv("MONGODB_PASSWORD")
 app = Flask(__name__)
-if is_docker():
-    app.config["MONGO_URI"] = f"mongodb://{username}:{password}@mongodb:27017/mydictionary"
-else:
 #    app.config["MONGO_URI"] = f"mongodb://localhost:27017/mydictionary"
-    app.config["MONGO_URI"] = f"mongodb+srv://tervingo:mig.langar.inn@gagnagunnur.okrh1.mongodb.net/eltotek"
+app.config["MONGO_URI"] = f"mongodb+srv://tervingo:mig.langar.inn@gagnagunnur.okrh1.mongodb.net/eltotek"
 mongo = PyMongo(app)
