@@ -87,7 +87,12 @@
             "rootModDate": "Konoi musten sirsami: ",
             "nofRoots": "Janso konoi: ",
             "pre-lastReadCSV": "CSV aunilten pusalen sirsami ",
-            "post-lastReadCSV": "-ne"
+            "post-lastReadCSV": "-ne",
+            "downloading": "Downloading...",
+            "downloadComplete": "Download complete!",
+            "downloadError": "Error downloading file",
+            "downloadDictionary": "Download Dictionary",
+            "downloadRoots": "Download Roots"
         }
     },
     "gram": {

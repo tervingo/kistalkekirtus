@@ -8,7 +8,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Container, Grid, Box, Paper, Typography } from '@mui/material';
 import { ToggleButtonGroup, ToggleButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { indigo, grey } from '@mui/material/colors';
 
 import theme from './theme';
 
@@ -21,12 +20,11 @@ import { QueryEntry, QueryRoot } from './QueryForm';
 import { ListEntries, ListRoots } from './ListForm';
 import { EditEntry, EditRoot } from './EditForm';
 import { ExportCsvForm, ImportCsvForm, CsvInfo } from './CsvForm';
-import { ExportPdfForm } from './PdfForm';
+import { ExportPdfForm } from './RemotePdfForm';
 import { HtmlDisplay } from './DisplayHtml';
 import { LexTreeView } from './LexTreeView';
 import { GramTreeView } from './GramTreeView';
 import { LetterTable } from './LetterTable'; 
-import { Style } from '@mui/icons-material';
 
 
 // Custom styled ToggleButton
@@ -48,16 +46,16 @@ const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (event, newLanguage) => {
+  const changeLanguage = React.useCallback((event, newLanguage) => {
     if (newLanguage !== null) {
       i18n.changeLanguage(newLanguage);
     }
-  };
+  }, [i18n]); // Add i18n as a dependency
 
   // Set default language to English on component mount
   useEffect(() => {
     changeLanguage(null, 'en');
-  }, []);
+  }, [changeLanguage]); // Add changeLanguage as a dependency
 
   return (
     <div className='language-switcher'>

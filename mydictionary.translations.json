@@ -1,0 +1,10926 @@
+[{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b17"
+  },
+  "can": "ae",
+  "num": 514,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "suddenly, unexpectedly",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b18"
+  },
+  "can": "aebarso",
+  "num": 563,
+  "cat": "NO",
+  "pl": "aebarsota",
+  "pl2": "",
+  "par": "aebarsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BAR",
+  "en": "leakage",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b19"
+  },
+  "can": "aepalto",
+  "num": 516,
+  "cat": "NO",
+  "pl": "aepaltota",
+  "pl2": "",
+  "par": "aepaltoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "surprise",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b1a"
+  },
+  "can": "aeturri",
+  "num": 543,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "java",
+  "pr": "aetur",
+  "pa": "aetuir",
+  "fu": "aetuor",
+  "root": "TUR",
+  "en": "to show up, to appear",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b1b"
+  },
+  "can": "ailo",
+  "num": 569,
+  "cat": "NO",
+  "pl": "ailota",
+  "pl2": "",
+  "par": "ailoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "strong love",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b1c"
+  },
+  "can": "ainajas",
+  "num": 519,
+  "cat": "NO",
+  "pl": "ainajai",
+  "pl2": "",
+  "par": "ainajea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NAJ",
+  "en": "friend (close male friend)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b1d"
+  },
+  "can": "air",
+  "num": 1,
+  "cat": "NO",
+  "pl": "airta",
+  "pl2": "",
+  "par": "airat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "month",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b1e"
+  },
+  "can": "aiseras",
+  "num": 520,
+  "cat": "NO",
+  "pl": "aiserai",
+  "pl2": "",
+  "par": "aiserea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SER",
+  "en": "friend (close fem. friend)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b1f"
+  },
+  "can": "aivarivas",
+  "num": 568,
+  "cat": "NO",
+  "pl": "aivarivai",
+  "pl2": "",
+  "par": "aivarivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAR",
+  "en": "butterfly",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b20"
+  },
+  "can": "aj",
+  "num": 2,
+  "cat": "IJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "vocative, exhortative",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b21"
+  },
+  "can": "ajas | ABS ai",
+  "num": 3,
+  "cat": "NO",
+  "pl": "ajai",
+  "pl2": "",
+  "par": "ajea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "moon",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b22"
+  },
+  "can": "ajir",
+  "num": 4,
+  "cat": "NO",
+  "pl": "ajirta",
+  "pl2": "",
+  "par": "ajier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "present (time)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b23"
+  },
+  "can": "ajni",
+  "num": 5,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ajn",
+  "pa": "ajn",
+  "fu": "aujn",
+  "root": "JAN",
+  "en": "to be carried",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b24"
+  },
+  "can": "ajtalkive",
+  "num": 536,
+  "cat": "NO",
+  "pl": "ajtalkiveta",
+  "pl2": "",
+  "par": "ajtalkivee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "interjection",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b25"
+  },
+  "can": "aka",
+  "num": 6,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "absolutive case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b26"
+  },
+  "can": "akas",
+  "num": 7,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "agentive case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b27"
+  },
+  "can": "akea",
+  "num": 8,
+  "cat": "NO",
+  "pl": "akeata",
+  "pl2": "",
+  "par": "akea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "partitive case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b28"
+  },
+  "can": "aken",
+  "num": 9,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "relative case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b29"
+  },
+  "can": "akin",
+  "num": 10,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "genitive case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b2a"
+  },
+  "can": "akla",
+  "num": 11,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "locative case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b2b"
+  },
+  "can": "akle",
+  "num": 12,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "comitative case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b2c"
+  },
+  "can": "akmi",
+  "num": 13,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "instrumental case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b2d"
+  },
+  "can": "akne",
+  "num": 14,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "aknee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "adessive case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b2e"
+  },
+  "can": "akpi",
+  "num": 15,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "akp",
+  "pa": "aikp",
+  "fu": "aukp",
+  "root": "KAP",
+  "en": "to understand ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b2f"
+  },
+  "can": "aksi",
+  "num": 16,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "ablative case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b30"
+  },
+  "can": "aku",
+  "num": 17,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "dative case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b31"
+  },
+  "can": "akur",
+  "num": 18,
+  "cat": "NO",
+  "pl": "akurta",
+  "pl2": "",
+  "par": "akuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "case (gram)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b32"
+  },
+  "can": "akursaltur",
+  "num": 19,
+  "cat": "NO",
+  "pl": "akursalturta",
+  "pl2": "",
+  "par": "akursaltuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAL",
+  "en": "declension",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b33"
+  },
+  "can": "akva",
+  "num": 20,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "resultative case",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b34"
+  },
+  "can": "al",
+  "num": 21,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "yes-no Q, if",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b35"
+  },
+  "can": "ale",
+  "num": 22,
+  "cat": "NO",
+  "pl": "aleta",
+  "pl2": "",
+  "par": "alee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AL",
+  "en": "body",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b36"
+  },
+  "can": "alekunto",
+  "num": 23,
+  "cat": "NO",
+  "pl": "alekuntota",
+  "pl2": "",
+  "par": "alekuntoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AL",
+  "en": "anatomy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b37"
+  },
+  "can": "aleverkunto",
+  "num": 24,
+  "cat": "NO",
+  "pl": "aleverkuntota",
+  "pl2": "",
+  "par": "aleverkuntoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AL",
+  "en": "physiotherapy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b38"
+  },
+  "can": "aleveruiras",
+  "num": 25,
+  "cat": "NO",
+  "pl": "aleveruirai",
+  "pl2": "",
+  "par": "aleveruirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AL",
+  "en": "physiotherapist",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b39"
+  },
+  "can": "alevervoiso",
+  "num": 26,
+  "cat": "NO",
+  "pl": "alevervoisota",
+  "pl2": "",
+  "par": "alevervoisoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AL",
+  "en": "physiotherapy treatment",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b3a"
+  },
+  "can": "alken",
+  "num": 27,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAK",
+  "en": "white",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b3b"
+  },
+  "can": "alki",
+  "num": 28,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "alk",
+  "pa": "ailk",
+  "fu": "aulk",
+  "root": "LAK",
+  "en": "to be white",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b3c"
+  },
+  "can": "almasto",
+  "num": 29,
+  "cat": "NO",
+  "pl": "almastota",
+  "pl2": "",
+  "par": "almastoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAS",
+  "en": "yes-no question",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b3d"
+  },
+  "can": "alni",
+  "num": 547,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "aln",
+  "pa": "ailn",
+  "fu": "auln",
+  "root": "LAN",
+  "en": "to be clean",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b3e"
+  },
+  "can": "alsi",
+  "num": 540,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "als",
+  "pa": "ails",
+  "fu": "auls",
+  "root": "LAS",
+  "en": "to be free",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b3f"
+  },
+  "can": "al…vai",
+  "num": 555,
+  "cat": "CJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "either…or",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b40"
+  },
+  "can": "am",
+  "num": 30,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "eam",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AM",
+  "en": "clouds (col.)",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b41"
+  },
+  "can": "amke",
+  "num": 31,
+  "cat": "NO",
+  "pl": "amkek",
+  "pl2": "",
+  "par": "amkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AM",
+  "en": "cloud (one cloud)",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b42"
+  },
+  "can": "amken",
+  "num": 32,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AM",
+  "en": "cloudy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b43"
+  },
+  "can": "ammas",
+  "num": 33,
+  "cat": "NO",
+  "pl": "immen",
+  "pl2": "ammai",
+  "par": "ammea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "mother",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b44"
+  },
+  "can": "amri",
+  "num": 525,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "amr",
+  "pa": "aimr",
+  "fu": "aumr",
+  "root": "MAR",
+  "en": "to love (family, friends)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b45"
+  },
+  "can": "anas",
+  "num": 34,
+  "cat": "PR",
+  "pl": "anai",
+  "pl2": "",
+  "par": "anea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "this [+HUM]",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b46"
+  },
+  "can": "aninsa",
+  "num": 35,
+  "cat": "QT",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "some",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b47"
+  },
+  "can": "anir",
+  "num": 36,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "now",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b48"
+  },
+  "can": "anis",
+  "num": 526,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "so, thus",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b49"
+  },
+  "can": "anistalke",
+  "num": 528,
+  "cat": "NO",
+  "pl": "anistalketa",
+  "pl2": "",
+  "par": "anistalkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "adverb",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b4a"
+  },
+  "can": "anla",
+  "num": 37,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "here",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b4b"
+  },
+  "can": "anlen",
+  "num": 38,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "local",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b4c"
+  },
+  "can": "anni",
+  "num": 39,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ann",
+  "pa": "ainn",
+  "fu": "aunn",
+  "root": "DAN",
+  "en": "to nourish",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b4d"
+  },
+  "can": "anni < adni",
+  "num": 40,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "an",
+  "pa": "in",
+  "fu": "un",
+  "root": "AN",
+  "en": "to be (ser)",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b4e"
+  },
+  "can": "ano",
+  "num": 41,
+  "cat": "PR",
+  "pl": "anota",
+  "pl2": "",
+  "par": "anoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "this [+ABS]",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b4f"
+  },
+  "can": "ansir",
+  "num": 42,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "today",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b50"
+  },
+  "can": "anus",
+  "num": 43,
+  "cat": "PR",
+  "pl": "anusta",
+  "pl2": "",
+  "par": "anuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "this [+CNC]",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b51"
+  },
+  "can": "apli",
+  "num": 44,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja-jami",
+  "pr": "apl",
+  "pa": "aipl",
+  "fu": "aupl",
+  "root": "PAL",
+  "en": "to appear as, to look like",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b52"
+  },
+  "can": "aplo",
+  "num": 45,
+  "cat": "NO",
+  "pl": "aplota",
+  "pl2": "",
+  "par": "aploi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "form",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b53"
+  },
+  "can": "aplo",
+  "num": 527,
+  "cat": "NO",
+  "pl": "aplota",
+  "pl2": "",
+  "par": "aploi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "appeaance",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b54"
+  },
+  "can": "aplotalke",
+  "num": 529,
+  "cat": "NO",
+  "pl": "aplotalketa",
+  "pl2": "",
+  "par": "aplotalkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "adjective",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b55"
+  },
+  "can": "ar",
+  "num": 46,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "immediate future",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b56"
+  },
+  "can": "ariel",
+  "num": 47,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "place where ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b57"
+  },
+  "can": "arjas",
+  "num": 512,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "person who",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b58"
+  },
+  "can": "aro",
+  "num": 48,
+  "cat": "NO",
+  "pl": "arota",
+  "pl2": "",
+  "par": "aruo",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AR",
+  "en": "state",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b59"
+  },
+  "can": "arolen",
+  "num": 49,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AR",
+  "en": "passive",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b5a"
+  },
+  "can": "arri",
+  "num": 50,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ar",
+  "pa": "ir",
+  "fu": "ur",
+  "root": "AR",
+  "en": "to be (estar)",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b5b"
+  },
+  "can": "arsijariel",
+  "num": 51,
+  "cat": "NO",
+  "pl": "arsijarielta",
+  "pl2": "",
+  "par": "arsijarielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "west",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b5c"
+  },
+  "can": "arsir",
+  "num": 52,
+  "cat": "NO",
+  "pl": "arsirta",
+  "pl2": "",
+  "par": "arsirat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "evening",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b5d"
+  },
+  "can": "arsiriel",
+  "num": 53,
+  "cat": "NO",
+  "pl": "arsirielta",
+  "pl2": "",
+  "par": "arsirielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "west",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b5e"
+  },
+  "can": "arso",
+  "num": 54,
+  "cat": "NO",
+  "pl": "arsota",
+  "pl2": "",
+  "par": "arsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AR",
+  "en": "situation",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b5f"
+  },
+  "can": "aspen",
+  "num": 55,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAP",
+  "en": "wide",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b60"
+  },
+  "can": "aspi",
+  "num": 56,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "asp",
+  "pa": "aisp",
+  "fu": "ausp",
+  "root": "SAP",
+  "en": "to be wide",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b61"
+  },
+  "can": "atri",
+  "num": 57,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "atr",
+  "pa": "aitr",
+  "fu": "autr",
+  "root": "TAR",
+  "en": "to fall",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b62"
+  },
+  "can": "attas",
+  "num": 58,
+  "cat": "NO",
+  "pl": "itten",
+  "pl2": "attai",
+  "par": "attea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "father",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b63"
+  },
+  "can": "aujupalliso ",
+  "num": 59,
+  "cat": "NO",
+  "pl": "aujupallisota",
+  "pl2": "",
+  "par": "aujupallisoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "meditation",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b64"
+  },
+  "can": "aujupaluenniso",
+  "num": 60,
+  "cat": "NO",
+  "pl": "aujupaluennisota",
+  "pl2": "",
+  "par": "aujupaluennisoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "introspection",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b65"
+  },
+  "can": "aunen",
+  "num": 61,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BAN",
+  "en": "heavy",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b66"
+  },
+  "can": "aunilli",
+  "num": 62,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "aunil",
+  "pa": "auniel",
+  "fu": "auniul",
+  "root": "NIL",
+  "en": "to put inside, to enter",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b67"
+  },
+  "can": "aupirri",
+  "num": 63,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-jala",
+  "pr": "aupir",
+  "pa": "aupier",
+  "fu": "aupiur",
+  "root": "PIR",
+  "en": "to walk in",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b68"
+  },
+  "can": "barri",
+  "num": 561,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "bar",
+  "pa": "bair",
+  "fu": "baur",
+  "root": "BAR",
+  "en": "to flow, to pour",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b69"
+  },
+  "can": "barso",
+  "num": 562,
+  "cat": "NO",
+  "pl": "barsota",
+  "pl2": "",
+  "par": "barsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BAR",
+  "en": "flow, stream",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b6a"
+  },
+  "can": "be",
+  "num": 64,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "to need, to have to",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b6b"
+  },
+  "can": "bejutro",
+  "num": 551,
+  "cat": "NO",
+  "pl": "bejutrota",
+  "pl2": "",
+  "par": "bejutroi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUR",
+  "en": "rights",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b6c"
+  },
+  "can": "belken",
+  "num": 65,
+  "cat": "NO",
+  "pl": "belkenta",
+  "pl2": "",
+  "par": "belkeen",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BEL",
+  "en": "leaff litter",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b6d"
+  },
+  "can": "belon",
+  "num": 66,
+  "cat": "NO",
+  "pl": "belonta",
+  "pl2": "",
+  "par": "beloin",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BEL",
+  "en": "leaf",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b6e"
+  },
+  "can": "biras",
+  "num": 559,
+  "cat": "NO",
+  "pl": "ibren",
+  "pl2": "birai",
+  "par": "birea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BIR",
+  "en": "fly",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b6f"
+  },
+  "can": "birivas",
+  "num": 560,
+  "cat": "NO",
+  "pl": "birivai",
+  "pl2": "",
+  "par": "birivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BIR",
+  "en": "mosquito",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b70"
+  },
+  "can": "danni",
+  "num": 67,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "dan",
+  "pa": "dain",
+  "fu": "daun",
+  "root": "DAN",
+  "en": "to eat",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b71"
+  },
+  "can": "danto",
+  "num": 68,
+  "cat": "NO",
+  "pl": "dantota",
+  "pl2": "",
+  "par": "dantoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DAN",
+  "en": "food",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b72"
+  },
+  "can": "dantoema",
+  "num": 69,
+  "cat": "NO",
+  "pl": "dantoemata",
+  "pl2": "",
+  "par": "dantoemea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DAN",
+  "en": "market",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b73"
+  },
+  "can": "daris",
+  "num": 70,
+  "cat": "NO",
+  "pl": "darista",
+  "pl2": "",
+  "par": "daries",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DAR",
+  "en": "horn",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b74"
+  },
+  "can": "der",
+  "num": 71,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "derat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DER",
+  "en": "trees (col.)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b75"
+  },
+  "can": "derkas",
+  "num": 72,
+  "cat": "NO",
+  "pl": "derkai",
+  "pl2": "",
+  "par": "derkea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DER",
+  "en": "tree",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b76"
+  },
+  "can": "devi (di)",
+  "num": 73,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "two",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b77"
+  },
+  "can": "devri",
+  "num": 74,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "twenty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b78"
+  },
+  "can": "drever",
+  "num": 75,
+  "cat": "NO",
+  "pl": "dreverta",
+  "pl2": "",
+  "par": "dreveer",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DER",
+  "en": "forest",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b79"
+  },
+  "can": "dukas",
+  "num": 76,
+  "cat": "NO",
+  "pl": "ikken",
+  "pl2": "dukai",
+  "par": "dukea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DUK",
+  "en": "daughter",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b7a"
+  },
+  "can": "dunas",
+  "num": 77,
+  "cat": "NO",
+  "pl": "innen",
+  "pl2": "dunai",
+  "par": "dunea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "DUN",
+  "en": "man",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b7b"
+  },
+  "can": "ea",
+  "num": 531,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "before, pre-",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b7c"
+  },
+  "can": "eatalkive",
+  "num": 533,
+  "cat": "NO",
+  "pl": "eatalkiveta",
+  "pl2": "",
+  "par": "eatalkivee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "prefix",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b7d"
+  },
+  "can": "edarjus",
+  "num": 78,
+  "cat": "NO",
+  "pl": "edarjusta",
+  "pl2": "",
+  "par": "edarjuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "ED",
+  "en": "processor",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b7e"
+  },
+  "can": "edaso",
+  "num": 79,
+  "cat": "NO",
+  "pl": "edasota",
+  "pl2": "",
+  "par": "edasoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "ED",
+  "en": "process",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b7f"
+  },
+  "can": "eddi",
+  "num": 80,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ed",
+  "pa": "id",
+  "fu": "eud",
+  "root": "ED",
+  "en": "to digest, to process",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b80"
+  },
+  "can": "ei",
+  "num": 81,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "again, repetition",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b81"
+  },
+  "can": "eikararvo",
+  "num": 82,
+  "cat": "NO",
+  "pl": "eikararvota",
+  "pl2": "",
+  "par": "eikararvoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR+",
+  "en": "reconstruction",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b82"
+  },
+  "can": "eiras",
+  "num": 83,
+  "cat": "NO",
+  "pl": "eirai",
+  "pl2": "",
+  "par": "eirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "EIR",
+  "en": "mind",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b83"
+  },
+  "can": "eirinkunto",
+  "num": 84,
+  "cat": "NO",
+  "pl": "eirinkuntota",
+  "pl2": "",
+  "par": "eirinkuntoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "psychology",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b84"
+  },
+  "can": "eirisuveruiras",
+  "num": 85,
+  "cat": "NO",
+  "pl": "eirisuveruirai",
+  "pl2": "",
+  "par": "eirisuveruirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "psychoneurologist",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b85"
+  },
+  "can": "eki (jek)",
+  "num": 86,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "one",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b86"
+  },
+  "can": "ekjo",
+  "num": 87,
+  "cat": "NO",
+  "pl": "ekjota",
+  "pl2": "",
+  "par": "ekjoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "singular",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b87"
+  },
+  "can": "eksa",
+  "num": 539,
+  "cat": "QT",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "every, all",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b88"
+  },
+  "can": "el",
+  "num": 88,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "EL",
+  "en": "well",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b89"
+  },
+  "can": "elarri",
+  "num": 89,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "elar",
+  "pa": "elir",
+  "fu": "elur",
+  "root": "EL",
+  "en": "to be happy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b8a"
+  },
+  "can": "elarso",
+  "num": 90,
+  "cat": "NO",
+  "pl": "elarsota",
+  "pl2": "",
+  "par": "elarsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AR",
+  "en": "health, well being",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b8b"
+  },
+  "can": "elarsolenas (< elarsojalenas)",
+  "num": 91,
+  "cat": "NO",
+  "pl": "elarsolenai",
+  "pl2": "",
+  "par": "elarsolenea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "healthy (person)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b8c"
+  },
+  "can": "elas | ABS el",
+  "num": 92,
+  "cat": "NO",
+  "pl": "ilen",
+  "pl2": "elai",
+  "par": "eel",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "sea",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b8d"
+  },
+  "can": "elkappi",
+  "num": 93,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "elkap",
+  "pa": "elkaip",
+  "fu": "elkaup",
+  "root": "KAP",
+  "en": "to accept",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b8e"
+  },
+  "can": "elkapto",
+  "num": 94,
+  "cat": "NO",
+  "pl": "elkaptota",
+  "pl2": "",
+  "par": "elkaptoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAP",
+  "en": "acceptance",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b8f"
+  },
+  "can": "ellen",
+  "num": 95,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "EL",
+  "en": "good",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b90"
+  },
+  "can": "elli",
+  "num": 96,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ell",
+  "pa": "ill",
+  "fu": "eull",
+  "root": "TEL",
+  "en": "to know",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b91"
+  },
+  "can": "ellis",
+  "num": 97,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "EL",
+  "en": "well",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b92"
+  },
+  "can": "elmentalo",
+  "num": 98,
+  "cat": "NO",
+  "pl": "elmentalota",
+  "pl2": "",
+  "par": "elmentaloi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "intelligence",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b93"
+  },
+  "can": "elto",
+  "num": 99,
+  "cat": "NO",
+  "pl": "eltota",
+  "pl2": "",
+  "par": "eltoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEL",
+  "en": "knowledge, information",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b94"
+  },
+  "can": "eltoedarjus",
+  "num": 100,
+  "cat": "NO",
+  "pl": "eltoedarjusta",
+  "pl2": "",
+  "par": "eltoedarjuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "computer",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b95"
+  },
+  "can": "eltonsjur",
+  "num": 101,
+  "cat": "NO",
+  "pl": "eltonsjurta",
+  "pl2": "",
+  "par": "eltonsiurat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NOS",
+  "en": "file, archive (comp)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b96"
+  },
+  "can": "ema",
+  "num": 102,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "place where VB/with NO",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b97"
+  },
+  "can": "ena",
+  "num": 103,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "enea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "ENA",
+  "en": "hair",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b98"
+  },
+  "can": "epren",
+  "num": 104,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PER",
+  "en": "hot",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b99"
+  },
+  "can": "epri",
+  "num": 105,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "epr",
+  "pa": "eipr",
+  "fu": "eupr",
+  "root": "PER",
+  "en": "to be hot, warm",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b9a"
+  },
+  "can": "er",
+  "num": 106,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "marker HAB",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b9b"
+  },
+  "can": "es",
+  "num": 107,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "contrary (eng. un- dis-)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b9c"
+  },
+  "can": "eskappi",
+  "num": 108,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "eskap",
+  "pa": "eskaip",
+  "fu": "eskaup",
+  "root": "KAP",
+  "en": "to avoid, to reject",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b9d"
+  },
+  "can": "eskapto",
+  "num": 109,
+  "cat": "NO",
+  "pl": "eskaptota",
+  "pl2": "",
+  "par": "eskaptoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAP",
+  "en": "rejection",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b9e"
+  },
+  "can": "etten",
+  "num": 110,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEP",
+  "en": "warm",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23b9f"
+  },
+  "can": "etti",
+  "num": 111,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ett",
+  "pa": "eitt",
+  "fu": "eutt",
+  "root": "TEP",
+  "en": "to be warm",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba0"
+  },
+  "can": "few",
+  "num": 112,
+  "cat": "QT",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "few",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba1"
+  },
+  "can": "hammi",
+  "num": 113,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "ham",
+  "pa": "haim",
+  "fu": "haum",
+  "root": "HAM",
+  "en": "to bite",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba2"
+  },
+  "can": "hammis",
+  "num": 114,
+  "cat": "NO",
+  "pl": "hammista",
+  "pl2": "",
+  "par": "hammies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "HAM",
+  "en": "tooth",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba3"
+  },
+  "can": "han",
+  "num": 557,
+  "cat": "NO",
+  "pl": "hanan",
+  "pl2": "",
+  "par": "hean",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "HAN",
+  "en": "sand",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba4"
+  },
+  "can": "harjas",
+  "num": 115,
+  "cat": "NO",
+  "pl": "harjai",
+  "pl2": "",
+  "par": "harjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "HAR",
+  "en": "doctor, physician",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba5"
+  },
+  "can": "harri",
+  "num": 116,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "har",
+  "pa": "hair",
+  "fu": "haur",
+  "root": "HAR",
+  "en": "to heal",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba6"
+  },
+  "can": "hissji",
+  "num": 117,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "hisj",
+  "pa": "hiesj",
+  "fu": "hiusj",
+  "root": "HIS",
+  "en": "to pee",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba7"
+  },
+  "can": "hjapapso",
+  "num": 118,
+  "cat": "NO",
+  "pl": "hjapapsota",
+  "pl2": "",
+  "par": "hjapapsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAP",
+  "en": "hug",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba8"
+  },
+  "can": "hjivas",
+  "num": 119,
+  "cat": "NO",
+  "pl": "ihjen",
+  "pl2": "hjivai",
+  "par": "hjivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIV",
+  "en": "child, kid",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ba9"
+  },
+  "can": "hulli",
+  "num": 120,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "hul",
+  "pa": "huil",
+  "fu": "huol",
+  "root": "HUL",
+  "en": "to laugh",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23baa"
+  },
+  "can": "hulvo",
+  "num": 121,
+  "cat": "NO",
+  "pl": "hulvota",
+  "pl2": "",
+  "par": "hulvoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "HUL",
+  "en": "laughter",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bab"
+  },
+  "can": "ia",
+  "num": 122,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "intensifier, indeed",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bac"
+  },
+  "can": "ibras | ABS ibar",
+  "num": 123,
+  "cat": "NO",
+  "pl": "ibren",
+  "pl2": "ibrai",
+  "par": "ibrea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "BAR",
+  "en": "river",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bad"
+  },
+  "can": "ier",
+  "num": 124,
+  "cat": "NO",
+  "pl": "ierta",
+  "pl2": "",
+  "par": "ierat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "past (time)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bae"
+  },
+  "can": "ihren / iiren",
+  "num": 125,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "HIR",
+  "en": "long",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23baf"
+  },
+  "can": "ihri",
+  "num": 126,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ihr",
+  "pa": "iehr",
+  "fu": "iuhr",
+  "root": "HIR",
+  "en": "to be long",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb0"
+  },
+  "can": "ihsji",
+  "num": 127,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ihsj",
+  "pa": "iehsj",
+  "fu": "iuhsj",
+  "root": "HIS",
+  "en": "to need to pee",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb1"
+  },
+  "can": "ijas",
+  "num": 128,
+  "cat": "PR",
+  "pl": "",
+  "pl2": "",
+  "par": "ijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "he, she, it",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb2"
+  },
+  "can": "iklen",
+  "num": 129,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIL",
+  "en": "round",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb3"
+  },
+  "can": "ikli",
+  "num": 130,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ikl",
+  "pa": "iekl",
+  "fu": "iukl",
+  "root": "KIL",
+  "en": "to be round",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb4"
+  },
+  "can": "il",
+  "num": 131,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "no",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb5"
+  },
+  "can": "ilan",
+  "num": 132,
+  "cat": "QT",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "other",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb6"
+  },
+  "can": "ile",
+  "num": 133,
+  "cat": "NO",
+  "pl": "ileta",
+  "pl2": "",
+  "par": "ilee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "way, path",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb7"
+  },
+  "can": "iliren",
+  "num": 134,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "timeless, tenseless (ling)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb8"
+  },
+  "can": "illelarjas",
+  "num": 135,
+  "cat": "NO",
+  "pl": "illelarjai",
+  "pl2": "",
+  "par": "illelarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LEL",
+  "en": "anxiety",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bb9"
+  },
+  "can": "illi",
+  "num": 136,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "il",
+  "pa": "iel",
+  "fu": "iul",
+  "root": "LIL",
+  "en": "to be happy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bba"
+  },
+  "can": "ilren",
+  "num": 137,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LIR",
+  "en": "thin, narrow",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bbb"
+  },
+  "can": "ilten",
+  "num": 138,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LIT",
+  "en": "short",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bbc"
+  },
+  "can": "ilvas",
+  "num": 139,
+  "cat": "NO",
+  "pl": "ilven",
+  "pl2": "ilvai",
+  "par": "ilvea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LIV",
+  "en": "a left-handed person ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bbd"
+  },
+  "can": "ilven",
+  "num": 140,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "ilveen",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LIV",
+  "en": "ilvish",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bbe"
+  },
+  "can": "ilvi",
+  "num": 141,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ilv",
+  "pa": "ielv",
+  "fu": "iulv",
+  "root": "LIV",
+  "en": "to be left-handed",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bbf"
+  },
+  "can": "in",
+  "num": 142,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "inchoative",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc0"
+  },
+  "can": "inas",
+  "num": 143,
+  "cat": "PR",
+  "pl": "inai",
+  "pl2": "",
+  "par": "inea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "that [+HUM]",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc1"
+  },
+  "can": "ine",
+  "num": 144,
+  "cat": "NO",
+  "pl": "ineta",
+  "pl2": "",
+  "par": "inee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "nose",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc2"
+  },
+  "can": "ineaepalto",
+  "num": 515,
+  "cat": "NO",
+  "pl": "ineaepaltota",
+  "pl2": "",
+  "par": "ineaepaltoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "aha moment, eureka",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc3"
+  },
+  "can": "iniuki",
+  "num": 541,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "java",
+  "pr": "iniuk",
+  "pa": "iniuik",
+  "fu": "inuok",
+  "root": "VIK",
+  "en": "to be born",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc4"
+  },
+  "can": "inla",
+  "num": 145,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "there",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc5"
+  },
+  "can": "innekir",
+  "num": 146,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "last year",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc6"
+  },
+  "can": "ino",
+  "num": 147,
+  "cat": "PR",
+  "pl": "inota",
+  "pl2": "",
+  "par": "inoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "that [+ABS]",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc7"
+  },
+  "can": "inren",
+  "num": 148,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NIR",
+  "en": "green",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc8"
+  },
+  "can": "inri",
+  "num": 149,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "inr",
+  "pa": "ienr",
+  "fu": "iunr",
+  "root": "NIR",
+  "en": "to be green",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bc9"
+  },
+  "can": "inus",
+  "num": 150,
+  "cat": "PR",
+  "pl": "inusta",
+  "pl2": "",
+  "par": "inuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "that [+CNC]",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bca"
+  },
+  "can": "ir",
+  "num": 151,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "irat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "mountains (col.)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bcb"
+  },
+  "can": "irel",
+  "num": 522,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "somewhere",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bcc"
+  },
+  "can": "irir",
+  "num": 263,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "sometime",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bcd"
+  },
+  "can": "iris",
+  "num": 523,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "somehow",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bce"
+  },
+  "can": "irjas",
+  "num": 264,
+  "cat": "NO",
+  "pl": "irjai",
+  "pl2": "",
+  "par": "irjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "somebody",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bcf"
+  },
+  "can": "irke",
+  "num": 152,
+  "cat": "NO",
+  "pl": "irketa",
+  "pl2": "",
+  "par": "irkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "mountain ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd0"
+  },
+  "can": "iro",
+  "num": 521,
+  "cat": "PR",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "something",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd1"
+  },
+  "can": "is",
+  "num": 153,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "to want",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd2"
+  },
+  "can": "isir",
+  "num": 154,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "yesterday",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd3"
+  },
+  "can": "isto",
+  "num": 155,
+  "cat": "NO",
+  "pl": "istota",
+  "pl2": "",
+  "par": "istoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "will",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd4"
+  },
+  "can": "isukunto",
+  "num": 156,
+  "cat": "NO",
+  "pl": "isukuntota",
+  "pl2": "",
+  "par": "isukuntoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "neurology",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd5"
+  },
+  "can": "isuveruiras",
+  "num": 157,
+  "cat": "NO",
+  "pl": "isuveruirai",
+  "pl2": "",
+  "par": "isuveruirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "neurologist",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd6"
+  },
+  "can": "isuvoiso",
+  "num": 158,
+  "cat": "NO",
+  "pl": "isuvoisota",
+  "pl2": "",
+  "par": "isuvoisoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "neurological treatment",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd7"
+  },
+  "can": "itras | ABS itar",
+  "num": 159,
+  "cat": "NO",
+  "pl": "itren",
+  "pl2": "itrai",
+  "par": "itarea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAR",
+  "en": "sea",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd8"
+  },
+  "can": "itrivar",
+  "num": 160,
+  "cat": "NO",
+  "pl": "itrivarta",
+  "pl2": "",
+  "par": "itrivear",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "lake",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bd9"
+  },
+  "can": "itsi",
+  "num": 161,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "its",
+  "pa": "iets",
+  "fu": "iuts",
+  "root": "TIS",
+  "en": "to be cold",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bda"
+  },
+  "can": "iuki",
+  "num": 162,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "iuk",
+  "pa": "iuik",
+  "fu": "iuok",
+  "root": "VIK",
+  "en": "to be alive",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bdb"
+  },
+  "can": "ivas",
+  "num": 163,
+  "cat": "NO",
+  "pl": "iven",
+  "pl2": "ivai",
+  "par": "ivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "IV",
+  "en": "child, kid",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bdc"
+  },
+  "can": "ivvi",
+  "num": 164,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "iv",
+  "pa": "iev",
+  "fu": "iuv",
+  "root": "IV",
+  "en": "to be little, to be small",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bdd"
+  },
+  "can": "jal",
+  "num": 558,
+  "cat": "NO",
+  "pl": "jalal",
+  "pl2": "",
+  "par": "jeal",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "JAL",
+  "en": "mist",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bde"
+  },
+  "can": "janso",
+  "num": 553,
+  "cat": "NO",
+  "pl": "jansota",
+  "pl2": "",
+  "par": "jansoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "amount",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bdf"
+  },
+  "can": "kahve",
+  "num": 165,
+  "cat": "NO",
+  "pl": "kahveta",
+  "pl2": "",
+  "par": "kahvee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "coffee",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be0"
+  },
+  "can": "kalkapariel",
+  "num": 166,
+  "cat": "NO",
+  "pl": "kalkaparielta",
+  "pl2": "",
+  "par": "kalkaparielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAL & KAP",
+  "en": "shop",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be1"
+  },
+  "can": "kalkappi",
+  "num": 167,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "kalkap",
+  "pa": "kalkaip",
+  "fu": "kalkaup",
+  "root": "KAL & KAP",
+  "en": "to buy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be2"
+  },
+  "can": "kalli",
+  "num": 168,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "kal",
+  "pa": "kail",
+  "fu": "kaul",
+  "root": "KAL",
+  "en": "to pay",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be3"
+  },
+  "can": "kalmius",
+  "num": 169,
+  "cat": "NO",
+  "pl": "kalmiusta",
+  "pl2": "",
+  "par": "kalmiusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAL",
+  "en": "money",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be4"
+  },
+  "can": "kalmiuskunto",
+  "num": 170,
+  "cat": "NO",
+  "pl": "kalmiuskuntota",
+  "pl2": "",
+  "par": "kalmiuskuntoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAL",
+  "en": "economy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be5"
+  },
+  "can": "kalmiusveruiras",
+  "num": 171,
+  "cat": "NO",
+  "pl": "kalmiusveruirai",
+  "pl2": "",
+  "par": "kalmiusveruirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAL",
+  "en": "economist",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be6"
+  },
+  "can": "kaltilli",
+  "num": 172,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "kaltil",
+  "pa": "kaltiel",
+  "fu": "kaltiul",
+  "root": "",
+  "en": "to sell",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be7"
+  },
+  "can": "kam",
+  "num": 173,
+  "cat": "NO",
+  "pl": "kamam",
+  "pl2": "kamta",
+  "par": "keam",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAM",
+  "en": "night",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be8"
+  },
+  "can": "kami (kem)",
+  "num": 174,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "five",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23be9"
+  },
+  "can": "kamriel",
+  "num": 175,
+  "cat": "NO",
+  "pl": "kamrielta",
+  "pl2": "",
+  "par": "kamrielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAM",
+  "en": "north",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bea"
+  },
+  "can": "kantokirtur",
+  "num": 176,
+  "cat": "NO",
+  "pl": "kantokirturta",
+  "pl2": "",
+  "par": "kantokirtuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "inscription",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23beb"
+  },
+  "can": "kanton",
+  "num": 177,
+  "cat": "NO",
+  "pl": "kantonta",
+  "pl2": "",
+  "par": "kantoin",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "stone",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bec"
+  },
+  "can": "kapair",
+  "num": 178,
+  "cat": "NO",
+  "pl": "kapairta",
+  "pl2": "",
+  "par": "kapairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAP",
+  "en": "august",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bed"
+  },
+  "can": "kappi",
+  "num": 179,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "kap",
+  "pa": "kaip",
+  "fu": "kaup",
+  "root": "KAP",
+  "en": "to catch, to take ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bee"
+  },
+  "can": "karari",
+  "num": 180,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "karar",
+  "pa": "kairar",
+  "fu": "kaurar",
+  "root": "KAR",
+  "en": "to build",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bef"
+  },
+  "can": "kararvur",
+  "num": 181,
+  "cat": "NO",
+  "pl": "kararvurta",
+  "pl2": "",
+  "par": "kararvuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR+",
+  "en": "building, construction",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf0"
+  },
+  "can": "karjus",
+  "num": 182,
+  "cat": "NO",
+  "pl": "karjusta",
+  "pl2": "",
+  "par": "karjuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR",
+  "en": "machine",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf1"
+  },
+  "can": "karkas",
+  "num": 183,
+  "cat": "NO",
+  "pl": "kardas (du)",
+  "pl2": "irken",
+  "par": "karkea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR",
+  "en": "hand",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf2"
+  },
+  "can": "karri",
+  "num": 184,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "kar",
+  "pa": "kair",
+  "fu": "kaur",
+  "root": "KAR",
+  "en": "to act, to do",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf3"
+  },
+  "can": "karri",
+  "num": 185,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "kar",
+  "pa": "kair",
+  "fu": "kaur",
+  "root": "KAR",
+  "en": "to make, to create, to craft",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf4"
+  },
+  "can": "karruvur",
+  "num": 186,
+  "cat": "NO",
+  "pl": "karruvurta",
+  "pl2": "",
+  "par": "karruvuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR",
+  "en": "order, instruction",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf5"
+  },
+  "can": "karso",
+  "num": 187,
+  "cat": "NO",
+  "pl": "karsota",
+  "pl2": "",
+  "par": "karsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR",
+  "en": "action",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf6"
+  },
+  "can": "karsolen",
+  "num": 188,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR",
+  "en": "active",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf7"
+  },
+  "can": "kartalke",
+  "num": 189,
+  "cat": "NO",
+  "pl": "kartalketa",
+  "pl2": "",
+  "par": "kartalkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "verb",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf8"
+  },
+  "can": "karvoedarjus",
+  "num": 190,
+  "cat": "NO",
+  "pl": "karvoedarjusta",
+  "pl2": "",
+  "par": "karvoedarjuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "app, software",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bf9"
+  },
+  "can": "karvosaltur",
+  "num": 191,
+  "cat": "NO",
+  "pl": "karvosalturta",
+  "pl2": "",
+  "par": "karvosaltuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR & SAL",
+  "en": "computer program",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bfa"
+  },
+  "can": "kason",
+  "num": 192,
+  "cat": "NO",
+  "pl": "kasonta",
+  "pl2": "",
+  "par": "kasoin",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAS",
+  "en": "bark (of a tree)",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bfb"
+  },
+  "can": "kavvi",
+  "num": 193,
+  "cat": "NO",
+  "pl": "kavvita",
+  "pl2": "",
+  "par": "kavvie",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAP",
+  "en": "harvest",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bfc"
+  },
+  "can": "kelli",
+  "num": 194,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "kel",
+  "pa": "keil",
+  "fu": "keul",
+  "root": "KEL",
+  "en": "to choose, to elect ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bfd"
+  },
+  "can": "keltas",
+  "num": 195,
+  "cat": "NO",
+  "pl": "keltai",
+  "pl2": "",
+  "par": "keltea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KEL",
+  "en": "leader, king",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bfe"
+  },
+  "can": "keltiele",
+  "num": 196,
+  "cat": "NO",
+  "pl": "keltieleta",
+  "pl2": "",
+  "par": "keltielee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KEL",
+  "en": "kingdom",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23bff"
+  },
+  "can": "keltivas",
+  "num": 197,
+  "cat": "NO",
+  "pl": "keltivai",
+  "pl2": "",
+  "par": "keltivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KEL",
+  "en": "prince",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c00"
+  },
+  "can": "kemmer",
+  "num": 198,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "fifty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c01"
+  },
+  "can": "kenis",
+  "num": 199,
+  "cat": "NO",
+  "pl": "kenista",
+  "pl2": "",
+  "par": "kenies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "knee",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c02"
+  },
+  "can": "kenni",
+  "num": 200,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "hundred",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c03"
+  },
+  "can": "keno",
+  "num": 201,
+  "cat": "NO",
+  "pl": "kenota",
+  "pl2": "",
+  "par": "kenoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KEN",
+  "en": "plural",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c04"
+  },
+  "can": "kentalke",
+  "num": 530,
+  "cat": "NO",
+  "pl": "kentalketa",
+  "pl2": "",
+  "par": "kentalkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "quantifier",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c05"
+  },
+  "can": "ker",
+  "num": 202,
+  "cat": "NO",
+  "pl": "kerer",
+  "pl2": "",
+  "par": "keer",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KER",
+  "en": "village, town",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c06"
+  },
+  "can": "kertaras",
+  "num": 203,
+  "cat": "NO",
+  "pl": "kertarai",
+  "pl2": "",
+  "par": "kertarea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KER",
+  "en": "villager",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c07"
+  },
+  "can": "keruriljus",
+  "num": 204,
+  "cat": "NO",
+  "pl": "keruriljusta",
+  "pl2": "",
+  "par": "keruriljuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "tram",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c08"
+  },
+  "can": "kesi (kies)",
+  "num": 205,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "six",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c09"
+  },
+  "can": "kevarjas",
+  "num": 206,
+  "cat": "NO",
+  "pl": "kevarjai",
+  "pl2": "",
+  "par": "kevarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "knight, horse rider",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c0a"
+  },
+  "can": "kevas",
+  "num": 207,
+  "cat": "NO",
+  "pl": "ikven",
+  "pl2": "kevai",
+  "par": "kevea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KEV",
+  "en": "horse",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c0b"
+  },
+  "can": "kiesmer",
+  "num": 208,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "sixty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c0c"
+  },
+  "can": "kijai",
+  "num": 209,
+  "cat": "PR",
+  "pl": "",
+  "pl2": "",
+  "par": "kijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "you (pl)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c0d"
+  },
+  "can": "kijas",
+  "num": 210,
+  "cat": "NO",
+  "pl": "kijai",
+  "pl2": "",
+  "par": "kijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "grammatical person (ling)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c0e"
+  },
+  "can": "kinis",
+  "num": 211,
+  "cat": "NO",
+  "pl": "kinista",
+  "pl2": "",
+  "par": "kinies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIN",
+  "en": "fingernail",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c0f"
+  },
+  "can": "kirarjas",
+  "num": 552,
+  "cat": "NO",
+  "pl": "kirarjai",
+  "pl2": "",
+  "par": "kirarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "scribe",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c10"
+  },
+  "can": "kirjas",
+  "num": 212,
+  "cat": "NO",
+  "pl": "kirjai",
+  "pl2": "",
+  "par": "kirjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "writer",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c11"
+  },
+  "can": "kirkivus",
+  "num": 213,
+  "cat": "NO",
+  "pl": "kirkivusta",
+  "pl2": "",
+  "par": "kirkivuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "note",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c12"
+  },
+  "can": "kirmius",
+  "num": 214,
+  "cat": "NO",
+  "pl": "kirmiusta",
+  "pl2": "",
+  "par": "kirmiusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "script, writing system ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c13"
+  },
+  "can": "kirri",
+  "num": 215,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "kir",
+  "pa": "kier",
+  "fu": "kiur",
+  "root": "KIR",
+  "en": "to write",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c14"
+  },
+  "can": "kirtal",
+  "num": 216,
+  "cat": "NO",
+  "pl": "kirtalal (kiretalta)",
+  "pl2": "",
+  "par": "kirtalat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR & TAL",
+  "en": "formal language",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c15"
+  },
+  "can": "kirtur",
+  "num": 217,
+  "cat": "NO",
+  "pl": "kirturta",
+  "pl2": "",
+  "par": "kirtuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "writing",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c16"
+  },
+  "can": "kirtus",
+  "num": 218,
+  "cat": "NO",
+  "pl": "kirtusta",
+  "pl2": "",
+  "par": "kirtuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "book",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c17"
+  },
+  "can": "kirtusariel",
+  "num": 219,
+  "cat": "NO",
+  "pl": "kirtusarielta",
+  "pl2": "",
+  "par": "kirtusarielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "library",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c18"
+  },
+  "can": "kirtuskalkapariel",
+  "num": 220,
+  "cat": "NO",
+  "pl": "kirtuskalkaparielta",
+  "pl2": "",
+  "par": "kirtuskalkaparielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "bookshop",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c19"
+  },
+  "can": "kissi",
+  "num": 221,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "kis",
+  "pa": "kies",
+  "fu": "kius",
+  "root": "KIS",
+  "en": "to exchange ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c1a"
+  },
+  "can": "kistalke",
+  "num": 222,
+  "cat": "NO",
+  "pl": "kistalketa",
+  "pl2": "",
+  "par": "kistalkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIS & TAL",
+  "en": "dictionary entry",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c1b"
+  },
+  "can": "kistalkekirtus",
+  "num": 223,
+  "cat": "NO",
+  "pl": "kistalkekirtusta",
+  "pl2": "",
+  "par": "kistalkekirtuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "bilingual dictionary",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c1c"
+  },
+  "can": "kolli",
+  "num": 224,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-jasi",
+  "pr": "kol",
+  "pa": "koil",
+  "fu": "koul",
+  "root": "KOL",
+  "en": "to listen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c1d"
+  },
+  "can": "konivo",
+  "num": 225,
+  "cat": "NO",
+  "pl": "konivota",
+  "pl2": "",
+  "par": "konivoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KON",
+  "en": "stem",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c1e"
+  },
+  "can": "kono",
+  "num": 226,
+  "cat": "NO",
+  "pl": "konota",
+  "pl2": "",
+  "par": "konoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KON",
+  "en": "root, centre, bone",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c1f"
+  },
+  "can": "ku",
+  "num": 227,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "indeed (after a premise)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c20"
+  },
+  "can": "kuimmer",
+  "num": 228,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "forty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c21"
+  },
+  "can": "kummur",
+  "num": 229,
+  "cat": "NO",
+  "pl": "kummurta",
+  "pl2": "",
+  "par": "kummuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUN",
+  "en": "theory",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c22"
+  },
+  "can": "kunariel",
+  "num": 230,
+  "cat": "NO",
+  "pl": "kunarielta",
+  "pl2": "",
+  "par": "kunarielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUN/GUN",
+  "en": "school",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c23"
+  },
+  "can": "kunarjas",
+  "num": 231,
+  "cat": "NO",
+  "pl": "kunarjai",
+  "pl2": "",
+  "par": "kunarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUN/GUN",
+  "en": "teacher",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c24"
+  },
+  "can": "kunarri",
+  "num": 232,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ju-java",
+  "pr": "kunar",
+  "pa": "kuinar",
+  "fu": "kuonar",
+  "root": "KUN",
+  "en": "to teach",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c25"
+  },
+  "can": "kunas",
+  "num": 233,
+  "cat": "NO",
+  "pl": "iknen",
+  "pl2": "kunai",
+  "par": "kunea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUN",
+  "en": "woman",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c26"
+  },
+  "can": "kusarri",
+  "num": 234,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ju-jasi",
+  "pr": "kusar",
+  "pa": "kuisar",
+  "fu": "kuosar",
+  "root": "KUS",
+  "en": "to show",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c27"
+  },
+  "can": "kusarvur",
+  "num": 235,
+  "cat": "NO",
+  "pl": "kusarvurta",
+  "pl2": "",
+  "par": "kusarvuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUS",
+  "en": "example",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c28"
+  },
+  "can": "kussi",
+  "num": 236,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "kus",
+  "pa": "kuis",
+  "fu": "kuos",
+  "root": "KUS",
+  "en": "to look at",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c29"
+  },
+  "can": "kuti (kuit)",
+  "num": 237,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "four",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c2a"
+  },
+  "can": "kutso",
+  "num": 238,
+  "cat": "NO",
+  "pl": "kutsota",
+  "pl2": "",
+  "par": "kutsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUT",
+  "en": "assembly, meetng",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c2b"
+  },
+  "can": "kuttalkive",
+  "num": 535,
+  "cat": "NO",
+  "pl": "kuttalkiveta",
+  "pl2": "",
+  "par": "kuttalkivee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "conjunction",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c2c"
+  },
+  "can": "kutti",
+  "num": 239,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "kut",
+  "pa": "kuit",
+  "fu": "kuot",
+  "root": "KUT",
+  "en": "to get together",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c2d"
+  },
+  "can": "la",
+  "num": 240,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "negative imperative",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c2e"
+  },
+  "can": "laikas",
+  "num": 572,
+  "cat": "NO",
+  "pl": "laikai",
+  "pl2": "",
+  "par": "laikea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "dog",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c2f"
+  },
+  "can": "laiklo",
+  "num": 573,
+  "cat": "NO",
+  "pl": "laiklota",
+  "pl2": "",
+  "par": "laikloi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "happiness",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c30"
+  },
+  "can": "lair",
+  "num": 241,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "when (after fin vb)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c31"
+  },
+  "can": "lakaki",
+  "num": 242,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "lakak",
+  "pa": "laikak",
+  "fu": "laukak",
+  "root": "LAK",
+  "en": "to discover",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c32"
+  },
+  "can": "lakki",
+  "num": 243,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "lak",
+  "pa": "laik",
+  "fu": "lauk",
+  "root": "LAK",
+  "en": "to shed light, to discover",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c33"
+  },
+  "can": "laksas",
+  "num": 244,
+  "cat": "NO",
+  "pl": "ilksen",
+  "pl2": "laksai",
+  "par": "laksea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "fish",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c34"
+  },
+  "can": "lalarjas",
+  "num": 245,
+  "cat": "NO",
+  "pl": "lalarjai",
+  "pl2": "",
+  "par": "lalarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAL",
+  "en": "singer",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c35"
+  },
+  "can": "lalli",
+  "num": 246,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "lal",
+  "pa": "lail",
+  "fu": "laul",
+  "root": "LAL",
+  "en": "to sing",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c36"
+  },
+  "can": "lalsur",
+  "num": 247,
+  "cat": "NO",
+  "pl": "lalsurta",
+  "pl2": "",
+  "par": "lalsuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAL",
+  "en": "music",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c37"
+  },
+  "can": "lalvur",
+  "num": 248,
+  "cat": "NO",
+  "pl": "lalvurta",
+  "pl2": "",
+  "par": "lalvuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAL",
+  "en": "song",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c38"
+  },
+  "can": "lammi",
+  "num": 249,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "lam",
+  "pa": "laim",
+  "fu": "laum",
+  "root": "LAM",
+  "en": "to breathe",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c39"
+  },
+  "can": "lamtaras",
+  "num": 250,
+  "cat": "NO",
+  "pl": "lamtarai",
+  "pl2": "",
+  "par": "lamtarea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAM",
+  "en": "air (flying) animal",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c3a"
+  },
+  "can": "lamto",
+  "num": 251,
+  "cat": "NO",
+  "pl": "lamtota",
+  "pl2": "",
+  "par": "lamtoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAM",
+  "en": "air",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c3b"
+  },
+  "can": "lamtoske",
+  "num": 252,
+  "cat": "NO",
+  "pl": "lamtosketa",
+  "pl2": "",
+  "par": "lamtoskee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAM",
+  "en": "gas",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c3c"
+  },
+  "can": "lanni",
+  "num": 546,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "lan",
+  "pa": "lain",
+  "fu": "laun",
+  "root": "LAN",
+  "en": "to clean",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c3d"
+  },
+  "can": "latmius",
+  "num": 253,
+  "cat": "NO",
+  "pl": "latmiusta",
+  "pl2": "",
+  "par": "latmiusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LAT",
+  "en": "stick",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c3e"
+  },
+  "can": "latti",
+  "num": 254,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "lat",
+  "pa": "lait",
+  "fu": "laut",
+  "root": "LAT",
+  "en": "to hit",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c3f"
+  },
+  "can": "le",
+  "num": 255,
+  "cat": "CJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "and",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c40"
+  },
+  "can": "lea",
+  "num": 256,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "lejat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "ice",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c41"
+  },
+  "can": "lea",
+  "num": 564,
+  "cat": "NO",
+  "pl": "leata",
+  "pl2": "",
+  "par": "lejea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "birch forest",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c42"
+  },
+  "can": "leakas",
+  "num": 565,
+  "cat": "NO",
+  "pl": "leakai",
+  "pl2": "",
+  "par": "leakea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "birch tree",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c43"
+  },
+  "can": "lealo",
+  "num": 570,
+  "cat": "NO",
+  "pl": "lealota",
+  "pl2": "",
+  "par": "lealoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "well being",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c44"
+  },
+  "can": "lekkarjas",
+  "num": 257,
+  "cat": "NO",
+  "pl": "lekkarjai",
+  "pl2": "",
+  "par": "lekkarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LEK+",
+  "en": "student",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c45"
+  },
+  "can": "lel",
+  "num": 258,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "very well",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c46"
+  },
+  "can": "lelarso",
+  "num": 259,
+  "cat": "NO",
+  "pl": "lelarsota",
+  "pl2": "",
+  "par": "lelarsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "EL",
+  "en": "happiness",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c47"
+  },
+  "can": "lelli",
+  "num": 260,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "lel",
+  "pa": "leil",
+  "fu": "leul",
+  "root": "LEL",
+  "en": "to let, to allow",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c48"
+  },
+  "can": "leluiriel",
+  "num": 261,
+  "cat": "NO",
+  "pl": "leluirielta",
+  "pl2": "",
+  "par": "leluirielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "heaven",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c49"
+  },
+  "can": "len",
+  "num": 262,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "having X",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c4a"
+  },
+  "can": "lilli",
+  "num": 265,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "lil",
+  "pa": "liel",
+  "fu": "liul",
+  "root": "LIL",
+  "en": "to smile",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c4b"
+  },
+  "can": "lilvo",
+  "num": 266,
+  "cat": "NO",
+  "pl": "lilvota",
+  "pl2": "",
+  "par": "lolvoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LIL",
+  "en": "smile",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c4c"
+  },
+  "can": "lo",
+  "num": 267,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "can, know how to",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c4d"
+  },
+  "can": "lo",
+  "num": 575,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "feeling, emotion",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c4e"
+  },
+  "can": "lokkis",
+  "num": 268,
+  "cat": "NO",
+  "pl": "lokkista",
+  "pl2": "loktis (du)",
+  "par": "lokkie",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LOK",
+  "en": "foot",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c4f"
+  },
+  "can": "lukas",
+  "num": 510,
+  "cat": "NO",
+  "pl": "ilken",
+  "pl2": "lukais",
+  "par": "lukea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "wolf",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c50"
+  },
+  "can": "lukis",
+  "num": 269,
+  "cat": "NO",
+  "pl": "lukista",
+  "pl2": "",
+  "par": "lukies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LUK",
+  "en": "bone",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c51"
+  },
+  "can": "lun",
+  "num": 270,
+  "cat": "NO",
+  "pl": "lunta",
+  "pl2": "",
+  "par": "luon",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LUN",
+  "en": "snow",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c52"
+  },
+  "can": "lunair",
+  "num": 271,
+  "cat": "NO",
+  "pl": "lunairta",
+  "pl2": "",
+  "par": "lunairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LUN",
+  "en": "january",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c53"
+  },
+  "can": "lunni",
+  "num": 272,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "lun",
+  "pa": "luin",
+  "fu": "luon",
+  "root": "LUN",
+  "en": "to snow",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c54"
+  },
+  "can": "lurair",
+  "num": 273,
+  "cat": "NO",
+  "pl": "lurairta",
+  "pl2": "",
+  "par": "lurairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LUR",
+  "en": "may",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c55"
+  },
+  "can": "luras",
+  "num": 274,
+  "cat": "NO",
+  "pl": "ilren",
+  "pl2": "lurai",
+  "par": "lurea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LUR",
+  "en": "flower",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c56"
+  },
+  "can": "lut",
+  "num": 275,
+  "cat": "NO",
+  "pl": "lutut",
+  "pl2": "",
+  "par": "lutat (old luot)",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LUT",
+  "en": "land, Earth",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c57"
+  },
+  "can": "luttaras",
+  "num": 276,
+  "cat": "NO",
+  "pl": "luttarai",
+  "pl2": "",
+  "par": "luttarea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LUT",
+  "en": "terrestrial animal",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c58"
+  },
+  "can": "m(a)",
+  "num": 513,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "interrogative pfx",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c59"
+  },
+  "can": "mal",
+  "num": 277,
+  "cat": "NO",
+  "pl": "malal",
+  "pl2": "",
+  "par": "meal",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "image, picture",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c5a"
+  },
+  "can": "malkirso",
+  "num": 278,
+  "cat": "NO",
+  "pl": "malkirsota",
+  "pl2": "",
+  "par": "malkirsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "photography (technique)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c5b"
+  },
+  "can": "malkirvus",
+  "num": 279,
+  "cat": "NO",
+  "pl": "malkirvusta",
+  "pl2": "",
+  "par": "malkirvuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "picture",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c5c"
+  },
+  "can": "mari (mer)",
+  "num": 280,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "ten",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c5d"
+  },
+  "can": "marri",
+  "num": 524,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "mar",
+  "pa": "mair",
+  "fu": "maur",
+  "root": "MAR",
+  "en": "to love (as a couple)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c5e"
+  },
+  "can": "massi",
+  "num": 281,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "mas",
+  "pa": "mais",
+  "fu": "maus",
+  "root": "MAS",
+  "en": "to ask",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c5f"
+  },
+  "can": "massi",
+  "num": 282,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "mas",
+  "pa": "mais",
+  "fu": "maus",
+  "root": "MAS",
+  "en": "to query",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c60"
+  },
+  "can": "mastur",
+  "num": 283,
+  "cat": "NO",
+  "pl": "masturta",
+  "pl2": "",
+  "par": "mastuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAS",
+  "en": "question",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c61"
+  },
+  "can": "menis",
+  "num": 284,
+  "cat": "NO",
+  "pl": "menista",
+  "pl2": "",
+  "par": "menies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MEN",
+  "en": "brain",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c62"
+  },
+  "can": "menkarjus",
+  "num": 285,
+  "cat": "NO",
+  "pl": "menkarjusta",
+  "pl2": "",
+  "par": "menkarjuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MEN & KAR",
+  "en": "program, app",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c63"
+  },
+  "can": "menpalkanton",
+  "num": 286,
+  "cat": "NO",
+  "pl": "menpalkantonta",
+  "pl2": "",
+  "par": "menpalkantoin",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "memorial stone",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c64"
+  },
+  "can": "menpalli",
+  "num": 287,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-jasi",
+  "pr": "menpal",
+  "pa": "menpail",
+  "fu": "menpaul",
+  "root": "PAL",
+  "en": "to remember",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c65"
+  },
+  "can": "menpaltalo",
+  "num": 288,
+  "cat": "NO",
+  "pl": "menpaltalota",
+  "pl2": "",
+  "par": "menpaltaloi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "memory",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c66"
+  },
+  "can": "merledi",
+  "num": 289,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "twelve",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c67"
+  },
+  "can": "merlekem",
+  "num": 290,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "fifteen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c68"
+  },
+  "can": "merlekies",
+  "num": 291,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "sixteen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c69"
+  },
+  "can": "merlekuit",
+  "num": 292,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "fourteen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c6a"
+  },
+  "can": "merleniev",
+  "num": 293,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "nineteen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c6b"
+  },
+  "can": "merlesep",
+  "num": 294,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "seventeen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c6c"
+  },
+  "can": "merlesuit",
+  "num": 295,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "eighteen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c6d"
+  },
+  "can": "merletel",
+  "num": 296,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "thirteen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c6e"
+  },
+  "can": "merliek",
+  "num": 297,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "eleven",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c6f"
+  },
+  "can": "mijas",
+  "num": 298,
+  "cat": "PR",
+  "pl": "",
+  "pl2": "",
+  "par": "mijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "I",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c70"
+  },
+  "can": "minis",
+  "num": 299,
+  "cat": "NO",
+  "pl": "minista",
+  "pl2": "",
+  "par": "minies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MIN",
+  "en": "tongue (organ)",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c71"
+  },
+  "can": "minni",
+  "num": 300,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "min",
+  "pa": "mien",
+  "fu": "miun",
+  "root": "MIN",
+  "en": "to chat, to have a talk",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c72"
+  },
+  "can": "minni",
+  "num": 301,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-jin",
+  "pr": "min",
+  "pa": "mien",
+  "fu": "miun",
+  "root": "MIN",
+  "en": "to talk about",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c73"
+  },
+  "can": "minso",
+  "num": 302,
+  "cat": "NO",
+  "pl": "minsota",
+  "pl2": "",
+  "par": "minsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MIN",
+  "en": "talk",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c74"
+  },
+  "can": "minvo",
+  "num": 303,
+  "cat": "NO",
+  "pl": "minvota",
+  "pl2": "",
+  "par": "minvoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MIN",
+  "en": "story, tale",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c75"
+  },
+  "can": "misas",
+  "num": 511,
+  "cat": "NO",
+  "pl": "imsen",
+  "pl2": "misai",
+  "par": "misea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MIS",
+  "en": "cat",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c76"
+  },
+  "can": "missi",
+  "num": 518,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "mis",
+  "pa": "mies",
+  "fu": "mius",
+  "root": "MIS",
+  "en": "to meow",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c77"
+  },
+  "can": "murair",
+  "num": 304,
+  "cat": "NO",
+  "pl": "murairta",
+  "pl2": "",
+  "par": "murairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "november",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c78"
+  },
+  "can": "murriel",
+  "num": 305,
+  "cat": "NO",
+  "pl": "murrielta",
+  "pl2": "",
+  "par": "murrielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MUR",
+  "en": "north",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c79"
+  },
+  "can": "mussi",
+  "num": 306,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "mus",
+  "pa": "muis",
+  "fu": "muos",
+  "root": "MUS",
+  "en": "to change sth",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c7a"
+  },
+  "can": "mussi",
+  "num": 307,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "mus",
+  "pa": "muis",
+  "fu": "muos",
+  "root": "MUS",
+  "en": "to become",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c7b"
+  },
+  "can": "na",
+  "num": 308,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "imperative",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c7c"
+  },
+  "can": "najas",
+  "num": 309,
+  "cat": "NO",
+  "pl": "injen",
+  "pl2": "najai",
+  "par": "najea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NAJ",
+  "en": "brother",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c7d"
+  },
+  "can": "nakas",
+  "num": 310,
+  "cat": "NO",
+  "pl": "nakai",
+  "pl2": "",
+  "par": "nakea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NAK",
+  "en": "mouth",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c7e"
+  },
+  "can": "narri",
+  "num": 311,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "nar",
+  "pa": "nair",
+  "fu": "naur",
+  "root": "NAR",
+  "en": "to throw, to send",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c7f"
+  },
+  "can": "nekair",
+  "num": 312,
+  "cat": "NO",
+  "pl": "nekaita",
+  "pl2": "",
+  "par": "nekairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NEK",
+  "en": "december",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c80"
+  },
+  "can": "nekir",
+  "num": 313,
+  "cat": "NO",
+  "pl": "nekirta",
+  "pl2": "",
+  "par": "nekier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NEK",
+  "en": "year",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c81"
+  },
+  "can": "nevi (niev)",
+  "num": 314,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "nine",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c82"
+  },
+  "can": "niemmer",
+  "num": 315,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "ninety",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c83"
+  },
+  "can": "nijai",
+  "num": 316,
+  "cat": "PR",
+  "pl": "",
+  "pl2": "",
+  "par": "nijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "they",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c84"
+  },
+  "can": "nilli",
+  "num": 317,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "nil",
+  "pa": "niel",
+  "fu": "niul",
+  "root": "NIL",
+  "en": "to put",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c85"
+  },
+  "can": "nir",
+  "num": 556,
+  "cat": "NO",
+  "pl": "nirir",
+  "pl2": "",
+  "par": "nier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NIR",
+  "en": "grass",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c86"
+  },
+  "can": "niras",
+  "num": 318,
+  "cat": "NO",
+  "pl": "inren",
+  "pl2": "nirai",
+  "par": "nirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NIR",
+  "en": "plant",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c87"
+  },
+  "can": "nutti",
+  "num": 319,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "nut",
+  "pa": "nuit",
+  "fu": "nuot",
+  "root": "NUT",
+  "en": "to kill, to extinguish",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c88"
+  },
+  "can": "nutto",
+  "num": 320,
+  "cat": "NO",
+  "pl": "nuttota",
+  "pl2": "",
+  "par": "nuttoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NUT",
+  "en": "death",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c89"
+  },
+  "can": "nutuenarri",
+  "num": 545,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "nutuenar",
+  "pa": "nuituenar",
+  "fu": "nuotuenar",
+  "root": "NUT",
+  "en": "to take out",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c8a"
+  },
+  "can": "nutueni",
+  "num": 544,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "nutuen",
+  "pa": "nuituen",
+  "fu": "nuotuen",
+  "root": "NUT",
+  "en": "to leave, to disappear",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c8b"
+  },
+  "can": "oikappi",
+  "num": 321,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "oikap",
+  "pa": "oikaip",
+  "fu": "oikaup",
+  "root": "KAP",
+  "en": "to keep away, to protect ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c8c"
+  },
+  "can": "oipirri",
+  "num": 322,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "oipir",
+  "pa": "oipier",
+  "fu": "oipiur",
+  "root": "PIR",
+  "en": "to walk out",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c8d"
+  },
+  "can": "okli",
+  "num": 323,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja-jasi",
+  "pr": "okl",
+  "pa": "oikl",
+  "fu": "oukl",
+  "root": "KOL",
+  "en": "to hear",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c8e"
+  },
+  "can": "ollen",
+  "num": 324,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TOL",
+  "en": "red",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c8f"
+  },
+  "can": "onsjus",
+  "num": 325,
+  "cat": "NO",
+  "pl": "onsjusta",
+  "pl2": "",
+  "par": "onsjusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NOS",
+  "en": "container",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c90"
+  },
+  "can": "orsen",
+  "num": 326,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "ROS",
+  "en": "nice, beautiful ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c91"
+  },
+  "can": "osair",
+  "num": 327,
+  "cat": "NO",
+  "pl": "osairta",
+  "pl2": "",
+  "par": "osairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "october",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c92"
+  },
+  "can": "osas",
+  "num": 328,
+  "cat": "NO",
+  "pl": "iusen",
+  "pl2": "osai",
+  "par": "osea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "thunder",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c93"
+  },
+  "can": "pakas",
+  "num": 329,
+  "cat": "NO",
+  "pl": "pakai",
+  "pl2": "",
+  "par": "pakea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAK",
+  "en": "head",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c94"
+  },
+  "can": "paljanni",
+  "num": 330,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "paljan",
+  "pa": "paljain",
+  "fu": "paljaun",
+  "root": "",
+  "en": "to travel",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c95"
+  },
+  "can": "paljanso",
+  "num": 331,
+  "cat": "NO",
+  "pl": "paljansota",
+  "pl2": "",
+  "par": "paljansoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "journey",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c96"
+  },
+  "can": "patti",
+  "num": 332,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "pat",
+  "pa": "pait",
+  "fu": "paut",
+  "root": "PAT",
+  "en": "to hunt",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c97"
+  },
+  "can": "perir",
+  "num": 333,
+  "cat": "NO",
+  "pl": "perirta",
+  "pl2": "",
+  "par": "perier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PER",
+  "en": "summer",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c98"
+  },
+  "can": "pirkis",
+  "num": 517,
+  "cat": "NO",
+  "pl": "pirkista",
+  "pl2": "pirdis (du)",
+  "par": "pirkie",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PIR",
+  "en": "leg",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c99"
+  },
+  "can": "pirri",
+  "num": 334,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "pir",
+  "pa": "pier",
+  "fu": "piur",
+  "root": "PIR",
+  "en": "to walk",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c9a"
+  },
+  "can": "pirso",
+  "num": 335,
+  "cat": "NO",
+  "pl": "pirsota",
+  "pl2": "",
+  "par": "pirsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PIR",
+  "en": "walking",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c9b"
+  },
+  "can": "pirvejur",
+  "num": 336,
+  "cat": "NO",
+  "pl": "pirvejurta",
+  "pl2": "",
+  "par": "pirvejuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PIR",
+  "en": "street, path",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c9c"
+  },
+  "can": "pu",
+  "num": 532,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "behind, after, post-",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c9d"
+  },
+  "can": "pul",
+  "num": 337,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "main, big",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c9e"
+  },
+  "can": "puljas",
+  "num": 338,
+  "cat": "NO",
+  "pl": "puljai",
+  "pl2": "",
+  "par": "puljea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PUL",
+  "en": "leader, boss",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23c9f"
+  },
+  "can": "pulkunariel",
+  "num": 339,
+  "cat": "NO",
+  "pl": "pulkunarielta",
+  "pl2": "",
+  "par": "pulkunarielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUN/GUN",
+  "en": "university",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca0"
+  },
+  "can": "pulmjur",
+  "num": 340,
+  "cat": "NO",
+  "pl": "pulmjurta",
+  "pl2": "",
+  "par": "pulmjurat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PUL",
+  "en": "corpus of rules",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca1"
+  },
+  "can": "pulso",
+  "num": 341,
+  "cat": "NO",
+  "pl": "pulota",
+  "pl2": "",
+  "par": "pulsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PUL",
+  "en": "government",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca2"
+  },
+  "can": "pulvimile",
+  "num": 342,
+  "cat": "NO",
+  "pl": "pulvimileta",
+  "pl2": "",
+  "par": "pulvimilee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIM",
+  "en": "highway",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca3"
+  },
+  "can": "pusalen",
+  "num": 554,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAL",
+  "en": "last",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca4"
+  },
+  "can": "putalkive",
+  "num": 534,
+  "cat": "NO",
+  "pl": "putalkiveta",
+  "pl2": "",
+  "par": "putalkivee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "suffix",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca5"
+  },
+  "can": "ravo",
+  "num": 548,
+  "cat": "NO",
+  "pl": "ravota",
+  "pl2": "",
+  "par": "ravoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "RAV",
+  "en": "value",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca6"
+  },
+  "can": "ripas",
+  "num": 343,
+  "cat": "NO",
+  "pl": "ripai",
+  "pl2": "",
+  "par": "ripea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "RIP",
+  "en": "snake",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca7"
+  },
+  "can": "ripivas",
+  "num": 344,
+  "cat": "NO",
+  "pl": "ripivai",
+  "pl2": "",
+  "par": "ripivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "RIP",
+  "en": "worm",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca8"
+  },
+  "can": "ro",
+  "num": 345,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "marker PERF",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ca9"
+  },
+  "can": "runni",
+  "num": 346,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "run",
+  "pa": "ruin",
+  "fu": "ruon",
+  "root": "RUN",
+  "en": "to speak, to say, to tell",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23caa"
+  },
+  "can": "runtal",
+  "num": 347,
+  "cat": "NO",
+  "pl": "runtalal (runtalta)",
+  "pl2": "",
+  "par": "runtalat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "RUN & TAL",
+  "en": "colloquial language",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cab"
+  },
+  "can": "rutjenmalo",
+  "num": 348,
+  "cat": "NO",
+  "pl": "rutjenmalota",
+  "pl2": "",
+  "par": "rutjenmaloi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "cinema (technique)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cac"
+  },
+  "can": "rutti",
+  "num": 349,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "rut",
+  "pa": "ruit",
+  "fu": "ruot",
+  "root": "RUT",
+  "en": "to move",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cad"
+  },
+  "can": "rutueni",
+  "num": 350,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "rutuen",
+  "pa": "ruituen",
+  "fu": "ruotuen",
+  "root": "RUT",
+  "en": "to move oneself",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cae"
+  },
+  "can": "rututueni",
+  "num": 351,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "rututuen",
+  "pa": "ruitutuen",
+  "fu": "ruotutuen",
+  "root": "RUT+",
+  "en": "to work out",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23caf"
+  },
+  "can": "rututueniso",
+  "num": 352,
+  "cat": "NO",
+  "pl": "rututuenisota",
+  "pl2": "",
+  "par": "rututuenisoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "RUT+",
+  "en": "exercice, training",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb0"
+  },
+  "can": "salke",
+  "num": 353,
+  "cat": "NO",
+  "pl": "salketa",
+  "pl2": "",
+  "par": "salkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAL",
+  "en": "number",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb1"
+  },
+  "can": "salkunto",
+  "num": 354,
+  "cat": "NO",
+  "pl": "salkuntota",
+  "pl2": "",
+  "par": "salkuntoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAL & KUN",
+  "en": "mathematics",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb2"
+  },
+  "can": "salli",
+  "num": 355,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "sal",
+  "pa": "sail",
+  "fu": "saul",
+  "root": "SAL",
+  "en": "to list, to order",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb3"
+  },
+  "can": "saltalke",
+  "num": 538,
+  "cat": "NO",
+  "pl": "saltalketa",
+  "pl2": "",
+  "par": "saltalkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "number (word)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb4"
+  },
+  "can": "salto",
+  "num": 356,
+  "cat": "NO",
+  "pl": "saltota",
+  "pl2": "",
+  "par": "saltoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAL",
+  "en": "list, sequence",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb5"
+  },
+  "can": "sami",
+  "num": 357,
+  "cat": "NO",
+  "pl": "samime",
+  "pl2": "",
+  "par": "samie",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAM",
+  "en": "name",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb6"
+  },
+  "can": "samikirto",
+  "num": 358,
+  "cat": "NO",
+  "pl": "samikirtota",
+  "pl2": "",
+  "par": "samikirtoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "signature",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb7"
+  },
+  "can": "samvejur",
+  "num": 359,
+  "cat": "NO",
+  "pl": "samvejurta",
+  "pl2": "",
+  "par": "samvejuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SAM",
+  "en": "noun, name",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb8"
+  },
+  "can": "sapi (sep)",
+  "num": 360,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "seven",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cb9"
+  },
+  "can": "sardjas",
+  "num": 361,
+  "cat": "NO",
+  "pl": "sardjai",
+  "pl2": "",
+  "par": "sardjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SARD",
+  "en": "heart",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cba"
+  },
+  "can": "sati",
+  "num": 362,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "satie",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "weather",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cbb"
+  },
+  "can": "satikunto",
+  "num": 363,
+  "cat": "NO",
+  "pl": "satikuntota",
+  "pl2": "",
+  "par": "satikuntoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "meteorology",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cbc"
+  },
+  "can": "semas",
+  "num": 364,
+  "cat": "NO",
+  "pl": "semai",
+  "pl2": "",
+  "par": "semea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SEM",
+  "en": "egg",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cbd"
+  },
+  "can": "semmer",
+  "num": 365,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "seventy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cbe"
+  },
+  "can": "semon",
+  "num": 366,
+  "cat": "NO",
+  "pl": "semonta",
+  "pl2": "",
+  "par": "semoin",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SEM",
+  "en": "seed",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cbf"
+  },
+  "can": "senas",
+  "num": 367,
+  "cat": "NO",
+  "pl": "isnen",
+  "pl2": "senai",
+  "par": "senea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SEN",
+  "en": "son",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc0"
+  },
+  "can": "sepsir",
+  "num": 368,
+  "cat": "NO",
+  "pl": "sepsirta",
+  "pl2": "",
+  "par": "sepsier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "week",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc1"
+  },
+  "can": "seras",
+  "num": 369,
+  "cat": "NO",
+  "pl": "issen",
+  "pl2": "serai",
+  "par": "serea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SER",
+  "en": "sister",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc2"
+  },
+  "can": "sievair",
+  "num": 370,
+  "cat": "NO",
+  "pl": "sievairta",
+  "pl2": "",
+  "par": "sievairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "june",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc3"
+  },
+  "can": "sievin",
+  "num": 542,
+  "cat": "NO",
+  "pl": "sievinta",
+  "pl2": "",
+  "par": "sievien",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "beer",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc4"
+  },
+  "can": "sievur",
+  "num": 371,
+  "cat": "NO",
+  "pl": "sievurta",
+  "pl2": "",
+  "par": "sievuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "light (natural)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc5"
+  },
+  "can": "sievurte",
+  "num": 372,
+  "cat": "NO",
+  "pl": "sievurtee",
+  "pl2": "",
+  "par": "sievurtee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "window",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc6"
+  },
+  "can": "sievus",
+  "num": 373,
+  "cat": "NO",
+  "pl": "sievusta",
+  "pl2": "",
+  "par": "sievuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "light (artificial)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc7"
+  },
+  "can": "sijas",
+  "num": 374,
+  "cat": "PR",
+  "pl": "",
+  "pl2": "",
+  "par": "sijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "you (sg)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc8"
+  },
+  "can": "sijas",
+  "num": 375,
+  "cat": "NO",
+  "pl": "isjen",
+  "pl2": "sijai",
+  "par": "sijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "sun",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cc9"
+  },
+  "can": "sikki",
+  "num": 376,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-jasi",
+  "pr": "sik",
+  "pa": "siek",
+  "fu": "siuk",
+  "root": "SIK",
+  "en": "to look for, to search",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cca"
+  },
+  "can": "sir (< sijir)",
+  "num": 377,
+  "cat": "NO",
+  "pl": "sirta",
+  "pl2": "",
+  "par": "sirat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "day",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ccb"
+  },
+  "can": "siriel",
+  "num": 378,
+  "cat": "NO",
+  "pl": "sirielta",
+  "pl2": "",
+  "par": "sirielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "south",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ccc"
+  },
+  "can": "sirke",
+  "num": 379,
+  "cat": "NO",
+  "pl": "sirketa",
+  "pl2": "",
+  "par": "sirkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "hour",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ccd"
+  },
+  "can": "sirkirtivus",
+  "num": 380,
+  "cat": "NO",
+  "pl": "sirkirtivusta",
+  "pl2": "",
+  "par": "sirkirtivuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ & KIR",
+  "en": "newspaper",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cce"
+  },
+  "can": "sol",
+  "num": 381,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "soil",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "salt",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ccf"
+  },
+  "can": "su",
+  "num": 382,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "to each other, marker RECIP",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd0"
+  },
+  "can": "suelkapto",
+  "num": 383,
+  "cat": "NO",
+  "pl": "suelkaptota",
+  "pl2": "",
+  "par": "suelkaptoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAP",
+  "en": "agreement",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd1"
+  },
+  "can": "sueskapto",
+  "num": 384,
+  "cat": "NO",
+  "pl": "sueskaptota",
+  "pl2": "",
+  "par": "sueskaptoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAP",
+  "en": "disagreement",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd2"
+  },
+  "can": "suimmer",
+  "num": 385,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "eighty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd3"
+  },
+  "can": "summinvo",
+  "num": 576,
+  "cat": "NO",
+  "pl": "summinvota",
+  "pl2": "",
+  "par": "summinvoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MIN",
+  "en": "dream",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd4"
+  },
+  "can": "summius (< sunmius)",
+  "num": 386,
+  "cat": "NO",
+  "pl": "summiusta",
+  "pl2": "",
+  "par": "summiusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SUN",
+  "en": "key",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd5"
+  },
+  "can": "sunni",
+  "num": 387,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "sun",
+  "pa": "suin",
+  "fu": "suon",
+  "root": "SUN",
+  "en": "to open",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd6"
+  },
+  "can": "supantemiviel",
+  "num": 388,
+  "cat": "NO",
+  "pl": "supantemivielta",
+  "pl2": "",
+  "par": "supantemivielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SUP",
+  "en": "sleeping room",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd7"
+  },
+  "can": "suti (suit)",
+  "num": 389,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "eight",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd8"
+  },
+  "can": "tai",
+  "num": 566,
+  "cat": "NO",
+  "pl": "taita",
+  "pl2": "",
+  "par": "taijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "pine forest",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cd9"
+  },
+  "can": "taikas",
+  "num": 567,
+  "cat": "NO",
+  "pl": "taikai",
+  "pl2": "",
+  "par": "taikea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "pine tree",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cda"
+  },
+  "can": "tailo",
+  "num": 571,
+  "cat": "NO",
+  "pl": "tailota",
+  "pl2": "",
+  "par": "tailoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "state of calm and relax",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cdb"
+  },
+  "can": "tal",
+  "num": 390,
+  "cat": "NO",
+  "pl": "talal",
+  "pl2": "",
+  "par": "talat (old teal)",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "language",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cdc"
+  },
+  "can": "tali (tel)",
+  "num": 391,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "three",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cdd"
+  },
+  "can": "talingas",
+  "num": 392,
+  "cat": "NO",
+  "pl": "talingai",
+  "pl2": "",
+  "par": "talingea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "linguist",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cde"
+  },
+  "can": "talkaplo",
+  "num": 393,
+  "cat": "NO",
+  "pl": "talkaplota",
+  "pl2": "",
+  "par": "talkaploi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "morphology (ling)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cdf"
+  },
+  "can": "talke",
+  "num": 394,
+  "cat": "NO",
+  "pl": "talketa",
+  "pl2": "",
+  "par": "talkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "word",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce0"
+  },
+  "can": "talkejonsjur",
+  "num": 395,
+  "cat": "NO",
+  "pl": "talkejonsjurta",
+  "pl2": "",
+  "par": "talkejonsjurat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NOS",
+  "en": "lexicon, vocabulary",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce1"
+  },
+  "can": "talkekirtus",
+  "num": 396,
+  "cat": "NO",
+  "pl": "talkekirtusta",
+  "pl2": "",
+  "par": "talkekirtuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL & KIR",
+  "en": "dictionary",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce2"
+  },
+  "can": "talkirtus",
+  "num": 397,
+  "cat": "NO",
+  "pl": "talkirtusta",
+  "pl2": "",
+  "par": "talkirtuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "grammar book",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce3"
+  },
+  "can": "talkissi",
+  "num": 398,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "talkis",
+  "pa": "talkies",
+  "fu": "talkius",
+  "root": "",
+  "en": "to translate ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce4"
+  },
+  "can": "talkisuiras",
+  "num": 399,
+  "cat": "NO",
+  "pl": "talkisuirai",
+  "pl2": "",
+  "par": "talkisuirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL & KIS",
+  "en": "translator",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce5"
+  },
+  "can": "talkisvo",
+  "num": 400,
+  "cat": "NO",
+  "pl": "talkisvota",
+  "pl2": "",
+  "par": "talkisvoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL & KIS",
+  "en": "translation",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce6"
+  },
+  "can": "talkummur",
+  "num": 401,
+  "cat": "NO",
+  "pl": "talkummurta",
+  "pl2": "",
+  "par": "talkummuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KUN",
+  "en": "grammar",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce7"
+  },
+  "can": "talo",
+  "num": 402,
+  "cat": "NO",
+  "pl": "talota",
+  "pl2": "",
+  "par": "taloi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "ability",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce8"
+  },
+  "can": "talo",
+  "num": 403,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "capacity, ability, property ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ce9"
+  },
+  "can": "talsalke",
+  "num": 404,
+  "cat": "NO",
+  "pl": "talsalketa",
+  "pl2": "",
+  "par": "talsalkee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL & SAL",
+  "en": "grammatical category",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cea"
+  },
+  "can": "tanni",
+  "num": 405,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "tan",
+  "pa": "tain",
+  "fu": "taun",
+  "root": "TAN",
+  "en": "to dance",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ceb"
+  },
+  "can": "tansa",
+  "num": 406,
+  "cat": "QT",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "many",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cec"
+  },
+  "can": "tanso",
+  "num": 407,
+  "cat": "NO",
+  "pl": "tansota",
+  "pl2": "",
+  "par": "tansoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAN",
+  "en": "dance",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ced"
+  },
+  "can": "taras",
+  "num": 408,
+  "cat": "NO",
+  "pl": "itren",
+  "pl2": "tarai",
+  "par": "tarea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "star",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cee"
+  },
+  "can": "te",
+  "num": 409,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "in vain, unsuccessfully",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cef"
+  },
+  "can": "te",
+  "num": 410,
+  "cat": "NO",
+  "pl": "tee",
+  "pl2": "",
+  "par": "tee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TE",
+  "en": "door",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf0"
+  },
+  "can": "tek",
+  "num": 411,
+  "cat": "NO",
+  "pl": "tekek",
+  "pl2": "",
+  "par": "teek",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEK",
+  "en": "house",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf1"
+  },
+  "can": "telmer",
+  "num": 412,
+  "cat": "NU",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "thirty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf2"
+  },
+  "can": "temiviel",
+  "num": 413,
+  "cat": "NO",
+  "pl": "temivielta",
+  "pl2": "",
+  "par": "temivielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEM",
+  "en": "room",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf3"
+  },
+  "can": "tepair",
+  "num": 414,
+  "cat": "NO",
+  "pl": "tepairta",
+  "pl2": "",
+  "par": "tepairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEP",
+  "en": "july",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf4"
+  },
+  "can": "tepir",
+  "num": 415,
+  "cat": "NO",
+  "pl": "tepirta",
+  "pl2": "",
+  "par": "tepier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEP",
+  "en": "summer",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf5"
+  },
+  "can": "tepivir",
+  "num": 416,
+  "cat": "NO",
+  "pl": "tepivirta",
+  "pl2": "",
+  "par": "tepivier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEP",
+  "en": "spring",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf6"
+  },
+  "can": "tepo",
+  "num": 417,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "tepoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TEP",
+  "en": "heat, warmth",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf7"
+  },
+  "can": "teppi",
+  "num": 418,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "tep",
+  "pa": "teip",
+  "fu": "teup",
+  "root": "TEP",
+  "en": "to warm up",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf8"
+  },
+  "can": "terri",
+  "num": 419,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "ter",
+  "pa": "teir",
+  "fu": "teur",
+  "root": "TER",
+  "en": "to run",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cf9"
+  },
+  "can": "terselen",
+  "num": 420,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TER",
+  "en": "ongoing, progressive (ling)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cfa"
+  },
+  "can": "tilli",
+  "num": 421,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "til",
+  "pa": "tiel",
+  "fu": "tiul",
+  "root": "TIL",
+  "en": "to give",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cfb"
+  },
+  "can": "timmi",
+  "num": 422,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "tim",
+  "pa": "tiem",
+  "fu": "tium",
+  "root": "TIM",
+  "en": "to dwell",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cfc"
+  },
+  "can": "tisair",
+  "num": 423,
+  "cat": "NO",
+  "pl": "tisairta",
+  "pl2": "",
+  "par": "tisairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TIS",
+  "en": "february",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cfd"
+  },
+  "can": "tisi",
+  "num": 424,
+  "cat": "NO",
+  "pl": "tisita",
+  "pl2": "",
+  "par": "tisie",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TIS",
+  "en": "cold",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cfe"
+  },
+  "can": "tisir",
+  "num": 425,
+  "cat": "NO",
+  "pl": "tisirta",
+  "pl2": "",
+  "par": "tisier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TIS",
+  "en": "winter",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23cff"
+  },
+  "can": "tisivir",
+  "num": 426,
+  "cat": "NO",
+  "pl": "tisivirta",
+  "pl2": "",
+  "par": "tisivier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TIS",
+  "en": "autumn",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d00"
+  },
+  "can": "tokki",
+  "num": 427,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-ja",
+  "pr": "tok",
+  "pa": "toik",
+  "fu": "touk",
+  "root": "TOK",
+  "en": "to put",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d01"
+  },
+  "can": "tolis",
+  "num": 428,
+  "cat": "NO",
+  "pl": "tolista",
+  "pl2": "",
+  "par": "tolies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TOL",
+  "en": "blood",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d02"
+  },
+  "can": "tor",
+  "num": 429,
+  "cat": "NO",
+  "pl": "toror",
+  "pl2": "",
+  "par": "toir",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TOR",
+  "en": "skin",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d03"
+  },
+  "can": "tukkantus",
+  "num": 430,
+  "cat": "NO",
+  "pl": "tukkantusta",
+  "pl2": "",
+  "par": "tukkantuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUK",
+  "en": "ax",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d04"
+  },
+  "can": "tukki",
+  "num": 431,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas-java",
+  "pr": "tuk",
+  "pa": "tuik",
+  "fu": "tuok",
+  "root": "TUK",
+  "en": "to cut",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d05"
+  },
+  "can": "tukmius",
+  "num": 432,
+  "cat": "NO",
+  "pl": "tukmiusta",
+  "pl2": "",
+  "par": "tukmiusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUK",
+  "en": "knife",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d06"
+  },
+  "can": "tulair",
+  "num": 433,
+  "cat": "NO",
+  "pl": "tulairta",
+  "pl2": "",
+  "par": "tulairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUL",
+  "en": "march",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d07"
+  },
+  "can": "tuljas",
+  "num": 434,
+  "cat": "NO",
+  "pl": "tuljai",
+  "pl2": "",
+  "par": "tuljea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUL",
+  "en": "wind",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d08"
+  },
+  "can": "tulmius",
+  "num": 435,
+  "cat": "NO",
+  "pl": "tulmiusta",
+  "pl2": "",
+  "par": "tulmiusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUL",
+  "en": "fan",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d09"
+  },
+  "can": "tuni",
+  "num": 436,
+  "cat": "NO",
+  "pl": "tunita",
+  "pl2": "",
+  "par": "tunie",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUN",
+  "en": "bread",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d0a"
+  },
+  "can": "turri",
+  "num": 437,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "tur",
+  "pa": "tuir",
+  "fu": "tuor",
+  "root": "TUR",
+  "en": "to come",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d0b"
+  },
+  "can": "uapas",
+  "num": 438,
+  "cat": "NO",
+  "pl": "uapai",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "UAP",
+  "en": "dog",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d0c"
+  },
+  "can": "uappi",
+  "num": 439,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "uaap",
+  "pa": "uaip",
+  "fu": "uop",
+  "root": "UAP",
+  "en": "to bark",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d0d"
+  },
+  "can": "uilsir",
+  "num": 440,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "daily",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d0e"
+  },
+  "can": "uino",
+  "num": 441,
+  "cat": "NO",
+  "pl": "uinota",
+  "pl2": "",
+  "par": "uinoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "GUN",
+  "en": "knowledge, information",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d0f"
+  },
+  "can": "uiras",
+  "num": 442,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "person who makes X",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d10"
+  },
+  "can": "uivas",
+  "num": 443,
+  "cat": "NO",
+  "pl": "iuven",
+  "pl2": "uivai",
+  "par": "uivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "UIV",
+  "en": "sheep",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d11"
+  },
+  "can": "ujir",
+  "num": 444,
+  "cat": "NO",
+  "pl": "ujirta",
+  "pl2": "",
+  "par": "ujier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "future",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d12"
+  },
+  "can": "uk",
+  "num": 445,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "ukat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "UK",
+  "en": "meat",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d13"
+  },
+  "can": "uksi",
+  "num": 446,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja-jasi",
+  "pr": "uks",
+  "pa": "uiks",
+  "fu": "uoks",
+  "root": "KUS",
+  "en": "to see",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d14"
+  },
+  "can": "ul",
+  "num": 447,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "bad, wrong, mis-",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d15"
+  },
+  "can": "ularso",
+  "num": 448,
+  "cat": "NO",
+  "pl": "ularsota",
+  "pl2": "",
+  "par": "ularsoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "AR",
+  "en": "illness",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d16"
+  },
+  "can": "uleirlejas",
+  "num": 449,
+  "cat": "NO",
+  "pl": "uleirlejai",
+  "pl2": "",
+  "par": "uleirlejea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "EIR",
+  "en": "fool",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d17"
+  },
+  "can": "ulkarjas",
+  "num": 450,
+  "cat": "NO",
+  "pl": "ulkarjai",
+  "pl2": "",
+  "par": "ulkarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR",
+  "en": "wrongdoer, offender",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d18"
+  },
+  "can": "ulkarto",
+  "num": 451,
+  "cat": "NO",
+  "pl": "ulkartota",
+  "pl2": "",
+  "par": "ulkartoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KAR",
+  "en": "mistake, fault",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d19"
+  },
+  "can": "uloaujuvo",
+  "num": 452,
+  "cat": "NO",
+  "pl": "uloaujuvota",
+  "pl2": "",
+  "par": "uloaujuvoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "temptation",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d1a"
+  },
+  "can": "ume",
+  "num": 453,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "umee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "smoke",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d1b"
+  },
+  "can": "umren",
+  "num": 454,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MUR",
+  "en": "black",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d1c"
+  },
+  "can": "umri",
+  "num": 455,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "umr",
+  "pa": "uimr",
+  "fu": "uomr",
+  "root": "MUR",
+  "en": "to be black",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d1d"
+  },
+  "can": "un",
+  "num": 456,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "progressive, now",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d1e"
+  },
+  "can": "unekir",
+  "num": 457,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NEK",
+  "en": "next year",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d1f"
+  },
+  "can": "unnen",
+  "num": 458,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VUN",
+  "en": "new, young",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d20"
+  },
+  "can": "unni",
+  "num": 459,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "un",
+  "pa": "uin",
+  "fu": "uon",
+  "root": "VUN",
+  "en": "to be new, to be young",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d21"
+  },
+  "can": "unsijariel",
+  "num": 460,
+  "cat": "NO",
+  "pl": "unsijarielta",
+  "pl2": "",
+  "par": "unsijarielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "east",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d22"
+  },
+  "can": "unsir",
+  "num": 461,
+  "cat": "NO",
+  "pl": "unsirta",
+  "pl2": "",
+  "par": "unsirat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "morning",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d23"
+  },
+  "can": "unsiriel",
+  "num": 462,
+  "cat": "NO",
+  "pl": "unsirielta",
+  "pl2": "",
+  "par": "unsirielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "SIJ",
+  "en": "east",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d24"
+  },
+  "can": "unti",
+  "num": 463,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "unt",
+  "pa": "uint",
+  "fu": "uont",
+  "root": "NUT",
+  "en": "to die",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d25"
+  },
+  "can": "upri",
+  "num": 464,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja-jasi/jea",
+  "pr": "upr",
+  "pa": "uipr",
+  "fu": "uopr",
+  "root": "PUR",
+  "en": "to dislike",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d26"
+  },
+  "can": "upruri",
+  "num": 465,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja-jasi/jea",
+  "pr": "uprur",
+  "pa": "uiprur",
+  "fu": "uoprur",
+  "root": "PUR",
+  "en": "to hate",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d27"
+  },
+  "can": "upsen",
+  "num": 466,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PUS",
+  "en": "thick",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d28"
+  },
+  "can": "ur",
+  "num": 577,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "negative subjective ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d29"
+  },
+  "can": "ure",
+  "num": 467,
+  "cat": "NO",
+  "pl": "ureta",
+  "pl2": "",
+  "par": "uree",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "iron",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d2a"
+  },
+  "can": "uren",
+  "num": 468,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "bad",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d2b"
+  },
+  "can": "ureno",
+  "num": 469,
+  "cat": "NO",
+  "pl": "urenota",
+  "pl2": "",
+  "par": "urenoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "evil",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d2c"
+  },
+  "can": "uriljus",
+  "num": 470,
+  "cat": "NO",
+  "pl": "uriljusta",
+  "pl2": "",
+  "par": "uriljuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "train",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d2d"
+  },
+  "can": "uriljustatema",
+  "num": 471,
+  "cat": "NO",
+  "pl": "uriljustatemata",
+  "pl2": "",
+  "par": "uriljustatemea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "train station",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d2e"
+  },
+  "can": "urken",
+  "num": 472,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "RUK",
+  "en": "correct",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d2f"
+  },
+  "can": "usir",
+  "num": 473,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "tomorrow ",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d30"
+  },
+  "can": "usmi",
+  "num": 550,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja-ju",
+  "pr": "usm",
+  "pa": "uism",
+  "fu": "uosm",
+  "root": "SUM",
+  "en": "to be equal",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d31"
+  },
+  "can": "uspi",
+  "num": 474,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "usp",
+  "pa": "uisp",
+  "fu": "uosp",
+  "root": "SUP",
+  "en": "to sleep",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d32"
+  },
+  "can": "usti",
+  "num": 475,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ust",
+  "pa": "uist",
+  "fu": "uost",
+  "root": "SUT",
+  "en": "to be tired",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d33"
+  },
+  "can": "ut",
+  "num": 476,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "uot",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "UT",
+  "en": "fire",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d34"
+  },
+  "can": "vae",
+  "num": 574,
+  "cat": "NO",
+  "pl": "vaeta",
+  "pl2": "",
+  "par": "veae",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "meadow, prairy",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d35"
+  },
+  "can": "vai",
+  "num": 477,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "emphatic, indeed",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d36"
+  },
+  "can": "vajenmalur",
+  "num": 478,
+  "cat": "NO",
+  "pl": "vajenmalurta",
+  "pl2": "",
+  "par": "vajenmaluor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "tv (system)",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d37"
+  },
+  "can": "vajenmalus",
+  "num": 479,
+  "cat": "NO",
+  "pl": "vajenmalusta",
+  "pl2": "",
+  "par": "vajenmaluos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "tv set",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d38"
+  },
+  "can": "vajentulus",
+  "num": 480,
+  "cat": "NO",
+  "pl": "vajentulusta",
+  "pl2": "",
+  "par": "vajentuluos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TUL",
+  "en": "telephone",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d39"
+  },
+  "can": "van",
+  "num": 481,
+  "cat": "NO",
+  "pl": "vanan",
+  "pl2": "",
+  "par": "vean",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAN",
+  "en": "water",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d3a"
+  },
+  "can": "vanair",
+  "num": 482,
+  "cat": "NO",
+  "pl": "vanairta",
+  "pl2": "",
+  "par": "vanairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAN",
+  "en": "april",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d3b"
+  },
+  "can": "vanevo",
+  "num": 483,
+  "cat": "NO",
+  "pl": "vanevota",
+  "pl2": "",
+  "par": "vanevoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAN",
+  "en": "rain",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d3c"
+  },
+  "can": "vanlamtoske",
+  "num": 484,
+  "cat": "NO",
+  "pl": "vanlamtosketa",
+  "pl2": "",
+  "par": "vanlamtoskee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAN & LAM",
+  "en": "hydrogen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d3d"
+  },
+  "can": "vanni",
+  "num": 485,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "van",
+  "pa": "vain",
+  "fu": "vaun",
+  "root": "VAN",
+  "en": "to rain",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d3e"
+  },
+  "can": "vanosnjus",
+  "num": 486,
+  "cat": "NO",
+  "pl": "vanosnjusta",
+  "pl2": "",
+  "par": "vanosnjusat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NOS",
+  "en": "glass, cup",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d3f"
+  },
+  "can": "vantaras",
+  "num": 487,
+  "cat": "NO",
+  "pl": "vantarai",
+  "pl2": "",
+  "par": "vantarea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAN",
+  "en": "water animal",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d40"
+  },
+  "can": "varas",
+  "num": 488,
+  "cat": "NO",
+  "pl": "ivren",
+  "pl2": "varai",
+  "par": "varea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAR",
+  "en": "bird",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d41"
+  },
+  "can": "varjus",
+  "num": 489,
+  "cat": "NO",
+  "pl": "varjusta",
+  "pl2": "",
+  "par": "varjuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAR",
+  "en": "airplane",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d42"
+  },
+  "can": "varjusema",
+  "num": 490,
+  "cat": "NO",
+  "pl": "varjusemata",
+  "pl2": "",
+  "par": "varjusemea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAR",
+  "en": "airport",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d43"
+  },
+  "can": "varkis",
+  "num": 491,
+  "cat": "NO",
+  "pl": "varkista",
+  "pl2": "vardis (dual)",
+  "par": "varkies",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VAR",
+  "en": "wing",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d44"
+  },
+  "can": "varri",
+  "num": 492,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "var",
+  "pa": "vair",
+  "fu": "vaur",
+  "root": "VAR",
+  "en": "to fly",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d45"
+  },
+  "can": "veron",
+  "num": 493,
+  "cat": "NO",
+  "pl": "veronta",
+  "pl2": "verken (col.)",
+  "par": "veroin",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VER",
+  "en": "fruit",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d46"
+  },
+  "can": "vie",
+  "num": 494,
+  "cat": "NO",
+  "pl": "",
+  "pl2": "",
+  "par": "vijat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VI",
+  "en": "wheat",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d47"
+  },
+  "can": "vijai",
+  "num": 495,
+  "cat": "PR",
+  "pl": "",
+  "pl2": "",
+  "par": "vijea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "we",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d48"
+  },
+  "can": "vikarjas",
+  "num": 496,
+  "cat": "NO",
+  "pl": "vikarjai",
+  "pl2": "",
+  "par": "vikarjea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIK",
+  "en": "animal",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d49"
+  },
+  "can": "vikkunas",
+  "num": 497,
+  "cat": "NO",
+  "pl": "vikkunai",
+  "pl2": "",
+  "par": "vikkunea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "wife",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d4a"
+  },
+  "can": "viko",
+  "num": 498,
+  "cat": "NO",
+  "pl": "vikota",
+  "pl2": "",
+  "par": "vikoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIK",
+  "en": "life",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d4b"
+  },
+  "can": "vikolamtoske",
+  "num": 499,
+  "cat": "NO",
+  "pl": "vikolamtosketa",
+  "pl2": "",
+  "par": "vikolamtoskee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIK & LAM",
+  "en": "oxygen",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d4c"
+  },
+  "can": "vikolen",
+  "num": 500,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIK",
+  "en": "alive",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d4d"
+  },
+  "can": "viktunas",
+  "num": 501,
+  "cat": "NO",
+  "pl": "viktunai",
+  "pl2": "",
+  "par": "viktunea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "husband",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d4e"
+  },
+  "can": "vimile",
+  "num": 502,
+  "cat": "NO",
+  "pl": "vimileta",
+  "pl2": "",
+  "par": "vimilee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIM",
+  "en": "road",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d4f"
+  },
+  "can": "vimmi",
+  "num": 503,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "jas",
+  "pr": "vim",
+  "pa": "viem",
+  "fu": "vium",
+  "root": "VIM",
+  "en": "to drive",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d50"
+  },
+  "can": "vimuiras",
+  "num": 504,
+  "cat": "NO",
+  "pl": "vimuirai",
+  "pl2": "",
+  "par": "vimuirea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIM",
+  "en": "driver",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d51"
+  },
+  "can": "vinair",
+  "num": 505,
+  "cat": "NO",
+  "pl": "vinairta",
+  "pl2": "",
+  "par": "vinairat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIN",
+  "en": "september",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d52"
+  },
+  "can": "vinsa",
+  "num": 506,
+  "cat": "QT",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "few",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d53"
+  },
+  "can": "viras",
+  "num": 507,
+  "cat": "NO",
+  "pl": "ivren",
+  "pl2": "virai",
+  "par": "virea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIR",
+  "en": "human being, person",
+  "sw": 1
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d54"
+  },
+  "can": "viren",
+  "num": 508,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIR",
+  "en": "human",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d55"
+  },
+  "can": "virkenas",
+  "num": 509,
+  "cat": "NO",
+  "pl": "virkenai",
+  "pl2": "",
+  "par": "virkenea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIR",
+  "en": "humanity, mankind",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d56"
+  },
+  "can": "virravo",
+  "num": 549,
+  "cat": "NO",
+  "pl": "virravota",
+  "pl2": "",
+  "par": "virravoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "RAV",
+  "en": "dignity",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d57"
+  },
+  "can": "virtalkive",
+  "num": 537,
+  "cat": "NO",
+  "pl": "virtalkiveta",
+  "pl2": "",
+  "par": "virtalkivee",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "TAL",
+  "en": "pronoun",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32a1e7f0bf8a314f180bb"
+  },
+  "can": "rau",
+  "num": 578,
+  "cat": "NO",
+  "pl": "rauta",
+  "pl2": "",
+  "par": "rauo",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "oak grove",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32a4a7f0bf8a314f180bc"
+  },
+  "can": "raukas",
+  "num": 579,
+  "cat": "NO",
+  "pl": "raukai",
+  "pl2": "",
+  "par": "raukea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "oak tree",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32a787f0bf8a314f180bd"
+  },
+  "can": "beas",
+  "num": 580,
+  "cat": "NO",
+  "pl": "beai",
+  "pl2": "",
+  "par": "bejea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "cow",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32a9d7f0bf8a314f180be"
+  },
+  "can": "aivas",
+  "num": 581,
+  "cat": "NO",
+  "pl": "aivai",
+  "pl2": "",
+  "par": "aivea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "sheep",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32ae17f0bf8a314f180bf"
+  },
+  "can": "rutuenmalur",
+  "num": 582,
+  "cat": "NO",
+  "pl": "rutueenmalurta",
+  "pl2": "",
+  "par": "rutuenmaluor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "film, movie",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32b407f0bf8a314f180c0"
+  },
+  "can": "virolas",
+  "num": 583,
+  "cat": "NO",
+  "pl": "virolai",
+  "pl2": "",
+  "par": "virolea",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "VIR",
+  "en": "ape",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32b8b7f0bf8a314f180c1"
+  },
+  "can": "nur",
+  "num": 584,
+  "cat": "NO",
+  "pl": "nurta",
+  "pl2": "",
+  "par": "nuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "NUR",
+  "en": "world, Earth",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32bc07f0bf8a314f180c3"
+  },
+  "can": "urillen",
+  "num": 585,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "LIL",
+  "en": "sad",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32c187f0bf8a314f180c4"
+  },
+  "can": "palto",
+  "num": 586,
+  "cat": "NO",
+  "pl": "paltota",
+  "pl2": "",
+  "par": "paltoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "sight",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32c517f0bf8a314f180c5"
+  },
+  "can": "lutpalto",
+  "num": 587,
+  "cat": "NO",
+  "pl": "lutpaltota",
+  "pl2": "",
+  "par": "lutpaltoi",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "PAL",
+  "en": "landscape",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32c6d7f0bf8a314f180c6"
+  },
+  "can": "ol",
+  "num": 588,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "similar to",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32c847f0bf8a314f180c7"
+  },
+  "can": "ik",
+  "num": 589,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "part, piece  of",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32cb27f0bf8a314f180c8"
+  },
+  "can": "kirtikus",
+  "num": 590,
+  "cat": "NO",
+  "pl": "kirtikusta",
+  "pl2": "",
+  "par": "kirtikuos",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "KIR",
+  "en": "page",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32ccc7f0bf8a314f180c9"
+  },
+  "can": "uir",
+  "num": 591,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "next in  time",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32ce87f0bf8a314f180ca"
+  },
+  "can": "ier",
+  "num": 592,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "previous in time",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32d077f0bf8a314f180cb"
+  },
+  "can": "air",
+  "num": 593,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "current in time",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32d4a7f0bf8a314f180cc"
+  },
+  "can": "ejri",
+  "num": 594,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "ja",
+  "pr": "ejr",
+  "pa": "iir",
+  "fu": "euir",
+  "root": "JER",
+  "en": "to be empty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32d747f0bf8a314f180ce"
+  },
+  "can": "ejren",
+  "num": 595,
+  "cat": "AJ",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "JER",
+  "en": "empty",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32da27f0bf8a314f180cf"
+  },
+  "can": "ejriel",
+  "num": 596,
+  "cat": "NO",
+  "pl": "ejrielta",
+  "pl2": "",
+  "par": "ejrielat",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "JER",
+  "en": "desert",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32ded7f0bf8a314f180d0"
+  },
+  "can": "iaelli",
+  "num": 597,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "iaell",
+  "pa": "iaill",
+  "fu": "iaeull",
+  "root": "",
+  "en": "to recognise",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32e3e7f0bf8a314f180d1"
+  },
+  "can": "et",
+  "num": 598,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "by chance, occassionally",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32e5b7f0bf8a314f180d2"
+  },
+  "can": "sju",
+  "num": 599,
+  "cat": "PF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "please don't",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32e947f0bf8a314f180d3"
+  },
+  "can": "satti",
+  "num": 600,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "sat",
+  "pa": "sait",
+  "fu": "saut",
+  "root": "SAT",
+  "en": "to stay, to wait",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32ec87f0bf8a314f180d5"
+  },
+  "can": "ivir",
+  "num": 601,
+  "cat": "NO",
+  "pl": "ivirta",
+  "pl2": "",
+  "par": "ivier",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "moment",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32ee37f0bf8a314f180d6"
+  },
+  "can": "iviris",
+  "num": 602,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "for a moment",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32ef47f0bf8a314f180d7"
+  },
+  "can": "inir",
+  "num": 603,
+  "cat": "AV",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "then",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32f1e7f0bf8a314f180d8"
+  },
+  "can": "lorri",
+  "num": 604,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "lor",
+  "pa": "loir",
+  "fu": "lour",
+  "root": "LOR",
+  "en": "to give back, to answer",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32f6c7f0bf8a314f180da"
+  },
+  "can": "no",
+  "num": 605,
+  "cat": "SF",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "",
+  "en": "then, as a consequence",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66c32fad7f0bf8a314f180db"
+  },
+  "can": "eiaeturri",
+  "num": 606,
+  "cat": "VB",
+  "pl": "",
+  "pl2": "",
+  "par": "",
+  "pul": "",
+  "pr": "eiaetur",
+  "pa": "eiaetuir",
+  "fu": "eiaetuor",
+  "root": "TUR",
+  "en": "to come back, to return somewere",
+  "sw": 0
+},
+{
+  "_id": {
+    "$oid": "66d036caaa898e4190cfc78e"
+  },
+  "can": "eltomaltur",
+  "num": 607,
+  "cat": "NO",
+  "pl": "eltomalturta",
+  "pl2": "",
+  "par": "eltomaltuor",
+  "pul": "",
+  "pr": "",
+  "pa": "",
+  "fu": "",
+  "root": "MAL",
+  "en": "computer program",
+  "sw": 0
+}]

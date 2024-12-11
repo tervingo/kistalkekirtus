@@ -1,0 +1,1573 @@
+[{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d58"
+  },
+  "root": "AI",
+  "prim": "moon",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d59"
+  },
+  "root": "AM",
+  "prim": "cloud",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d5a"
+  },
+  "root": "AN",
+  "prim": "here, this",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be (ser)"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d5b"
+  },
+  "root": "AR",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be (estar)"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d5c"
+  },
+  "root": "BAN",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be heavy"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d5d"
+  },
+  "root": "BAR",
+  "prim": "river",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d5e"
+  },
+  "root": "BEL",
+  "prim": "leaf",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d5f"
+  },
+  "root": "BIR",
+  "prim": "fly",
+  "moda": "",
+  "act": "to bother, to pester",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d60"
+  },
+  "root": "DAN",
+  "prim": "",
+  "moda": "",
+  "act": "to eat",
+  "modp": "",
+  "pas": "to get, to absorb"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d61"
+  },
+  "root": "DAR",
+  "prim": "horn",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d62"
+  },
+  "root": "DER",
+  "prim": "tree",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d63"
+  },
+  "root": "DUK",
+  "prim": "daughter",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d64"
+  },
+  "root": "DUN",
+  "prim": "man",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d65"
+  },
+  "root": "ED",
+  "prim": "",
+  "moda": "",
+  "act": "to digest, to process",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d66"
+  },
+  "root": "EIR",
+  "prim": "mind",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d67"
+  },
+  "root": "EL",
+  "prim": "good",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d68"
+  },
+  "root": "ENA",
+  "prim": "hair",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d69"
+  },
+  "root": "GUM",
+  "prim": "",
+  "moda": "",
+  "act": "to come",
+  "modp": "",
+  "pas": "to arrive"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d6a"
+  },
+  "root": "GUN",
+  "prim": "",
+  "moda": "",
+  "act": "to learn",
+  "modp": "",
+  "pas": "to know"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d6b"
+  },
+  "root": "HAM",
+  "prim": "",
+  "moda": "",
+  "act": "to bite",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d6c"
+  },
+  "root": "HAN",
+  "prim": "sand",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d6d"
+  },
+  "root": "HAR",
+  "prim": "",
+  "moda": "",
+  "act": "to heal",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d6e"
+  },
+  "root": "HIR",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be long"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d6f"
+  },
+  "root": "HIS",
+  "prim": "",
+  "moda": "J",
+  "act": "to urinate",
+  "modp": "J",
+  "pas": "to need to urinate"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d70"
+  },
+  "root": "HUL",
+  "prim": "",
+  "moda": "",
+  "act": "to laugh",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d71"
+  },
+  "root": "HUR",
+  "prim": "",
+  "moda": "",
+  "act": "to drink (-alc)",
+  "modp": "",
+  "pas": "to swallow"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d72"
+  },
+  "root": "IR",
+  "prim": "mountain",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d73"
+  },
+  "root": "IV",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be little"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d74"
+  },
+  "root": "JAL",
+  "prim": "mist",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d75"
+  },
+  "root": "JAN",
+  "prim": "",
+  "moda": "",
+  "act": "to go",
+  "modp": "",
+  "pas": "to be carried"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d76"
+  },
+  "root": "KAL",
+  "prim": "",
+  "moda": "",
+  "act": "to pay, to give in exchange",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d77"
+  },
+  "root": "KAM",
+  "prim": "night",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d78"
+  },
+  "root": "KAP",
+  "prim": "",
+  "moda": "",
+  "act": "to catch, take",
+  "modp": "",
+  "pas": "to understand, grasp"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d79"
+  },
+  "root": "KAP",
+  "prim": "",
+  "moda": "IJ",
+  "act": "to hug, to squeeze",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d7a"
+  },
+  "root": "KAR",
+  "prim": "",
+  "moda": "",
+  "act": "to make, do",
+  "modp": "",
+  "pas": "to involuntarily cause"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d7b"
+  },
+  "root": "KAR",
+  "prim": "",
+  "moda": "I",
+  "act": "to build",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d7c"
+  },
+  "root": "KAS",
+  "prim": "bark (of a tree)",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d7d"
+  },
+  "root": "KEL",
+  "prim": "",
+  "moda": "",
+  "act": "to choose, to elect",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d7e"
+  },
+  "root": "KER",
+  "prim": "village",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d7f"
+  },
+  "root": "KEV",
+  "prim": "horse",
+  "moda": "",
+  "act": "to pull",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d80"
+  },
+  "root": "KIL",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be round"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d81"
+  },
+  "root": "KIN",
+  "prim": "fingernail",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d82"
+  },
+  "root": "KIR",
+  "prim": "",
+  "moda": "",
+  "act": "to write",
+  "modp": "",
+  "pas": "to look like/to seem"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d83"
+  },
+  "root": "KIS",
+  "prim": "",
+  "moda": "",
+  "act": "to exchange",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d84"
+  },
+  "root": "KIV",
+  "prim": "child, kid",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d85"
+  },
+  "root": "KOL",
+  "prim": "",
+  "moda": "",
+  "act": "to listen to",
+  "modp": "",
+  "pas": "to hear"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d86"
+  },
+  "root": "KON",
+  "prim": "bone, stem",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d87"
+  },
+  "root": "KUN",
+  "prim": "woman",
+  "moda": "",
+  "act": "to learn",
+  "modp": "",
+  "pas": "to know"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d88"
+  },
+  "root": "KUS",
+  "prim": "",
+  "moda": "",
+  "act": "to look at",
+  "modp": "",
+  "pas": "to see"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d89"
+  },
+  "root": "KUS",
+  "prim": "",
+  "moda": "C",
+  "act": "to show",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d8a"
+  },
+  "root": "KUT",
+  "prim": "",
+  "moda": "",
+  "act": "to get together",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d8b"
+  },
+  "root": "LAK",
+  "prim": "",
+  "moda": "",
+  "act": "to shed light",
+  "modp": "",
+  "pas": "to be white"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d8c"
+  },
+  "root": "LAL",
+  "prim": "",
+  "moda": "",
+  "act": "to sing",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d8d"
+  },
+  "root": "LAM",
+  "prim": "",
+  "moda": "",
+  "act": "to breathe",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d8e"
+  },
+  "root": "LAS",
+  "prim": "",
+  "moda": "",
+  "act": "to set free",
+  "modp": "",
+  "pas": "to be free"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d8f"
+  },
+  "root": "LAT",
+  "prim": "",
+  "moda": "",
+  "act": "to hit",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d90"
+  },
+  "root": "LEK",
+  "prim": "",
+  "moda": "",
+  "act": "to read",
+  "modp": "",
+  "pas": "to realize, to understand by reading"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d91"
+  },
+  "root": "LEK",
+  "prim": "",
+  "moda": "I",
+  "act": "to study",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d92"
+  },
+  "root": "LEL",
+  "prim": "",
+  "moda": "",
+  "act": "to let, to allow",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d93"
+  },
+  "root": "LIL",
+  "prim": "",
+  "moda": "",
+  "act": "to smile",
+  "modp": "",
+  "pas": "to be happy"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d94"
+  },
+  "root": "LIR",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be thin, to be narrow"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d95"
+  },
+  "root": "LIT",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be short"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d96"
+  },
+  "root": "LIV",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be left-handed"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d97"
+  },
+  "root": "LOK",
+  "prim": "foot",
+  "moda": "",
+  "act": "to tread",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d98"
+  },
+  "root": "LUN",
+  "prim": "",
+  "moda": "",
+  "act": "to snow heavily",
+  "modp": "",
+  "pas": "to snow"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d99"
+  },
+  "root": "LUT",
+  "prim": "land, earth",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d9a"
+  },
+  "root": "MAL",
+  "prim": "picture",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d9b"
+  },
+  "root": "MAR",
+  "prim": "",
+  "moda": "",
+  "act": "to love (a partner)",
+  "modp": "",
+  "pas": "to love (a friend)"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d9c"
+  },
+  "root": "MAS",
+  "prim": "",
+  "moda": "",
+  "act": "to ask, to inquire",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d9d"
+  },
+  "root": "MEN",
+  "prim": "",
+  "moda": "",
+  "act": "to think (about)",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d9e"
+  },
+  "root": "MIN",
+  "prim": "",
+  "moda": "",
+  "act": "to chat, to have a conversation (+GEN: about)",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23d9f"
+  },
+  "root": "MIS",
+  "prim": "cat",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da0"
+  },
+  "root": "MUR",
+  "prim": "darkness",
+  "moda": "",
+  "act": "to hide, to blacken",
+  "modp": "",
+  "pas": "to be black"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da1"
+  },
+  "root": "MUS",
+  "prim": "",
+  "moda": "",
+  "act": "to change, to become",
+  "modp": "",
+  "pas": "to become"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da2"
+  },
+  "root": "NAJ",
+  "prim": "brother",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da3"
+  },
+  "root": "NAR",
+  "prim": "",
+  "moda": "",
+  "act": "to throw",
+  "modp": "",
+  "pas": "to fall"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da4"
+  },
+  "root": "NEK",
+  "prim": "year",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da5"
+  },
+  "root": "NIL",
+  "prim": "",
+  "moda": "",
+  "act": "to put",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da6"
+  },
+  "root": "NIR",
+  "prim": "grass",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be green"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da7"
+  },
+  "root": "NOS",
+  "prim": "",
+  "moda": "",
+  "act": "to contain liquid",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da8"
+  },
+  "root": "PAL",
+  "prim": "",
+  "moda": "",
+  "act": "to look, to observe",
+  "modp": "",
+  "pas": "to appear, to look like"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23da9"
+  },
+  "root": "PER",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be hot, to be warm"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23daa"
+  },
+  "root": "PIR",
+  "prim": "leg",
+  "moda": "",
+  "act": "to walk",
+  "modp": "",
+  "pas": "to stroll, to wander"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dab"
+  },
+  "root": "PUJ",
+  "prim": "",
+  "moda": "",
+  "act": "to pray, to meditate",
+  "modp": "",
+  "pas": "to be sacred, holy, …"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dac"
+  },
+  "root": "PUL",
+  "prim": "",
+  "moda": "",
+  "act": "to lead",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dad"
+  },
+  "root": "PUR",
+  "prim": "",
+  "moda": "",
+  "act": "to reject, to avoid",
+  "modp": "",
+  "pas": "to dislike"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dae"
+  },
+  "root": "PUR",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "I",
+  "pas": "to hate"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23daf"
+  },
+  "root": "PUS",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be thick"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db0"
+  },
+  "root": "RAV",
+  "prim": "",
+  "moda": "",
+  "act": "to appreciate",
+  "modp": "",
+  "pas": "to be worthy"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db1"
+  },
+  "root": "RIP",
+  "prim": "",
+  "moda": "",
+  "act": "to creep",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db2"
+  },
+  "root": "ROS",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be nice, to be beautiful "
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db3"
+  },
+  "root": "RUK",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be correct"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db4"
+  },
+  "root": "RUN",
+  "prim": "",
+  "moda": "",
+  "act": "to speak, to say",
+  "modp": "",
+  "pas": "to involuntarily disclose"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db5"
+  },
+  "root": "RUT",
+  "prim": "",
+  "moda": "",
+  "act": "to move",
+  "modp": "",
+  "pas": "to be moved"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db6"
+  },
+  "root": "RUT",
+  "prim": "",
+  "moda": "I",
+  "act": "to make exercise",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db7"
+  },
+  "root": "SAL",
+  "prim": "",
+  "moda": "",
+  "act": "to order, to align, to put one after another, to count",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db8"
+  },
+  "root": "SAM",
+  "prim": "",
+  "moda": "",
+  "act": "to name",
+  "modp": "",
+  "pas": "to be called"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23db9"
+  },
+  "root": "SAP",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be wide, to be fat"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dba"
+  },
+  "root": "SAR",
+  "prim": "",
+  "moda": "",
+  "act": "to look after",
+  "modp": "",
+  "pas": "to be old"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dbb"
+  },
+  "root": "SEM",
+  "prim": "",
+  "moda": "",
+  "act": "to plant, to sow",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dbc"
+  },
+  "root": "SEN",
+  "prim": "son",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dbd"
+  },
+  "root": "SER",
+  "prim": "sister",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dbe"
+  },
+  "root": "SIJ",
+  "prim": "",
+  "moda": "",
+  "act": "to shine",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dbf"
+  },
+  "root": "SIK",
+  "prim": "",
+  "moda": "",
+  "act": "to look for, to search",
+  "modp": "",
+  "pas": "to like"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc0"
+  },
+  "root": "SUK",
+  "prim": "",
+  "moda": "",
+  "act": "to pester, to disturb",
+  "modp": "",
+  "pas": "to be nervous, anxious"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc1"
+  },
+  "root": "SUM",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be equal"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc2"
+  },
+  "root": "SUN",
+  "prim": "",
+  "moda": "",
+  "act": "to open",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc3"
+  },
+  "root": "SUP",
+  "prim": "",
+  "moda": "",
+  "act": "to put to sleep",
+  "modp": "",
+  "pas": "to sleep"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc4"
+  },
+  "root": "SUR",
+  "prim": "",
+  "moda": "",
+  "act": "to make big",
+  "modp": "",
+  "pas": "to be big"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc5"
+  },
+  "root": "SUT",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be tired"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc6"
+  },
+  "root": "TAL",
+  "prim": "",
+  "moda": "",
+  "act": "to speak",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc7"
+  },
+  "root": "TAN",
+  "prim": "",
+  "moda": "",
+  "act": "to dance",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc8"
+  },
+  "root": "TAR",
+  "prim": "horn",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dc9"
+  },
+  "root": "TE",
+  "prim": "door",
+  "moda": "",
+  "act": "to close",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dca"
+  },
+  "root": "TEK",
+  "prim": "house",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dcb"
+  },
+  "root": "TEM",
+  "prim": "house, hut",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dcc"
+  },
+  "root": "TEP",
+  "prim": "",
+  "moda": "",
+  "act": "to heat",
+  "modp": "",
+  "pas": "to be warm"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dcd"
+  },
+  "root": "TER",
+  "prim": "",
+  "moda": "",
+  "act": "to run",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dce"
+  },
+  "root": "TIL",
+  "prim": "",
+  "moda": "",
+  "act": "to give",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dcf"
+  },
+  "root": "TIM",
+  "prim": "",
+  "moda": "",
+  "act": "to live (in)",
+  "modp": "",
+  "pas": "to inhabit"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd0"
+  },
+  "root": "TIS",
+  "prim": "",
+  "moda": "",
+  "act": "to make cold",
+  "modp": "",
+  "pas": "to be cold"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd1"
+  },
+  "root": "TOK",
+  "prim": "",
+  "moda": "",
+  "act": "to put",
+  "modp": "",
+  "pas": "to be (estar)"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd2"
+  },
+  "root": "TOL",
+  "prim": "blood",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd3"
+  },
+  "root": "TOR",
+  "prim": "skin",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd4"
+  },
+  "root": "TUK",
+  "prim": "",
+  "moda": "",
+  "act": "to cut",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd5"
+  },
+  "root": "TUL",
+  "prim": "wind",
+  "moda": "",
+  "act": "to blow",
+  "modp": "",
+  "pas": "to fall down, to be windy"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd6"
+  },
+  "root": "TUR",
+  "prim": "",
+  "moda": "",
+  "act": "to come",
+  "modp": "",
+  "pas": "to get"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd7"
+  },
+  "root": "UAP",
+  "prim": "",
+  "moda": "",
+  "act": "to bark",
+  "modp": "",
+  "pas": "to be noisy"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd8"
+  },
+  "root": "UIV",
+  "prim": "sheep",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dd9"
+  },
+  "root": "UT",
+  "prim": "fire",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dda"
+  },
+  "root": "VAN",
+  "prim": "water",
+  "moda": "",
+  "act": "to rain, to make wet",
+  "modp": "",
+  "pas": "to cry"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ddb"
+  },
+  "root": "VAR",
+  "prim": "",
+  "moda": "",
+  "act": "to fly",
+  "modp": "",
+  "pas": "to glide, to float"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ddc"
+  },
+  "root": "VER",
+  "prim": "fruit",
+  "moda": "",
+  "act": "to care, to look after",
+  "modp": "",
+  "pas": "to grow"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ddd"
+  },
+  "root": "VI",
+  "prim": "wheat",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23dde"
+  },
+  "root": "VIK",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be alive"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23ddf"
+  },
+  "root": "VIM",
+  "prim": "",
+  "moda": "",
+  "act": "to drive",
+  "modp": "",
+  "pas": "to be a passenger"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23de0"
+  },
+  "root": "VIN",
+  "prim": "",
+  "moda": "",
+  "act": "to drink (+alc)",
+  "modp": "",
+  "pas": "to be drunk"
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23de1"
+  },
+  "root": "VIR",
+  "prim": "human being",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66b9cd2a807e67b5edc23de2"
+  },
+  "root": "VUN",
+  "prim": "",
+  "moda": "",
+  "act": "to clean, to tidy up",
+  "modp": "",
+  "pas": "to be young/new"
+},
+{
+  "_id": {
+    "$oid": "66c32b997f0bf8a314f180c2"
+  },
+  "root": "NUR",
+  "prim": "world, Earth",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66c32d557f0bf8a314f180cd"
+  },
+  "root": "JER",
+  "prim": "",
+  "moda": "",
+  "act": "",
+  "modp": "",
+  "pas": "to be empty"
+},
+{
+  "_id": {
+    "$oid": "66c32ea17f0bf8a314f180d4"
+  },
+  "root": "SAT",
+  "prim": "",
+  "moda": "",
+  "act": "to stay, to wait",
+  "modp": "",
+  "pas": ""
+},
+{
+  "_id": {
+    "$oid": "66c32f307f0bf8a314f180d9"
+  },
+  "root": "LOR",
+  "prim": "",
+  "moda": "",
+  "act": "to give back, to answer",
+  "modp": "",
+  "pas": ""
+}]

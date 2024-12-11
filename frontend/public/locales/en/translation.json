@@ -89,7 +89,12 @@
             "rootModDate": "Root Modified Date: ",
             "nofRoots": "Number of Roots: ",
             "pre-lastReadCSV": "Date when CSV was last read  at ",
-            "post-lastReadCSV": ""
+            "post-lastReadCSV": "",
+            "downloading": "Downloading...",
+            "downloadComplete": "Download complete!",
+            "downloadError": "Error downloading file",
+            "downloadDictionary": "Download Dictionary",
+            "downloadRoots": "Download Roots"
         }
     },
     "gram": {
