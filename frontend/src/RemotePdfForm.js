@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { SERVER_IP } from './constants';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { Box, Typography, Button, Stack } from '@mui/material';
@@ -12,7 +11,7 @@ export const ExportPdfForm = () => {
     const downloadDictionary = async () => {
         try {
             setMessage(t('lex.files.downloading'));
-            const response = await fetch(`${SERVER_IP}/api/export/dictionary-pdf`);
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/dictionary-pdf`);
             const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -32,7 +31,7 @@ export const ExportPdfForm = () => {
     const downloadRoots = async () => {
         try {
             setMessage(t('lex.files.downloading'));
-            const response = await fetch(`${SERVER_IP}/api/export/roots-pdf`);
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/roots-pdf`);
             const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');

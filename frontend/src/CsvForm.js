@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { SERVER_IP } from './constants';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { Box, Typography } from '@mui/material';
@@ -15,7 +14,7 @@ export const ExportCsvForm = () => {
 
     useEffect(() => {
         const exportCsv = async () => {
-            const response = await fetch(`${SERVER_IP}/api/export/csv`);
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/csv`);
             const data = await response.text();
             setMessage(data);
         };
@@ -43,7 +42,7 @@ export function ImportCsvForm() {
 
     const handleFileUpload = () => {
       if (window.confirm('Do you want to import the new CSV file?')) {
-        fetch(`${SERVER_IP}/api/import/csv`, {
+        fetch(`https://kistalkekirtus.onrender.com/api/import/csv`, {
           method: 'POST',
         })
         .then(response => response.json())
@@ -83,7 +82,7 @@ export function ImportCsvForm() {
     const { t } = useTranslation();
 
     useEffect(() => {
-      fetch(`${SERVER_IP}/api/csv-info`)
+      fetch(`https://kistalkekirtus.onrender.com/api/csv-info`)
         .then(response => response.json())
         .then(data => setInfo(data));
     }, []);

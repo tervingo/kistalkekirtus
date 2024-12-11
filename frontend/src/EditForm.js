@@ -19,7 +19,6 @@ import {
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 
-import { SERVER_IP } from './constants';
 
 // EDIT ENTRIES
 
@@ -46,7 +45,7 @@ export function EditEntry({ setRefreshKey }) {
         console.log(can);
         if (can) {
             const fetchEntry = async () => {
-                const response = await fetch(`${SERVER_IP}/api/query-entry?${`can=${can}`}`);
+                const response = await fetch(`https://kistalkekirtus.onrender.com/api/query-entry?${`can=${can}`}`);
                 const data = await response.json();
                 setId(data._id);
                 setCan(data.can);
@@ -70,7 +69,7 @@ export function EditEntry({ setRefreshKey }) {
     
     const handleEdit = async (event) => {
         event.preventDefault();
-        const response = await fetch(`${SERVER_IP}/api/edit-entry/${id}`, {
+        const response = await fetch(`https://kistalkekirtus.onrender.com/api/edit-entry/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -273,7 +272,7 @@ export function EditRoot() {
     useEffect(() => {
         console.log('root: ',root);
             const fetchRoot = async () => {
-                const url = `${SERVER_IP}/api/query-root?root=${root}`;
+                const url = `https://kistalkekirtus.onrender.com/api/query-root?root=${root}`;
                 console.log('url: ', url);
                 const response = await fetch(url);
                 if (response.ok) {
@@ -297,7 +296,7 @@ export function EditRoot() {
     
     const handleEdit = async (event) => {
         event.preventDefault();
-        const response = await fetch(`${SERVER_IP}/api/edit-root/${id}`, {
+        const response = await fetch(`https://kistalkekirtus.onrender.com/api/edit-root/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

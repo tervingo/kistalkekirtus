@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import { SERVER_IP } from './constants';
 import './tkk.css';
 
 export function HtmlDisplay() {
@@ -14,7 +13,7 @@ export function HtmlDisplay() {
     useEffect(() => {
         console.log('label is: ', label.label);
         const fetchData = async () => {
-            const response = await fetch(`${SERVER_IP}/api/get_html`, {
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/get_html`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

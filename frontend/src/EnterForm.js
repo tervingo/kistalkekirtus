@@ -20,8 +20,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import './tkk.css';
 import theme from './theme';
 
-import { SERVER_IP } from './constants';
-
 // ENTER ENTRY
 
 export function EnterEntry() {
@@ -51,7 +49,7 @@ export function EnterEntry() {
     const enterEntry = async (event) => {
         event.preventDefault();
 
-        const response = await fetch(`${SERVER_IP}/api/enter-entry`, {
+        const response = await fetch(`https://kistalkekirtus.onrender.com/api/enter-entry`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -62,7 +60,7 @@ export function EnterEntry() {
         console.log(data);
         setMessage('Entry stored successfully!');
 
-        const alkono = await fetch(`${SERVER_IP}/api/query-root?root=${root}`);
+        const alkono = await fetch(`https://kistalkekirtus.onrender.com/api/query-root?root=${root}`);
         const kono = await alkono.json();
         console.log('root is: ', kono);
         if (kono == '0') {
@@ -272,7 +270,7 @@ export function EnterRoot() {
 
     const enterRoot = async (event) => {
         event.preventDefault();
-        const response = await fetch(`${SERVER_IP}/api/enter-root`, {
+        const response = await fetch(`https://kistalkekirtus.onrender.com/api/enter-root`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

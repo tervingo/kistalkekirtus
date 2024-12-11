@@ -24,8 +24,6 @@ import theme from './theme';
 
 import './tkk.css';
 
-import { SERVER_IP } from './constants';
-
 // QUERY ENTRY (using MUI)
 
 
@@ -43,7 +41,7 @@ export function QueryEntry() {
 
     const queryEntry = async (event) => {
         event.preventDefault();
-        const response = await fetch(`${SERVER_IP}/api/search-entries?search=${search}`);
+        const response = await fetch(`https://kistalkekirtus.onrender.com/api/search-entries?search=${search}`);
         console.log(response);
         const data = await response.json();
         console.log(data);
@@ -62,7 +60,7 @@ export function QueryEntry() {
 
     const handleDelete = async (id, can) => {
         if (window.confirm(`Are you sure you want to delete ${can}?`)) {
-            const response = await fetch(`${SERVER_IP}/api/delete-entry/${id}`, {
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/delete-entry/${id}`, {
                 method: 'DELETE',
             });
             const data = await response.json();
@@ -183,7 +181,7 @@ export function QueryRoot() {
 
     const queryRoot = async (event) => {
         event.preventDefault();
-        const response = await fetch(`${SERVER_IP}/api/search-roots?search=${search}`);
+        const response = await fetch(`https://kistalkekirtus.onrender.com/api/search-roots?search=${search}`);
         console.log(response);
         const data = await response.json();
         console.log(data);
@@ -202,7 +200,7 @@ export function QueryRoot() {
 
     const handleDelete = async (id, root) => {
         if (window.confirm(`Are you sure you want to delete ${root}?`)) {
-            const response = await fetch(`${SERVER_IP}/api/delete-root/${id}`, {
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/delete-root/${id}`, {
                 method: 'DELETE',
             });
             const data = await response.json();
