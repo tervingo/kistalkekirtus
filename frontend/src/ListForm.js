@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { 
@@ -72,10 +71,10 @@ export function ListEntries({ refreshKey, tableContainerRef })  {
     const handleDelete = async (can) => {
         if (window.confirm(`Are you sure you want to delete ${can}?`)) 
         {
-            const temp = await fetch(`${SERVER_IP}/api/query-entry?${`can=${can}`}`);
+            const temp = await fetch(`https://kistalkekirtus.onrender.com/api/query-entry?${`can=${can}`}`);
             const temp_data = await temp.json();
             console.log(temp_data);
-            const response = await fetch(`${SERVER_IP}/api/delete-entry/${temp_data._id}`, {
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/delete-entry/${temp_data._id}`, {
                 method: 'DELETE',
             });
             if (response) {
@@ -202,7 +201,7 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
  
     useEffect(() => {
       const fetchAndSortRoots = async () => {
-          const response = await fetch(`${SERVER_IP}/api/list-roots`);
+          const response = await fetch(`https://kistalkekirtus.onrender.com/api/list-roots`);
           let data = await response.json();
   
           // Add a 'firstLetter' field to each item in the 'translations' array
@@ -245,10 +244,10 @@ export function ListRoots({ refreshKey, tableContainerRef })  {
     const handleDelete = async (root) => {
         if (window.confirm(`Are you sure you want to delete the root ${root}?`)) 
         {
-            const temp = await fetch(`${SERVER_IP}/api/query-root?${`root=${root}`}`);
+            const temp = await fetch(`https://kistalkekirtus.onrender.com/api/query-root?${`root=${root}`}`);
             const temp_data = await temp.json();
             console.log(temp_data);
-            const response = await fetch(`${SERVER_IP}/api/delete-root/${temp_data._id}`, {
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/delete-root/${temp_data._id}`, {
                 method: 'DELETE',
             });
             if (response) {
