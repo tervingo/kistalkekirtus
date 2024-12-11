@@ -53,6 +53,7 @@ const MorphVerbNode = () =>{
   </TreeNode>
 );
 
+
 const PhonoNode = () => (
   <TreeNode label="Eltonsjusta">
     <Link className='tree-list' to="/export/csv">CSV oinilli</Link>
@@ -70,9 +71,7 @@ export const GramTreeView = ({ GramNavigateOnMount, setGramNavigateOnMount }) =>
     if (GramNavigateOnMount) {
       setGramNavigateOnMount(false);
     }
-  }, [location]);
-
-  console.log('GTV: GramNavigateOnMount is: ', GramNavigateOnMount);
+  }, [location, setGramNavigateOnMount, GramNavigateOnMount]);
 
   return (
     <div>

@@ -63,7 +63,7 @@ export function EnterEntry() {
         const alkono = await fetch(`https://kistalkekirtus.onrender.com/api/query-root?root=${root}`);
         const kono = await alkono.json();
         console.log('root is: ', kono);
-        if (kono == '0') {
+        if (kono === '0') {
             console.log('lets enter a new root');
             navigate(`/enter-root/${root}`);
         }

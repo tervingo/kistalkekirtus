@@ -32,7 +32,7 @@ export const ExportCsvForm = () => {
 };
 
 //=============================
-// IMPORT CSV FILE
+// IMPORT CSV FILE 
 //=============================
 
 export function ImportCsvForm() {
@@ -60,7 +60,7 @@ export function ImportCsvForm() {
       if (!hasUploaded) {
         handleFileUpload();
       }
-    }, []);
+    }, [hasUploaded]);
   
     return (
     <ThemeProvider theme={theme}>

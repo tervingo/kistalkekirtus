@@ -61,7 +61,6 @@ const FilesNode = () => {
 };
 
 
-
 export const LexTreeView = ({ LexNavigateOnMount, setLexNavigateOnMount }) => {
   const location = useLocation();
 
@@ -69,7 +68,7 @@ export const LexTreeView = ({ LexNavigateOnMount, setLexNavigateOnMount }) => {
     if (LexNavigateOnMount) {
       setLexNavigateOnMount(false);
     }
-  }, [location]);
+  }, [location, LexNavigateOnMount, setLexNavigateOnMount]);
 
   return (
   <div>

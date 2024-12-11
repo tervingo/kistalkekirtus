@@ -89,6 +89,8 @@ export function EditEntry({ setRefreshKey }) {
                 sw,
             }),
         });
+
+        console.log(response);
         
         setMessage("Entry updated successfully");
         setRefreshKey(oldKey => oldKey + 1);
@@ -290,7 +292,8 @@ export function EditRoot() {
                 }
             }
             fetchRoot();
-     }, []); 
+     }, [root]); 
+     
     
     const navigate = useNavigate();
     
@@ -310,6 +313,7 @@ export function EditRoot() {
                 pas,
             }),
         });
+        console.log(response);
         setMessage("Root updated successfully");
         navigate('/list-roots');
     };
