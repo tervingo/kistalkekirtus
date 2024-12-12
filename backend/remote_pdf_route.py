@@ -14,6 +14,7 @@ from dropbox.files import WriteMode
 
 import datetime
 import socket
+import secrets  # for generating secret key
 
 from __init__ import mongo
 
@@ -29,6 +30,10 @@ CLIENT_SECRET = os.getenv('DROPBOX_CLIENT_SECRET')
 REDIRECT_URI = "https://kistalkekirtus.onrender.com/oauth/callback"  # Your Render URL + /oauth/callback
 
 
+# Make sure your app has a secret key for sessions
+app.secret_key = os.getenv('FLASK_SECRET_KEY', secrets.token_hex(16))
+
+
 pdf_route = Blueprint('pdf_route', __name__)
 
 @pdf_route.route('/oauth/connect')
@@ -38,24 +43,41 @@ def oauth_connect():
 
 @pdf_route.route('/oauth/callback')
 def oauth_callback():
-    code = request.args.get('code')
-    token_url = "https://api.dropbox.com/oauth2/token"
-    
-    data = {
-        'code': code,
-        'grant_type': 'authorization_code',
-        'client_id': CLIENT_ID,
-        'client_secret': CLIENT_SECRET,
-        'redirect_uri': REDIRECT_URI
-    }
-    
-    response = requests.post(token_url, data=data)
-    token_data = response.json()
-    
-    # Store the access token
-    session['dropbox_token'] = token_data['access_token']
-    
-    return redirect('/export/pdf')  # Redirect back to your PDF page
+    try:
+        code = request.args.get('code')
+        if not code:
+            return jsonify({'error': 'No authorization code received'}), 400
+
+        token_url = "https://api.dropbox.com/oauth2/token"
+        
+        data = {
+            'code': code,
+            'grant_type': 'authorization_code',
+            'client_id': os.getenv('DROPBOX_CLIENT_ID'),
+            'client_secret': os.getenv('DROPBOX_CLIENT_SECRET'),
+            'redirect_uri': f"{os.getenv('RENDER_URL')}/oauth/callback"
+        }
+        
+        # Debug prints
+        print("Requesting token with data:", data)
+        
+        response = requests.post(token_url, data=data)
+        
+        # Debug prints
+        print("Token response status:", response.status_code)
+        print("Token response:", response.text)
+        
+        if response.status_code != 200:
+            return jsonify({'error': f'Token request failed: {response.text}'}), 400
+            
+        token_data = response.json()
+        session['dropbox_token'] = token_data['access_token']
+        
+        return redirect('/export/pdf')
+        
+    except Exception as e:
+        print(f"Error in callback: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 @pdf_route.route('/api/export/dictionary-pdf', methods=['GET'])
 def export_dictionary_pdf():
