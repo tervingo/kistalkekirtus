@@ -30,18 +30,21 @@ export const ExportPdfForm = () => {
  */
     const downloadDictionary = async () => {
         try {
+            setMessage(t('lex.files.uploading')); // Add loading message
             const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/dictionary-pdf`);
             const data = await response.json();
             
-            if (data.link) {
-                // Open Dropbox link in new tab
+            console.log('Response from server:', data); // Debug log
+            
+            if (data.success && data.link) {
+                setMessage(t('lex.files.uploadSuccess'));
                 window.open(data.link, '_blank');
             } else {
-                throw new Error('No download link received');
+                throw new Error(data.error || 'Upload failed');
             }
         } catch (error) {
-            console.error('Error:', error);
-            setMessage(t('lex.files.uploadError'));
+            console.error('Full error:', error);
+            setMessage(t('lex.files.uploadError') + ': ' + error.message);
         }
     };
 

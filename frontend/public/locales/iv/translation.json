@@ -92,7 +92,8 @@
             "downloadComplete": "Download complete!",
             "downloadError": "Error downloading file",
             "downloadDictionary": "Download Dictionary",
-            "downloadRoots": "Download Roots"
+            "downloadRoots": "Download Roots",
+            "uploadError": "Error uploading file to Dropcbox"
         }
     },
     "gram": {
