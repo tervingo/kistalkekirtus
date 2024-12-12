@@ -54,14 +54,7 @@ def oauth_callback():
             'redirect_uri': f"{os.getenv('RENDER_URL')}/oauth/callback"
         }
         
-        # Debug prints
-        print("Requesting token with data:", data)
-        
         response = requests.post(token_url, data=data)
-        
-        # Debug prints
-        print("Token response status:", response.status_code)
-        print("Token response:", response.text)
         
         if response.status_code != 200:
             return jsonify({'error': f'Token request failed: {response.text}'}), 400
@@ -69,12 +62,14 @@ def oauth_callback():
         token_data = response.json()
         session['dropbox_token'] = token_data['access_token']
         
-        return redirect('/export/pdf')
+        # Redirect to the frontend URL instead of just the path
+        return redirect(f"{os.getenv('FRONTEND_URL')}/export/pdf")
         
     except Exception as e:
         print(f"Error in callback: {str(e)}")
         return jsonify({'error': str(e)}), 500
-
+    
+    
 @pdf_route.route('/api/export/dictionary-pdf', methods=['GET'])
 def export_dictionary_pdf():
 
