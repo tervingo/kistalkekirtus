@@ -28,6 +28,9 @@ CLIENT_ID = os.getenv('DROPBOX_CLIENT_ID')
 CLIENT_SECRET = os.getenv('DROPBOX_CLIENT_SECRET')
 REDIRECT_URI = "https://kistalkekirtus.onrender.com/oauth/callback"  # Your Render URL + /oauth/callback
 
+
+pdf_route = Blueprint('pdf_route', __name__)
+
 @pdf_route.route('/oauth/connect')
 def oauth_connect():
     auth_url = f"https://www.dropbox.com/oauth2/authorize?client_id={CLIENT_ID}&redirect_uri={REDIRECT_URI}&response_type=code"
@@ -53,10 +56,6 @@ def oauth_callback():
     session['dropbox_token'] = token_data['access_token']
     
     return redirect('/export/pdf')  # Redirect back to your PDF page
-
-
-
-pdf_route = Blueprint('pdf_route', __name__)
 
 @pdf_route.route('/api/export/dictionary-pdf', methods=['GET'])
 def export_dictionary_pdf():
