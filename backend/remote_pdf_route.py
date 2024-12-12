@@ -1,4 +1,5 @@
-from flask import Blueprint, send_file, request, jsonify
+from flask import Blueprint, send_file, request, jsonify, redirect, session, url_for
+import requests
 from io import BytesIO
 from bson.objectid import ObjectId
 from reportlab.lib.pagesizes import letter
@@ -20,14 +21,52 @@ hostname = socket.gethostname()
 
 from constants import paths, new_paths
 
-
 import os
+
+# Add these environment variables in Render
+CLIENT_ID = os.getenv('DROPBOX_CLIENT_ID')
+CLIENT_SECRET = os.getenv('DROPBOX_CLIENT_SECRET')
+REDIRECT_URI = "https://kistalkekirtus.onrender.com/oauth/callback"  # Your Render URL + /oauth/callback
+
+@pdf_route.route('/oauth/connect')
+def oauth_connect():
+    auth_url = f"https://www.dropbox.com/oauth2/authorize?client_id={CLIENT_ID}&redirect_uri={REDIRECT_URI}&response_type=code"
+    return redirect(auth_url)
+
+@pdf_route.route('/oauth/callback')
+def oauth_callback():
+    code = request.args.get('code')
+    token_url = "https://api.dropbox.com/oauth2/token"
+    
+    data = {
+        'code': code,
+        'grant_type': 'authorization_code',
+        'client_id': CLIENT_ID,
+        'client_secret': CLIENT_SECRET,
+        'redirect_uri': REDIRECT_URI
+    }
+    
+    response = requests.post(token_url, data=data)
+    token_data = response.json()
+    
+    # Store the access token
+    session['dropbox_token'] = token_data['access_token']
+    
+    return redirect('/export/pdf')  # Redirect back to your PDF page
+
 
 
 pdf_route = Blueprint('pdf_route', __name__)
 
 @pdf_route.route('/api/export/dictionary-pdf', methods=['GET'])
 def export_dictionary_pdf():
+
+    if 'dropbox_token' not in session:
+        return jsonify({'error': 'Not authenticated with Dropbox'}), 401
+        
+    # Use the token from session instead of environment variable
+    dbx = Dropbox(session['dropbox_token'])
+
     try:
         # Get all documents from your MongoDB collection and sort them by 'can'
         iv_en = mongo.db.translations.find().sort('can')

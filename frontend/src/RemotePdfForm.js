@@ -7,44 +7,35 @@ import { useTranslation } from 'react-i18next';
 export const ExportPdfForm = () => {
     const [message, setMessage] = useState('');
     const { t } = useTranslation();
-/* 
-    const downloadDictionary = async () => {
+
+    const initiateDropboxAuth = async () => {
         try {
-            setMessage(t('lex.files.downloading'));
-            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/dictionary-pdf`);
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'ilven_dictionary.pdf';
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-            setMessage(t('lex.files.downloadComplete'));
+            window.location.href = `${SERVER_IP}/oauth/connect`;
         } catch (error) {
-            console.error('Error downloading dictionary PDF:', error);
-            setMessage(t('lex.files.downloadError'));
+            setMessage(t('lex.files.authError'));
         }
     };
- */
+
+
     const downloadDictionary = async () => {
         try {
-            setMessage(t('lex.files.uploading')); // Add loading message
-            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/dictionary-pdf`);
+            const response = await fetch('https://kistalkekirtus.onrender.com/api/export/dictionary-pdf');
             const data = await response.json();
             
-            console.log('Response from server:', data); // Debug log
+            if (data.error === 'Not authenticated with Dropbox') {
+                initiateDropboxAuth();
+                return;
+            }
             
             if (data.success && data.link) {
-                setMessage(t('lex.files.uploadSuccess'));
                 window.open(data.link, '_blank');
+                setMessage(t('lex.files.uploadSuccess'));
             } else {
                 throw new Error(data.error || 'Upload failed');
             }
         } catch (error) {
-            console.error('Full error:', error);
-            setMessage(t('lex.files.uploadError') + ': ' + error.message);
+            console.error('Error:', error);
+            setMessage(t('lex.files.uploadError'));
         }
     };
 
