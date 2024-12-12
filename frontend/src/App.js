@@ -85,17 +85,26 @@ function App() {
     const [gramNavigateOnMount, setGramNavigateOnMount] = useState(false);
     const { t } = useTranslation();
     const hostname = window.location.hostname;
+    const tableContainerRef = useRef(null);
 
+   // Create a navigation component
+   function NavigationHandler() {
+    const navigate = useNavigate();
+    
+    useEffect(() => {
+        if (isFirstRender) {
+            navigate('/list-entries');
+            setIsFirstRender(false);
+        }
+    }, [navigate]);
+
+    return null;
+}
+
+
+
+/* 
     function MainComponent() {
-
-        const navigate = useNavigate();
-
-        useEffect(() => {
-            if (isFirstRender) {
-                navigate('/list-entries');
-                setIsFirstRender(false);
-            }
-        }, [navigate]);
 
         return (
             <div className="main">
@@ -117,9 +126,9 @@ function App() {
                 </Routes>
             </div>
         );
-    }
+    } */
 
-    const tableContainerRef = useRef(null);
+    // const tableContainerRef = useRef(null);
 
     function handleLetterClick(letter) {
       console.log('letter :', letter);
@@ -157,84 +166,102 @@ function App() {
 
 
     return (
+    <Router>
       <Container maxWidth="xl" sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Router>
-            <Grid container sx={{ height: '100%', flexGrow: 1, overflow:'hidden' }}>
+        <NavigationHandler />  {/* Add the navigation handler here */}
+        <Grid container sx={{ height: '100%', flexGrow: 1, overflow:'hidden' }}>
 
-              {/* Top Panel */}
-              <Grid item xs={12}>
-                <Box justifyContent="center" alignItems="center" sx={{ p: 2, backgroundColor: 'primary.main' }}>            
-                    <LanguageSwitcher />
-                    <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', my: 2 }} >
-                      <Paper sx={{ my:3, bgcolor: theme.palette.labels.bgblue, color: theme.palette.labels.tx, textAlign: 'center', width:"60%"}} elevation={3}>
-                        <Typography variant="h3">
-                          {t('title')}
-                        </Typography>
-                      </Paper>
-                    </Box>
-                    <Box sx={{ p:1, textAlign: 'center'}} >
-                      <img src=".\kantokirtur_3.png" alt="Kantokirtur" />
-                      <Typography sx={{ fontFamily: '"Kirmius Ilren", sans-serif', fontSize: '2rem', fontWeight: 600}}>
-                        ilven.talkummur.<br/>le.kistalkejonsjur
-                      </Typography>
-                    </Box>
+          {/* Top Panel */}
+          <Grid item xs={12}>
+            <Box justifyContent="center" alignItems="center" sx={{ p: 2, backgroundColor: 'primary.main' }}>            
+                <LanguageSwitcher />
+                <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', my: 2 }} >
+                  <Paper sx={{ my:3, bgcolor: theme.palette.labels.bgblue, color: theme.palette.labels.tx, textAlign: 'center', width:"60%"}} elevation={3}>
+                    <Typography variant="h3">
+                      {t('title')}
+                    </Typography>
+                  </Paper>
                 </Box>
-              </Grid>
-              
-              {/* Left Panel */}
-              <Grid item xs={3} sx={{ height: '100%', overflow: 'auto', borderRight: 1, borderColor: 'divider' }}>
-                  <Box sx={{ p: 2, backgroundColor: 'primary.main' }}>
-                    <h3 className="hostname">{hostname}</h3>
-                    <div className="tabs">
-                        <ToggleButtonGroup
-                          value={activeTab}
-                          exclusive
-                          onChange={handleTabChange}
-                          aria-label="text alignment"
-                          size="small"
-                        >
-                        <StyledToggleButton
-                          value="LEXICON" 
-                          aria-label="lexicon"
-                          >
-                          {t('tabs.lexicon')}
-                        </StyledToggleButton>
-                        <StyledToggleButton
-                          value="GRAMMAR" 
-                          aria-label="grammar"
-                        >
-                          {t('tabs.grammar')}
-                        </StyledToggleButton>
-                      </ToggleButtonGroup>
-                    </div>
-                    {activeTab === 'LEXICON' && (
-                        <>        
-                            <LexTreeView LexNavigateOnMount={lexNavigateOnMount} setLexNavigateOnMount={setLexNavigateOnMount} />
-                            <LetterTable handleLetterClick={handleLetterClick} handleScrollToTop={handleScrollToTop} handleScrollToBottom={handleScrollToBottom}/>                       
-                        </>
-                        )}
-                    {activeTab === 'GRAMMAR' && (
-                        <>
-                            <GramTreeView GramNavigateOnMount={gramNavigateOnMount} setGramNavigateOnMount={setGramNavigateOnMount} />
-                        </>
-                        )}
-                  </Box>
-                </Grid>   
-      
-                {/* Main Panel  */}
+                <Box sx={{ p:1, textAlign: 'center'}} >
+                  <img src=".\kantokirtur_3.png" alt="Kantokirtur" />
+                  <Typography sx={{ fontFamily: '"Kirmius Ilren", sans-serif', fontSize: '2rem', fontWeight: 600}}>
+                    ilven.talkummur.<br/>le.kistalkejonsjur
+                  </Typography>
+                </Box>
+            </Box>
+          </Grid>
+          
+          {/* Left Panel */}
+          <Grid item xs={3} sx={{ height: '100%', overflow: 'auto', borderRight: 1, borderColor: 'divider' }}>
+              <Box sx={{ p: 2, backgroundColor: 'primary.main' }}>
+                <h3 className="hostname">{hostname}</h3>
+                <div className="tabs">
+                    <ToggleButtonGroup
+                      value={activeTab}
+                      exclusive
+                      onChange={handleTabChange}
+                      aria-label="text alignment"
+                      size="small"
+                    >
+                    <StyledToggleButton
+                      value="LEXICON" 
+                      aria-label="lexicon"
+                      >
+                      {t('tabs.lexicon')}
+                    </StyledToggleButton>
+                    <StyledToggleButton
+                      value="GRAMMAR" 
+                      aria-label="grammar"
+                    >
+                      {t('tabs.grammar')}
+                    </StyledToggleButton>
+                  </ToggleButtonGroup>
+                </div>
+                {activeTab === 'LEXICON' && (
+                    <>        
+                        <LexTreeView LexNavigateOnMount={lexNavigateOnMount} setLexNavigateOnMount={setLexNavigateOnMount} />
+                        <LetterTable handleLetterClick={handleLetterClick} handleScrollToTop={handleScrollToTop} handleScrollToBottom={handleScrollToBottom}/>                       
+                    </>
+                    )}
+                {activeTab === 'GRAMMAR' && (
+                    <>
+                        <GramTreeView GramNavigateOnMount={gramNavigateOnMount} setGramNavigateOnMount={setGramNavigateOnMount} />
+                    </>
+                    )}
+              </Box>
+            </Grid>   
+  
+            {/* Main Panel  */}
 
-                <Grid item xs={9} sx={{ height: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column', backgroundColor: theme.palette.primary.dark }}>
-                  <Box sx={{ width: '100%', overflowX: 'auto' }}>
-                    <MainComponent />
-                  </Box>
-                </Grid>
-             </Grid>
-        </Router>
+            <Grid item xs={9} sx={{ height: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column', backgroundColor: theme.palette.primary.dark }}>
+              <Box sx={{ width: '100%', overflowX: 'auto' }}>
+                <Routes>
+                  <Route path="/enter-entry" element={<EnterEntry />} />
+                  <Route path="/query-entry" element={<QueryEntry />} />
+                  <Route path="/list-entries" element={<ListEntries refreshKey={refreshKey} tableContainerRef={tableContainerRef} />} />
+                  <Route path="/edit-entry/:can" element={<EditEntry setRefreshKey={setRefreshKey} />} />
+                  <Route path="/list-roots" element={< ListRoots refreshKey={refreshKey} tableContainerRef={tableContainerRef} />} />
+                  <Route path="/edit-root/:root" element={< EditRoot />} />
+                  <Route path="/enter-root" element={< EnterRoot />} />
+                  <Route path="/enter-root/:root" element={< EnterRoot />} />
+                  <Route path="/query-root" element={< QueryRoot />} />
+                  <Route path="/export/csv" element={<ExportCsvForm />} />
+                  <Route path="/export/pdf" element={<ExportPdfForm />} />
+                  <Route path="/import/csv" element={<ImportCsvForm />} />
+                  <Route path="/csv-info" element={<CsvInfo />} />
+                  <Route path="/html-display/:label" element={<HtmlDisplay />} />
+                </Routes>
+              </Box>
+            </Grid>
+          </Grid>
       </ThemeProvider>
       </Container>
-    );
+    </Router>
+          );
 }
+
+
 
 export default App;
