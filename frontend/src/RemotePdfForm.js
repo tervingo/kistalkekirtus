@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 export const ExportPdfForm = () => {
     const [message, setMessage] = useState('');
     const { t } = useTranslation();
-
+/* 
     const downloadDictionary = async () => {
         try {
             setMessage(t('lex.files.downloading'));
@@ -25,6 +25,23 @@ export const ExportPdfForm = () => {
         } catch (error) {
             console.error('Error downloading dictionary PDF:', error);
             setMessage(t('lex.files.downloadError'));
+        }
+    };
+ */
+    const downloadDictionary = async () => {
+        try {
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/dictionary-pdf`);
+            const data = await response.json();
+            
+            if (data.link) {
+                // Open Dropbox link in new tab
+                window.open(data.link, '_blank');
+            } else {
+                throw new Error('No download link received');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            setMessage(t('lex.files.uploadError'));
         }
     };
 

@@ -8,6 +8,8 @@ from reportlab.lib.units import cm
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 from reportlab.lib import colors
+from dropbox import Dropbox
+from dropbox.files import WriteMode
 
 import datetime
 import socket
@@ -206,17 +208,35 @@ def export_dictionary_pdf():
 
     # Build the PDF
     pdf_doc.build(elements)
-   
     buffer.seek(0)
 
-    # Return a success message
-    return send_file(
-        buffer,
-        as_attachment=True,
-        download_name='il-en.pdf',
-        mimetype='application/pdf'
-    )
+     # Return a success message
+#    return send_file(
+#        buffer,
+#        as_attachment=True,
+#        download_name='il-en.pdf',
+#        mimetype='application/pdf'
+#    )
 
+    # Upload to Dropbox
+    dbx = Dropbox(os.getenv('DROPBOX_ACCESS_TOKEN'))
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    dropbox_path = f"/Lenguas/Ilven/ilven_dictionary_{timestamp}.pdf"
+
+    try:
+        dbx.files_upload(
+            buffer.getvalue(),
+            dropbox_path,
+            mode=WriteMode('overwrite')
+        )
+        # Get a shared link
+        shared_link = dbx.sharing_create_shared_link(dropbox_path)
+        return jsonify({
+            'message': 'PDF uploaded to Dropbox',
+            'link': shared_link.url
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 @pdf_route.route('/api/export/roots-pdf', methods=['GET'])
