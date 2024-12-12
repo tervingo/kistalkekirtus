@@ -30,10 +30,6 @@ CLIENT_SECRET = os.getenv('DROPBOX_CLIENT_SECRET')
 REDIRECT_URI = "https://kistalkekirtus.onrender.com/oauth/callback"  # Your Render URL + /oauth/callback
 
 
-# Make sure your app has a secret key for sessions
-app.secret_key = os.getenv('FLASK_SECRET_KEY', secrets.token_hex(16))
-
-
 pdf_route = Blueprint('pdf_route', __name__)
 
 @pdf_route.route('/oauth/connect')

@@ -14,6 +14,8 @@ from display_html import html_route
 
 def create_app():
     app = Flask(__name__)
+    # Make sure your app has a secret key for sessions
+    app.secret_key = os.getenv('FLASK_SECRET_KEY', secrets.token_hex(16))
     CORS(app)
 
     app.register_blueprint(enter_route)
