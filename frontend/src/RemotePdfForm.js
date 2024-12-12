@@ -10,7 +10,7 @@ export const ExportPdfForm = () => {
 
     const initiateDropboxAuth = async () => {
         try {
-            window.location.href = `${SERVER_IP}/oauth/connect`;
+            window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
         } catch (error) {
             setMessage(t('lex.files.authError'));
         }
