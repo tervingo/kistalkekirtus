@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
@@ -12,38 +12,13 @@ export const ExportPdfForm = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    useEffect(() => {
-        console.log("Current location hash:", location.hash);
-        // Check for Dropbox token in URL parameters
-        if (location.hash.includes('access_token')) {
-            const params = new URLSearchParams(location.hash.substring(1));
-            const token = params.get('access_token');
-            console.log("Got token from URL:", token ? "Yes" : "No");
-            if (token) {
-                setDropboxToken(token);
-                // Clean up the URL
-                navigate('/export-pdf', { replace: true });
-            }
-        }
-    }, [location, navigate]);
-
-    const initiateDropboxAuth = () => {
-        window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
-    };
-
-    const downloadDictionary = async () => {
+    const downloadDictionary = useCallback(async (token) => {
         try {
-            console.log("Starting download, token exists:", !!dropboxToken);
-            if (!dropboxToken) {
-                initiateDropboxAuth();
-                return;
-            }
-
             console.log("Making API request with token...");
             const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${dropboxToken}`,
+                    'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'
                 }
             });
@@ -51,7 +26,7 @@ export const ExportPdfForm = () => {
             console.log("API response status:", response.status);
             const data = await response.json();
             console.log("API response data:", data);
-           
+            
             if (data.success && data.link) {
                 window.open(data.link, '_blank');
                 setMessage(t('lex.files.uploadSuccess'));
@@ -62,12 +37,36 @@ export const ExportPdfForm = () => {
             console.error('Error:', error);
             setMessage(t('lex.files.uploadError'));
         }
+    }, [t]); // Add t as a dependency since it's used inside
+
+    useEffect(() => {
+        console.log("Current location hash:", location.hash);
+        if (location.hash.includes('access_token')) {
+            const params = new URLSearchParams(location.hash.substring(1));
+            const token = params.get('access_token');
+            console.log("Got token from URL:", token ? "Yes" : "No");
+            if (token) {
+                setDropboxToken(token);
+                // Immediately use the token to download
+                downloadDictionary(token);
+                navigate('/export-pdf', { replace: true });
+            }
+        }
+    }, [location, navigate, downloadDictionary]); // Added downloadDictionary as a dependency
+
+    const handleDownloadClick = () => {
+        if (dropboxToken) {
+            downloadDictionary(dropboxToken);
+        } else {
+            console.log("No token, initiating auth...");
+            window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
+        }
     };
 
     const downloadRoots = async () => {
         try {
             setMessage(t('lex.files.downloading'));
-            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export-roots`);
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/roots-pdf`);
             const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -94,7 +93,7 @@ export const ExportPdfForm = () => {
                 <Stack direction="row" spacing={2} sx={{ mt: 2, mb: 2 }}>
                     <Button 
                         variant="contained" 
-                        onClick={downloadDictionary}
+                        onClick={handleDownloadClick}
                         sx={{ backgroundColor: theme.palette.secondary.main }}
                     >
                         {t('lex.files.downloadDictionary')}
