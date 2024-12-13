@@ -16,7 +16,7 @@ export const ExportPdfForm = () => {
         try {
             console.log("Making API request with token...");
             const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf', {
-                method: 'POST',
+                method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'

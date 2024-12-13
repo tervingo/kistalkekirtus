@@ -30,7 +30,7 @@ def oauth_connect():
     print(f"Redirecting to Dropbox auth URL: {auth_url}")
     return redirect(auth_url)
 
-@pdf_route.route('/api/export-pdf', methods=['GET'])
+@pdf_route.route('/api/export-pdf', methods=['GET', 'POST'])
 def export_dictionary_pdf():
     try:
 
@@ -254,8 +254,11 @@ def export_dictionary_pdf():
         })
 
     except Exception as e:
-        print(f"Error: {str(e)}")
-        return jsonify({'error': str(e)}), 500
+        print(f"Error during PDF export: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
 
 
 
