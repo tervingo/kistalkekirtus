@@ -18,8 +18,11 @@ def create_app():
     app = Flask(__name__)
     # Make sure your app has a secret key for sessions
     app.secret_key = os.getenv('FLASK_SECRET_KEY', secrets.token_hex(16))
-    CORS(app)
-
+    CORS(app, supports_credentials=True, origins=[
+        "https://ktkirtus.netlify.app",
+        "http://localhost:3000"  # for local development
+    ])
+    
     app.register_blueprint(enter_route)
     app.register_blueprint(list_route)
     app.register_blueprint(query_route)

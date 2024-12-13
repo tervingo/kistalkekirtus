@@ -8,14 +8,19 @@ export const ExportPdfForm = () => {
     const [message, setMessage] = useState('');
     const { t } = useTranslation();
 
-    // Move downloadDictionary inside useEffect or use useCallback
     useEffect(() => {
         const params = new URLSearchParams(window.location.hash.split('?')[1]);
         
         const handleAuthSuccess = async () => {
             try {
-                const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf');
+                console.log("Auth success detected, initiating PDF export...");
+                const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf', {
+                    credentials: 'include' // Important! Add this to include cookies
+                });
+                console.log("Received response:", response.status);
+                
                 const data = await response.json();
+                console.log("Response data:", data);
                 
                 if (data.success && data.link) {
                     window.open(data.link, '_blank');
@@ -24,26 +29,27 @@ export const ExportPdfForm = () => {
                     throw new Error(data.error || 'Upload failed');
                 }
             } catch (error) {
-                console.error('Error:', error);
+                console.error('Error during PDF export:', error);
                 setMessage(t('lex.files.uploadError'));
             }
         };
 
         if (params.get('auth') === 'success') {
+            console.log("Found auth=success in URL");
             handleAuthSuccess();
         }
-    }, [t]); // Add t as a dependency since it's used inside
-
+    }, [t]);
 
 
     const initiateDropboxAuth = async () => {
         try {
+            console.log("Initiating Dropbox auth...");
             window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
         } catch (error) {
+            console.error('Auth error:', error);
             setMessage(t('lex.files.authError'));
         }
     };
-
 
     const downloadDictionary = async () => {
         try {

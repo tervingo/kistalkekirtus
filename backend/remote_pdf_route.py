@@ -41,7 +41,10 @@ def oauth_connect():
 def oauth_callback():
     try:
         code = request.args.get('code')
+        print(f"Received auth code: {code[:10]}...") # Print first 10 chars for security
+        
         if not code:
+            print("No authorization code received")
             return jsonify({'error': 'No authorization code received'}), 400
 
         token_url = "https://api.dropbox.com/oauth2/token"
@@ -51,32 +54,39 @@ def oauth_callback():
             'grant_type': 'authorization_code',
             'client_id': os.getenv('DROPBOX_CLIENT_ID'),
             'client_secret': os.getenv('DROPBOX_CLIENT_SECRET'),
-            'redirect_uri': f"{os.getenv('RENDER_URL')}/oauth/callback"
+            'redirect_uri': REDIRECT_URI
         }
         
+        print("Requesting token from Dropbox...")
         response = requests.post(token_url, data=data)
+        print(f"Token response status: {response.status_code}")
         
         if response.status_code != 200:
+            print(f"Token request failed: {response.text}")
             return jsonify({'error': f'Token request failed: {response.text}'}), 400
             
         token_data = response.json()
+        print("Successfully received token")
         session['dropbox_token'] = token_data['access_token']
         
-        # Redirect to the frontend URL instead of just the path
-        return redirect(f"{os.getenv('FRONTEND_URL')}/#/export-pdf?auth=success")
+        frontend_url = f"{os.getenv('FRONTEND_URL')}/#/export-pdf?auth=success"
+        print(f"Redirecting to: {frontend_url}")
+        return redirect(frontend_url)
         
     except Exception as e:
         print(f"Error in callback: {str(e)}")
         return jsonify({'error': str(e)}), 500
-    
+
     
 @pdf_route.route('/api/export-pdf', methods=['GET'])
 def export_dictionary_pdf():
-
+    print("Starting PDF export...")
+    
     if 'dropbox_token' not in session:
+        print("No Dropbox token in session")
         return jsonify({'error': 'Not authenticated with Dropbox'}), 401
-        
-    # Use the token from session instead of environment variable
+    
+    print("Found Dropbox token in session")    
     dbx = Dropbox(session['dropbox_token'])
 
     try:
@@ -260,12 +270,16 @@ def export_dictionary_pdf():
 
         # Build the PDF
         pdf_doc.build(elements)
-        buffer.seek(0)
 
         # Debug print
         print("PDF generated successfully")
 
+
+
         # Upload to Dropbox
+
+        print(f"Attempting to upload to Dropbox: {dropbox_path}")
+
         dbx = Dropbox(os.getenv('DROPBOX_ACCESS_TOKEN'))
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         dropbox_path = f"/kistalkekirtus/ilven_dictionary_{timestamp}.pdf"
@@ -273,7 +287,7 @@ def export_dictionary_pdf():
         try:
             # Debug print
             print(f"Attempting to upload to Dropbox: {dropbox_path}")
-            
+            buffer.seek(0)            
             upload_result = dbx.files_upload(
                 buffer.getvalue(),
                 dropbox_path,
@@ -281,9 +295,7 @@ def export_dictionary_pdf():
             )
             
             print("Upload successful, creating shared link")
-            
             shared_link = dbx.sharing_create_shared_link(dropbox_path)
-            
             print(f"Shared link created: {shared_link.url}")
             
             return jsonify({
@@ -297,6 +309,7 @@ def export_dictionary_pdf():
                 'success': False,
                 'error': f"Dropbox error: {str(dropbox_error)}"
             }), 500
+        
     except Exception as e:
         print(f"General error: {str(e)}")
         return jsonify({
