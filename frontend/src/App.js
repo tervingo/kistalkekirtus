@@ -101,35 +101,6 @@ function App() {
     return null;
 }
 
-
-
-/* 
-    function MainComponent() {
-
-        return (
-            <div className="main">
-                <Routes>
-                    <Route path="/enter-entry" element={<EnterEntry />} />
-                    <Route path="/query-entry" element={<QueryEntry />} />
-                    <Route path="/list-entries" element={<ListEntries refreshKey={refreshKey} tableContainerRef={tableContainerRef} />} />
-                    <Route path="/edit-entry/:can" element={<EditEntry setRefreshKey={setRefreshKey} />} />
-                    <Route path="/list-roots" element={< ListRoots refreshKey={refreshKey} tableContainerRef={tableContainerRef} />} />
-                    <Route path="/edit-root/:root" element={< EditRoot />} />
-                    <Route path="/enter-root" element={< EnterRoot />} />
-                    <Route path="/enter-root/:root" element={< EnterRoot />} />
-                    <Route path="/query-root" element={< QueryRoot />} />
-                    <Route path="/export/csv" element={<ExportCsvForm />} />
-                    <Route path="/export/pdf" element={<ExportPdfForm />} />
-                    <Route path="/import/csv" element={<ImportCsvForm />} />
-                    <Route path="/csv-info" element={<CsvInfo />} />
-                    <Route path="/html-display/:label" element={<HtmlDisplay />} />
-                </Routes>
-            </div>
-        );
-    } */
-
-    // const tableContainerRef = useRef(null);
-
     function handleLetterClick(letter) {
       console.log('letter :', letter);
       const element = document.getElementById(`entry-${letter}`);
@@ -163,7 +134,6 @@ function App() {
         setLexNavigateOnMount(false);
       }
     };
-
 
     return (
     <Router>

@@ -45,25 +45,6 @@ const MorphVerbNode = () =>{
   );
 };
 
-/* const SyntaxNode = () => (
-  <TreeNode label="Konota">
-    <Link className="tree-list" to="/list-roots">Uilen konoi salli</Link>
-    <Link className="tree-list" to="/enter-root">Unnen konova aunilli</Link>
-    <Link className="tree-list" to="/query-root">Konoiva massi</Link>
-  </TreeNode>
-);
-
-
-const PhonoNode = () => (
-  <TreeNode label="Eltonsjusta">
-    <Link className='tree-list' to="/export/csv">CSV oinilli</Link>
-    <Link className='tree-list' to="/export/pdf" >PDF oinilli</Link>
-    <Link className='tree-list' to="import/csv" >CSV aunilli</Link>
-    <Link className='tree-list' to="/csv-info" >CSV aro</Link>
-  </TreeNode>
-); */
-
-
 export const GramTreeView = ({ GramNavigateOnMount, setGramNavigateOnMount }) => {
   const location = useLocation();
 
