@@ -63,7 +63,7 @@ def oauth_callback():
         session['dropbox_token'] = token_data['access_token']
         
         # Redirect to the frontend URL instead of just the path
-        return redirect(f"{os.getenv('FRONTEND_URL')}/export-pdf")
+        return redirect(f"{os.getenv('FRONTEND_URL')}/#/export-pdf?auth=success")
         
     except Exception as e:
         print(f"Error in callback: {str(e)}")

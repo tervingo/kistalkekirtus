@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef  } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

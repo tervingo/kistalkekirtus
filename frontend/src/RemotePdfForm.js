@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { Box, Typography, Button, Stack } from '@mui/material';
@@ -7,6 +7,34 @@ import { useTranslation } from 'react-i18next';
 export const ExportPdfForm = () => {
     const [message, setMessage] = useState('');
     const { t } = useTranslation();
+
+    // Move downloadDictionary inside useEffect or use useCallback
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.hash.split('?')[1]);
+        
+        const handleAuthSuccess = async () => {
+            try {
+                const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf');
+                const data = await response.json();
+                
+                if (data.success && data.link) {
+                    window.open(data.link, '_blank');
+                    setMessage(t('lex.files.uploadSuccess'));
+                } else {
+                    throw new Error(data.error || 'Upload failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                setMessage(t('lex.files.uploadError'));
+            }
+        };
+
+        if (params.get('auth') === 'success') {
+            handleAuthSuccess();
+        }
+    }, [t]); // Add t as a dependency since it's used inside
+
+
 
     const initiateDropboxAuth = async () => {
         try {
