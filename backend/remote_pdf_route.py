@@ -25,7 +25,9 @@ pdf_route = Blueprint('pdf_route', __name__)
 
 @pdf_route.route('/oauth/connect')
 def oauth_connect():
-    auth_url = f"https://www.dropbox.com/oauth2/authorize?client_id={os.getenv('DROPBOX_CLIENT_ID')}&response_type=token&redirect_uri={os.getenv('FRONTEND_URL')}/export-pdf"
+    redirect_uri = f"{os.getenv('FRONTEND_URL')}/export-pdf"
+    auth_url = f"https://www.dropbox.com/oauth2/authorize?client_id={os.getenv('DROPBOX_CLIENT_ID')}&response_type=token&redirect_uri={redirect_uri}"
+    print(f"Redirecting to Dropbox auth URL: {auth_url}")
     return redirect(auth_url)
 
 @pdf_route.route('/api/export-pdf', methods=['GET'])
@@ -33,12 +35,19 @@ def export_dictionary_pdf():
     try:
 
         # Get token from request headers
+        print("Received export-pdf request")
         auth_header = request.headers.get('Authorization')
+        print(f"Auth header present: {bool(auth_header)}")
+
         if not auth_header:
             return jsonify({'error': 'No token provided'}), 401
             
         access_token = auth_header.split(' ')[1]  # Assumes format: "Bearer <token>"
+        print("Token extracted from header")
+
         dbx = Dropbox(access_token)
+        print("Dropbox client initialized")
+
 
         # Get all documents from your MongoDB collection and sort them by 'can'
         iv_en = mongo.db.translations.find().sort('can')

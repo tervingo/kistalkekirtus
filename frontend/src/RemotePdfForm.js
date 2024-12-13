@@ -13,10 +13,12 @@ export const ExportPdfForm = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        console.log("Current location hash:", location.hash);
         // Check for Dropbox token in URL parameters
         if (location.hash.includes('access_token')) {
             const params = new URLSearchParams(location.hash.substring(1));
             const token = params.get('access_token');
+            console.log("Got token from URL:", token ? "Yes" : "No");
             if (token) {
                 setDropboxToken(token);
                 // Clean up the URL
@@ -31,11 +33,13 @@ export const ExportPdfForm = () => {
 
     const downloadDictionary = async () => {
         try {
+            console.log("Starting download, token exists:", !!dropboxToken);
             if (!dropboxToken) {
                 initiateDropboxAuth();
                 return;
             }
 
+            console.log("Making API request with token...");
             const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf', {
                 method: 'POST',
                 headers: {
@@ -44,8 +48,10 @@ export const ExportPdfForm = () => {
                 }
             });
             
+            console.log("API response status:", response.status);
             const data = await response.json();
-            
+            console.log("API response data:", data);
+           
             if (data.success && data.link) {
                 window.open(data.link, '_blank');
                 setMessage(t('lex.files.uploadSuccess'));
