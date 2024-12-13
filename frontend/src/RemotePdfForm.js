@@ -19,7 +19,7 @@ export const ExportPdfForm = () => {
 
     const downloadDictionary = async () => {
         try {
-            const response = await fetch('https://kistalkekirtus.onrender.com/api/export/dictionary-pdf');
+            const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf');
             const data = await response.json();
             
             if (data.error === 'Not authenticated with Dropbox') {

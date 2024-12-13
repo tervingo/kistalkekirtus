@@ -53,7 +53,7 @@ const FilesNode = () => {
   return (
     <TreeNode label= {t('lex.files.label')}>
       <Link className='tree-list' to="/export/csv"> {t('lex.files.exportCSV')}</Link>
-      <Link className='tree-list' to="/export/pdf" >{t('lex.files.exportPDF')}</Link>
+      <Link className='tree-list' to="/export-pdf" >{t('lex.files.exportPDF')}</Link>
       <Link className='tree-list' to="import/csv" >{t('lex.files.importCSV')}</Link>
       <Link className='tree-list' to="/csv-info" >{t('lex.files.CSVInfo')}</Link>
     </TreeNode>

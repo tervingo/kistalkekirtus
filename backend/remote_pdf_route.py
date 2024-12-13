@@ -70,7 +70,7 @@ def oauth_callback():
         return jsonify({'error': str(e)}), 500
     
     
-@pdf_route.route('/api/export/dictionary-pdf', methods=['GET'])
+@pdf_route.route('/api/export-pdf', methods=['GET'])
 def export_dictionary_pdf():
 
     if 'dropbox_token' not in session:

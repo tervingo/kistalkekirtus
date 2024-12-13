@@ -248,7 +248,7 @@ function App() {
                   <Route path="/enter-root/:root" element={< EnterRoot />} />
                   <Route path="/query-root" element={< QueryRoot />} />
                   <Route path="/export/csv" element={<ExportCsvForm />} />
-                  <Route path="/export/pdf" element={<ExportPdfForm />} />
+                  <Route path="/export-pdf" element={<ExportPdfForm />} />
                   <Route path="/import/csv" element={<ImportCsvForm />} />
                   <Route path="/csv-info" element={<CsvInfo />} />
                   <Route path="/html-display/:label" element={<HtmlDisplay />} />
