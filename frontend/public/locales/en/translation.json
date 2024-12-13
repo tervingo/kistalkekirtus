@@ -95,7 +95,8 @@
             "downloadError": "Error downloading file",
             "downloadDictionary": "Download Dictionary",
             "downloadRoots": "Download Roots",
-            "uploadError": "Error uploading file to Dropcbox"
+            "uploadError": "Error uploading file to Dropcbox",
+            "uploadSuccess": "File uploaded to Dropbox successfully"
         }
     },
     "gram": {

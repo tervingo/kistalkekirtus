@@ -63,25 +63,38 @@ export const ExportPdfForm = () => {
         }
     };
 
-    const downloadRoots = async () => {
+    const downloadRoots = useCallback(async () => {
         try {
-            setMessage(t('lex.files.downloading'));
-            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/roots-pdf`);
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'ilven_roots.pdf';
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-            setMessage(t('lex.files.downloadComplete'));
+            if (!dropboxToken) {
+                console.log("No token, initiating auth...");
+                window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
+                return;
+            }
+    
+            console.log("Making API request with token...");
+            const response = await fetch('https://kistalkekirtus.onrender.com/api/export-roots', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${dropboxToken}`,
+                    'Content-Type': 'application/json'
+                }
+            });
+            
+            console.log("API response status:", response.status);
+            const data = await response.json();
+            console.log("API response data:", data);
+            
+            if (data.success && data.link) {
+                window.open(data.link, '_blank');
+                setMessage(t('lex.files.uploadSuccess'));
+            } else {
+                throw new Error(data.error || 'Upload failed');
+            }
         } catch (error) {
-            console.error('Error downloading roots PDF:', error);
-            setMessage(t('lex.files.downloadError'));
+            console.error('Error:', error);
+            setMessage(t('lex.files.uploadError'));
         }
-    };
+    }, [dropboxToken, t]);
 
     return (
         <ThemeProvider theme={theme}>

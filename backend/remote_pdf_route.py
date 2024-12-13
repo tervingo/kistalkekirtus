@@ -226,7 +226,6 @@ def export_dictionary_pdf():
             elements.append(Paragraph(text, normal_style))
         elements.append(PageBreak())
 
-
         # Build the PDF
         pdf_doc.build(elements)
 
@@ -262,155 +261,187 @@ def export_dictionary_pdf():
 
 
 
-@pdf_route.route('/api/export-roots', methods=['GET'])
+@pdf_route.route('/api/export-roots', methods=['GET', 'POST'])
 def export_roots_pdf():
-    # Get roots data
-    konota = mongo.db.roots.find().sort('root', 1)
-    root_count = mongo.db.roots.count_documents({})
+    try:
+        print("Starting roots PDF export...")
+        auth_header = request.headers.get('Authorization')
+        print(f"Auth header present: {bool(auth_header)}")
+        
+        if not auth_header:
+            return jsonify({'error': 'Not authenticated with Dropbox'}), 401
+            
+        access_token = auth_header.split(' ')[1]
+        print("Token extracted from header")
+        
+        dbx = Dropbox(access_token)
+        print("Dropbox client initialized")
 
-    # Create BytesIO buffer
-    buffer = BytesIO()
+        # Get roots data
+        konota = mongo.db.roots.find().sort('root', 1)
+        root_count = mongo.db.roots.count_documents({})
+
+        # Create BytesIO buffer
+        buffer = BytesIO()
+
+        # Get roots data
     
-    class FooterCanvas:
-        def __init__(self, doc):
-            self.doc = doc
+        class FooterCanvas:
+            def __init__(self, doc):
+                self.doc = doc
 
-        def afterPage(self, canvas, doc):
-            "Register drawing commands with the canvas"
-            c = canvas
-            c.saveState()
-            c.setFont("Helvetica", 9)
-            c.drawString(cm, cm, "Page %d" % doc.page)
-            c.restoreState()
+            def afterPage(self, canvas, doc):
+                "Register drawing commands with the canvas"
+                c = canvas
+                c.saveState()
+                c.setFont("Helvetica", 9)
+                c.drawString(cm, cm, "Page %d" % doc.page)
+                c.restoreState()
 
 
-    # Create PDF doc with buffer
-    root_doc = BaseDocTemplate(buffer, pagesize=letter)
-    
-    # Your existing root PDF creation code
-    root_main_frame = Frame(root_doc.leftMargin, root_doc.bottomMargin, root_doc.width, root_doc.height, id='main_frame')
+        # Create PDF doc with buffer
+        root_doc = BaseDocTemplate(buffer, pagesize=letter)
+        
+        # Your existing root PDF creation code
+        root_main_frame = Frame(root_doc.leftMargin, root_doc.bottomMargin, root_doc.width, root_doc.height, id='main_frame')
 
-    root_footer_frame = Frame(root_doc.leftMargin, root_doc.bottomMargin - 50, root_doc.width, 50, id='footer_frame')
+        root_footer_frame = Frame(root_doc.leftMargin, root_doc.bottomMargin - 50, root_doc.width, 50, id='footer_frame')
 
-    root_main_page_template = PageTemplate(id='main', frames=[root_main_frame], onPageEnd=FooterCanvas(root_doc).afterPage)
+        root_main_page_template = PageTemplate(id='main', frames=[root_main_frame], onPageEnd=FooterCanvas(root_doc).afterPage)
 
-    root_doc.addPageTemplates([root_main_page_template])
+        root_doc.addPageTemplates([root_main_page_template])
 
-   # title
+    # title
 
-    # Get a sample stylesheet
-    styles = getSampleStyleSheet()
+        # Get a sample stylesheet
+        styles = getSampleStyleSheet()
 
-    # Define a style for the title
-    title_style = ParagraphStyle(
-        'Title',
-        parent=styles['Heading1'],
-        fontSize=24,
-        alignment=1  # Center alignment
-    )
-
-    date_style = ParagraphStyle(
-        'Date',
-        parent = styles['Heading2'],
-        alignment = 1,
-        fontSize = 16
+        # Define a style for the title
+        title_style = ParagraphStyle(
+            'Title',
+            parent=styles['Heading1'],
+            fontSize=24,
+            alignment=1  # Center alignment
         )
 
-    noe_style = ParagraphStyle(
-        'Noe',
-        parent = styles['Heading2'],
-        alignment = 1,
-        fontSize = 14
+        date_style = ParagraphStyle(
+            'Date',
+            parent = styles['Heading2'],
+            alignment = 1,
+            fontSize = 16
+            )
+
+        noe_style = ParagraphStyle(
+            'Noe',
+            parent = styles['Heading2'],
+            alignment = 1,
+            fontSize = 14
+            )
+
+
+        # Define a style for the section
+        section_style = ParagraphStyle(
+            'Section',
+            parent=styles['Heading2'],
+            fontSize=18,
+            alignment=0  # Left alignment
         )
 
-
-    # Define a style for the section
-    section_style = ParagraphStyle(
-        'Section',
-        parent=styles['Heading2'],
-        fontSize=18,
-        alignment=0  # Left alignment
-    )
-
-    normal_style = ParagraphStyle(
-        'MyNormal',
-        parent = styles['Normal'],
-        fontSize = 12,
-        spaceAfter = 5,
-        spaceBefore = 5
+        normal_style = ParagraphStyle(
+            'MyNormal',
+            parent = styles['Normal'],
+            fontSize = 12,
+            spaceAfter = 5,
+            spaceBefore = 5
+            )
+        
+        tableStyle = ParagraphStyle(
+        name='CustomWrap',
+        fontName='Helvetica',
+        fontSize=10,
+        leading=12,  # Line spacing
+        wordWrap='CJK'  # Wrap algorithm
         )
+
+    # Create a list to hold the elements
+        root_elements = []
+
+        # Create a Paragraph object with the title text
+        root_title = Paragraph("Konotalen Salto", title_style)
+        # Add the title to the elements list
+        root_elements.append(root_title)
+
+        # Add a spacer after the title
+        root_elements.append(Spacer(1, 0.5 * cm))
+
+        # Insert date
+
+        # Insert date
+
+        anir = datetime.datetime.now()
+        anir_str = anir.strftime("%d-%m-%y")
+        date = Paragraph(anir_str, date_style)
+        root_elements.append(date)
+        root_elements.append(Spacer(1, 0.2 * cm))
+
+        nor = Paragraph(f"({root_count} konoi)", noe_style)
+        root_elements.append(nor)
+        root_elements.append(Spacer(1, 0.2 * cm))
+
+        data = [["ROOT", "PRIMARY", "ACTIVE", "MOD ACT", "PASSIVE", "MOD PAS"]]  # Header row
+
+        for doc in konota:
+            row = [doc['root'], doc['prim'], doc['act'], doc['moda'], doc['pas'], doc['modp']]
+            data.append(row)
+
+        # Wrap cell content in Paragraphs
+        for i in range(len(data)):
+            for j in range(len(data[i])):
+                data[i][j] = Paragraph(data[i][j], tableStyle)  # Wrap text
+        # Create the table
+
+        table = Table(data, colWidths=[60, 80, 90, 40, 90, 40], repeatRows=1)  # Adjust widths as needed
+        WIDTH, HEIGHT = letter
+
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTSIZE', (0, 0), (-1, 0), 14),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+            ('BACKGROUND', (0, 1), (-1, -1), colors.ghostwhite),
+            ('GRID', (0,0), (-1,-1), 1, colors.black),
+            ('WIDTH', (0, 0), (-1, -1), WIDTH * 0.8),
+        ]))
+
+        root_elements.append(table)
+
+        # Build PDF to buffer
+        root_doc.build(root_elements)
     
-    tableStyle = ParagraphStyle(
-    name='CustomWrap',
-    fontName='Helvetica',
-    fontSize=10,
-    leading=12,  # Line spacing
-    wordWrap='CJK'  # Wrap algorithm
-    )
-
-   # Create a list to hold the elements
-    root_elements = []
-
-    # Create a Paragraph object with the title text
-    root_title = Paragraph("Konotalen Salto", title_style)
-    # Add the title to the elements list
-    root_elements.append(root_title)
-
-    # Add a spacer after the title
-    root_elements.append(Spacer(1, 0.5 * cm))
-
-    # Insert date
-
-     # Insert date
-
-    anir = datetime.datetime.now()
-    anir_str = anir.strftime("%d-%m-%y")
-    date = Paragraph(anir_str, date_style)
-    root_elements.append(date)
-    root_elements.append(Spacer(1, 0.2 * cm))
-
-    nor = Paragraph(f"({root_count} konoi)", noe_style)
-    root_elements.append(nor)
-    root_elements.append(Spacer(1, 0.2 * cm))
-
-    data = [["ROOT", "PRIMARY", "ACTIVE", "MOD ACT", "PASSIVE", "MOD PAS"]]  # Header row
-
-    for doc in konota:
-        row = [doc['root'], doc['prim'], doc['act'], doc['moda'], doc['pas'], doc['modp']]
-        data.append(row)
-
-    # Wrap cell content in Paragraphs
-    for i in range(len(data)):
-        for j in range(len(data[i])):
-            data[i][j] = Paragraph(data[i][j], tableStyle)  # Wrap text
-    # Create the table
-
-    table = Table(data, colWidths=[60, 80, 90, 40, 90, 40], repeatRows=1)  # Adjust widths as needed
-    WIDTH, HEIGHT = letter
-
-    table.setStyle(TableStyle([
-        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
-        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-        ('FONTSIZE', (0, 0), (-1, 0), 14),
-        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-        ('BACKGROUND', (0, 1), (-1, -1), colors.ghostwhite),
-        ('GRID', (0,0), (-1,-1), 1, colors.black),
-        ('WIDTH', (0, 0), (-1, -1), WIDTH * 0.8),
-    ]))
-
-    root_elements.append(table)
-
-    # Build PDF to buffer
-    root_doc.build(root_elements)
+       # Upload to Dropbox
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        dropbox_path = f"/kistalkekirtus/ilven_roots_{timestamp}.pdf"
+        
+        buffer.seek(0)
+        upload_result = dbx.files_upload(
+            buffer.getvalue(),
+            dropbox_path,
+            mode=WriteMode('overwrite')
+        )
+        
+        shared_link = dbx.sharing_create_shared_link(dropbox_path)
+        
+        return jsonify({
+            'success': True,
+            'message': 'Roots PDF uploaded to Dropbox',
+            'link': shared_link.url
+        })
     
-    # Prepare buffer for reading
-    buffer.seek(0)
-    
-    return send_file(
-        buffer,
-        as_attachment=True,
-        download_name='konota.pdf',
-        mimetype='application/pdf'
-    )
+    except Exception as e:
+        print(f"Error during roots PDF export: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
