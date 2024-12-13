@@ -1,4 +1,4 @@
-from flask import Blueprint, send_file, request, jsonify, redirect, session, url_for
+from flask import Blueprint, send_file, request, jsonify, redirect
 import requests
 from io import BytesIO
 from bson.objectid import ObjectId
@@ -15,81 +15,31 @@ from dropbox.files import WriteMode
 import datetime
 import socket
 import secrets  # for generating secret key
+import os
 
 from __init__ import mongo
 
 hostname = socket.gethostname()
 
-from constants import paths, new_paths
-
-import os
-
-# Add these environment variables in Render
-CLIENT_ID = os.getenv('DROPBOX_CLIENT_ID')
-CLIENT_SECRET = os.getenv('DROPBOX_CLIENT_SECRET')
-REDIRECT_URI = "https://kistalkekirtus.onrender.com/oauth/callback"  # Your Render URL + /oauth/callback
-
-
 pdf_route = Blueprint('pdf_route', __name__)
 
 @pdf_route.route('/oauth/connect')
 def oauth_connect():
-    auth_url = f"https://www.dropbox.com/oauth2/authorize?client_id={CLIENT_ID}&redirect_uri={REDIRECT_URI}&response_type=code"
+    auth_url = f"https://www.dropbox.com/oauth2/authorize?client_id={os.getenv('DROPBOX_CLIENT_ID')}&response_type=token&redirect_uri={os.getenv('FRONTEND_URL')}/export-pdf"
     return redirect(auth_url)
 
-@pdf_route.route('/oauth/callback')
-def oauth_callback():
-    try:
-        code = request.args.get('code')
-        print(f"Received auth code: {code[:10]}...") # Print first 10 chars for security
-        
-        if not code:
-            print("No authorization code received")
-            return jsonify({'error': 'No authorization code received'}), 400
-
-        token_url = "https://api.dropbox.com/oauth2/token"
-        
-        data = {
-            'code': code,
-            'grant_type': 'authorization_code',
-            'client_id': os.getenv('DROPBOX_CLIENT_ID'),
-            'client_secret': os.getenv('DROPBOX_CLIENT_SECRET'),
-            'redirect_uri': REDIRECT_URI
-        }
-        
-        print("Requesting token from Dropbox...")
-        response = requests.post(token_url, data=data)
-        print(f"Token response status: {response.status_code}")
-        
-        if response.status_code != 200:
-            print(f"Token request failed: {response.text}")
-            return jsonify({'error': f'Token request failed: {response.text}'}), 400
-            
-        token_data = response.json()
-        print("Successfully received token")
-        session['dropbox_token'] = token_data['access_token']
-        
-        frontend_url = f"{os.getenv('FRONTEND_URL')}/#/export-pdf?auth=success"
-        print(f"Redirecting to: {frontend_url}")
-        return redirect(frontend_url)
-        
-    except Exception as e:
-        print(f"Error in callback: {str(e)}")
-        return jsonify({'error': str(e)}), 500
-
-    
 @pdf_route.route('/api/export-pdf', methods=['GET'])
 def export_dictionary_pdf():
-    print("Starting PDF export...")
-    
-    if 'dropbox_token' not in session:
-        print("No Dropbox token in session")
-        return jsonify({'error': 'Not authenticated with Dropbox'}), 401
-    
-    print("Found Dropbox token in session")    
-    dbx = Dropbox(session['dropbox_token'])
-
     try:
+
+        # Get token from request headers
+        auth_header = request.headers.get('Authorization')
+        if not auth_header:
+            return jsonify({'error': 'No token provided'}), 401
+            
+        access_token = auth_header.split(' ')[1]  # Assumes format: "Bearer <token>"
+        dbx = Dropbox(access_token)
+
         # Get all documents from your MongoDB collection and sort them by 'can'
         iv_en = mongo.db.translations.find().sort('can')
         en_iv = mongo.db.translations.find().sort('en')
@@ -274,52 +224,33 @@ def export_dictionary_pdf():
         # Debug print
         print("PDF generated successfully")
 
-
-
         # Upload to Dropbox
 
-        print(f"Attempting to upload to Dropbox: {dropbox_path}")
-
-        dbx = Dropbox(os.getenv('DROPBOX_ACCESS_TOKEN'))
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         dropbox_path = f"/kistalkekirtus/ilven_dictionary_{timestamp}.pdf"
         
-        try:
-            # Debug print
-            print(f"Attempting to upload to Dropbox: {dropbox_path}")
-            buffer.seek(0)            
-            upload_result = dbx.files_upload(
-                buffer.getvalue(),
-                dropbox_path,
-                mode=WriteMode('overwrite')
-            )
-            
-            print("Upload successful, creating shared link")
-            shared_link = dbx.sharing_create_shared_link(dropbox_path)
-            print(f"Shared link created: {shared_link.url}")
-            
-            return jsonify({
-                'success': True,
-                'message': 'PDF uploaded to Dropbox',
-                'link': shared_link.url
-            })
-        except Exception as dropbox_error:
-            print(f"Dropbox error: {str(dropbox_error)}")
-            return jsonify({
-                'success': False,
-                'error': f"Dropbox error: {str(dropbox_error)}"
-            }), 500
+        buffer.seek(0)
+        upload_result = dbx.files_upload(
+            buffer.getvalue(),
+            dropbox_path,
+            mode=WriteMode('overwrite')
+        )
         
-    except Exception as e:
-        print(f"General error: {str(e)}")
+        shared_link = dbx.sharing_create_shared_link(dropbox_path)
+        
         return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 500            
+            'success': True,
+            'message': 'PDF uploaded to Dropbox',
+            'link': shared_link.url
+        })
+
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 
 
-@pdf_route.route('/api/export/roots-pdf', methods=['GET'])
+@pdf_route.route('/api/export-roots', methods=['GET'])
 def export_roots_pdf():
     # Get roots data
     konota = mongo.db.roots.find().sort('root', 1)

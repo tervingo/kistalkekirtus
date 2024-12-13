@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { Box, Typography, Button, Stack } from '@mui/material';
@@ -6,60 +7,44 @@ import { useTranslation } from 'react-i18next';
 
 export const ExportPdfForm = () => {
     const [message, setMessage] = useState('');
+    const [dropboxToken, setDropboxToken] = useState(null);
     const { t } = useTranslation();
+    const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
-        const params = new URLSearchParams(window.location.hash.split('?')[1]);
-        
-        const handleAuthSuccess = async () => {
-            try {
-                console.log("Auth success detected, initiating PDF export...");
-                const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf', {
-                    credentials: 'include' // Important! Add this to include cookies
-                });
-                console.log("Received response:", response.status);
-                
-                const data = await response.json();
-                console.log("Response data:", data);
-                
-                if (data.success && data.link) {
-                    window.open(data.link, '_blank');
-                    setMessage(t('lex.files.uploadSuccess'));
-                } else {
-                    throw new Error(data.error || 'Upload failed');
-                }
-            } catch (error) {
-                console.error('Error during PDF export:', error);
-                setMessage(t('lex.files.uploadError'));
+        // Check for Dropbox token in URL parameters
+        if (location.hash.includes('access_token')) {
+            const params = new URLSearchParams(location.hash.substring(1));
+            const token = params.get('access_token');
+            if (token) {
+                setDropboxToken(token);
+                // Clean up the URL
+                navigate('/export-pdf', { replace: true });
             }
-        };
-
-        if (params.get('auth') === 'success') {
-            console.log("Found auth=success in URL");
-            handleAuthSuccess();
         }
-    }, [t]);
+    }, [location, navigate]);
 
-
-    const initiateDropboxAuth = async () => {
-        try {
-            console.log("Initiating Dropbox auth...");
-            window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
-        } catch (error) {
-            console.error('Auth error:', error);
-            setMessage(t('lex.files.authError'));
-        }
+    const initiateDropboxAuth = () => {
+        window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
     };
 
     const downloadDictionary = async () => {
         try {
-            const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf');
-            const data = await response.json();
-            
-            if (data.error === 'Not authenticated with Dropbox') {
+            if (!dropboxToken) {
                 initiateDropboxAuth();
                 return;
             }
+
+            const response = await fetch('https://kistalkekirtus.onrender.com/api/export-pdf', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${dropboxToken}`,
+                    'Content-Type': 'application/json'
+                }
+            });
+            
+            const data = await response.json();
             
             if (data.success && data.link) {
                 window.open(data.link, '_blank');
@@ -76,7 +61,7 @@ export const ExportPdfForm = () => {
     const downloadRoots = async () => {
         try {
             setMessage(t('lex.files.downloading'));
-            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export/roots-pdf`);
+            const response = await fetch(`https://kistalkekirtus.onrender.com/api/export-roots`);
             const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
