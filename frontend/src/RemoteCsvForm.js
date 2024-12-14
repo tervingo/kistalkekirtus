@@ -3,17 +3,18 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { Box, Typography, Button, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export const ExportCsvForm = () => {
     const [message, setMessage] = useState('');
     const [dropboxToken, setDropboxToken] = useState(null);
     const { t } = useTranslation();
     const navigate = useNavigate();
+    const location = useLocation();
 
     const exportCsv = useCallback(async (token) => {
         try {
-            console.log("Making CSV export request with token...");
+            console.log("Starting CSV export with token");
             const response = await fetch('https://kistalkekirtus.onrender.com/api/export-csv', {
                 method: 'GET',
                 headers: {
@@ -22,51 +23,53 @@ export const ExportCsvForm = () => {
                 }
             });
             
-            console.log("API response status:", response.status);
+            console.log("CSV export response status:", response.status);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
             const data = await response.json();
-            console.log("API response data:", data);
+            console.log("CSV export response data:", data);
             
             if (data.success) {
+                // Open links in new tabs
                 window.open(data.entries_link, '_blank');
                 window.open(data.roots_link, '_blank');
-                setMessage(t('lex.files.uploadSuccess') + 
-                         `\n${t('lex.files.entries')}: ${data.entry_count}` +
-                         `\n${t('lex.files.roots')}: ${data.root_count}`);
+                setMessage(`${t('lex.files.uploadSuccess')}\n${t('lex.files.entries')}: ${data.entry_count}\n${t('lex.files.roots')}: ${data.root_count}`);
             } else {
                 throw new Error(data.error || 'Upload failed');
             }
         } catch (error) {
-            console.error('Error:', error);
-            setMessage(t('lex.files.uploadError'));
+            console.error('CSV Export Error:', error);
+            setMessage(`${t('lex.files.uploadError')}: ${error.message}`);
         }
     }, [t]);
 
+    // Handle Dropbox OAuth callback
+    React.useEffect(() => {
+        console.log("Current location hash:", location.hash);
+        if (location.hash.includes('access_token')) {
+            const params = new URLSearchParams(location.hash.substring(1));
+            const token = params.get('access_token');
+            console.log("Got token from hash:", token ? "Yes" : "No");
+            if (token) {
+                setDropboxToken(token);
+                console.log("About to call exportCsv with token");
+                exportCsv(token);
+                navigate('/export-csv', { replace: true });
+            }
+        }
+    }, [location, navigate, exportCsv]);
+
     const handleExportClick = () => {
+        console.log("Export button clicked, token exists:", !!dropboxToken);
         if (dropboxToken) {
             exportCsv(dropboxToken);
         } else {
-            console.log("No token, initiating auth...");
-            window.location.href = `https://kistalkekirtus.onrender.com/oauth/csv-connect`;  // Updated endpoint
+            console.log("Redirecting to Dropbox auth...");
+            window.location.href = `https://kistalkekirtus.onrender.com/oauth/csv-connect`;
         }
     };
-
-    // Handle Dropbox OAuth callback
-    React.useEffect(() => {
-        const handleAuth = () => {
-            if (window.location.hash.includes('access_token')) {
-                const params = new URLSearchParams(window.location.hash.substring(1));
-                const token = params.get('access_token');
-                if (token) {
-                    setDropboxToken(token);
-                    exportCsv(token);
-                    // Clean the URL without changing the path
-                    navigate('/export-csv', { replace: true });
-                }
-            }
-        };
-
-        handleAuth();
-    }, [exportCsv, navigate]);
 
     return (
         <ThemeProvider theme={theme}>
