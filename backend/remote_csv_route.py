@@ -6,6 +6,7 @@ from dropbox import Dropbox
 from dropbox.files import WriteMode
 from __init__ import mongo
 import datetime
+import os
 
 csv_route = Blueprint('csv_route', __name__)
 
