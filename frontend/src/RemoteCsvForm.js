@@ -3,11 +3,13 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { Box, Typography, Button, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 export const ExportCsvForm = () => {
     const [message, setMessage] = useState('');
     const [dropboxToken, setDropboxToken] = useState(null);
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     const exportCsv = useCallback(async (token) => {
         try {
@@ -25,7 +27,6 @@ export const ExportCsvForm = () => {
             console.log("API response data:", data);
             
             if (data.success) {
-                // Open both CSV files in new tabs
                 window.open(data.entries_link, '_blank');
                 window.open(data.roots_link, '_blank');
                 setMessage(t('lex.files.uploadSuccess') + 
@@ -45,21 +46,27 @@ export const ExportCsvForm = () => {
             exportCsv(dropboxToken);
         } else {
             console.log("No token, initiating auth...");
-            window.location.href = `https://kistalkekirtus.onrender.com/oauth/connect`;
+            window.location.href = `https://kistalkekirtus.onrender.com/oauth/csv-connect`;  // Updated endpoint
         }
     };
 
     // Handle Dropbox OAuth callback
     React.useEffect(() => {
-        if (window.location.hash.includes('access_token')) {
-            const params = new URLSearchParams(window.location.hash.substring(1));
-            const token = params.get('access_token');
-            if (token) {
-                setDropboxToken(token);
-                exportCsv(token);
+        const handleAuth = () => {
+            if (window.location.hash.includes('access_token')) {
+                const params = new URLSearchParams(window.location.hash.substring(1));
+                const token = params.get('access_token');
+                if (token) {
+                    setDropboxToken(token);
+                    exportCsv(token);
+                    // Clean the URL without changing the path
+                    navigate('/export-csv', { replace: true });
+                }
             }
-        }
-    }, [exportCsv]);
+        };
+
+        handleAuth();
+    }, [exportCsv, navigate]);
 
     return (
         <ThemeProvider theme={theme}>
@@ -82,7 +89,7 @@ export const ExportCsvForm = () => {
                     <Typography 
                         variant="h6" 
                         gutterBottom 
-                        sx={{ whiteSpace: 'pre-line' }}  // This allows line breaks in the message
+                        sx={{ whiteSpace: 'pre-line' }}
                     >
                         {message}
                     </Typography>

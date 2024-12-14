@@ -9,6 +9,11 @@ import datetime
 
 csv_route = Blueprint('csv_route', __name__)
 
+@csv_route.route('/oauth/csv-connect')  # New separate route for CSV auth
+def oauth_csv_connect():
+    auth_url = f"https://www.dropbox.com/oauth2/authorize?client_id={os.getenv('DROPBOX_CLIENT_ID')}&response_type=token&redirect_uri={os.getenv('FRONTEND_URL')}/export-csv"
+    return redirect(auth_url)
+
 @csv_route.route('/api/export-csv', methods=['GET'])
 def export_csv():
     try:
