@@ -19,7 +19,7 @@ import { EnterEntry, EnterRoot } from './EnterForm';
 import { QueryEntry, QueryRoot } from './QueryForm';
 import { ListEntries, ListRoots } from './ListForm';
 import { EditEntry, EditRoot } from './EditForm';
-import { ExportCsvForm, ImportCsvForm, CsvInfo } from './CsvForm';
+import { ExportCsvForm } from './CsvForm';
 import { ExportPdfForm } from './RemotePdfForm';
 import { HtmlDisplay } from './DisplayHtml';
 import { LexTreeView } from './LexTreeView';
@@ -217,10 +217,8 @@ function App() {
                   <Route path="/enter-root" element={< EnterRoot />} />
                   <Route path="/enter-root/:root" element={< EnterRoot />} />
                   <Route path="/query-root" element={< QueryRoot />} />
-                  <Route path="/export/csv" element={<ExportCsvForm />} />
+                  <Route path="/export-csv" element={<ExportCsvForm />} />
                   <Route path="/export-pdf" element={<ExportPdfForm />} />
-                  <Route path="/import/csv" element={<ImportCsvForm />} />
-                  <Route path="/csv-info" element={<CsvInfo />} />
                   <Route path="/html-display/:label" element={<HtmlDisplay />} />
                 </Routes>
               </Box>

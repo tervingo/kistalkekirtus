@@ -1,25 +1,20 @@
-from flask import Blueprint, send_file, request, jsonify, redirect
-import requests
+from flask import Blueprint, request, jsonify, redirect
 from io import BytesIO
-from bson.objectid import ObjectId
 from reportlab.lib.pagesizes import letter
-from reportlab.platypus import BaseDocTemplate, PageTemplate, Frame, Paragraph, NextPageTemplate, PageBreak, Spacer
+from reportlab.platypus import BaseDocTemplate, PageTemplate, Frame, Paragraph, PageBreak, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import cm
 from reportlab.lib.styles import ParagraphStyle
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+from reportlab.platypus import Table, TableStyle
 from reportlab.lib import colors
 from dropbox import Dropbox
 from dropbox.files import WriteMode
 
 import datetime
 import socket
-import secrets  # for generating secret key
 import os
 
 from __init__ import mongo
-
-hostname = socket.gethostname()
 
 pdf_route = Blueprint('pdf_route', __name__)
 
